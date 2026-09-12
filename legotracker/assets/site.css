@@ -162,7 +162,7 @@ a:hover { color: var(--accent-2); }
 }
 .brand {
   display: inline-flex; align-items: center; gap: 8px;
-  font-family: var(--f-display); font-weight: 700; font-size: 16px;
+  font-family: var(--f-display); font-weight: 700; font-size: 24px;
   letter-spacing: -.015em; color: var(--ink); text-decoration: none;
 }
 .brand:hover { color: var(--accent); }
@@ -186,9 +186,9 @@ a:hover { color: var(--accent-2); }
 .social {
   display: inline-flex; align-items: center; gap: 6px;
   font-family: var(--f-body); font-weight: 600; font-size: 14px;
-  color: var(--ink-2); text-decoration: none; flex: 0 0 auto;
+  color: var(--accent); text-decoration: none; flex: 0 0 auto;
 }
-.social:hover { color: var(--accent); }
+.social:hover { color: var(--accent-2); }
 .social svg { width: 18px; height: 18px; display: block; flex: 0 0 auto; }
 
 main {
