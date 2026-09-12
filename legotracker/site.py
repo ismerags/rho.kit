@@ -828,7 +828,7 @@ def render_home(items: list[dict], analyses: dict, builds: list[Build],
 
     body = f"""
 <section class="hero">
-  <h1>Find the cheapest Lego in the market</h1>
+  <h1>Compare Lego prices in the market</h1>
   <p class="lede">Type a set number or a name.</p>
 
   <form class="search" role="search" id="searchform" autocomplete="off">
