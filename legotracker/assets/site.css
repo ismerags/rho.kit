@@ -168,7 +168,7 @@ a:hover { color: var(--accent-2); }
 .brand:hover { color: var(--accent); }
 .brand svg { width: 19px; height: 19px; display: block; flex: 0 0 auto; }
 .brand img {
-  width: 28px; height: 28px; display: block; flex: 0 0 auto;
+  width: 32px; height: 32px; display: block; flex: 0 0 auto;
   filter: var(--logo-filter);
 }
 .studs { display: inline-flex; gap: 3px; }

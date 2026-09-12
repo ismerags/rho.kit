@@ -478,12 +478,13 @@ def page(*, title: str, description: str, rel: str, body: str,
               '<circle cx="12" cy="12" r="4.2"/>'
               '<circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/>'
               '</svg>')
-    # Top-left is the site's own mark now — Rho's logo, not the handle.
-    # The wordmark is the Greek letter itself (ρ); cfg.title stays "Rho" for
-    # page titles and alt text, where the spelled-out name reads better.
+    # Top-left is the site's own mark now — Rho's logo, not the handle. The
+    # logo itself is the wordmark (a rocket built from the letter ρ), so
+    # there's no separate text next to it. cfg.title stays "Rho" for page
+    # titles and alt text, where the spelled-out name reads better.
     brand = (f'<a class="brand" href="{rel}">'
-              f'<img src="{rel}assets/logo.png" alt="{esc(cfg.title)}" width="28" height="28">'
-              f'<span>ρ</span></a>')
+              f'<img src="{rel}assets/logo.png" alt="{esc(cfg.title)}" width="32" height="32">'
+              f'</a>')
     # Instagram moves to the top right as its own link.
     social = (f'<a class="social" href="{esc(ig)}" rel="me noopener" target="_blank">'
               f'{ig_svg}<span>@{esc(handle)}</span></a>' if ig and handle else
