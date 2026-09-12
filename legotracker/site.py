@@ -456,7 +456,7 @@ def sparkline(series: list[dict], width: int = 660, height: int = 190) -> str:
 
 # ----------------------------------------------------------------- shell
 
-NAV = [("", "Search"), ("browse/", "Browse"), ("builds/", "Builds"), ("about/", "About")]
+NAV = [("", "Home"), ("browse/", "Browse"), ("builds/", "Builds"), ("about/", "About")]
 
 
 def page(*, title: str, description: str, rel: str, body: str,
