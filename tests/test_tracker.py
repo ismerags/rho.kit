@@ -946,18 +946,35 @@ def test_site_never_claims_history_it_lacks():
     with tempfile.TemporaryDirectory() as tmp:
         out = _site_fixture(tmp, days=1)          # 2 days — below the threshold
         page = (out / "set" / "42176" / "index.html").read_text()
-        check("Not enough data yet" in page, "thin history refuses to draw a chart")
-        check("<svg" not in page, "…and emits no chart at all")
+        check("<svg" not in page, "no chart, thin history or not")
         check("all-time" not in page.lower(), "…and claims no all-time low")
 
     with tempfile.TemporaryDirectory() as tmp:
         out = _site_fixture(tmp, days=40)
         page = (out / "set" / "42176" / "index.html").read_text()
-        check("<svg" in page, "real history does draw a chart")
-        check("Lowest since we started tracking" in page,
-              "all-time low is worded as since-we-started")
+        # Price history is held back from set pages for now (see history_block's
+        # docstring) — build_site must not call it, even with ample history.
+        check("<svg" not in page,
+              "price history chart is not shown on set pages yet")
         check("all-time low" not in page.lower(),
-              "…and never as a true all-time low")
+              "…and never claims a true all-time low")
+
+    from datetime import datetime as _dt, timedelta as _td
+    from legotracker.site import history_block, analyse_set
+    # The function itself still works correctly — it's just not wired in.
+    start = _dt(2026, 1, 1)
+    obs = [{"retailer": "amazon_in",
+            "observed_at": (start + _td(days=d)).isoformat(),
+            "price_inr": 15000.0 + d, "mrp_inr": 17999.0, "in_stock": True}
+           for d in range(40)]
+    item = {"set_num": "42176", "pieces": 3696}
+    analysis = analyse_set(item, obs)
+    block = history_block(analysis)
+    check("<svg" in block, "history_block itself still draws a chart when called")
+    check("Lowest since we started tracking" in block,
+          "all-time low is worded as since-we-started")
+    check("all-time low" not in block.lower(),
+          "…and never as a true all-time low")
 
 
 def test_site_distinguishes_unchecked_from_unavailable():
@@ -971,7 +988,10 @@ def test_site_distinguishes_unchecked_from_unavailable():
               "never-checked set says so")
         check("No retailer we checked has it in stock" not in page,
               "…and does not claim it is unavailable")
-        check("Not checked yet" in page, "each unchecked retailer is listed as such")
+        check("Not checked yet" not in page,
+              "unchecked retailers are left out of the table, not listed as such")
+        check("No retailer has been checked for this set yet" in page,
+              "…and the empty table says so plainly instead")
 
     with tempfile.TemporaryDirectory() as tmp:
         out = _site_fixture(tmp, with_prices=False, catalog_price=True)

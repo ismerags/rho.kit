@@ -89,6 +89,70 @@ ALLOWED_LINK_HOSTS = tuple(sorted(
 SET_NUM_RE = re.compile(r"^\d{4,7}$")
 SAFE_IMAGE_RE = re.compile(r"^https://[\w.-]+/[^\s\"'<>]*$")
 
+#: A set's catalogue `theme` is a single string, but plenty of real sets
+#: straddle two of the browse filters at once — a Technic set that is also an
+#: F1 car, an Icons set that is also a Star Wars build. Rather than force one
+#: label, the browse page tags a set with every franchise its own name names,
+#: in addition to its catalogue theme, so it turns up under both filters.
+SECONDARY_THEME_KEYWORDS: dict[str, tuple[str, ...]] = {
+    "F1": ("f1", "formula 1", "formula one"),
+    "Speed Champions": ("speed champions",),
+    "Star Wars": ("star wars",),
+    "Marvel": ("marvel", "spider-man", "spiderman", "avengers"),
+    "Harry Potter": ("harry potter", "hogwarts"),
+    "Disney": ("disney",),
+}
+
+
+def theme_tags(item: dict) -> list[str]:
+    """Every browse-filter bucket a set belongs in: its catalogue theme plus
+    any franchise its own name mentions."""
+    primary = (item.get("theme") or "").strip()
+    name = (item.get("display_name") or item.get("name") or "").lower()
+    tags = [primary] if primary else []
+    for tag, keywords in SECONDARY_THEME_KEYWORDS.items():
+        if tag == primary or tag in tags:
+            continue
+        if any(kw in name for kw in keywords):
+            tags.append(tag)
+    return tags
+
+
+def compute_value_thresholds(values: Iterable[float]) -> tuple[float, float]:
+    """Tertile cut points for per-piece price, used to rank a set as cheap,
+    mid or expensive *relative to the rest of the catalogue* — never against
+    a fixed rupee figure, which would go stale the moment prices move."""
+    values = sorted(v for v in values if v and v > 0)
+    if not values:
+        return (0.0, 0.0)
+    lo = values[int(len(values) * 0.33)]
+    hi = values[min(len(values) - 1, int(len(values) * 0.67))]
+    return (lo, hi)
+
+
+def value_tier(per_piece: Optional[float], thresholds: tuple[float, float]) -> str:
+    """'good' (cheap), 'warn' (mid) or 'bad' (expensive) — reusing the site's
+    existing semantic colours, which already read as green / orange / red."""
+    if not per_piece:
+        return ""
+    lo, hi = thresholds
+    if hi <= lo:
+        return ""
+    if per_piece <= lo:
+        return "good"
+    if per_piece >= hi:
+        return "bad"
+    return "warn"
+
+
+def pp_span(per_piece: Optional[float], thresholds: tuple[float, float]) -> str:
+    """The italic, colour-coded '₹X.XX/piece' used on browse tiles and cards."""
+    if not per_piece:
+        return ""
+    tier = value_tier(per_piece, thresholds)
+    cls = f"pp pp-{tier}" if tier else "pp"
+    return f'<span class="{cls}">{esc(rupees(per_piece, decimals=True))}/piece</span>'
+
 
 # ------------------------------------------------------------------ helpers
 
@@ -407,6 +471,16 @@ def page(*, title: str, description: str, rel: str, body: str,
     ig = safe_url(cfg.instagram_url)
     ig_link = (f'<a href="{esc(ig)}" rel="me noopener" target="_blank">Instagram</a>'
                if ig else "")
+    # A small icon in the header, not just the footer text link, so the
+    # Instagram handle is visible the moment someone lands on any page.
+    ig_icon = (f'<a class="ig-link" href="{esc(ig)}" rel="me noopener" target="_blank" '
+               f'aria-label="{esc(cfg.title)} on Instagram">'
+               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+               'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+               '<rect x="2" y="2" width="20" height="20" rx="5"/>'
+               '<circle cx="12" cy="12" r="4.2"/>'
+               '<circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/>'
+               '</svg></a>' if ig else "")
     repo = safe_url(cfg.repo)
     repo_link = (f'<a href="{esc(repo)}" rel="noopener" target="_blank">Source on GitHub</a>'
                  if repo else "")
@@ -428,7 +502,7 @@ def page(*, title: str, description: str, rel: str, body: str,
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="{rel}assets/site.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230A5BD3'/%3E%3Ccircle cx='11' cy='11' r='3.4' fill='%23fff'/%3E%3Ccircle cx='21' cy='11' r='3.4' fill='%23fff'/%3E%3Crect x='6' y='17' width='20' height='9' rx='2' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23EA580C'/%3E%3Ccircle cx='11' cy='11' r='3.4' fill='%23fff'/%3E%3Ccircle cx='21' cy='11' r='3.4' fill='%23fff'/%3E%3Crect x='6' y='17' width='20' height='9' rx='2' fill='%23fff'/%3E%3C/svg%3E">
 {head_extra}
 </head>
 <body>
@@ -440,6 +514,7 @@ def page(*, title: str, description: str, rel: str, body: str,
       <span>{esc(cfg.title)}</span>
     </a>
     <nav aria-label="Main">{nav}</nav>
+    {ig_icon}
   </div>
 </header>
 <main id="main">
@@ -470,11 +545,21 @@ def page(*, title: str, description: str, rel: str, body: str,
 # ------------------------------------------------------------- components
 
 def price_table(analysis: dict) -> str:
-    """The comparison table. Every retailer gets a row, including the ones with
-    nothing to say — "we have not checked this one" and "they don't have it" are
-    different answers and a price comparison that hides either is misleading."""
+    """The comparison table.
+
+    Only retailers we actually have an observation for get a row. A retailer
+    with nothing on record isn't a useful comparison point — it just pads the
+    table with "Not checked yet" — so it is left out here; the set page's own
+    headline already says plainly when nothing has been checked at all.
+    """
+    checked_rows = [r for r in analysis["rows"] if r["state"] != "unchecked"]
+    if not checked_rows:
+        return """<div class="tablewrap">
+<p class="empty">No retailer has been checked for this set yet.</p>
+</div>"""
+
     rows = []
-    for i, r in enumerate(analysis["rows"]):
+    for i, r in enumerate(checked_rows):
         fresh = r["fresh"]
         if r["state"] == "in_stock":
             price = f'<span class="p">{esc(rupees(r["price"]))}</span>'
@@ -492,13 +577,9 @@ def price_table(analysis: dict) -> str:
             note = f'<span class="when {fresh["level"]}">checked {esc(fresh["text"])}</span>'
             link = (f'<a class="buy ghost" href="{esc(r["url"])}" target="_blank"'
                     f' rel="noopener nofollow">View</a>' if r["url"] else "")
-        elif r["state"] == "no_price":
+        else:  # "no_price" — reached, but nothing to quote
             status = '<span class="na">No price listed</span>'
             note = f'<span class="when {fresh["level"]}">checked {esc(fresh["text"])}</span>'
-            link = ""
-        else:
-            status = '<span class="na quiet">Not checked yet</span>'
-            note = '<span class="when unknown">no observation on record</span>'
             link = ""
 
         best = ' class="best"' if i == 0 and r["state"] == "in_stock" else ""
@@ -513,7 +594,7 @@ def price_table(analysis: dict) -> str:
 
     return f"""<div class="tablewrap">
 <table class="prices">
-  <caption>Every retailer we track, cheapest first</caption>
+  <caption>Retailers checked, cheapest first</caption>
   <thead><tr><th scope="col">Retailer</th><th scope="col">Price</th>
     <th scope="col">Last checked</th><th scope="col"><span class="sr">Link</span></th></tr></thead>
   <tbody>{''.join(rows)}</tbody>
@@ -521,8 +602,13 @@ def price_table(analysis: dict) -> str:
 </div>"""
 
 
-def history_block(analysis: dict) -> str:
-    """Price history — or an honest refusal to show one."""
+def history_block(analysis: dict) -> str:  # pragma: no cover — currently unused
+    """Price history — or an honest refusal to show one.
+
+    Not called from `render_set_page` right now: the chart is being held back
+    from set pages until there's enough history for it to be worth showing.
+    Left in place, working, so it's a one-line change to bring back.
+    """
     if not analysis["enough_history"]:
         days = analysis["days_tracked"]
         return f"""<section class="panel thin">
@@ -677,7 +763,6 @@ def render_set_page(item: dict, analysis: dict, cfg: SiteConfig,
   </div>
 
   {price_table(analysis)}
-  {history_block(analysis)}
 
   <p class="disclaim">Prices are collected automatically and can be wrong or out
      of date. Check the retailer's page before buying.</p>
@@ -689,9 +774,9 @@ def render_set_page(item: dict, analysis: dict, cfg: SiteConfig,
 
 
 def render_home(items: list[dict], analyses: dict, builds: list[Build],
-                cfg: SiteConfig, meta: dict) -> str:
+                cfg: SiteConfig, meta: dict,
+                thresholds: tuple[float, float] = (0.0, 0.0)) -> str:
     rel = ""
-    current = next((b for b in builds if b.is_current), None)
 
     # "Best value" strips are built from real observations only. A set we have
     # never compared has no business being called a deal.
@@ -709,10 +794,23 @@ def render_home(items: list[dict], analyses: dict, builds: list[Build],
     def card(item, analysis, note) -> str:
         image = safe_image(item.get("image"))
         name = item.get("display_name") or item.get("name")
+        pieces = item.get("pieces")
+        best = analysis["best"]
+        mrp = best.get("mrp") or item.get("mrp")
+        mrp_html = (f'<span class="mrp">{esc(rupees(mrp))}</span>'
+                    if mrp and best["price"] and mrp > best["price"] else "")
+        meta_bits = []
+        if pieces:
+            meta_bits.append(f'{pieces:,} pieces')
+        pp = pp_span(analysis.get("per_piece"), thresholds)
+        if pp:
+            meta_bits.append(pp)
+        meta_line = " · ".join(meta_bits)
         return f"""<a class="card" href="{rel}set/{esc(item['set_num'])}/">
       <span class="well">{f'<img src="{esc(image)}" alt="" loading="lazy" referrerpolicy="no-referrer">' if image else ''}</span>
       <span class="c-name">{esc(name)}</span>
-      <span class="c-price">{esc(rupees(analysis['best']['price']))}</span>
+      <span class="c-price">{esc(rupees(best['price']))}{mrp_html}</span>
+      {f'<span class="c-meta">{meta_line}</span>' if meta_line else ''}
       <span class="c-note">{note}</span>
     </a>"""
 
@@ -721,33 +819,17 @@ def render_home(items: list[dict], analyses: dict, builds: list[Build],
                    f'at {esc(a["best"]["label"])}')
         for i, a in deals)
     value_cards = "".join(
-        card(i, a, f'{esc(rupees(a["per_piece"], decimals=True))} per piece')
+        card(i, a, f'at {esc(a["best"]["label"])}')
         for i, a in value)
 
-    build_block = ""
-    if current:
-        cover = safe_image(current.cover)
-        build_block = f"""<section class="now{'' if cover else ' solo'}">
-    <div class="now-in">
-      <p class="eyebrow">Currently building</p>
-      <h2>{esc(current.title)}</h2>
-      {f'<div class="bar-track"><div class="bar-fill" style="width:{current.progress}%"></div></div>'
-       f'<p class="sub">{current.progress}% done</p>' if current.progress is not None else ''}
-      <p class="now-links">
-        <a href="{rel}builds/">Build log</a>
-        {f'<a href="{esc(safe_url(current.instagram))}" target="_blank" rel="noopener">Watch on Instagram</a>'
-         if safe_url(current.instagram) else ''}
-      </p>
-    </div>
-    {f'<div class="now-shot"><img src="{esc(cover)}" alt="" loading="lazy"></div>' if cover else ''}
-  </section>"""
+    last_checked = freshness(meta.get("last_observation"))
+    discounts_heading = (f"Biggest discounts right now"
+                          f' <span class="sub">— last updated {esc(last_checked["text"])}</span>')
 
     body = f"""
 <section class="hero">
-  <h1>What does that LEGO set actually cost in India?</h1>
-  <p class="lede">Type a set number or a name. We compare
-     {len(PRICE_RETAILERS)} Indian retailers and show you when each price was last
-     checked — no login, no ads, no affiliate nonsense.</p>
+  <h1>Find the cheapest Lego in the market</h1>
+  <p class="lede">Type a set number or a name.</p>
 
   <form class="search" role="search" id="searchform" autocomplete="off">
     <label class="sr" for="q">Search LEGO sets by number or name</label>
@@ -760,29 +842,8 @@ def render_home(items: list[dict], analyses: dict, builds: list[Build],
      {meta.get('observations') or 0:,} price observations on record</p>
 </section>
 
-{build_block}
-
-{f'<section class="strip"><h2>Biggest discounts right now</h2><div class="cards">{deal_cards}</div></section>' if deal_cards else ''}
+{f'<section class="strip"><h2>{discounts_heading}</h2><div class="cards">{deal_cards}</div></section>' if deal_cards else ''}
 {f'<section class="strip"><h2>Best value per piece</h2><div class="cards">{value_cards}</div></section>' if value_cards else ''}
-
-<section class="how">
-  <h2>How this works</h2>
-  <div class="how-grid">
-    <div><h3>Collected weekly, not live</h3>
-      <p>A script on a laptop in Gurgaon checks every retailer once a week. The
-         website only reads what it found, which is why pages load instantly and
-         why every price carries the date it was checked.</p></div>
-    <div><h3>Wrong matches are thrown away</h3>
-      <p>Ask a retailer for 42176 and its search box will cheerfully return
-         42210. The set number has to appear in the listing title, and light
-         kits, display stands and “compatible” knock-offs are rejected outright.</p></div>
-    <div><h3>No verdict without history</h3>
-      <p>Whether a price is good is judged against what that set normally sells
-         for. Until there are {MIN_OBSERVATIONS_FOR_TYPICAL} days of data, the
-         page says “not enough data yet” instead of guessing.</p></div>
-  </div>
-  <p class="how-more"><a href="{rel}about/">More about where the data comes from →</a></p>
-</section>
 """
     return page(title=f"{cfg.title} — compare LEGO prices across Indian retailers",
                 description=cfg.tagline or cfg.description, rel=rel, body=body,
@@ -790,9 +851,10 @@ def render_home(items: list[dict], analyses: dict, builds: list[Build],
 
 
 def render_browse(items: list[dict], analyses: dict, cfg: SiteConfig,
-                  meta: dict) -> str:
+                  meta: dict, thresholds: tuple[float, float] = (0.0, 0.0)) -> str:
     rel = "../"
-    themes = sorted({i["theme"] for i in items if i.get("theme")})
+    item_tags = {item["set_num"]: theme_tags(item) for item in items}
+    themes = sorted({t for tags in item_tags.values() for t in tags})
     opts = "".join(f'<option value="{esc(t)}">{esc(t)}</option>' for t in themes)
 
     tiles = []
@@ -806,27 +868,30 @@ def render_browse(items: list[dict], analyses: dict, cfg: SiteConfig,
         per_piece = a.get("per_piece") or (
             round(price / pieces, 2) if price and pieces else None)
         out = a.get("retailers_checked") and not a.get("retailers_in_stock")
+        tags = item_tags[item["set_num"]]
 
         note = (f'cheapest of {a.get("retailers_checked")} checked'
                 if best else "store price only")
+        pp = pp_span(per_piece, thresholds)
         tiles.append(f"""<a class="tile{' out' if out else ''}"
    href="{rel}set/{esc(item['set_num'])}/"
    data-name="{esc((name or '').lower())}" data-num="{esc(item['set_num'])}"
-   data-theme="{esc(item.get('theme') or '')}"
+   data-theme="{esc('|'.join(tags))}"
    data-price="{price or ''}" data-pieces="{pieces or ''}"
    data-per="{per_piece or ''}" data-out="{1 if out else 0}">
   <span class="well">{f'<img src="{esc(image)}" alt="" loading="lazy" referrerpolicy="no-referrer">' if image else ''}</span>
   <span class="t-name">{esc(name)}</span>
   <span class="t-num">#{esc(item['set_num'])}</span>
   <span class="t-price">{esc(rupees(price))}{' <span class="t-out">out of stock</span>' if out else ''}</span>
-  <span class="t-note">{esc(note)}{f' · {rupees(per_piece, decimals=True)}/piece' if per_piece else ''}</span>
+  <span class="t-note">{esc(note)}{f' · {pp}' if pp else ''}</span>
 </a>""")
+
+    catalog_refreshed = freshness(meta.get("catalog_refreshed_at"))
 
     body = f"""
 <section class="browse">
   <h1>Browse the catalogue</h1>
-  <p class="lede">{len(items)} sets available in India, with the cheapest price we
-     have seen for each. Click any set for the full comparison.</p>
+  <p class="lede">Click any set for details.</p>
 
   <div class="filters">
     <label class="sr" for="bq">Filter by name or number</label>
@@ -843,6 +908,7 @@ def render_browse(items: list[dict], analyses: dict, cfg: SiteConfig,
     </select>
     <label class="check"><input type="checkbox" id="bstock"> In stock only</label>
   </div>
+  <p class="freshmark">Catalogue last refreshed {esc(catalog_refreshed["text"])}</p>
   <p class="count" id="bcount" aria-live="polite"></p>
   <div class="tiles" id="tiles">{''.join(tiles)}</div>
   <p class="empty" id="bempty" hidden>Nothing matches that filter.</p>
@@ -912,10 +978,6 @@ def render_builds(builds: list[Build], catalog_by_num: dict,
 
 def render_about(cfg: SiteConfig, meta: dict) -> str:
     rel = "../"
-    retailers = "".join(
-        f'<li><strong>{esc(v["label"])}</strong> <span class="quiet">'
-        f'{esc(v["domain"])}</span></li>'
-        for v in PRICE_RETAILERS.values())
     first = freshness(meta.get("first_observation"))
     last = freshness(meta.get("last_observation"))
 
@@ -926,45 +988,17 @@ def render_about(cfg: SiteConfig, meta: dict) -> str:
      India. No account, no ads, no tracking, no affiliate links.</p>
 
   <h2>Where the prices come from</h2>
-  <p>Once a week, a script checks each of these retailers for every set in the
-     catalogue. Four of them publish proper JSON APIs — the same ones their own
-     websites call — so most of this is reading published data rather than
-     scraping pages.</p>
-  <ul class="retailers">{retailers}</ul>
-  <p>There is no lego.com row, and that is not an oversight: LEGO does not sell
-     direct into India and lego.com/en-in publishes no rupee price at all. The
-     LEGO Certified Store is the closest equivalent.</p>
+  <p>Once a week, a script checks each of the retailers listed on every set's
+     page for every set in the catalogue. Each set page names exactly which
+     retailer a price came from and when it was checked.</p>
 
   <h2>Why prices aren't live</h2>
-  <p>Fetching seven retailers every time somebody searched would be slow for
-     you, rude to them, and would get the site blocked within a day. Instead the
-     collection runs once a week from a normal home connection, and this site
-     only reads what it found. That is why every price on every page tells you
-     when it was checked.</p>
+  <p>Checking every retailer every time somebody searched would be slow for
+     you and rude to them. Instead the collection runs once a week from a
+     normal home connection, and this site only reads what it found. That is
+     why every price on every page tells you when it was checked.</p>
   <p>Currently holding <strong>{meta.get('observations') or 0:,}</strong>
      observations, from {esc(first["text"])} to {esc(last["text"])}.</p>
-
-  <h2>What we throw away</h2>
-  <p>Every retailer's search is fuzzy. Ask for set 42176 and you may get 42210,
-     a display stand, a light kit, or a "compatible with LEGO" knock-off. A
-     listing is only shown if the set number appears in its title once piece
-     counts and age ranges are stripped out, the LEGO brand is present, and no
-     accessory markers appear. Being shown five honest rows beats being shown
-     seven convincing wrong ones.</p>
-
-  <h2>What the verdict means</h2>
-  <p>A discount is only real relative to what a thing normally sells for. An
-     Indian marketplace "MRP" is often fictional — a set permanently listed at
-     60% off ₹5,000 was never a ₹5,000 set. So the judgement is made against
-     each set's own trading history, with MRP as the weakest input. Below
-     {MIN_OBSERVATIONS_FOR_TYPICAL} days of history there is no verdict at all,
-     because there is nothing honest to say yet.</p>
-
-  <h2>Mistakes</h2>
-  <p>Parsers break when retailers change their pages, and a broken parser shows
-     up here as a missing row rather than a wrong number — that is deliberate.
-     If you spot a price that is plainly wrong, the code is public and the
-     issue tracker is open.</p>
 
   <h2>Not affiliated with LEGO</h2>
   <p>LEGO® is a trademark of the LEGO Group. The LEGO Group does not sponsor,
@@ -1026,6 +1060,8 @@ def build_site(data_dir: Path, content_dir: Path, out_dir: Path,
     analyses = {i["set_num"]: analyse_set(i, observations.get(i["set_num"], []), now)
                 for i in items}
     catalog_by_num = {i["set_num"]: i for i in items}
+    thresholds = compute_value_thresholds(
+        a["per_piece"] for a in analyses.values() if a.get("per_piece"))
 
     if out_dir.exists():
         shutil.rmtree(out_dir)
@@ -1036,8 +1072,8 @@ def build_site(data_dir: Path, content_dir: Path, out_dir: Path,
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(text, encoding="utf-8")
 
-    write("index.html", render_home(items, analyses, builds, cfg, meta))
-    write("browse/index.html", render_browse(items, analyses, cfg, meta))
+    write("index.html", render_home(items, analyses, builds, cfg, meta, thresholds))
+    write("browse/index.html", render_browse(items, analyses, cfg, meta, thresholds))
     write("builds/index.html", render_builds(builds, catalog_by_num, cfg, meta))
     write("about/index.html", render_about(cfg, meta))
 

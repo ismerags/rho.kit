@@ -170,7 +170,9 @@
         node: node,
         name: node.dataset.name || "",
         num: node.dataset.num || "",
-        theme: node.dataset.theme || "",
+        // A set can belong to more than one filter bucket (a Technic set
+        // that's also an F1 car), so this is "|"-joined rather than one value.
+        themes: (node.dataset.theme || "").split("|").filter(Boolean),
         price: parseFloat(node.dataset.price) || null,
         pieces: parseInt(node.dataset.pieces, 10) || null,
         per: parseFloat(node.dataset.per) || null,
@@ -208,7 +210,7 @@
       var stockOnly = bstock.checked;
 
       var shown = data.filter(function (d) {
-        if (theme && d.theme !== theme) return false;
+        if (theme && d.themes.indexOf(theme) === -1) return false;
         if (stockOnly && d.out) return false;
         if (q && d.name.indexOf(q) === -1 && d.num.indexOf(q) === -1) return false;
         return true;
