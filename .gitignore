@@ -1,0 +1,46 @@
+# Local working files — never committed.
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+.vscode/
+
+# The SQLite database is the local working copy. The repository carries the
+# exported text files (data/catalog.json, data/observations.csv) instead:
+# git handles those far better, and they are readable by anyone.
+data/*.sqlite3
+data/*.sqlite3-*
+data/*.db
+data/*.db-*
+data/cache/
+data/*.log
+
+# Generated output. Built fresh by GitHub Actions on every deploy, so there is
+# no reason for a copy of it to live in git.
+site/
+_site/
+dashboard.html
+*.csv
+!data/observations.csv
+
+# Secrets. There are none in this project by design, but an accidental .env
+# should never be the thing standing between a mistake and a public repo.
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# Superseded by the static-site build — safe to delete from your working copy.
+# Listed here so a stale copy can never be published: the old plist has a home
+# directory path baked into it.
+scripts/com.rb.legotracker.plist
+web/
+.pytest_cache/
+data/_preview/
+data/.fuse_hidden*
+
+# transfer archive — delete it, it is not part of the project
+lego-website.tar.gz

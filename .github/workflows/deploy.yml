@@ -1,0 +1,85 @@
+# Rebuild and publish the website whenever data or content changes.
+#
+# Deliberately has no `pip install` step. `legotracker/site.py` and everything
+# it imports are standard library only, so this workflow has no dependencies
+# that can break — no lockfile to age, no package that can publish a bad
+# release on a Tuesday and take the site down.
+#
+# GitHub Actions minutes are free and unlimited on public repositories, so this
+# costs nothing however often it runs.
+
+name: Build and publish site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'content/**'
+      - 'legotracker/site.py'
+      - 'legotracker/content.py'
+      - 'legotracker/export.py'
+      - 'legotracker/analytics.py'
+      - 'legotracker/assets/**'
+      - '.github/workflows/deploy.yml'
+  # Lets you rebuild from the Actions tab without pushing anything.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time. `cancel-in-progress: false` because cancelling a
+# half-finished deploy is how you end up serving a partial site.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Must run BEFORE the build: it is what tells us the public URL, and the
+      # sitemap needs absolute links.
+      - uses: actions/configure-pages@v5
+        id: pages
+
+      - name: Build the site
+        run: |
+          python -m legotracker.site \
+            --out _site \
+            --base-url "${{ steps.pages.outputs.base_url }}"
+
+      - name: Sanity-check the output
+        # A deploy that silently publishes an empty folder is worse than a
+        # failed one: the site would go blank and nothing would say why.
+        run: |
+          test -f _site/index.html || { echo "::error::no index.html was built"; exit 1; }
+          test -f _site/browse/index.html || { echo "::error::no browse page"; exit 1; }
+          pages=$(find _site -name 'index.html' | wc -l)
+          echo "Built $pages pages"
+          if [ "$pages" -lt 5 ]; then
+            echo "::error::only $pages pages — the data files are probably missing"
+            exit 1
+          fi
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

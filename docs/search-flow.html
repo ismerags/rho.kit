@@ -1,0 +1,725 @@
+<title>Tracing Search 42176</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{
+  --paper:#EEF2F4;
+  --surface:#FFFFFF;
+  --surface-2:#F7FAFB;
+  --ink:#141A20;
+  --ink-2:#4B5663;
+  --ink-3:#77838F;
+  --line:#D3DBE0;
+  --line-strong:#A7B3BB;
+  --accent:#C9510C;
+  --accent-ink:#C9510C;
+  --accent-soft:#FBEADF;
+  --accent-line:#EBC3A5;
+  --free:#4B5663;
+  --free-soft:#E4EAED;
+  --warn:#9A6206;
+  --warn-soft:#FBF0DC;
+  --shadow:0 1px 2px rgba(20,26,32,.06), 0 8px 24px -16px rgba(20,26,32,.28);
+
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+
+  --gutter:22px;
+  --maxw:860px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#10151A;
+    --surface:#181F26;
+    --surface-2:#1E262E;
+    --ink:#E6ECF0;
+    --ink-2:#A7B4BF;
+    --ink-3:#7C8996;
+    --line:#2B343D;
+    --line-strong:#3E4A55;
+    --accent:#FF8340;
+    --accent-ink:#FF8340;
+    --accent-soft:#2E1D12;
+    --accent-line:#5A3A22;
+    --free:#A7B4BF;
+    --free-soft:#232C34;
+    --warn:#E0A64A;
+    --warn-soft:#2B2214;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#10151A;
+  --surface:#181F26;
+  --surface-2:#1E262E;
+  --ink:#E6ECF0;
+  --ink-2:#A7B4BF;
+  --ink-3:#7C8996;
+  --line:#2B343D;
+  --line-strong:#3E4A55;
+  --accent:#FF8340;
+  --accent-ink:#FF8340;
+  --accent-soft:#2E1D12;
+  --accent-line:#5A3A22;
+  --free:#A7B4BF;
+  --free-soft:#232C34;
+  --warn:#E0A64A;
+  --warn-soft:#2B2214;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.9);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding-inline:var(--gutter);
+  padding-block:48px 72px;
+}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+strong{font-weight:600}
+a{color:var(--accent-ink)}
+
+.eyebrow{
+  font-family:var(--f-mono);
+  font-size:11.5px;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  margin:0 0 14px;
+}
+h1{
+  font-family:var(--f-display);
+  font-weight:700;
+  font-size:clamp(34px,6.4vw,52px);
+  line-height:1.02;
+  letter-spacing:-.022em;
+  margin:0 0 18px;
+  text-wrap:balance;
+}
+.deck{
+  font-size:clamp(18px,2.6vw,20.5px);
+  line-height:1.5;
+  color:var(--ink-2);
+  max-width:60ch;
+  margin:0;
+}
+h2{
+  font-family:var(--f-display);
+  font-weight:600;
+  font-size:clamp(21px,3.4vw,26px);
+  letter-spacing:-.014em;
+  line-height:1.18;
+  margin:0 0 8px;
+  text-wrap:balance;
+}
+h3{
+  font-family:var(--f-display);
+  font-weight:600;
+  font-size:17px;
+  letter-spacing:-.008em;
+  margin:0 0 6px;
+}
+section{margin-top:56px}
+.lede{color:var(--ink-2);max-width:64ch;margin:0 0 24px}
+
+hr.rule{
+  border:0;
+  border-top:1px solid var(--line);
+  margin:0;
+}
+
+/* ---- answer strip ---------------------------------------------------- */
+.answer{
+  margin-top:38px;
+  border:1px solid var(--line);
+  border-top:3px solid var(--accent);
+  background:var(--surface);
+  border-radius:3px;
+  box-shadow:var(--shadow);
+  padding:24px 24px 22px;
+}
+.answer p{max-width:62ch}
+.bill{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:20px;
+  padding-top:18px;
+  border-top:1px solid var(--line);
+}
+.chip{
+  font-family:var(--f-mono);
+  font-size:12.5px;
+  font-weight:500;
+  letter-spacing:.01em;
+  padding:7px 11px;
+  border-radius:2px;
+  border:1px solid var(--accent-line);
+  background:var(--accent-soft);
+  color:var(--accent-ink);
+  font-variant-numeric:tabular-nums;
+}
+.chip.zero{
+  border-color:var(--line);
+  background:var(--free-soft);
+  color:var(--free);
+}
+
+/* ---- the map --------------------------------------------------------- */
+.map{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:stretch;
+  gap:10px;
+  margin-bottom:20px;
+}
+.node{
+  flex:1 1 178px;
+  min-width:0;
+  border:1px solid var(--line);
+  background:var(--surface);
+  border-radius:3px;
+  padding:14px 14px 13px;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+.node.paid{
+  border-color:var(--accent-line);
+  border-top:3px solid var(--accent);
+  padding-top:12px;
+}
+.node .where{
+  font-family:var(--f-mono);
+  font-size:10.5px;
+  font-weight:600;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+}
+.node .what{
+  font-family:var(--f-display);
+  font-weight:600;
+  font-size:16px;
+  letter-spacing:-.01em;
+  line-height:1.22;
+}
+.node .note{
+  font-size:14px;
+  line-height:1.42;
+  color:var(--ink-2);
+}
+.node .tag{
+  margin-top:auto;
+  padding-top:9px;
+  font-family:var(--f-mono);
+  font-size:11.5px;
+  font-weight:600;
+  letter-spacing:.02em;
+  color:var(--free);
+  font-variant-numeric:tabular-nums;
+}
+.node.paid .tag{color:var(--accent-ink)}
+.arrow{
+  align-self:center;
+  font-family:var(--f-mono);
+  font-size:15px;
+  color:var(--line-strong);
+  padding:0 2px;
+  flex:0 0 auto;
+}
+.arrow span{display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:center;margin-top:2px}
+@media (max-width:640px){
+  .arrow{transform:rotate(90deg);margin:-2px 0;align-self:flex-start;margin-left:24px}
+  .arrow span{display:none}
+  .node{flex:1 1 100%}
+}
+
+.cutline{
+  border:1px dashed var(--line-strong);
+  background:var(--surface-2);
+  border-radius:3px;
+  padding:15px 16px;
+  display:flex;
+  gap:13px;
+  align-items:flex-start;
+}
+.cutline .x{
+  font-family:var(--f-mono);
+  font-weight:600;
+  font-size:15px;
+  color:var(--accent-ink);
+  line-height:1.5;
+  flex:0 0 auto;
+}
+.cutline p{font-size:15.5px;line-height:1.5;color:var(--ink-2);max-width:60ch}
+.cutline strong{color:var(--ink)}
+
+/* ---- steps ----------------------------------------------------------- */
+.steps{
+  display:flex;
+  flex-direction:column;
+  border-top:1px solid var(--line);
+}
+.step{
+  display:grid;
+  grid-template-columns:52px minmax(0,1fr) minmax(0,120px);
+  gap:0 18px;
+  padding:22px 0;
+  border-bottom:1px solid var(--line);
+  align-items:start;
+}
+.step .n{
+  font-family:var(--f-mono);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.06em;
+  color:var(--ink-3);
+  padding-top:3px;
+  font-variant-numeric:tabular-nums;
+}
+.step .body{min-width:0}
+.step .where{
+  font-family:var(--f-mono);
+  font-size:10.5px;
+  font-weight:600;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  margin-bottom:5px;
+}
+.step .body p{font-size:16px;line-height:1.55;color:var(--ink-2);max-width:56ch}
+.step .body p strong{color:var(--ink)}
+.step .cost{
+  font-family:var(--f-mono);
+  font-size:11.5px;
+  font-weight:600;
+  letter-spacing:.02em;
+  text-align:right;
+  color:var(--free);
+  padding-top:3px;
+  font-variant-numeric:tabular-nums;
+}
+.step.paid .cost{color:var(--accent-ink)}
+.step.paid .n{color:var(--accent-ink)}
+@media (max-width:640px){
+  .step{grid-template-columns:38px minmax(0,1fr);gap:0 12px}
+  .step .cost{grid-column:2;text-align:left;padding-top:10px}
+}
+
+.quotes{
+  margin-top:12px;
+  border-left:2px solid var(--accent-line);
+  padding:2px 0 2px 14px;
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.q{
+  font-family:var(--f-mono);
+  font-size:13px;
+  color:var(--ink-2);
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  font-variant-numeric:tabular-nums;
+  max-width:38ch;
+}
+.q b{color:var(--ink);font-weight:600}
+
+/* ---- bill table ------------------------------------------------------ */
+.tablewrap{overflow-x:auto;margin-top:4px}
+table{
+  border-collapse:collapse;
+  width:100%;
+  min-width:460px;
+  font-size:15.5px;
+}
+caption{
+  caption-side:bottom;
+  text-align:left;
+  font-size:13.5px;
+  color:var(--ink-3);
+  padding-top:12px;
+  line-height:1.5;
+}
+th,td{
+  text-align:left;
+  padding:11px 14px 11px 0;
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
+}
+thead th{
+  font-family:var(--f-mono);
+  font-size:10.5px;
+  font-weight:600;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  padding-bottom:9px;
+  border-bottom:1px solid var(--line-strong);
+}
+td.num,th.num{text-align:right;padding-right:0;font-family:var(--f-mono);font-size:14px;font-variant-numeric:tabular-nums}
+tbody tr.total td{
+  border-bottom:0;
+  border-top:2px solid var(--line-strong);
+  font-weight:600;
+  color:var(--ink);
+  padding-top:13px;
+}
+tbody tr.total td.num{color:var(--accent-ink);font-size:16px;font-weight:600}
+td .sub{display:block;font-size:13.5px;color:var(--ink-3);line-height:1.4;margin-top:2px}
+
+/* ---- free list ------------------------------------------------------- */
+.free-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+  border-radius:3px;
+  overflow:hidden;
+}
+.free-item{
+  background:var(--surface);
+  padding:17px 17px 16px;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+.free-item .zero{
+  font-family:var(--f-mono);
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.1em;
+  color:var(--ink-3);
+}
+.free-item p{font-size:14.5px;line-height:1.45;color:var(--ink-2)}
+
+/* ---- caution --------------------------------------------------------- */
+.caution{
+  border:1px solid var(--line);
+  border-left:3px solid var(--warn);
+  background:var(--warn-soft);
+  border-radius:3px;
+  padding:20px 22px;
+}
+.caution h2{margin-bottom:10px}
+.caution p{color:var(--ink-2);max-width:62ch}
+.caution p strong{color:var(--ink)}
+
+footer{
+  margin-top:60px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  font-family:var(--f-mono);
+  font-size:12px;
+  letter-spacing:.02em;
+  color:var(--ink-3);
+  line-height:1.7;
+}
+</style>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Lego Tracker · Stage 2 architecture</p>
+    <h1>Tracing search 42176</h1>
+    <p class="deck">Someone taps your Instagram link and types a Technic set number.
+      Here is every place that query goes, in order — and the three lines on the bill.</p>
+  </header>
+
+  <div class="answer">
+    <h2>The short answer</h2>
+    <p>You pay for <strong>one small server and nothing else</strong>. The price is
+      fixed per month, not per search. A thousand visitors and ten visitors cost
+      exactly the same.</p>
+    <p>Nobody's search ever touches Amazon, Flipkart or Toycra. The website only
+      reads a database that your own Mac filled in earlier that week.</p>
+    <div class="bill">
+      <span class="chip">Render web app · ₹620/mo</span>
+      <span class="chip">Photo storage · ₹22/mo</span>
+      <span class="chip zero">Database · ₹0</span>
+      <span class="chip zero">Collection · ₹0</span>
+      <span class="chip zero">Visitor traffic · ₹0</span>
+    </div>
+  </div>
+
+  <section>
+    <h2>The map</h2>
+    <p class="lede">Four places, one direction of travel. Only the two with an
+      orange rule cost money.</p>
+
+    <div class="map">
+      <div class="node">
+        <span class="where">Gurgaon · your Mac</span>
+        <span class="what">Collection</span>
+        <span class="note">The 7 retailer adapters. Runs weekly while you sleep.</span>
+        <span class="tag">₹0 — hardware you own</span>
+      </div>
+      <div class="arrow">→<span>writes</span></div>
+      <div class="node">
+        <span class="where">Singapore · Supabase</span>
+        <span class="what">Postgres database</span>
+        <span class="note">Every price ever seen, append-only. About 60 MB a year.</span>
+        <span class="tag">₹0 — free tier</span>
+      </div>
+      <div class="arrow">→<span>reads</span></div>
+      <div class="node paid">
+        <span class="where">Singapore · Render</span>
+        <span class="what">The website</span>
+        <span class="note">Answers searches from the database. Never scrapes.</span>
+        <span class="tag">₹642/mo</span>
+      </div>
+      <div class="arrow">→<span>html</span></div>
+      <div class="node">
+        <span class="where">Anywhere · a phone</span>
+        <span class="what">The visitor</span>
+        <span class="note">Reads the comparison, taps through to the cheapest shop.</span>
+        <span class="tag">₹0</span>
+      </div>
+    </div>
+
+    <div class="cutline">
+      <span class="x">✕</span>
+      <p><strong>There is deliberately no arrow from the website to the retailers.</strong>
+        If the server fetched live prices on every search, Amazon would block its
+        datacenter address within a day, each page would take twenty seconds, and
+        seven shops would get hammered by your visitors. Reading a database instead
+        removes all three problems at once.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What happens, in order</h2>
+    <p class="lede">Following one real set: <strong>42176 Porsche GT4 e-Performance</strong>.
+      Steps 1–3 happened last Sunday. Steps 4–7 take about a second.</p>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="n">01</div>
+        <div class="body">
+          <div class="where">Sunday 03:00 · your Mac</div>
+          <p>macOS wakes <strong>priceall</strong> on a timer. It walks all ~900
+            catalogue sets and asks all 7 retailers about each — roughly 5,800
+            requests, spread out politely over about 45 minutes.</p>
+          <p>Most answers get thrown away. Ask Toycra for 42176 and its search box
+            happily returns 42210. The matcher demands the number actually appear in
+            the title and rejects light kits, display stands and "compatible with"
+            knock-offs. <strong>That discarding is the product.</strong></p>
+        </div>
+        <div class="cost">₹0</div>
+      </div>
+
+      <div class="step">
+        <div class="n">02</div>
+        <div class="body">
+          <div class="where">Sunday 03:45 · your Mac</div>
+          <p>The run finishes and writes one tidy summary row per set — cheapest
+            price, which shop, 7-day low, 30-day low, all-time low, rupees per piece.
+            The hard thinking is done <em>now</em>, once a week, so that later nobody
+            has to wait for it.</p>
+        </div>
+        <div class="cost">₹0</div>
+      </div>
+
+      <div class="step">
+        <div class="n">03</div>
+        <div class="body">
+          <div class="where">Supabase · Postgres</div>
+          <p>Those rows travel over the internet into the database. Nothing is ever
+            overwritten — "still ₹15,999 on the fortieth check" is exactly what makes
+            a median mean something later.</p>
+          <p>About 5,800 new rows a week, ~60 MB a year. The free allowance is 500 MB,
+            so this is comfortable for years.</p>
+        </div>
+        <div class="cost">₹0</div>
+      </div>
+
+      <div class="step">
+        <div class="n">04</div>
+        <div class="body">
+          <div class="where">A phone, Thursday afternoon</div>
+          <p>Someone sees your build post, taps the link in your bio, and lands on the
+            site. Their phone is now talking to Render, and to nothing else of yours.</p>
+        </div>
+        <div class="cost">₹0</div>
+      </div>
+
+      <div class="step paid">
+        <div class="n">05</div>
+        <div class="body">
+          <div class="where">Render · the web app</div>
+          <p>They type <strong>42176</strong>. The app checks it looks like a set
+            number — digits only, 4 to 7 of them — so nothing strange ever reaches the
+            database. Then <strong>two indexed lookups</strong>: the summary row, and
+            the per-retailer rows behind it.</p>
+          <p>About 20 milliseconds. No retailer is contacted. This is the only step
+            running on hardware you rent, and it is the reason a hundred people at
+            once feels the same as one.</p>
+        </div>
+        <div class="cost">₹642/mo<br>fixed</div>
+      </div>
+
+      <div class="step">
+        <div class="n">06</div>
+        <div class="body">
+          <div class="where">Back on the phone</div>
+          <p>A comparison table renders, cheapest first, every line stamped with when
+            it was actually checked:</p>
+          <div class="quotes">
+            <span class="q"><span>Toycra</span><b>₹14,899</b></span>
+            <span class="q"><span>Amazon.in</span><b>₹15,499</b></span>
+            <span class="q"><span>LEGO Certified Store</span><b>₹15,999</b></span>
+            <span class="q"><span>Flipkart</span><b>₹16,299</b></span>
+            <span class="q"><span>Hamleys</span><b>₹16,999</b></span>
+            <span class="q"><span>Jaiman Toys</span><b>out of stock</b></span>
+            <span class="q"><span>FirstCry</span><b>doesn't stock it</b></span>
+          </div>
+          <p style="margin-top:14px">Under it: "last checked Sunday 3:12 am", ₹18.10
+            per piece, and the price chart — or <strong>"Not enough data yet"</strong>
+            when there are fewer than four observations. Never an invented line.</p>
+        </div>
+        <div class="cost">included</div>
+      </div>
+
+      <div class="step">
+        <div class="n">07</div>
+        <div class="body">
+          <div class="where">Toycra.com</div>
+          <p>They tap <strong>Buy at Toycra</strong> and their own browser goes
+            straight to the shop. Your server is out of the loop entirely — it never
+            saw a cart, a card, or a checkout.</p>
+          <p>This is also the one place future income could appear: an affiliate tag
+            on that outbound link. Nothing is required for the site to work.</p>
+        </div>
+        <div class="cost">₹0</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The bill</h2>
+    <p class="lede">Three real lines, one optional. Everything is a flat monthly
+      charge — there is no meter running anywhere.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>What</th>
+            <th>Where</th>
+            <th class="num">Per month</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web service, 512 MB, always on
+              <span class="sub">Serves every page and the public API</span></td>
+            <td>Render</td>
+            <td class="num">₹620</td>
+          </tr>
+          <tr>
+            <td>Persistent disk, 1 GB
+              <span class="sub">Your own build photos and videos</span></td>
+            <td>Render</td>
+            <td class="num">₹22</td>
+          </tr>
+          <tr>
+            <td>Postgres database, free tier
+              <span class="sub">500 MB store, 5 GB traffic — you'd use ~5 MB and a fraction</span></td>
+            <td>Supabase</td>
+            <td class="num">₹0</td>
+          </tr>
+          <tr>
+            <td>Domain name <em>(optional)</em>
+              <span class="sub">Skip it and Render gives you a free .onrender.com address</span></td>
+            <td>Registrar</td>
+            <td class="num">~₹75</td>
+          </tr>
+          <tr class="total">
+            <td>Total</td>
+            <td>—</td>
+            <td class="num">₹640–715</td>
+          </tr>
+        </tbody>
+        <caption>Dollar prices converted at roughly ₹88. Render is $7 and $0.25;
+          the rest is genuinely zero at your scale.</caption>
+      </table>
+    </div>
+
+    <p style="margin-top:26px"><strong>One correction to the earlier plan.</strong>
+      It said Render's Postgres was "free → $6/mo". That was wrong, and worth fixing
+      before you build on it: Render deletes a free database 30 days after you create
+      it. Supabase's free tier has no expiry, so the database moves there. Nothing
+      else about the design changes — it is still one <code>DATABASE_URL</code>.</p>
+  </section>
+
+  <section>
+    <h2>What costs nothing, and why</h2>
+    <p class="lede">These are the four things people usually assume they'll be billed
+      for. None of them apply here.</p>
+
+    <div class="free-grid">
+      <div class="free-item">
+        <span class="zero">₹0 — RETAILER DATA</span>
+        <h3>The prices themselves</h3>
+        <p>Nobody sells you this. The adapters read the same public endpoints the
+          shops' own websites call when a normal customer loads a page. No API keys,
+          no accounts, no subscription.</p>
+      </div>
+      <div class="free-item">
+        <span class="zero">₹0 — COLLECTION</span>
+        <h3>The weekly run</h3>
+        <p>It happens on the Mac you already own, over the broadband you already pay
+          for. Moving it to a server would cost money <em>and</em> get the server
+          blocked, so it stays home.</p>
+      </div>
+      <div class="free-item">
+        <span class="zero">₹0 — PER VISITOR</span>
+        <h3>Traffic</h3>
+        <p>Render's plan has no per-request charge, and the free database allowance
+          covers roughly 50,000 page views a month. Your 500-at-peak target doesn't
+          approach any limit.</p>
+      </div>
+      <div class="free-item">
+        <span class="zero">₹0 — IMAGES</span>
+        <h3>Set thumbnails</h3>
+        <p>All ~900 product photos load straight from the Certified Store's own image
+          servers. The 1 GB disk you pay ₹22 for holds only your build photos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="caution">
+    <h2>The one thing that can actually go wrong</h2>
+    <p><strong>If your Mac is asleep at 3 am on Sunday, that week's prices never get
+      collected.</strong> The website keeps working perfectly — it just starts telling
+      the truth in amber: <em>"Last checked 12 days ago — may be out of date."</em></p>
+    <p>That is the price of keeping collection at home, and it is the right trade for
+      now. The fix, if it ever annoys you, is a second small Render service running
+      the collection on a schedule — about ₹620 more a month, and it accepts the risk
+      that Amazon blocks a datacenter address. Or you plug the Mac in on Saturday
+      night.</p>
+  </section>
+
+  <footer>
+    Stage 2 · read-only website, collection at home<br>
+    7 retailers · ~900 catalogue sets · prices append-only, never edited
+  </footer>
+
+</div>

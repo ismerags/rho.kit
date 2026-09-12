@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "name": "LEGO Icons Blacktron Renegade 10355, Building Blocks for Kids 18Y+",
+      "slug": "lego-icons-blacktron-renegade-10355-building-blocks-for-kids-18y",
+      "uid": 13468871,
+      "item_code": "HAM10355",
+      "sellable": true,
+      "brand": {"name": "LEGO", "uid": 44},
+      "price": {
+        "effective": {"min": 9099, "max": 9099, "currency_code": "INR"},
+        "marked": {"min": 9099, "max": 9099, "currency_code": "INR"}
+      }
+    },
+    {
+      "name": "LEGO Botanicals Pretty Pink Flower Bouquet Floral Decor 10342 Building Blocks for 18Y+",
+      "slug": "lego-botanicals-pretty-pink-flower-bouquet-floral-decor-10342-building-blocks-for-18y-13468872",
+      "uid": 13468872,
+      "sellable": true,
+      "brand": {"name": "LEGO"},
+      "price": {
+        "effective": {"min": 6079, "max": 6079, "currency_code": "INR"},
+        "marked": {"min": 6399, "max": 6399, "currency_code": "INR"}
+      }
+    },
+    {
+      "name": "LEGO Duplo Town First Time: Visit with the Doctor 10449 Building Blocks Toys for 2Y+",
+      "slug": "lego-duplo-town-first-time-visit-with-the-doctor-10449-building-blocks-toys-for-2y-13468960",
+      "uid": 13468960,
+      "sellable": false,
+      "brand": {"name": "LEGO"},
+      "price": {
+        "effective": {"min": 4099, "max": 4099, "currency_code": "INR"},
+        "marked": {"min": 4099, "max": 4099, "currency_code": "INR"}
+      }
+    }
+  ],
+  "page": {"current": 1, "has_next": true, "item_total": 312, "type": "number"}
+}

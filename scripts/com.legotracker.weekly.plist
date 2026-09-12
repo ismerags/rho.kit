@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Weekly price collection, Sunday at 03:00 local time.
+
+     This is a TEMPLATE. __PROJECT_DIR__ is replaced with the real path when
+     you run scripts/install-schedule.sh — don't edit the paths by hand and
+     don't commit a version with your home directory baked into it.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.legotracker.weekly</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>__PROJECT_DIR__/scripts/weekly.sh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>__PROJECT_DIR__</string>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key><integer>0</integer>
+    <key>Hour</key><integer>3</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+
+  <!-- Don't run the moment it's loaded; wait for Sunday. If the Mac was asleep
+       at 03:00, launchd runs the missed job as soon as it wakes, which is the
+       behaviour we want: a late collection beats no collection. It cannot wake
+       a sleeping Mac by itself — for that, System Settings › Battery ›
+       Schedule, or just leave the lid open on Saturday night. -->
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>__PROJECT_DIR__/data/weekly.log</string>
+  <key>StandardErrorPath</key>
+  <string>__PROJECT_DIR__/data/weekly.log</string>
+</dict>
+</plist>

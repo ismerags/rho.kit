@@ -1,0 +1,41 @@
+{
+  "resources": {
+    "results": {
+      "products": [
+        {
+          "available": true,
+          "compare_at_price_max": "21999.00",
+          "compare_at_price_min": "21999.00",
+          "handle": "lego-71814-ninjago-tournament-temple-city-3489-pieces",
+          "id": 9045096988870,
+          "price": "18499.00",
+          "price_max": "18499.00",
+          "price_min": "18499.00",
+          "title": "Lego 71814 Ninjago Tournament Temple City (3489 Pieces)",
+          "type": "Building Blocks",
+          "url": "/products/lego-71814-ninjago-tournament-temple-city-3489-pieces?_pos=1&_psq=71806&_psid=c14ad9c74&_ss=e",
+          "vendor": "LEGO"
+        },
+        {
+          "available": false,
+          "compare_at_price_max": "0.00",
+          "handle": "lego-71800-ninjago-nyas-water-dragon-evo",
+          "id": 8811111111111,
+          "price": "2499.00",
+          "title": "LEGO 71800 Ninjago Nyas Water Dragon EVO",
+          "url": "/products/lego-71800-ninjago-nyas-water-dragon-evo?_pos=2&_psq=71806",
+          "vendor": "LEGO"
+        },
+        {
+          "available": true,
+          "handle": "brick-buddy-display-stand-for-lego-71800",
+          "id": 8811111111112,
+          "price": "899.00",
+          "title": "Brick Buddy Acrylic Display Stand for Lego 71800 Water Dragon",
+          "url": "/products/brick-buddy-display-stand-for-lego-71800",
+          "vendor": "Brick Buddy"
+        }
+      ]
+    }
+  }
+}
