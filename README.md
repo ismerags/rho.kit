@@ -1,4 +1,4 @@
-# LEGO Price Search & Tracker — India
+# Rho — LEGO price search & tracker for India
 
 A free, independent price comparison for LEGO sets sold in India, published as
 a **static website**. No server, no database in production, no login, no ads.

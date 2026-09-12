@@ -1,8 +1,8 @@
-title: baijalbuilds
+title: Rho
 tagline: Live LEGO price comparison across Indian retailers, plus what I'm building.
 author: rb
 instagram_handle: baijalbuilds
-repo: https://github.com/ismerags/lego-price-tracker
+repo: https://github.com/ismerags/rho
 description: A free, independent price tracker for LEGO sets sold in India. Compare Amazon, Flipkart, FirstCry, Hamleys, Toycra, Jaiman Toys and the LEGO Certified Store.
 ---
 Edit this file to change the site name, tagline and links. Everything above the
