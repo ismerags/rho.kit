@@ -478,17 +478,15 @@ def page(*, title: str, description: str, rel: str, body: str,
               '<circle cx="12" cy="12" r="4.2"/>'
               '<circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/>'
               '</svg>')
-    # The top-left corner is the Instagram handle, icon and all, rather than
-    # the site's own wordmark — this site is the handle's project.
-    if ig:
-        brand = (f'<a class="brand" href="{esc(ig)}" rel="me noopener" target="_blank">'
-                  f'{ig_svg}<span>@{esc(handle)}</span></a>' if handle else
-                  f'<a class="brand" href="{esc(ig)}" rel="me noopener" target="_blank">'
-                  f'{ig_svg}<span>{esc(cfg.title)}</span></a>')
-    else:
-        brand = (f'<a class="brand" href="{rel}">'
-                  '<span class="studs" aria-hidden="true"><i></i><i></i></span>'
-                  f'<span>{esc(cfg.title)}</span></a>')
+    # Top-left is the site's own mark now — Rho's logo, not the handle.
+    brand = (f'<a class="brand" href="{rel}">'
+              f'<img src="{rel}assets/logo.png" alt="{esc(cfg.title)}" width="28" height="28">'
+              f'<span>{esc(cfg.title)}</span></a>')
+    # Instagram moves to the top right as its own link.
+    social = (f'<a class="social" href="{esc(ig)}" rel="me noopener" target="_blank">'
+              f'{ig_svg}<span>@{esc(handle)}</span></a>' if ig and handle else
+              f'<a class="social" href="{esc(ig)}" rel="me noopener" target="_blank">'
+              f'{ig_svg}</a>' if ig else "")
     repo = safe_url(cfg.repo)
     repo_link = (f'<a href="{esc(repo)}" rel="noopener" target="_blank">Source on GitHub</a>'
                  if repo else "")
@@ -519,6 +517,7 @@ def page(*, title: str, description: str, rel: str, body: str,
   <div class="bar-in">
     {brand}
     <nav aria-label="Main">{nav}</nav>
+    {social}
   </div>
 </header>
 <main id="main">
@@ -1131,7 +1130,7 @@ def build_site(data_dir: Path, content_dir: Path, out_dir: Path,
 
     assets_out = out_dir / "assets"
     assets_out.mkdir(parents=True, exist_ok=True)
-    for asset in ("site.css", "site.js"):
+    for asset in ("site.css", "site.js", "logo.png"):
         shutil.copyfile(ASSET_DIR / asset, assets_out / asset)
 
     media_src = content_dir / "media"

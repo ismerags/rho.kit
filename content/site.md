@@ -1,5 +1,5 @@
 title: Rho
-tagline: Live LEGO price comparison across Indian retailers, plus what I'm building.
+tagline: Same set, a smarter buy.
 author: rb
 instagram_handle: baijalbuilds
 repo: https://github.com/ismerags/rho

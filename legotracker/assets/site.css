@@ -43,6 +43,10 @@
   --gutter: 20px;
   --wide:  1120px;
   --read:   68ch;
+
+  /* The logo asset is a solid black mark on a transparent background — this
+     flips it to white in dark mode instead of shipping a second image. */
+  --logo-filter: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -68,6 +72,7 @@
     --bad-soft:   #2C1717;
 
     --shadow:     0 1px 2px rgba(0,0,0,.45), 0 12px 34px -22px rgba(0,0,0,.9);
+    --logo-filter: invert(1);
   }
 }
 
@@ -90,6 +95,7 @@
   --bad:        #E07070;
   --bad-soft:   #2C1717;
   --shadow:     0 1px 2px rgba(0,0,0,.45), 0 12px 34px -22px rgba(0,0,0,.9);
+  --logo-filter: invert(1);
 }
 
 * { box-sizing: border-box; }
@@ -161,6 +167,10 @@ a:hover { color: var(--accent-2); }
 }
 .brand:hover { color: var(--accent); }
 .brand svg { width: 19px; height: 19px; display: block; flex: 0 0 auto; }
+.brand img {
+  width: 28px; height: 28px; display: block; flex: 0 0 auto;
+  filter: var(--logo-filter);
+}
 .studs { display: inline-flex; gap: 3px; }
 .studs i {
   width: 9px; height: 9px; border-radius: 50%;
@@ -173,6 +183,13 @@ a:hover { color: var(--accent-2); }
 }
 .bar nav a:hover { background: var(--surface); color: var(--ink); }
 .bar nav a.on { color: var(--accent); background: var(--accent-soft); }
+.social {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--f-body); font-weight: 600; font-size: 14px;
+  color: var(--ink-2); text-decoration: none; flex: 0 0 auto;
+}
+.social:hover { color: var(--accent); }
+.social svg { width: 18px; height: 18px; display: block; flex: 0 0 auto; }
 
 main {
   max-width: var(--wide); margin: 0 auto;
