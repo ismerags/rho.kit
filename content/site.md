@@ -2,7 +2,7 @@ title: Rho
 tagline: Same set, a smarter buy.
 author: rb
 instagram_handle: baijalbuilds
-repo: https://github.com/ismerags/rho
+repo: https://github.com/ismerags/rho.kit
 description: A free, independent price tracker for LEGO sets sold in India. Compare Amazon, Flipkart, FirstCry, Hamleys, Toycra, Jaiman Toys and the LEGO Certified Store.
 ---
 Edit this file to change the site name, tagline and links. Everything above the
