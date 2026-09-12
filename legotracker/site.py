@@ -471,16 +471,24 @@ def page(*, title: str, description: str, rel: str, body: str,
     ig = safe_url(cfg.instagram_url)
     ig_link = (f'<a href="{esc(ig)}" rel="me noopener" target="_blank">Instagram</a>'
                if ig else "")
-    # A small icon in the header, not just the footer text link, so the
-    # Instagram handle is visible the moment someone lands on any page.
-    ig_icon = (f'<a class="ig-link" href="{esc(ig)}" rel="me noopener" target="_blank" '
-               f'aria-label="{esc(cfg.title)} on Instagram">'
-               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
-               'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
-               '<rect x="2" y="2" width="20" height="20" rx="5"/>'
-               '<circle cx="12" cy="12" r="4.2"/>'
-               '<circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/>'
-               '</svg></a>' if ig else "")
+    handle = (cfg.instagram_handle or cfg.instagram or "").lstrip("@")
+    ig_svg = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+              'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+              '<rect x="2" y="2" width="20" height="20" rx="5"/>'
+              '<circle cx="12" cy="12" r="4.2"/>'
+              '<circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/>'
+              '</svg>')
+    # The top-left corner is the Instagram handle, icon and all, rather than
+    # the site's own wordmark — this site is the handle's project.
+    if ig:
+        brand = (f'<a class="brand" href="{esc(ig)}" rel="me noopener" target="_blank">'
+                  f'{ig_svg}<span>@{esc(handle)}</span></a>' if handle else
+                  f'<a class="brand" href="{esc(ig)}" rel="me noopener" target="_blank">'
+                  f'{ig_svg}<span>{esc(cfg.title)}</span></a>')
+    else:
+        brand = (f'<a class="brand" href="{rel}">'
+                  '<span class="studs" aria-hidden="true"><i></i><i></i></span>'
+                  f'<span>{esc(cfg.title)}</span></a>')
     repo = safe_url(cfg.repo)
     repo_link = (f'<a href="{esc(repo)}" rel="noopener" target="_blank">Source on GitHub</a>'
                  if repo else "")
@@ -509,12 +517,8 @@ def page(*, title: str, description: str, rel: str, body: str,
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar">
   <div class="bar-in">
-    <a class="brand" href="{rel}">
-      <span class="studs" aria-hidden="true"><i></i><i></i></span>
-      <span>{esc(cfg.title)}</span>
-    </a>
+    {brand}
     <nav aria-label="Main">{nav}</nav>
-    {ig_icon}
   </div>
 </header>
 <main id="main">
@@ -978,8 +982,6 @@ def render_builds(builds: list[Build], catalog_by_num: dict,
 
 def render_about(cfg: SiteConfig, meta: dict) -> str:
     rel = "../"
-    first = freshness(meta.get("first_observation"))
-    last = freshness(meta.get("last_observation"))
     ig = safe_url(cfg.instagram_url)
 
     body = f"""
@@ -1013,19 +1015,6 @@ def render_about(cfg: SiteConfig, meta: dict) -> str:
      tracker better, or simply want to say hi, I'd genuinely love to hear
      from you.</p>
 
-  <h2>Where the prices come from</h2>
-  <p>Once a week, a script checks each of the retailers listed on every set's
-     page for every set in the catalogue. Each set page names exactly which
-     retailer a price came from and when it was checked.</p>
-
-  <h2>Why prices aren't live</h2>
-  <p>Checking every retailer every time somebody searched would be slow for
-     you and rude to them. Instead the collection runs once a week from a
-     normal home connection, and this site only reads what it found. That is
-     why every price on every page tells you when it was checked.</p>
-  <p>Currently holding <strong>{meta.get('observations') or 0:,}</strong>
-     observations, from {esc(first["text"])} to {esc(last["text"])}.</p>
-
   <h2>Not affiliated with LEGO</h2>
   <p>LEGO® is a trademark of the LEGO Group. The LEGO Group does not sponsor,
      authorise or endorse this site. Outbound links to retailers carry no
@@ -1034,8 +1023,8 @@ def render_about(cfg: SiteConfig, meta: dict) -> str:
 </section>
 """
     return page(title=f"About — {cfg.title}",
-                description="How this LEGO price tracker collects data, what it "
-                            "rejects, and why prices are weekly rather than live.",
+                description="Why this free LEGO price tracker for India exists, "
+                            "and who built it.",
                 rel=rel, body=body, cfg=cfg, meta=meta, active="about/")
 
 

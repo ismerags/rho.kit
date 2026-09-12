@@ -155,10 +155,12 @@ a:hover { color: var(--accent-2); }
   gap: 16px; flex-wrap: wrap;
 }
 .brand {
-  display: inline-flex; align-items: center; gap: 9px;
+  display: inline-flex; align-items: center; gap: 8px;
   font-family: var(--f-display); font-weight: 700; font-size: 16px;
   letter-spacing: -.015em; color: var(--ink); text-decoration: none;
 }
+.brand:hover { color: var(--accent); }
+.brand svg { width: 19px; height: 19px; display: block; flex: 0 0 auto; }
 .studs { display: inline-flex; gap: 3px; }
 .studs i {
   width: 9px; height: 9px; border-radius: 50%;
@@ -171,13 +173,6 @@ a:hover { color: var(--accent-2); }
 }
 .bar nav a:hover { background: var(--surface); color: var(--ink); }
 .bar nav a.on { color: var(--accent); background: var(--accent-soft); }
-.ig-link {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 30px; height: 30px; border-radius: 50%;
-  color: var(--ink-2); flex: 0 0 auto;
-}
-.ig-link:hover { background: var(--surface); color: var(--accent); }
-.ig-link svg { width: 17px; height: 17px; display: block; }
 
 main {
   max-width: var(--wide); margin: 0 auto;
