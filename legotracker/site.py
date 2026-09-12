@@ -980,12 +980,38 @@ def render_about(cfg: SiteConfig, meta: dict) -> str:
     rel = "../"
     first = freshness(meta.get("first_observation"))
     last = freshness(meta.get("last_observation"))
+    ig = safe_url(cfg.instagram_url)
 
     body = f"""
 <section class="prose-page">
   <h1>About this tracker</h1>
   <p class="lede">A free, independent price comparison for LEGO sets sold in
      India. No account, no ads, no tracking, no affiliate links.</p>
+
+  <h2>Why I built this</h2>
+  <p>I built this because I like two things: solving problems and building
+     LEGO.</p>
+  <p>I'm an engineer, so I'm wired to look at a problem and think, there has
+     to be a better way to do this.</p>
+  <p>When I wanted to buy LEGO sets, I found myself checking different
+     websites, comparing prices, waiting for discounts, and wondering if I
+     was actually getting a good deal. So I decided to build a simple
+     solution: a place where you can quickly find the best available price
+     for a LEGO set.</p>
+  <p>LEGO itself is a pretty good representation of how I like to work.
+     Brick by brick. Build something, see if it works, break it, rebuild it,
+     and come back stronger.</p>
+  <p>I made this tracker for myself, but also for anyone who loves LEGO and
+     finds the prices a little hard to justify. If there's a set you've
+     always wanted, hopefully this helps you find it at a price that makes a
+     little more sense.</p>
+  <p>This is still a work in progress, and I'm building it the same way I
+     build LEGO — one brick at a time.</p>
+  <p>I also share my LEGO builds and build videos on Instagram at
+     {f'<a href="{esc(ig)}" target="_blank" rel="noopener">@{esc(cfg.instagram_handle or "baijalbuilds")}</a>' if ig else '@baijalbuilds'}.</p>
+  <p>If you spot something that's wrong, have an idea that would make the
+     tracker better, or simply want to say hi, I'd genuinely love to hear
+     from you.</p>
 
   <h2>Where the prices come from</h2>
   <p>Once a week, a script checks each of the retailers listed on every set's
