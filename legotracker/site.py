@@ -518,7 +518,10 @@ def page(*, title: str, description: str, rel: str, body: str,
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar">
   <div class="bar-in">
-    {brand}
+    <div class="brand-group">
+      {brand}
+      <span class="beta-badge" title="Rho is a trial — things may change or break">Beta</span>
+    </div>
     <nav aria-label="Main">{nav}</nav>
     {social}
   </div>

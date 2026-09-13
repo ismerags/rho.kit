@@ -171,6 +171,14 @@ a:hover { color: var(--accent-2); }
   width: 32px; height: 32px; display: block; flex: 0 0 auto;
   filter: var(--logo-filter);
 }
+.brand-group { display: inline-flex; align-items: center; gap: 8px; }
+.beta-badge {
+  font-family: var(--f-mono); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-soft);
+  border: 1px solid var(--accent); border-radius: 99px;
+  padding: 2px 8px; cursor: default;
+}
 .studs { display: inline-flex; gap: 3px; }
 .studs i {
   width: 9px; height: 9px; border-radius: 50%;
