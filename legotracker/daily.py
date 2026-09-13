@@ -7,15 +7,24 @@ makes the run "partial", never "failed":
 
   1. LEGO Certified Store  whole catalogue, 4 requests   (catalog.refresh)
   2. Toycra, Jaiman Toys   whole LEGO range, a few requests each
-  3. Your watchlist        each set on Amazon, Flipkart, FirstCry and Hamleys
+  3. Marketplaces          every catalogued set, on Amazon, Flipkart,
+                           FirstCry and Hamleys — no set is skipped
   4. New lows              any set now cheaper than anything seen before
   5. Snapshot              cheapest price per set -> CSV + Discord message
 
 Why the split between 1-2 and 3: the three Shopify stores publish their whole
 price list as JSON, so ~900 sets cost a handful of requests. Amazon and Flipkart
-only answer one search at a time, and they block scripts that ask too often —
-830 searches a day there would get the Mac blocked within the hour. So the big
-marketplaces are checked only for the sets you actually care about.
+only answer one search at a time, and they have blocked scripted traffic before
+(the Mac was blocked on 11 Sep). Step 3 now goes through the whole catalogue
+regardless — full coverage matters more than avoiding that risk — but it leans
+on the safety nets already built into `search.py` to keep one blocked retailer
+from wasting the rest of the run: a bot-check or 429/503 pauses that retailer
+for 30 minutes (`search.start_cooldown`) instead of retrying it on every
+remaining set, and a paused or failed retailer is reported as "couldn't check",
+never as "out of stock" — so a block shows up honestly instead of quietly
+hiding real prices. If a retailer is mid-cooldown for part of a run, the next
+day's run tries it again from set one; coverage catches up rather than being
+permanently short.
 """
 
 from __future__ import annotations
@@ -43,7 +52,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SNAPSHOT_DIR = ROOT / "data" / "snapshots"
 
 SWEEP_STORES = ("toycra", "jaimantoys")
-WATCH_SOURCES = ("amazon_in", "flipkart", "firstcry", "hamleys")
+MARKETPLACE_SOURCES = ("amazon_in", "flipkart", "firstcry", "hamleys")
 
 #: How recent a price must be to count as "today's" in the snapshot. Covers
 #: this run plus anything a search picked up in the previous day.
@@ -202,17 +211,30 @@ def sweep_store(db: Database, session: PoliteSession, retailer: str,
 
 
 # --------------------------------------------------------------------------
-# 3. watchlist on the marketplaces
+# 3. every catalogued set, on the marketplaces
 # --------------------------------------------------------------------------
 
-def check_watchlist(db: Database, session: PoliteSession, sets: list[str],
-                    report: DailyReport) -> None:
+def check_marketplaces(db: Database, session: PoliteSession, sets: list[str],
+                       report: DailyReport) -> None:
+    """Search Amazon, Flipkart, FirstCry and Hamleys for every set in `sets`.
+
+    One targeted search per set (exact set number, not a broad keyword), so a
+    set only shows a marketplace's price when that marketplace's own listing
+    actually names it — same matching rule as everywhere else in the app.
+
+    Deliberately not gated by anything short of a request budget: every set
+    in the catalogue gets tried, every day. `search.py`'s own cooldown logic
+    is what keeps a blocked retailer from being hammered for the rest of the
+    run — this function does not need to know that happened, it just sees
+    that retailer's remaining calls fail fast and move on.
+    """
     for set_num in sets:
         try:
             outcome = run_search(set_num, session=session,
-                                 sources=list(WATCH_SOURCES), refine=False, db=db)
+                                 sources=list(MARKETPLACE_SOURCES),
+                                 refine=False, db=db)
         except Exception as exc:  # noqa: BLE001
-            report.errors.append(f"watchlist {set_num}: {exc}")
+            report.errors.append(f"{set_num}: {exc}")
             continue
         for st in outcome.statuses:
             h = report.h(st.retailer)
@@ -527,10 +549,15 @@ def run_daily(db: Database, session: Optional[PoliteSession] = None,
                 h.errors, h.last_error = h.errors + 1, str(exc)
                 report.errors.append(f"{store}: {exc}")
 
-    # 3. Watchlist on the marketplaces.
+    # 3. Every catalogued set, on the marketplaces — not gated by a watchlist.
+    all_set_nums = [item["set_num"] for item in db.catalog_items()]
+    if watch and all_set_nums:
+        check_marketplaces(db, session, all_set_nums, report)
+
+    # `watchlist` here is only the optional personal list (see `targets`/
+    # `add_to_watchlist`) used to build the "Your watchlist" Discord embed
+    # below — it plays no part in which sets get checked above any more.
     report.watchlist = db.watchlist()
-    if watch and report.watchlist:
-        check_watchlist(db, session, report.watchlist, report)
 
     # 4 + 5.
     report.new_lows = find_new_lows(db, started)
