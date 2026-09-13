@@ -320,7 +320,14 @@ def price_all(db: Database, session: Optional[PoliteSession] = None,
     for n, item in enumerate(todo, 1):
         set_num = item["set_num"]
         try:
-            outcome = run_search(set_num, session=session, refine=False, db=db)
+            # refine=True: a retailer's first-pass query coming up empty is
+            # not evidence it lacks the set (see search.py's pass 2). Skipping
+            # that retry here was trading real coverage for a faster sweep —
+            # the retry only re-queries retailers whose targeted query would
+            # differ from what pass 1 already sent, so it does not double
+            # Amazon/Flipkart's request volume for sets they were always
+            # going to search precisely anyway.
+            outcome = run_search(set_num, session=session, refine=True, db=db)
             hit = next((s for s in outcome.sets if s.set_num == set_num), None)
             found = len(hit.offers) if hit else 0
             if found:
