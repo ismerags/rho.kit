@@ -71,6 +71,13 @@ DOMAIN_TO_RETAILER = {
     "firstcry.com": "firstcry",
 }
 
+#: Retailers queried directly instead of through BuyHatke (see
+#: sources/__init__.py) precisely because BuyHatke does not track them.
+#: An offer with one of these as its retailer was never something BuyHatke
+#: could resolve, so `search._deep_enrich` skips it rather than spending a
+#: guaranteed-to-fail request per catalogue set on it.
+NOT_TRACKED_BY_BUYHATKE = frozenset({"toycra", "jaimantoys"})
+
 
 def retailer_for_link(link: Optional[str]) -> str:
     """Who a shopper would actually pay, going only by the listing's own URL."""

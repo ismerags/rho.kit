@@ -57,7 +57,10 @@ RESULT_TTL_SECONDS = {"buyhatke": 2 * 3600}
 #: After a retailer answers with a bot-check page or a throttle (429/503), stop
 #: asking it for a while. Retrying a block immediately is what extends it.
 COOLDOWN_SECONDS = 30 * 60
-BLOCK_MARKERS = ("bot-check", "http 429", "http 503")
+BLOCK_MARKERS = ("bot-check", "http 429", "http 503", "http 403")
+#: 403 is Forbidden -- in practice that is always a bot-wall response
+#: from these sites, never a legitimate per-request error, so it is
+#: worth a cooldown exactly like 429/503.
 
 _state_lock = threading.Lock()
 _cooldown: dict[str, tuple[float, str]] = {}          # retailer -> (until, why)
@@ -513,9 +516,20 @@ def _deep_enrich(session: PoliteSession, outcome: SearchOutcome) -> dict[str, di
     """
     detail_by_url: dict[str, dict] = {}
     for res in outcome.sets:
+        if cooling_down(buyhatke_source.BuyHatke.name):
+            # BuyHatke just blocked us (almost certainly in this same
+            # search() call's own fan-out, a few lines up) -- every further
+            # detail fetch this round would fail the same way, so stop
+            # asking rather than 403 once per remaining offer.
+            break
         seen_urls = {o.url for o in res.offers}
         for offer in list(res.offers):
             if offer.url in detail_by_url:
+                continue
+            if offer.retailer in buyhatke_source.NOT_TRACKED_BY_BUYHATKE:
+                # Toycra/Jaiman Toys are queried directly precisely because
+                # BuyHatke doesn't track them -- asking it anyway is a
+                # guaranteed-fail request on every catalogue set.
                 continue
             data = buyhatke_source.fetch_detail(
                 session, buyhatke_source.proxy_url(offer.url))

@@ -948,6 +948,70 @@ def test_deep_enrich_and_backfill():
         db.close()
 
 
+def test_deep_enrich_skips_direct_sources_and_respects_cooldown():
+    """Two failure modes seen in a real GitHub Actions run, both from the
+    same cause: `_deep_enrich` tried to ask BuyHatke about offers it was
+    never going to know about.
+
+    1. Toycra/Jaiman Toys offers got proxied through buyhatke.com/<url> --
+       a guaranteed 403 on every single catalogue set, since BuyHatke
+       doesn't track either store.
+    2. BuyHatke's own search was blocked (HTTP 403) but that wasn't treated
+       as a block worth cooling down for, so it kept retrying and failing on
+       every one of 900+ sets instead of pausing.
+    """
+    print("\ndeep enrich skips toycra/jaimantoys and respects cooldown")
+    from legotracker import search as search_mod
+    from legotracker.search import SearchOutcome, SetResult, cooling_down, reset_retailer_state, start_cooldown
+    from legotracker.sources.base import Offer
+    from legotracker.sources.buyhatke import BuyHatke
+
+    eq(search_mod.is_block_error("HTTP 403 for https://buyhatke.com/search?product=x"), True,
+       "a 403 is treated as a block, not a one-off error -- it always means a bot wall here")
+
+    reset_retailer_state()
+    try:
+        # 1. A toycra offer must never be proxied through BuyHatke.
+        outcome = SearchOutcome(query="30724", kind="set_number", sets=[
+            SetResult("30724", "LEGO X 30724", [
+                Offer(retailer="toycra", url="https://toycra.com/products/x",
+                      title="LEGO X", price_inr=499.0, in_stock=True),
+            ]),
+        ])
+        calls = []
+        original_fetch = search_mod.buyhatke_source.fetch_detail
+        search_mod.buyhatke_source.fetch_detail = lambda session, url: calls.append(url) or {}
+        try:
+            detail_by_url = search_mod._deep_enrich(session=None, outcome=outcome)
+        finally:
+            search_mod.buyhatke_source.fetch_detail = original_fetch
+        eq(calls, [], "a toycra offer is never looked up on BuyHatke")
+        eq(detail_by_url, {}, "nothing to enrich from")
+
+        # 2. Once BuyHatke is cooling down, no further detail fetch is even
+        #    attempted -- not for the set that tripped it, nor any after.
+        start_cooldown(BuyHatke.name, "HTTP 403 for https://buyhatke.com/search?product=x")
+        check(cooling_down(BuyHatke.name) is not None, "cooldown is active")
+
+        outcome2 = SearchOutcome(query="71813", kind="set_number", sets=[
+            SetResult("71813", "LEGO X 71813", [
+                Offer(retailer="amazon_in", url="http://www.amazon.in/gp/product/X",
+                      title="LEGO X", price_inr=1999.0, in_stock=True),
+            ]),
+        ])
+        calls2 = []
+        original_fetch2 = search_mod.buyhatke_source.fetch_detail
+        search_mod.buyhatke_source.fetch_detail = lambda session, url: calls2.append(url) or {}
+        try:
+            detail_by_url2 = search_mod._deep_enrich(session=None, outcome=outcome2)
+        finally:
+            search_mod.buyhatke_source.fetch_detail = original_fetch2
+        eq(calls2, [], "no detail fetch is attempted while BuyHatke is cooling down")
+        eq(detail_by_url2, {}, "nothing to enrich while cooling down")
+    finally:
+        reset_retailer_state()
+
+
 def test_dashboard_renders():
     print("\ndashboard")
     from legotracker.report import render
@@ -1369,7 +1433,8 @@ def main() -> int:
                test_undecoded_body_is_loud, test_session_is_per_thread,
                test_amazon_search_url, test_search_matching,
                test_search_deadline, test_search_result_shape,
-               test_database_roundtrip, test_deep_enrich_and_backfill, test_dashboard_renders,
+               test_database_roundtrip, test_deep_enrich_and_backfill, test_deep_enrich_skips_direct_sources_and_respects_cooldown,
+               test_dashboard_renders,
                test_site_money_and_freshness, test_site_link_and_image_allowlist,
                test_site_escapes_untrusted_text,
                test_site_never_claims_history_it_lacks,
