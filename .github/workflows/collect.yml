@@ -50,12 +50,23 @@ jobs:
         # priceall skips anything priced in the last 7 days, so an interrupted
         # or timed-out run just picks back up next time rather than starting
         # over. A partial sweep is still worth publishing --- see weekly.sh.
+        #
+        # timeout-minutes here (NOT on the job) is deliberate: a job-level
+        # timeout kills the whole job the instant it fires, which skips every
+        # later step -- so a run that ran long would time out and lose
+        # everything it had already collected, having never reached publish
+        # or the commit. A step timeout just fails this one step; the
+        # `if: always()` below on export/commit is what makes that safe to
+        # rely on. Left well under the job's own 90-minute backstop.
+        timeout-minutes: 70
         run: python -m legotracker priceall || echo "::warning::priceall stopped early --- publishing what was gathered"
 
       - name: Export data files and rebuild the site
+        if: always()
         run: python -m legotracker publish
 
       - name: Commit and push if anything changed
+        if: always()
         run: |
           git config user.name "legotracker-bot"
           git config user.email "actions@users.noreply.github.com"
