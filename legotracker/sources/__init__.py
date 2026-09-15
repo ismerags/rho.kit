@@ -24,17 +24,21 @@ SOURCE_CLASSES = {
     LegoIN.name: LegoIN,
 }
 
-#: BuyHatke is the only active price source: it already watches Amazon,
-#: Flipkart, Hamleys and others itself, for free, and hands back a labelled
+#: BuyHatke is the primary price source: it already watches Amazon, Flipkart,
+#: Hamleys and others itself, for free, and hands back a labelled
 #: cross-retailer comparison in one request -- so there is no reason left to
 #: query amazon.in, flipkart.com etc. directly and run into their bot walls.
-#: The other adapters (amazon_in.py, flipkart.py, firstcry.py, hamleys.py,
-#: shopify.py's Toycra/JaimanToys) are retired, not deleted: they still work,
-#: still have tests and fixtures, and can be named explicitly with
-#: --sources for a one-off manual check, but nothing calls them by default
-#: any more. LEGO.com is excluded outright -- it renders prices client-side
-#: only (see sources/lego_in.py) and BuyHatke does not track it either.
-PRICE_SOURCES = ("buyhatke",)
+#: Toycra and Jaiman Toys are queried directly alongside it because BuyHatke
+#: does not appear to track either -- both are small India-only Shopify
+#: stores, and going through their own public /search/suggest.json is fast,
+#: unthrottled, and has never hit a bot wall. The remaining adapters
+#: (amazon_in.py, flipkart.py, firstcry.py, hamleys.py) are retired, not
+#: deleted: they still work, still have tests and fixtures, and can be named
+#: explicitly with --sources for a one-off manual check, but nothing calls
+#: them by default any more. LEGO.com is excluded outright -- it renders
+#: prices client-side only (see sources/lego_in.py) and BuyHatke does not
+#: track it either.
+PRICE_SOURCES = ("buyhatke", "toycra", "jaimantoys")
 
 #: The storefront the browsable catalogue is built from. Unaffected by the
 #: BuyHatke move above: this is one clean, un-throttled JSON feed

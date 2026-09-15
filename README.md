@@ -7,7 +7,7 @@ a **static website**. No server, no database in production, no login, no ads.
 YOUR MAC                          GITHUB                      VISITORS
 python -m legotracker publish  →  Actions builds the site  →  a fast, free page
  (weekly, ~45 min)                 (~2 min, free)              (no retailer is
- BuyHatke is the only source        ~900 set pages               ever contacted)
+ BuyHatke + 2 Shopify APIs           ~900 set pages               ever contacted)
 ```
 
 The website only ever *reads* data that was collected earlier. That is what
@@ -37,13 +37,14 @@ python -m legotracker serve          # opens the search page in your browser
 
 ---
 
-## BuyHatke is the only source
+## BuyHatke does most of the work, two Shopify stores do the rest
 
-This used to talk to eight retailers directly. It now talks to **one**:
+This used to talk to eight retailers directly. It now talks to **three**:
 `buyhatke.com`, a free, no-login, no-API-key price-tracking aggregator that
-already watches Amazon, Flipkart, Hamleys, FirstCry and others itself. Every
-price on this site is sourced through it — live search, the Browse grid, and
-the background collection job all go through the same two BuyHatke routes:
+already watches Amazon, Flipkart, Hamleys, FirstCry and others itself, plus
+Toycra and Jaiman Toys directly (see below for why those two are the
+exception). Live search, the Browse grid, and the background collection job
+all go through the same routes:
 
 - `/search?product=lego` — one request surfaces dozens of BuyHatke-tracked LEGO
   sets across every retailer it watches. Used for text search and for the
@@ -60,9 +61,14 @@ needed, and each is **one HTTP request**.
 **Why the switch.** Amazon, Flipkart and the rest increasingly return bot-wall
 pages or block requests outright, especially from a datacenter IP (GitHub
 Actions' runners, for instance). BuyHatke already does that scraping, at scale,
-and publishes the result — so the honest, durable way to get LEGO prices in
-India is to read BuyHatke once instead of racing eight separate anti-bot
-systems.
+and publishes the result — so the honest, durable way to get most LEGO prices
+in India is to read BuyHatke once instead of racing separate anti-bot systems.
+
+**Why Toycra and Jaiman Toys are still queried directly.** BuyHatke does not
+appear to track either — both are small India-only Shopify stores outside its
+coverage. Their own `/search/suggest.json` endpoint is a fast, unthrottled,
+public JSON API that has never hit a bot wall, so there's no reason to drop
+them just because BuyHatke replaced the sites that *were* a problem.
 
 **Attribution is still per-retailer.** A price sourced through BuyHatke is
 labelled with the *real* retailer it came from (`amazon_in`, `flipkart`,
@@ -86,25 +92,18 @@ sweep (`priceall`), not while someone is waiting on a live search:**
   is seen, which is where a set's history can suddenly start well before this
   project began tracking it.
 
-**The eight retailer-specific adapters (`sources/amazon_in.py`,
-`flipkart.py`, `firstcry.py`, `hamleys.py`, `toycra.py`, `jaimantoys.py`) are
+**The four retailer-specific adapters for sites BuyHatke already covers
+(`sources/amazon_in.py`, `flipkart.py`, `firstcry.py`, `hamleys.py`) are
 retired, not deleted.** They still work and can be named explicitly with
 `--sources amazon_in,flipkart`, but nothing in normal operation calls them —
-`PRICE_SOURCES` / `SEARCH_SOURCES` in `sources/__init__.py` now default to
-`("buyhatke",)` alone.
-
-**Toycra and Jaiman Toys stop getting new price history.** Both are small
-India-only Shopify stores; BuyHatke does not appear to track either. Their
-existing history stays in the database, but nothing currently refreshes it. If
-that matters, watch a couple of their listings for a few weeks and check
-whether BuyHatke ever surfaces one — if not, their adapters are still there to
-run by hand (`--sources toycra,jaimantoys`).
+`PRICE_SOURCES` / `SEARCH_SOURCES` in `sources/__init__.py` default to
+`("buyhatke", "toycra", "jaimantoys")`.
 
 **The catalogue source is unaffected.** `CATALOG_SOURCE` (the LEGO Certified
 Store's `/products.json` feed, `lego.mybrickhouse.com`) is a separate, single
 clean JSON feed used only to know *what sets exist* — set numbers, piece
 counts, images — never a per-set price lookup. It never had a bot-wall problem
-and isn't "another vendor" in the sense the other seven were; it keeps working
+and isn't "another vendor" in the sense the other four were; it keeps working
 exactly as before.
 
 **There is no lego.com vendor, and that is not a limitation.** lego.com/en-in
@@ -326,18 +325,19 @@ names the retailer and distinguishes **UNREACHABLE** (network problem) from
 **EMPTY** (reached it, parsed nothing — a layout change or a bot wall). Different
 problems, different fixes.
 
-Since BuyHatke is the only active source (see above), almost every fix now
-lives in one file:
+Since BuyHatke and the two Shopify adapters are the only active sources (see
+above), almost every fix now lives in one of these:
 
 | File | What to look at |
 |---|---|
 | `sources/buyhatke.py` | the search-route regex, the paste-link route's object-literal extractor, `DOMAIN_TO_RETAILER` / `SITE_NAME_TO_RETAILER` |
+| `sources/shopify.py` | serves Toycra and Jaiman Toys (also the Certified Store's own search, unused by default) |
 | `catalog.py` | set-number / theme / piece-count extraction (still reads the Certified Store's own feed) |
 
 The retired per-retailer adapters (`amazon_in.py`, `flipkart.py`,
-`firstcry.py`, `hamleys.py`, `shopify.py` for Toycra/Jaiman Toys/the Certified
-Store's own search) still exist and still work if you run them explicitly with
-`--sources`, but they are not on the normal fix-it path any more.
+`firstcry.py`, `hamleys.py`) still exist and still work if you run them
+explicitly with `--sources`, but they are not on the normal fix-it path any
+more.
 
 `--cache` saves raw responses to `data/cache/` so you can iterate on a parser
 without re-fetching:

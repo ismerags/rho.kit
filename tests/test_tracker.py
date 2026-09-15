@@ -765,10 +765,11 @@ def test_search_deadline():
             SOURCE_CLASSES[n].search = stub(n, 60 if n == "amazon_in" else 0.2)
 
         t0 = _t.monotonic()
-        # BuyHatke alone is the default source now (see sources/__init__.py),
-        # so this test explicitly asks for every registered adapter -- the
-        # deadline/cooldown mechanism being tested here is generic over
-        # however many sources are active, default or not.
+        # BuyHatke, Toycra and Jaiman Toys are the default sources now (see
+        # sources/__init__.py), so this test explicitly asks for every
+        # registered adapter -- the deadline/cooldown mechanism being tested
+        # here is generic over however many sources are active, default or
+        # not.
         out = search_mod.search("42171", deadline=4.0, refine=True,
                                 sources=list(SOURCE_CLASSES))
         elapsed = _t.monotonic() - t0
