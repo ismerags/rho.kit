@@ -14,6 +14,13 @@ The website only ever *reads* data that was collected earlier. That is what
 makes it instant, free to host, impossible to get blocked, and polite to the
 retailers — a thousand visitors cause exactly as much retailer traffic as zero.
 
+Every set page shows the usual per-retailer comparison table plus a price
+history chart — an inline SVG, no charting library — once there are at least
+4 days of observations for that set (`legotracker/site.py`'s `history_block`
+and `sparkline`). BuyHatke's own multi-year backfill (see below) is what gets
+most tracked sets past that bar quickly rather than waiting months for this
+project's own observations to accumulate.
+
 **Deploying it: see [DEPLOY.md](DEPLOY.md).**
 
 ---

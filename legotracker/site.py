@@ -612,12 +612,14 @@ def price_table(analysis: dict) -> str:
 </div>"""
 
 
-def history_block(analysis: dict) -> str:  # pragma: no cover — currently unused
+def history_block(analysis: dict) -> str:
     """Price history — or an honest refusal to show one.
 
-    Not called from `render_set_page` right now: the chart is being held back
-    from set pages until there's enough history for it to be worth showing.
-    Left in place, working, so it's a one-line change to bring back.
+    Called from `render_set_page`. BuyHatke's own multi-year price series
+    (imported by search.py's deep-search backfill, see collect via priceall)
+    is what makes this worth showing now: a set search.py has run a deep
+    enrichment on typically has real history from day one, not just what
+    this project has observed itself since it started tracking.
     """
     if not analysis["enough_history"]:
         days = analysis["days_tracked"]
@@ -773,6 +775,8 @@ def render_set_page(item: dict, analysis: dict, cfg: SiteConfig,
   </div>
 
   {price_table(analysis)}
+
+  {history_block(analysis)}
 
   <p class="disclaim">Prices are collected automatically and can be wrong or out
      of date. Check the retailer's page before buying.</p>

@@ -1173,16 +1173,21 @@ def test_site_never_claims_history_it_lacks():
     with tempfile.TemporaryDirectory() as tmp:
         out = _site_fixture(tmp, days=1)          # 2 days — below the threshold
         page = (out / "set" / "42176" / "index.html").read_text()
-        check("<svg" not in page, "no chart, thin history or not")
+        check("<svg" not in page, "no chart when there isn't enough history for one")
         check("all-time" not in page.lower(), "…and claims no all-time low")
+        check("Not enough data yet" in page,
+              "the set page says why, instead of just omitting the section")
 
     with tempfile.TemporaryDirectory() as tmp:
         out = _site_fixture(tmp, days=40)
         page = (out / "set" / "42176" / "index.html").read_text()
-        # Price history is held back from set pages for now (see history_block's
-        # docstring) — build_site must not call it, even with ample history.
-        check("<svg" not in page,
-              "price history chart is not shown on set pages yet")
+        # Wired in for real now that BuyHatke's own multi-year series gives
+        # most tracked sets ample history from day one (see history_block's
+        # docstring) — a set page with enough history shows the chart.
+        check("<svg" in page,
+              "price history chart is shown once there is enough history")
+        check("Lowest since we started tracking" in page,
+              "the all-time-low fact is worded as since-we-started")
         check("all-time low" not in page.lower(),
               "…and never claims a true all-time low")
 
