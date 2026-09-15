@@ -26,7 +26,9 @@ from legotracker.sources.amazon_in import AmazonIN  # noqa: E402
 from legotracker.sources.buyhatke import (_extract_balanced_object,  # noqa: E402
                                           _js_object_to_json, offer_from_product_data,
                                           history_points, deal_list, _parse_search_blocks,
-                                          _offer_from_search_item)
+                                          _offer_from_search_item,
+                                          proxy_url as buyhatke_proxy_url,
+                                          retailer_for_link)
 from legotracker.sources.base import parse_inr  # noqa: E402
 from legotracker.sources.firstcry import FirstCry  # noqa: E402
 from legotracker.sources.flipkart import _extract_state, _walk_products, _prices  # noqa: E402
@@ -267,6 +269,10 @@ def test_buyhatke_parser():
 
     offer = offer_from_product_data("https://buyhatke.com/x", data)
     check(offer is not None, "offer built from productData")
+    eq(offer.retailer, "amazon_in",
+       "detail-route offer resolves to the real retailer, not 'buyhatke'")
+    eq(offer.url, "http://www.amazon.in/gp/product/B0CQ3VY8X2",
+       "detail-route offer keeps the real vendor link from productData.link")
     eq(offer.price_inr, 13499.0, "current price read")
     eq(offer.mrp_inr, None, "mrp(12999) < price(13499) discarded, matches base.py convention")
     eq(offer.sku, "B0CQ3VY8X2", "ASIN read from productData.pid")
@@ -283,6 +289,12 @@ def test_buyhatke_parser():
     names = sorted(d["site_name"] for d in deals)
     eq(names, ["Ajio", "Amazon", "Hamleys"], "deal site names read")
 
+    eq(retailer_for_link("https://www.flipkart.com/p/x"), "flipkart",
+       "domain resolution: flipkart.com")
+    eq(retailer_for_link("https://www.ajio.com/p/x"), "buyhatke",
+       "an unmapped domain (Ajio) stays under the generic buyhatke bucket")
+    eq(retailer_for_link(None), "buyhatke", "no link at all also falls back")
+
     # ---- search route: flat x.field=value; statements, not JSON ----------
     search_html = (FIX / "buyhatke_search.html").read_text()
     items = list(_parse_search_blocks(search_html))
@@ -292,11 +304,19 @@ def test_buyhatke_parser():
 
     first = _offer_from_search_item(items[0])
     check(first is not None, "search item converted to an Offer")
-    eq(first.url, "https://buyhatke.com/http://www.amazon.in/gp/product/B0FPXDXXYR",
-       "amazon.in link wrapped in the buyhatke paste-link proxy form")
+    eq(first.url, "http://www.amazon.in/gp/product/B0FPXDXXYR",
+       "offer keeps the real amazon.in link, not a buyhatke-proxied one")
+    eq(first.retailer, "amazon_in",
+       "retailer resolved from the link's own domain")
     eq(first.price_inr, 2547.0, "search item price")
     eq(first.mrp_inr, 2999.0, "search item mrp(2999) > price(2547) kept")
     check("77256" in first.title, "search item title carries the set number")
+
+    second = _offer_from_search_item(items[1])
+    eq(second.retailer, "amazon_in", "second item also resolves to amazon_in")
+    eq(buyhatke_proxy_url(first.url),
+       "https://buyhatke.com/http://www.amazon.in/gp/product/B0FPXDXXYR",
+       "proxy_url reconstructs the paste-link form for re-fetching via BuyHatke")
 
 
 def test_catalog_extraction():
@@ -745,7 +765,12 @@ def test_search_deadline():
             SOURCE_CLASSES[n].search = stub(n, 60 if n == "amazon_in" else 0.2)
 
         t0 = _t.monotonic()
-        out = search_mod.search("42171", deadline=4.0, refine=True)
+        # BuyHatke alone is the default source now (see sources/__init__.py),
+        # so this test explicitly asks for every registered adapter -- the
+        # deadline/cooldown mechanism being tested here is generic over
+        # however many sources are active, default or not.
+        out = search_mod.search("42171", deadline=4.0, refine=True,
+                                sources=list(SOURCE_CLASSES))
         elapsed = _t.monotonic() - t0
 
         check(elapsed < 7.0,
@@ -832,6 +857,93 @@ def test_database_roundtrip():
         rid = db.start_run()
         db.finish_run(rid, "ok", 1, 2)
         eq(db.recent_runs()[0]["status"], "ok", "run recorded")
+        db.close()
+
+
+def test_deep_enrich_and_backfill():
+    """The composition logic behind `deep=True` (catalog.py's background
+    sweep): one BuyHatke detail fetch per offer should (a) fold in other
+    retailers' prices for the same product as new offers, deduped against
+    what is already there, and (b) backfill that product's price history
+    once listings exist to attach it to.
+    """
+    print("\ndeep enrich + history backfill")
+    from legotracker import search as search_mod
+    from legotracker.search import SearchOutcome, SetResult
+    from legotracker.sources.base import Offer
+
+    amazon_url = "http://www.amazon.in/gp/product/B0CQ3VY8X2"
+    outcome = SearchOutcome(query="71813", kind="set_number", sets=[
+        SetResult("71813", "LEGO NINJAGO Wolf Mask Shadow Dojo 71813", [
+            Offer(retailer="amazon_in", url=amazon_url,
+                  title="LEGO NINJAGO Wolf Mask Shadow Dojo 71813",
+                  price_inr=13499.0, in_stock=True, brand="LEGO"),
+        ]),
+    ])
+
+    detail_data = {
+        "dealsData": {"dealsList": [
+            # A genuinely new retailer for this product -- should become a
+            # new offer on the same SetResult.
+            {"site_name": "Flipkart", "link": "https://www.flipkart.com/p/x",
+             "price": 12999, "mrpFloat": 13999, "prod": "LEGO X flipkart"},
+            # An unmapped site (see DOMAIN_TO_RETAILER) -- must be skipped,
+            # not invented as a new retailer identity.
+            {"site_name": "Ajio", "link": "https://www.ajio.com/p/x",
+             "price": 11999, "mrpFloat": 12999, "prod": "LEGO X ajio"},
+            # Same URL as the offer already on this SetResult -- must not
+            # be duplicated.
+            {"site_name": "Amazon", "link": amazon_url,
+             "price": 13499, "mrpFloat": 13999, "prod": "dup"},
+        ]},
+        "predictedData": {"history": [
+            {"from": "2024-04-19 05:05:31", "to": "2024-04-19 05:05:31", "price": 33500},
+            {"from": "2026-09-14 07:00:24", "to": "2026-09-14 07:00:24", "price": 13499},
+        ]},
+    }
+
+    calls = []
+
+    def fake_fetch_detail(session, url):
+        calls.append(url)
+        return detail_data
+
+    original = search_mod.buyhatke_source.fetch_detail
+    search_mod.buyhatke_source.fetch_detail = fake_fetch_detail
+    try:
+        detail_by_url = search_mod._deep_enrich(session=None, outcome=outcome)
+    finally:
+        search_mod.buyhatke_source.fetch_detail = original
+
+    eq(len(calls), 1, "one detail fetch for the one offer that was present")
+    eq(list(detail_by_url), [amazon_url], "keyed by the real vendor URL")
+
+    res = outcome.sets[0]
+    eq(len(res.offers), 2, "flipkart's deal was folded in; Ajio and the duplicate were not")
+    added = res.offers[1]
+    eq(added.retailer, "flipkart", "new offer resolved to the real retailer")
+    eq(added.url, "https://www.flipkart.com/p/x", "new offer keeps the real vendor link")
+    eq(added.price_inr, 12999.0, "new offer's price carried over")
+    eq(added.mrp_inr, 13999.0, "new offer's mrp carried over")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        db = Database(Path(tmp) / "t.sqlite3")
+        search_mod._persist(db, outcome)
+        search_mod._backfill_all_history(db, outcome, detail_by_url)
+
+        amazon_lid = db.upsert_listing("71813", "amazon_in", amazon_url)
+        rows = db.history(amazon_lid)
+        eq(len(rows), 3, "today's persisted price plus two backfilled history points")
+        prices = sorted(r["price_inr"] for r in rows)
+        eq(prices, [13499.0, 13499.0, 33500.0], "backfilled prices match BuyHatke's history")
+
+        flipkart_lid = db.upsert_listing("71813", "flipkart", "https://www.flipkart.com/p/x")
+        eq(len(db.history(flipkart_lid)), 1,
+           "flipkart's own detail page was never fetched, so it has no history to backfill")
+
+        # Backfilling again must not duplicate rows already recorded.
+        search_mod._backfill_all_history(db, outcome, detail_by_url)
+        eq(len(db.history(amazon_lid)), 3, "re-running the backfill is a no-op (deduped by timestamp)")
         db.close()
 
 
@@ -1256,7 +1368,7 @@ def main() -> int:
                test_undecoded_body_is_loud, test_session_is_per_thread,
                test_amazon_search_url, test_search_matching,
                test_search_deadline, test_search_result_shape,
-               test_database_roundtrip, test_dashboard_renders,
+               test_database_roundtrip, test_deep_enrich_and_backfill, test_dashboard_renders,
                test_site_money_and_freshness, test_site_link_and_image_allowlist,
                test_site_escapes_untrusted_text,
                test_site_never_claims_history_it_lacks,

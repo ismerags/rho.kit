@@ -32,6 +32,7 @@ from .db import Database
 from .http_client import PoliteSession
 from .matching import candidate_set_numbers, normalise_set_num, score_listing
 from .sources import (RETAILER_LABELS, SEARCH_SOURCES, Offer, build_sources)
+from .sources import buyhatke as buyhatke_source
 
 log = logging.getLogger(__name__)
 
@@ -47,12 +48,11 @@ SET_NUMBER_QUERY_RE = re.compile(r"^\s*(\d{4,7})\s*$")
 DEFAULT_DEADLINE = 20.0
 REFINE_RESERVE = 0.45           # fraction of the budget kept for the retry pass
 
-#: Retailers that block scripted traffic when hit too often. Their answers are
-#: reused for a few hours: a LEGO price on Amazon does not change minute to
-#: minute, and every repeat click on the same set was another request counting
-#: towards a block. Found the hard way on 11 Sep 2026, when a busy afternoon of
-#: searching got Amazon to stop answering entirely.
-RESULT_TTL_SECONDS = {"amazon_in": 6 * 3600, "flipkart": 6 * 3600}
+#: Reuse a recent identical BuyHatke answer rather than re-asking: a LEGO
+#: price does not change minute to minute, and every repeat click on the same
+#: set was another request that gained nothing. Keyed by source name
+#: ("buyhatke"), not by the real retailer BuyHatke resolves each offer to.
+RESULT_TTL_SECONDS = {"buyhatke": 2 * 3600}
 
 #: After a retailer answers with a bot-check page or a throttle (429/503), stop
 #: asking it for a while. Retrying a block immediately is what extends it.
@@ -257,11 +257,18 @@ def search(query: str,
            limit: int = 24,
            refine: bool = True,
            db: Optional[Database] = None,
-           deadline: float = DEFAULT_DEADLINE) -> SearchOutcome:
+           deadline: float = DEFAULT_DEADLINE,
+           deep: bool = False) -> SearchOutcome:
     """Search every retailer for `query` and return matched, priced offers.
 
     Always returns within roughly `deadline` seconds. Retailers that have not
     answered by then are reported as timed out rather than holding the result.
+
+    `deep=True` (used only by the background collection sweep in catalog.py's
+    price_all, never by an interactive lookup) makes one extra BuyHatke
+    request per offer already found, to pull that listing's cross-retailer
+    deals and full price history — see `_deep_enrich`. It roughly doubles the
+    requests for the set, so it stays off for anything a person is waiting on.
     """
     t0 = time.monotonic()
     raw = query.strip()
@@ -338,11 +345,22 @@ def search(query: str,
                              s.best.price_inr if s.best else float("inf")))
 
     outcome.sets = sets
+
+    detail_by_url: dict[str, dict] = {}
+    if deep and outcome.sets:
+        detail_by_url = _deep_enrich(session, outcome)
+        for res in outcome.sets:
+            res.offers.sort(key=lambda o: (o.price_inr is None,
+                                           o.in_stock is False,
+                                           o.price_inr or 0))
+
     outcome.statuses = sorted(status_by_name.values(), key=lambda s: s.label)
     outcome.elapsed_ms = int((time.monotonic() - t0) * 1000)
 
     if db is not None:
         _persist(db, outcome)
+        if detail_by_url:
+            _backfill_all_history(db, outcome, detail_by_url)
 
     log.info("search %r -> %d set(s), %d offers, %dms",
              raw, len(sets), sum(len(s.offers) for s in sets), outcome.elapsed_ms)
@@ -476,3 +494,76 @@ def _persist(db: Database, outcome: SearchOutcome) -> None:
     except Exception as exc:  # noqa: BLE001
         # Logging a search must never break the search.
         log.warning("could not persist search results: %s", exc)
+
+
+def _deep_enrich(session: PoliteSession, outcome: SearchOutcome) -> dict[str, dict]:
+    """For every offer already found, fetch BuyHatke's own detail page once.
+
+    Two things come out of that one extra request per listing: other
+    retailers BuyHatke already prices the SAME product at (folded in here as
+    ordinary extra offers on the same set, so they get matched, sorted and
+    persisted exactly like anything found by the search route itself), and
+    that listing's full price history — returned rather than written here,
+    since backfilling needs a listing_id that only exists after `_persist`
+    has run.
+
+    A dict keyed by real vendor URL, not by (already deduped) offer object:
+    the same URL can legitimately appear on more than one SetResult's offers
+    across a text-query outcome, and this is a fetch cache, not a copy.
+    """
+    detail_by_url: dict[str, dict] = {}
+    for res in outcome.sets:
+        seen_urls = {o.url for o in res.offers}
+        for offer in list(res.offers):
+            if offer.url in detail_by_url:
+                continue
+            data = buyhatke_source.fetch_detail(
+                session, buyhatke_source.proxy_url(offer.url))
+            if not data:
+                continue
+            detail_by_url[offer.url] = data
+            for deal in buyhatke_source.deal_list(data):
+                site = str(deal.get("site_name") or "").strip().lower()
+                retailer = buyhatke_source.SITE_NAME_TO_RETAILER.get(site)
+                link = deal.get("link")
+                price = deal.get("price")
+                if (not retailer or not link or link in seen_urls
+                        or not isinstance(price, (int, float))):
+                    continue
+                mrp = deal.get("mrpFloat")
+                res.offers.append(Offer(
+                    retailer=retailer, url=link,
+                    title=deal.get("prod") or res.name,
+                    price_inr=float(price),
+                    mrp_inr=(float(mrp) if isinstance(mrp, (int, float))
+                            and mrp >= price else None),
+                    in_stock=True, brand="LEGO"))
+                seen_urls.add(link)
+    return detail_by_url
+
+
+def _backfill_all_history(db: Database, outcome: SearchOutcome,
+                          detail_by_url: dict[str, dict]) -> None:
+    """Import each offer's BuyHatke price history, deduped against what this
+    listing already has. Runs after `_persist`, which is what makes today's
+    price and the historical series line up under the same listing_id."""
+    for res in outcome.sets:
+        for offer in res.offers:
+            data = detail_by_url.get(offer.url)
+            if not data:
+                continue
+            points = buyhatke_source.history_points(data)
+            if not points:
+                continue
+            listing_id = db.upsert_listing(
+                set_num=res.set_num, retailer=offer.retailer, url=offer.url)
+            existing = db.observed_timestamps(listing_id)
+            for at, price in points:
+                # BuyHatke's "2024-04-19 05:05:31" normalised to this
+                # project's ISO-with-offset convention; no timezone is
+                # published for these, treated as UTC.
+                observed_at = at.replace(" ", "T") + "+00:00"
+                if observed_at in existing:
+                    continue
+                db.backfill_price_point(listing_id, observed_at, price_inr=price)
+                existing.add(observed_at)

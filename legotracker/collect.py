@@ -21,7 +21,7 @@ from typing import Iterable, Optional
 from .analytics import compute_stats, detect_alerts
 from .db import Database
 from .matching import candidate_set_numbers, normalise_set_num, score_listing
-from .sources import Offer, Source, build_sources
+from .sources import Offer, RETAILER_LABELS, Source, build_sources
 from .sources import buyhatke as buyhatke_source
 from .http_client import PoliteSession
 
@@ -188,22 +188,41 @@ def _backfill_history(db: Database, listing_id: int,
 def refresh(db: Database, session: PoliteSession,
             sources: Optional[list[str]] = None,
             only_sets: Optional[Iterable[str]] = None) -> RunReport:
+    """Re-price every already-registered listing.
+
+    Not on the production path any more — `priceall` (catalog.py::price_all,
+    via search.py's deep search) is what scripts/weekly.sh and the GitHub
+    Actions workflow actually run, and it does the discover-and-price-in-one
+    sweep that made this two-step discover()/refresh() pair mostly redundant.
+    Kept working for anyone using `discover`/`collect` by hand: BuyHatke can
+    re-fetch ANY listing's stored real vendor URL through its paste-link
+    route regardless of which retailer it is labelled as, so it refreshes
+    everything by default; a dormant per-site adapter only gets used when
+    named explicitly via --sources.
+    """
     report = RunReport()
     run_id = db.start_run()
 
     adapters = {a.name: a for a in build_sources(session, sources)}
+    buyhatke_adapter = adapters.get(buyhatke_source.BuyHatke.name)
     targets = db.targets()
     wanted = {normalise_set_num(s) for s in only_sets} if only_sets else None
 
     listings = [l for l in db.all_active_listings()
-                if l["retailer"] in adapters
+                if (l["retailer"] in adapters or buyhatke_adapter is not None)
                 and (wanted is None or l["set_num"] in wanted)]
 
     log.info("refreshing %d listings across %d retailers",
              len(listings), len(adapters))
 
     for listing in listings:
-        adapter: Source = adapters[listing["retailer"]]
+        # A listing's own retailer wins if that adapter was explicitly named
+        # (a dormant per-site scraper someone asked for via --sources);
+        # otherwise BuyHatke fetches it via the paste-link route, whatever
+        # retailer it is labelled as.
+        use_own_adapter = (listing["retailer"] in adapters
+                          and listing["retailer"] != buyhatke_source.BuyHatke.name)
+        adapter: Optional[Source] = adapters.get(listing["retailer"])
         report.listings_seen += 1
 
         prev = db.latest_price(listing["id"])
@@ -211,15 +230,16 @@ def refresh(db: Database, session: PoliteSession,
 
         bh_data = None
         try:
-            if listing["retailer"] == buyhatke_source.BuyHatke.name:
+            if use_own_adapter:
+                offer = adapter.fetch_offer(listing["url"])
+            else:
                 # Fetched once here so the cross-vendor deals and the full
                 # price history below can reuse it instead of hitting
                 # BuyHatke a second time for the same page.
-                bh_data = buyhatke_source.fetch_detail(session, listing["url"])
+                bh_data = buyhatke_source.fetch_detail(
+                    session, buyhatke_source.proxy_url(listing["url"]))
                 offer = (buyhatke_source.offer_from_product_data(listing["url"], bh_data)
                         if bh_data else None)
-            else:
-                offer = adapter.fetch_offer(listing["url"])
         except Exception as exc:  # noqa: BLE001
             log.warning("refresh %s %s failed: %s",
                         listing["retailer"], listing["set_num"], exc)
@@ -269,7 +289,7 @@ def refresh(db: Database, session: PoliteSession,
         for alert in detect_alerts(
             set_num=listing["set_num"],
             listing_id=listing["id"],
-            retailer=adapter.label,
+            retailer=RETAILER_LABELS.get(listing["retailer"], listing["retailer"]),
             stats=stats,
             prev_price=prev_price,
             target=targets.get(listing["set_num"]),

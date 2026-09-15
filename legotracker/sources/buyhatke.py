@@ -41,7 +41,7 @@ import logging
 import re
 from dataclasses import dataclass, field
 from typing import Iterator, Optional
-from urllib.parse import quote_plus
+from urllib.parse import quote_plus, urlparse
 
 from .base import Offer, Source
 
@@ -58,6 +58,38 @@ SITE_NAME_TO_RETAILER = {
     "flipkart": "flipkart",
     "hamleys": "hamleys",
 }
+
+#: Same idea, keyed by the real vendor URL's domain instead of BuyHatke's own
+#: "site_name" label -- needed for the /search route, whose result items carry
+#: a `link` but no explicit site name. A domain not listed here (Ajio,
+#: Snapdeal, ...) is left tagged "buyhatke" rather than inventing a retailer
+#: this project has no page or label for.
+DOMAIN_TO_RETAILER = {
+    "amazon.in": "amazon_in",
+    "flipkart.com": "flipkart",
+    "hamleys.in": "hamleys",
+    "firstcry.com": "firstcry",
+}
+
+
+def retailer_for_link(link: Optional[str]) -> str:
+    """Who a shopper would actually pay, going only by the listing's own URL."""
+    if not link:
+        return "buyhatke"
+    host = (urlparse(link).netloc or "").lower()
+    if host.startswith("www."):
+        host = host[4:]
+    for domain, retailer in DOMAIN_TO_RETAILER.items():
+        if host == domain or host.endswith("." + domain):
+            return retailer
+    return "buyhatke"
+
+
+def proxy_url(real_url: str) -> str:
+    """The BuyHatke paste-link form of a real vendor URL: re-fetching this
+    gets that exact listing's current price, cross-retailer deals, and full
+    price history in one request."""
+    return f"{BASE_URL}/{real_url}"
 
 
 # --------------------------------------------------------------------------
@@ -197,9 +229,12 @@ def offer_from_product_data(url: str, data: dict) -> Optional[Offer]:
         return None
     price = pd.get("cur_price")
     mrp = pd.get("mrpFloat")
+    real_url = pd.get("link") or url
+    site = str(pd.get("site_name") or "").strip().lower()
+    retailer = SITE_NAME_TO_RETAILER.get(site) or retailer_for_link(real_url)
     return Offer(
-        retailer="buyhatke",
-        url=url,
+        retailer=retailer,
+        url=real_url,
         title=name,
         price_inr=float(price) if isinstance(price, (int, float)) else None,
         mrp_inr=(float(mrp) if isinstance(mrp, (int, float))
@@ -289,14 +324,13 @@ def _offer_from_search_item(item: dict) -> Optional[Offer]:
     if not title:
         return None
     link = item.get("link") or ""
-    proxied_url = f"{BASE_URL}/{link}" if link else None
-    if not proxied_url:
+    if not link:
         return None
     price = item.get("price")
     mrp = item.get("mrp")
     return Offer(
-        retailer="buyhatke",
-        url=proxied_url,
+        retailer=retailer_for_link(link),
+        url=link,
         title=title,
         price_inr=float(price) if isinstance(price, (int, float)) else None,
         mrp_inr=(float(mrp) if isinstance(mrp, (int, float))
@@ -338,7 +372,8 @@ class BuyHatke(Source):
         return offers
 
     def fetch_offer(self, url: str) -> Optional[Offer]:
-        data = fetch_detail(self.session, url)
+        target = url if url.startswith(BASE_URL) else proxy_url(url)
+        data = fetch_detail(self.session, target)
         if data is None:
             return None
-        return offer_from_product_data(url, data)
+        return offer_from_product_data(target, data)

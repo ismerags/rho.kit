@@ -24,12 +24,23 @@ SOURCE_CLASSES = {
     LegoIN.name: LegoIN,
 }
 
-#: Sources that can actually report a rupee price. LEGO.com is excluded — it
-#: renders prices client-side only (see sources/lego_in.py).
-PRICE_SOURCES = ("amazon_in", "flipkart", "firstcry", "buyhatke",
-                 "hamleys", "jaimantoys", "mybrickhouse", "toycra")
+#: BuyHatke is the only active price source: it already watches Amazon,
+#: Flipkart, Hamleys and others itself, for free, and hands back a labelled
+#: cross-retailer comparison in one request -- so there is no reason left to
+#: query amazon.in, flipkart.com etc. directly and run into their bot walls.
+#: The other adapters (amazon_in.py, flipkart.py, firstcry.py, hamleys.py,
+#: shopify.py's Toycra/JaimanToys) are retired, not deleted: they still work,
+#: still have tests and fixtures, and can be named explicitly with
+#: --sources for a one-off manual check, but nothing calls them by default
+#: any more. LEGO.com is excluded outright -- it renders prices client-side
+#: only (see sources/lego_in.py) and BuyHatke does not track it either.
+PRICE_SOURCES = ("buyhatke",)
 
-#: The storefront the browsable catalogue is built from.
+#: The storefront the browsable catalogue is built from. Unaffected by the
+#: BuyHatke move above: this is one clean, un-throttled JSON feed
+#: (lego.mybrickhouse.com/products.json) used only to know WHAT sets exist,
+#: their piece counts and images -- never a per-set price lookup, so it was
+#: never the thing that ran into bot walls.
 CATALOG_SOURCE = MyBrickHouse.name
 
 #: What a live search fans out to by default.

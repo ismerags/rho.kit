@@ -327,7 +327,11 @@ def price_all(db: Database, session: Optional[PoliteSession] = None,
             # differ from what pass 1 already sent, so it does not double
             # Amazon/Flipkart's request volume for sets they were always
             # going to search precisely anyway.
-            outcome = run_search(set_num, session=session, refine=True, db=db)
+            # deep=True: this is background collection, not someone
+            # waiting on a page — worth the extra BuyHatke request per
+            # offer to also pull cross-retailer deals and full history.
+            outcome = run_search(set_num, session=session, refine=True,
+                                 db=db, deep=True)
             hit = next((s for s in outcome.sets if s.set_num == set_num), None)
             found = len(hit.offers) if hit else 0
             if found:
