@@ -17,6 +17,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10281,mybrickhouse,2026-09-12T10:49:00+00:00,5449.0,,0,https://lego.mybrickhouse.com/products/bonsai-tree-10281-building-kit-878-pieces
 10281,mybrickhouse,2026-09-12T10:54:29+00:00,5449.0,,0,https://lego.mybrickhouse.com/products/bonsai-tree-10281-building-kit-878-pieces
 10281,mybrickhouse,2026-09-12T11:04:28+00:00,5449.0,,0,https://lego.mybrickhouse.com/products/bonsai-tree-10281-building-kit-878-pieces
+10281,toycra,2026-09-15T06:55:00+00:00,5449.0,,0,https://toycra.com/products/lego-10281-icons-bonsai-tree
 10294,mybrickhouse,2026-09-10T09:18:14+00:00,63999.0,,0,https://lego.mybrickhouse.com/products/titanic-10294-building-kit-9-090-pieces
 10294,mybrickhouse,2026-09-10T11:10:46+00:00,63999.0,,0,https://lego.mybrickhouse.com/products/titanic-10294-building-kit-9-090-pieces
 10294,mybrickhouse,2026-09-10T11:34:31+00:00,63999.0,,0,https://lego.mybrickhouse.com/products/titanic-10294-building-kit-9-090-pieces
@@ -148,6 +149,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10343,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-mini-orchid-plant-gift-10343-building-kit-274-pieces
 10343,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-mini-orchid-plant-gift-10343-building-kit-274-pieces
 10343,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-mini-orchid-plant-gift-10343-building-kit-274-pieces
+10343,toycra,2026-09-15T06:55:12+00:00,3199.0,,1,https://toycra.com/products/lego-10343-botanicals-mini-orchid-274-pieces
 10344,hamleys,2026-09-09T12:13:30+00:00,3039.0,3199.0,1,https://hamleys.in/product/lego-botanicals-lucky-bamboo-plant-decor-10344-building-blocks-for-18y-13468871
 10344,hamleys,2026-09-09T12:15:07+00:00,3039.0,3199.0,1,https://hamleys.in/product/lego-botanicals-lucky-bamboo-plant-decor-10344-building-blocks-for-18y-13468871
 10344,hamleys,2026-09-09T12:29:11+00:00,3039.0,3199.0,1,https://hamleys.in/product/lego-botanicals-lucky-bamboo-plant-decor-10344-building-blocks-for-18y-13468871
@@ -175,6 +177,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10347,mybrickhouse,2026-09-12T10:49:00+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/botanicals-petite-sunny-bouquet-10347-building-kit-373-pieces
 10347,mybrickhouse,2026-09-12T10:54:29+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/botanicals-petite-sunny-bouquet-10347-building-kit-373-pieces
 10347,mybrickhouse,2026-09-12T11:04:28+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/botanicals-petite-sunny-bouquet-10347-building-kit-373-pieces
+10347,toycra,2026-09-15T06:55:17+00:00,3349.0,,1,https://toycra.com/products/lego-10347-botanicals-petite-sunny-bouquet-373-pieces
 10348,mybrickhouse,2026-09-10T09:18:14+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/japanese-red-maple-bonsai-tree
 10348,mybrickhouse,2026-09-10T11:10:46+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/japanese-red-maple-bonsai-tree
 10348,mybrickhouse,2026-09-10T11:34:31+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/japanese-red-maple-bonsai-tree
@@ -182,6 +185,8 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10348,mybrickhouse,2026-09-12T10:49:00+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/japanese-red-maple-bonsai-tree
 10348,mybrickhouse,2026-09-12T10:54:29+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/japanese-red-maple-bonsai-tree
 10348,mybrickhouse,2026-09-12T11:04:28+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/japanese-red-maple-bonsai-tree
+10348,toycra,2026-09-15T06:55:09+00:00,4499.0,6399.0,1,https://toycra.com/products/lego-10348-botanicals-japanese-red-maple-bonsai-tree-474-pieces
+10349,jaimantoys,2026-09-15T06:55:05+00:00,2190.0,2599.0,1,https://jaimantoys.com/products/box-damage-lego-75375-starship-model-for-home-decor-921-pieces-copy
 10349,mybrickhouse,2026-09-10T09:18:14+00:00,2349.0,,1,https://lego.mybrickhouse.com/products/botanicals-happy-plants-10349-building-kit-217-pieces
 10349,mybrickhouse,2026-09-10T11:10:46+00:00,2349.0,,1,https://lego.mybrickhouse.com/products/botanicals-happy-plants-10349-building-kit-217-pieces
 10349,mybrickhouse,2026-09-10T11:34:31+00:00,2349.0,,1,https://lego.mybrickhouse.com/products/botanicals-happy-plants-10349-building-kit-217-pieces
@@ -189,6 +194,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10349,mybrickhouse,2026-09-12T10:49:00+00:00,2349.0,,1,https://lego.mybrickhouse.com/products/botanicals-happy-plants-10349-building-kit-217-pieces
 10349,mybrickhouse,2026-09-12T10:54:29+00:00,2349.0,,1,https://lego.mybrickhouse.com/products/botanicals-happy-plants-10349-building-kit-217-pieces
 10349,mybrickhouse,2026-09-12T11:04:28+00:00,2349.0,,1,https://lego.mybrickhouse.com/products/botanicals-happy-plants-10349-building-kit-217-pieces
+10349,toycra,2026-09-15T06:55:05+00:00,2349.0,,1,https://toycra.com/products/lego-10349-botanicals-happy-plants-217-pieces
 10350,mybrickhouse,2026-09-10T09:18:14+00:00,24499.0,,1,https://lego.mybrickhouse.com/products/icons-tudor-corner-model-for-adults-10350-building-kit-3266-pieces
 10350,mybrickhouse,2026-09-10T11:10:46+00:00,24499.0,,1,https://lego.mybrickhouse.com/products/icons-tudor-corner-model-for-adults-10350-building-kit-3266-pieces
 10350,mybrickhouse,2026-09-10T11:34:31+00:00,24499.0,,1,https://lego.mybrickhouse.com/products/icons-tudor-corner-model-for-adults-10350-building-kit-3266-pieces
@@ -514,6 +520,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10455,mybrickhouse,2026-09-12T10:49:00+00:00,6999.0,,1,https://lego.mybrickhouse.com/products/duplo-disney-anna-and-elsas-frozen-castle-party-10455-building-kit-54-pieces
 10455,mybrickhouse,2026-09-12T10:54:29+00:00,6999.0,,1,https://lego.mybrickhouse.com/products/duplo-disney-anna-and-elsas-frozen-castle-party-10455-building-kit-54-pieces
 10455,mybrickhouse,2026-09-12T11:04:28+00:00,6999.0,,1,https://lego.mybrickhouse.com/products/duplo-disney-anna-and-elsas-frozen-castle-party-10455-building-kit-54-pieces
+10455,toycra,2026-09-15T07:01:18+00:00,6999.0,,1,https://toycra.com/products/lego-10455-duplo-anna-and-elsas-frozen-castle-party-54-pieces
 10456,mybrickhouse,2026-09-10T09:18:14+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/duplo-disney-mcqueens-visit-to-docs-garage-10456-building-kit-35-pieces
 10456,mybrickhouse,2026-09-10T11:10:46+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/duplo-disney-mcqueens-visit-to-docs-garage-10456-building-kit-35-pieces
 10456,mybrickhouse,2026-09-10T11:34:31+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/duplo-disney-mcqueens-visit-to-docs-garage-10456-building-kit-35-pieces
@@ -675,6 +682,8 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10713,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/classic-creative-suitcase-10713-building-kit-213-piece
 10713,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/classic-creative-suitcase-10713-building-kit-213-piece
 10713,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/classic-creative-suitcase-10713-building-kit-213-piece
+10713,toycra,2026-09-15T06:58:53+00:00,2499.0,,1,https://toycra.com/products/lego-10713-classic-creative-suitcase-213-pieces
+10913,jaimantoys,2026-09-15T06:55:23+00:00,2834.0,3499.0,0,https://jaimantoys.com/products/lego-duplo-10913-classic-brick-box-65-piece-building-set-for-toddlers-ages-1-5
 10913,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/brick-box-10913-building-kit-65-pieces
 10913,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/brick-box-10913-building-kit-65-pieces
 10913,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/brick-box-10913-building-kit-65-pieces
@@ -682,6 +691,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10913,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/brick-box-10913-building-kit-65-pieces
 10913,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/brick-box-10913-building-kit-65-pieces
 10913,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/brick-box-10913-building-kit-65-pieces
+10913,toycra,2026-09-15T06:55:23+00:00,3199.0,,1,https://toycra.com/products/lego-10913-duplo-brick-box
 10914,mybrickhouse,2026-09-10T09:18:14+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/deluxe-brick-box-10914-building-kit-85-pieces
 10914,mybrickhouse,2026-09-10T11:10:46+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/deluxe-brick-box-10914-building-kit-85-pieces
 10914,mybrickhouse,2026-09-10T11:34:31+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/deluxe-brick-box-10914-building-kit-85-pieces
@@ -724,6 +734,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11023,mybrickhouse,2026-09-12T10:49:00+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-green-baseplate-11023-building-kit-for-kids-1-piece
 11023,mybrickhouse,2026-09-12T10:54:29+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-green-baseplate-11023-building-kit-for-kids-1-piece
 11023,mybrickhouse,2026-09-12T11:04:28+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-green-baseplate-11023-building-kit-for-kids-1-piece
+11023,toycra,2026-09-15T06:59:02+00:00,999.0,,1,https://toycra.com/products/lego-11023-classic-green-baseplate
 11024,mybrickhouse,2026-09-10T09:18:14+00:00,1599.0,,1,https://lego.mybrickhouse.com/products/classic-grey-baseplate-11024-building-kit-for-kids-1-piece
 11024,mybrickhouse,2026-09-10T11:10:46+00:00,1599.0,,1,https://lego.mybrickhouse.com/products/classic-grey-baseplate-11024-building-kit-for-kids-1-piece
 11024,mybrickhouse,2026-09-10T11:34:31+00:00,1599.0,,1,https://lego.mybrickhouse.com/products/classic-grey-baseplate-11024-building-kit-for-kids-1-piece
@@ -731,6 +742,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11024,mybrickhouse,2026-09-12T10:49:00+00:00,1599.0,,1,https://lego.mybrickhouse.com/products/classic-grey-baseplate-11024-building-kit-for-kids-1-piece
 11024,mybrickhouse,2026-09-12T10:54:29+00:00,1599.0,,1,https://lego.mybrickhouse.com/products/classic-grey-baseplate-11024-building-kit-for-kids-1-piece
 11024,mybrickhouse,2026-09-12T11:04:28+00:00,1599.0,,1,https://lego.mybrickhouse.com/products/classic-grey-baseplate-11024-building-kit-for-kids-1-piece
+11024,toycra,2026-09-15T06:59:05+00:00,1799.0,,1,https://toycra.com/products/lego-11024-classic-gray-baseplate
 11025,mybrickhouse,2026-09-10T09:18:14+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-blue-baseplate-11025-building-kit-for-kids-1-piece
 11025,mybrickhouse,2026-09-10T11:10:46+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-blue-baseplate-11025-building-kit-for-kids-1-piece
 11025,mybrickhouse,2026-09-10T11:34:31+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-blue-baseplate-11025-building-kit-for-kids-1-piece
@@ -738,6 +750,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11025,mybrickhouse,2026-09-12T10:49:00+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-blue-baseplate-11025-building-kit-for-kids-1-piece
 11025,mybrickhouse,2026-09-12T10:54:29+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-blue-baseplate-11025-building-kit-for-kids-1-piece
 11025,mybrickhouse,2026-09-12T11:04:28+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-blue-baseplate-11025-building-kit-for-kids-1-piece
+11025,toycra,2026-09-15T06:58:23+00:00,899.0,999.0,1,https://toycra.com/products/lego-11025-classic-blue-baseplate
 11026,mybrickhouse,2026-09-10T09:18:14+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-white-baseplate-11026-building-kit-for-kids-1-piece
 11026,mybrickhouse,2026-09-10T11:10:46+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-white-baseplate-11026-building-kit-for-kids-1-piece
 11026,mybrickhouse,2026-09-10T11:34:31+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-white-baseplate-11026-building-kit-for-kids-1-piece
@@ -745,6 +758,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11026,mybrickhouse,2026-09-12T10:49:00+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-white-baseplate-11026-building-kit-for-kids-1-piece
 11026,mybrickhouse,2026-09-12T10:54:29+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-white-baseplate-11026-building-kit-for-kids-1-piece
 11026,mybrickhouse,2026-09-12T11:04:28+00:00,899.0,,1,https://lego.mybrickhouse.com/products/classic-white-baseplate-11026-building-kit-for-kids-1-piece
+11026,toycra,2026-09-15T06:59:12+00:00,999.0,,1,https://toycra.com/products/lego-11026-classic-white-baseplate
 11034,mybrickhouse,2026-09-10T09:18:14+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-pets-buildable-animal-toy-11034-building-kit-450-pieces
 11034,mybrickhouse,2026-09-10T11:10:46+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-pets-buildable-animal-toy-11034-building-kit-450-pieces
 11034,mybrickhouse,2026-09-10T11:34:31+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-pets-buildable-animal-toy-11034-building-kit-450-pieces
@@ -752,6 +766,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11034,mybrickhouse,2026-09-12T10:49:00+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-pets-buildable-animal-toy-11034-building-kit-450-pieces
 11034,mybrickhouse,2026-09-12T10:54:29+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-pets-buildable-animal-toy-11034-building-kit-450-pieces
 11034,mybrickhouse,2026-09-12T11:04:28+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-pets-buildable-animal-toy-11034-building-kit-450-pieces
+11034,toycra,2026-09-15T06:58:46+00:00,3999.0,,1,https://toycra.com/products/lego-11034-creative-pets-450-pieces
 11036,mybrickhouse,2026-09-10T09:18:14+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/classic-creative-vehicles-building-toy-11036-building-kit-900-pieces
 11036,mybrickhouse,2026-09-10T11:10:46+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/classic-creative-vehicles-building-toy-11036-building-kit-900-pieces
 11036,mybrickhouse,2026-09-10T11:34:31+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/classic-creative-vehicles-building-toy-11036-building-kit-900-pieces
@@ -759,6 +774,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11036,mybrickhouse,2026-09-12T10:49:00+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/classic-creative-vehicles-building-toy-11036-building-kit-900-pieces
 11036,mybrickhouse,2026-09-12T10:54:29+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/classic-creative-vehicles-building-toy-11036-building-kit-900-pieces
 11036,mybrickhouse,2026-09-12T11:04:28+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/classic-creative-vehicles-building-toy-11036-building-kit-900-pieces
+11036,toycra,2026-09-15T06:58:57+00:00,4999.0,,1,https://toycra.com/products/lego-11036-classic-creative-vehicles-900-pieces
 11037,mybrickhouse,2026-09-10T09:18:14+00:00,2060.0,2749.0,0,https://lego.mybrickhouse.com/products/classic-creative-space-planets-kit-11037-building-kit-450-pieces
 11037,mybrickhouse,2026-09-10T11:10:46+00:00,2060.0,2749.0,0,https://lego.mybrickhouse.com/products/classic-creative-space-planets-kit-11037-building-kit-450-pieces
 11037,mybrickhouse,2026-09-10T11:34:31+00:00,2060.0,2749.0,0,https://lego.mybrickhouse.com/products/classic-creative-space-planets-kit-11037-building-kit-450-pieces
@@ -766,6 +782,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11037,mybrickhouse,2026-09-12T10:49:00+00:00,2060.0,2749.0,0,https://lego.mybrickhouse.com/products/classic-creative-space-planets-kit-11037-building-kit-450-pieces
 11037,mybrickhouse,2026-09-12T10:54:29+00:00,2060.0,2749.0,0,https://lego.mybrickhouse.com/products/classic-creative-space-planets-kit-11037-building-kit-450-pieces
 11037,mybrickhouse,2026-09-12T11:04:28+00:00,2060.0,2749.0,0,https://lego.mybrickhouse.com/products/classic-creative-space-planets-kit-11037-building-kit-450-pieces
+11037,toycra,2026-09-15T06:58:49+00:00,2999.0,,0,https://toycra.com/products/lego-11037-classic-creative-space-planets-450-pieces
 11039,mybrickhouse,2026-09-10T09:18:14+00:00,899.0,,0,https://lego.mybrickhouse.com/products/classic-creative-food-friends-imaginative-pretend-play-toy-11039-building-kit-150-pieces
 11039,mybrickhouse,2026-09-10T11:10:46+00:00,899.0,,0,https://lego.mybrickhouse.com/products/classic-creative-food-friends-imaginative-pretend-play-toy-11039-building-kit-150-pieces
 11039,mybrickhouse,2026-09-10T11:34:31+00:00,899.0,,0,https://lego.mybrickhouse.com/products/classic-creative-food-friends-imaginative-pretend-play-toy-11039-building-kit-150-pieces
@@ -773,6 +790,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11039,mybrickhouse,2026-09-12T10:49:00+00:00,899.0,,0,https://lego.mybrickhouse.com/products/classic-creative-food-friends-imaginative-pretend-play-toy-11039-building-kit-150-pieces
 11039,mybrickhouse,2026-09-12T10:54:29+00:00,899.0,,0,https://lego.mybrickhouse.com/products/classic-creative-food-friends-imaginative-pretend-play-toy-11039-building-kit-150-pieces
 11039,mybrickhouse,2026-09-12T11:04:28+00:00,899.0,,0,https://lego.mybrickhouse.com/products/classic-creative-food-friends-imaginative-pretend-play-toy-11039-building-kit-150-pieces
+11039,toycra,2026-09-15T06:58:38+00:00,999.0,,1,https://toycra.com/products/lego-11039-classic-creative-food-friends-150-pieces
 11040,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/classic-magical-transparent-box-colourful-building-bricks-toy-11040-building-kit-340-pieces
 11040,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/classic-magical-transparent-box-colourful-building-bricks-toy-11040-building-kit-340-pieces
 11040,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/classic-magical-transparent-box-colourful-building-bricks-toy-11040-building-kit-340-pieces
@@ -780,6 +798,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11040,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/classic-magical-transparent-box-colourful-building-bricks-toy-11040-building-kit-340-pieces
 11040,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/classic-magical-transparent-box-colourful-building-bricks-toy-11040-building-kit-340-pieces
 11040,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/classic-magical-transparent-box-colourful-building-bricks-toy-11040-building-kit-340-pieces
+11040,toycra,2026-09-15T06:59:09+00:00,2290.0,,0,https://toycra.com/products/lego-11040-classic-magical-transparent-box-340-pieces
 11041,mybrickhouse,2026-09-10T09:18:14+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-dinosaurs-imaginative-toy-models-11041-building-kit-450-pieces
 11041,mybrickhouse,2026-09-10T11:10:46+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-dinosaurs-imaginative-toy-models-11041-building-kit-450-pieces
 11041,mybrickhouse,2026-09-10T11:34:31+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-dinosaurs-imaginative-toy-models-11041-building-kit-450-pieces
@@ -787,6 +806,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11041,mybrickhouse,2026-09-12T10:49:00+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-dinosaurs-imaginative-toy-models-11041-building-kit-450-pieces
 11041,mybrickhouse,2026-09-12T10:54:29+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-dinosaurs-imaginative-toy-models-11041-building-kit-450-pieces
 11041,mybrickhouse,2026-09-12T11:04:28+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/classic-creative-dinosaurs-imaginative-toy-models-11041-building-kit-450-pieces
+11041,toycra,2026-09-15T06:58:34+00:00,3999.0,,0,https://toycra.com/products/lego-11041-classic-creative-dinosaurs-450-pieces
 11042,mybrickhouse,2026-09-10T09:18:14+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/classic-creative-happy-box-colourful-building-bricks-toy-11042-building-kit-680-pieces
 11042,mybrickhouse,2026-09-10T11:10:46+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/classic-creative-happy-box-colourful-building-bricks-toy-11042-building-kit-680-pieces
 11042,mybrickhouse,2026-09-10T11:34:31+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/classic-creative-happy-box-colourful-building-bricks-toy-11042-building-kit-680-pieces
@@ -794,6 +814,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11042,mybrickhouse,2026-09-12T10:49:00+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/classic-creative-happy-box-colourful-building-bricks-toy-11042-building-kit-680-pieces
 11042,mybrickhouse,2026-09-12T10:54:29+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/classic-creative-happy-box-colourful-building-bricks-toy-11042-building-kit-680-pieces
 11042,mybrickhouse,2026-09-12T11:04:28+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/classic-creative-happy-box-colourful-building-bricks-toy-11042-building-kit-680-pieces
+11042,toycra,2026-09-15T06:58:42+00:00,4499.0,,0,https://toycra.com/products/lego-11042-classic-creative-happy-box-680-pieces
 11043,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/classic-cool-creative-box-colourful-building-bricks-toy-11043-building-kit-510-pieces
 11043,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/classic-cool-creative-box-colourful-building-bricks-toy-11043-building-kit-510-pieces
 11043,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/classic-cool-creative-box-colourful-building-bricks-toy-11043-building-kit-510-pieces
@@ -801,6 +822,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11043,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/classic-cool-creative-box-colourful-building-bricks-toy-11043-building-kit-510-pieces
 11043,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/classic-cool-creative-box-colourful-building-bricks-toy-11043-building-kit-510-pieces
 11043,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/classic-cool-creative-box-colourful-building-bricks-toy-11043-building-kit-510-pieces
+11043,toycra,2026-09-15T06:58:27+00:00,3499.0,,0,https://toycra.com/products/lego-11043-classic-cool-creative-box-510-pieces
 11044,mybrickhouse,2026-09-10T09:18:14+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/classic-creative-build-and-play-box-colourful-building-bricks-toy-11044-building-kit-750-pieces
 11044,mybrickhouse,2026-09-10T11:10:46+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/classic-creative-build-and-play-box-colourful-building-bricks-toy-11044-building-kit-750-pieces
 11044,mybrickhouse,2026-09-10T11:34:31+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/classic-creative-build-and-play-box-colourful-building-bricks-toy-11044-building-kit-750-pieces
@@ -808,6 +830,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11044,mybrickhouse,2026-09-12T10:49:00+00:00,5449.0,,0,https://lego.mybrickhouse.com/products/classic-creative-build-and-play-box-colourful-building-bricks-toy-11044-building-kit-750-pieces
 11044,mybrickhouse,2026-09-12T10:54:29+00:00,5449.0,,0,https://lego.mybrickhouse.com/products/classic-creative-build-and-play-box-colourful-building-bricks-toy-11044-building-kit-750-pieces
 11044,mybrickhouse,2026-09-12T11:04:28+00:00,5449.0,,0,https://lego.mybrickhouse.com/products/classic-creative-build-and-play-box-colourful-building-bricks-toy-11044-building-kit-750-pieces
+11044,toycra,2026-09-15T06:58:30+00:00,5999.0,,1,https://toycra.com/products/lego-11044-classic-creative-build-and-play-box-750-pieces
 11045,mybrickhouse,2026-09-10T09:18:14+00:00,5499.0,,1,https://lego.mybrickhouse.com/products/lego-r-classic-creative-colorful-bricks-building-toy-11045
 11045,mybrickhouse,2026-09-10T11:10:46+00:00,5499.0,,1,https://lego.mybrickhouse.com/products/lego-r-classic-creative-colorful-bricks-building-toy-11045
 11045,mybrickhouse,2026-09-10T11:34:31+00:00,5499.0,,1,https://lego.mybrickhouse.com/products/lego-r-classic-creative-colorful-bricks-building-toy-11045
@@ -1535,6 +1558,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 21598,mybrickhouse,2026-09-12T10:49:00+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-minecraft-r-underwater-adventure-toy-building-set-21598
 21598,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-minecraft-r-underwater-adventure-toy-building-set-21598
 21598,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-minecraft-r-underwater-adventure-toy-building-set-21598
+30665,jaimantoys,2026-09-15T06:54:56+00:00,425.0,449.0,1,https://jaimantoys.com/products/lego-30675-ninjago-tournament-training-ground-building-set-polybag-copy
 30665,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,0,https://lego.mybrickhouse.com/products/baby-gorilla-encounter-30665-building-kit-34-pieces
 30665,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,0,https://lego.mybrickhouse.com/products/baby-gorilla-encounter-30665-building-kit-34-pieces
 30665,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,0,https://lego.mybrickhouse.com/products/baby-gorilla-encounter-30665-building-kit-34-pieces
@@ -1542,6 +1566,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30665,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,0,https://lego.mybrickhouse.com/products/baby-gorilla-encounter-30665-building-kit-34-pieces
 30665,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,0,https://lego.mybrickhouse.com/products/baby-gorilla-encounter-30665-building-kit-34-pieces
 30665,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,0,https://lego.mybrickhouse.com/products/baby-gorilla-encounter-30665-building-kit-34-pieces
+30665,toycra,2026-09-15T06:54:56+00:00,449.0,,0,https://toycra.com/products/lego-30665-recruitment-bags-baby-gorilla-encounter-34-pieces
 30670,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,0,https://lego.mybrickhouse.com/products/santas-sleigh-ride-30670-building-kit-73-pieces
 30670,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,0,https://lego.mybrickhouse.com/products/santas-sleigh-ride-30670-building-kit-73-pieces
 30670,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,0,https://lego.mybrickhouse.com/products/santas-sleigh-ride-30670-building-kit-73-pieces
@@ -1570,6 +1595,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30692,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,0,https://lego.mybrickhouse.com/products/creator-christmas-chimney-fun-with-santa-30692-building-kit-60-pieces
 30692,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,0,https://lego.mybrickhouse.com/products/creator-christmas-chimney-fun-with-santa-30692-building-kit-60-pieces
 30692,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,0,https://lego.mybrickhouse.com/products/creator-christmas-chimney-fun-with-santa-30692-building-kit-60-pieces
+30692,toycra,2026-09-15T07:00:07+00:00,399.0,,1,https://toycra.com/products/lego-30692-polybags-christmas-chimney-fun-with-santa-60-pieces
 30700,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/ninjago-arin-vs-dragonian-battle-30700-building-kit-48-pieces
 30700,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/ninjago-arin-vs-dragonian-battle-30700-building-kit-48-pieces
 30700,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/ninjago-arin-vs-dragonian-battle-30700-building-kit-48-pieces
@@ -1599,6 +1625,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30712,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,0,https://lego.mybrickhouse.com/products/30712-celebration-cake
 30712,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,0,https://lego.mybrickhouse.com/products/30712-celebration-cake
 30712,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,0,https://lego.mybrickhouse.com/products/30712-celebration-cake
+30712,toycra,2026-09-15T06:55:58+00:00,399.0,,1,https://toycra.com/products/lego-30712-recruitment-bags-celebration-cake-9-pieces
 30713,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/fancy-restaurant-with-bingo
 30713,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/fancy-restaurant-with-bingo
 30713,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/fancy-restaurant-with-bingo
@@ -1620,6 +1647,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30715,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30715-cute-animal-birthday-party
 30715,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30715-cute-animal-birthday-party
 30715,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30715-cute-animal-birthday-party
+30715,toycra,2026-09-15T07:01:01+00:00,399.0,,0,https://toycra.com/products/lego-30715-recruitment-bags-cute-animal-birthday-party-64-pieces
 30716,amazon_in,2026-09-10T11:05:32+00:00,440.0,799.0,1,https://www.amazon.in/dp/B0GP4M9R6R
 30716,amazon_in,2026-09-10T11:13:07+00:00,440.0,799.0,1,https://www.amazon.in/dp/B0GP4M9R6R
 30716,firstcry,2026-09-10T11:05:32+00:00,371.07,399.0,1,https://www.firstcry.com/lego/lego-cute-easter-bunny-v29-set-30716-66-pieces-set/22491944/product-detail
@@ -1645,6 +1673,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30718,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,1,https://lego.mybrickhouse.com/products/cataclaws-snow-adventure
 30718,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,1,https://lego.mybrickhouse.com/products/cataclaws-snow-adventure
 30718,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,1,https://lego.mybrickhouse.com/products/cataclaws-snow-adventure
+30718,toycra,2026-09-15T06:55:55+00:00,399.0,,1,https://toycra.com/products/lego-30718-recruitment-bags-cataclaws-snow-adventure-70-pieces
 30719,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/lego-30719-recruitment-bags-go-kart-racer-48-pieces
 30719,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/lego-30719-recruitment-bags-go-kart-racer-48-pieces
 30719,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/lego-30719-recruitment-bags-go-kart-racer-48-pieces
@@ -1693,6 +1722,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30723,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30723-ninja-coles-car-v29
 30723,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30723-ninja-coles-car-v29
 30723,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30723-ninja-coles-car-v29
+30724,jaimantoys,2026-09-15T06:54:08+00:00,399.0,,1,https://jaimantoys.com/products/lego-harry-potter-30724-dumbledore-s-office-with-harry-potter-minifigure-42-pieces-building-set
 30724,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30724-dumbledores-office-with-har
 30724,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30724-dumbledores-office-with-har
 30724,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30724-dumbledores-office-with-har
@@ -1700,6 +1730,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30724,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30724-dumbledores-office-with-har
 30724,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30724-dumbledores-office-with-har
 30724,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30724-dumbledores-office-with-har
+30724,toycra,2026-09-15T06:54:08+00:00,399.0,,0,https://toycra.com/products/lego-30724-recruitment-bags-dumbledores-office-with-harry-potter-42-pieces
 30725,jaimantoys,2026-09-10T11:19:12+00:00,399.0,,1,https://jaimantoys.com/products/lego-30725-marvel-spider-man-vs-anti-venom-heist-building-set-31-pieces-superhero-toy
 30725,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30725-spider-man-vs-anti-venom-he
 30725,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30725-spider-man-vs-anti-venom-he
@@ -1727,6 +1758,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30727,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,0,https://lego.mybrickhouse.com/products/lego-30727-recruitment-bags-tie-advance-mini-build-68-pieces
 30727,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,0,https://lego.mybrickhouse.com/products/lego-30727-recruitment-bags-tie-advance-mini-build-68-pieces
 30727,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,0,https://lego.mybrickhouse.com/products/lego-30727-recruitment-bags-tie-advance-mini-build-68-pieces
+30732,jaimantoys,2026-09-15T06:54:14+00:00,399.0,,1,https://jaimantoys.com/products/lego-30732-minecraft-alex-s-campfire-conflict-building-set-31-pieces-adventure-toy
 30732,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30732-alexs-campfire-conflict-v29
 30732,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30732-alexs-campfire-conflict-v29
 30732,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30732-alexs-campfire-conflict-v29
@@ -1734,6 +1766,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30732,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30732-alexs-campfire-conflict-v29
 30732,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30732-alexs-campfire-conflict-v29
 30732,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30732-alexs-campfire-conflict-v29
+30732,toycra,2026-09-15T06:54:14+00:00,399.0,,1,https://toycra.com/products/lego-30732-recruitment-bags-alexs-campfire-conflict-31-pieces
 30734,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/mini-f1-academy-car
 30734,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/mini-f1-academy-car
 30734,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/mini-f1-academy-car
@@ -1762,6 +1795,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31134,mybrickhouse,2026-09-12T10:49:00+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/creator-space-shuttle-31134-building-toy-set-144-pieces
 31134,mybrickhouse,2026-09-12T10:54:29+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/creator-space-shuttle-31134-building-toy-set-144-pieces
 31134,mybrickhouse,2026-09-12T11:04:28+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/creator-space-shuttle-31134-building-toy-set-144-pieces
+31134,toycra,2026-09-15T07:00:48+00:00,1099.0,1199.0,0,https://toycra.com/products/lego-31134-creator-space-shuttle
 31137,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-adorable-dogs-31137-building-toy-set-475-pieces
 31137,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-adorable-dogs-31137-building-toy-set-475-pieces
 31137,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-adorable-dogs-31137-building-toy-set-475-pieces
@@ -1769,6 +1803,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31137,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-adorable-dogs-31137-building-toy-set-475-pieces
 31137,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-adorable-dogs-31137-building-toy-set-475-pieces
 31137,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-adorable-dogs-31137-building-toy-set-475-pieces
+31137,toycra,2026-09-15T07:00:01+00:00,3499.0,,0,https://toycra.com/products/lego-31137-creator-adorable-dogs
 31140,mybrickhouse,2026-09-10T09:18:14+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/creator-magical-unicorn-31140-building-toy-set-145-pieces
 31140,mybrickhouse,2026-09-10T11:10:46+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/creator-magical-unicorn-31140-building-toy-set-145-pieces
 31140,mybrickhouse,2026-09-10T11:34:31+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/creator-magical-unicorn-31140-building-toy-set-145-pieces
@@ -1776,6 +1811,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31140,mybrickhouse,2026-09-12T10:49:00+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/creator-magical-unicorn-31140-building-toy-set-145-pieces
 31140,mybrickhouse,2026-09-12T10:54:29+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/creator-magical-unicorn-31140-building-toy-set-145-pieces
 31140,mybrickhouse,2026-09-12T11:04:28+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/creator-magical-unicorn-31140-building-toy-set-145-pieces
+31140,toycra,2026-09-15T07:00:28+00:00,1199.0,,1,https://toycra.com/products/lego-31140-creator-magical-unicorn
 31145,mybrickhouse,2026-09-10T09:18:14+00:00,899.0,,1,https://lego.mybrickhouse.com/products/creator-red-dragon-3in1-animal-toy-set-31145-building-kit-149-pieces
 31145,mybrickhouse,2026-09-10T11:10:46+00:00,899.0,,1,https://lego.mybrickhouse.com/products/creator-red-dragon-3in1-animal-toy-set-31145-building-kit-149-pieces
 31145,mybrickhouse,2026-09-10T11:34:31+00:00,899.0,,1,https://lego.mybrickhouse.com/products/creator-red-dragon-3in1-animal-toy-set-31145-building-kit-149-pieces
@@ -1783,6 +1819,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31145,mybrickhouse,2026-09-12T10:49:00+00:00,899.0,,1,https://lego.mybrickhouse.com/products/creator-red-dragon-3in1-animal-toy-set-31145-building-kit-149-pieces
 31145,mybrickhouse,2026-09-12T10:54:29+00:00,899.0,,1,https://lego.mybrickhouse.com/products/creator-red-dragon-3in1-animal-toy-set-31145-building-kit-149-pieces
 31145,mybrickhouse,2026-09-12T11:04:28+00:00,899.0,,1,https://lego.mybrickhouse.com/products/creator-red-dragon-3in1-animal-toy-set-31145-building-kit-149-pieces
+31145,toycra,2026-09-15T07:00:31+00:00,999.0,,0,https://toycra.com/products/lego-31145-creator-3-in-1-red-dragon-149-pieces
 31146,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/creator-flatbed-truck-with-helicopter-toy-31146-building-kit-270-pieces
 31146,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/creator-flatbed-truck-with-helicopter-toy-31146-building-kit-270-pieces
 31146,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/creator-flatbed-truck-with-helicopter-toy-31146-building-kit-270-pieces
@@ -1790,6 +1827,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31146,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/creator-flatbed-truck-with-helicopter-toy-31146-building-kit-270-pieces
 31146,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/creator-flatbed-truck-with-helicopter-toy-31146-building-kit-270-pieces
 31146,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/creator-flatbed-truck-with-helicopter-toy-31146-building-kit-270-pieces
+31146,toycra,2026-09-15T07:00:11+00:00,2290.0,,0,https://toycra.com/products/lego-31146-creator-3-in-1-flatbed-truck-with-helicopter-270-pieces
 31147,mybrickhouse,2026-09-10T09:18:14+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/creator-retro-camera-3in1-toy-31147-building-kit-261-pieces
 31147,mybrickhouse,2026-09-10T11:10:46+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/creator-retro-camera-3in1-toy-31147-building-kit-261-pieces
 31147,mybrickhouse,2026-09-10T11:34:31+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/creator-retro-camera-3in1-toy-31147-building-kit-261-pieces
@@ -1797,6 +1835,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31147,mybrickhouse,2026-09-12T10:49:00+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/creator-retro-camera-3in1-toy-31147-building-kit-261-pieces
 31147,mybrickhouse,2026-09-12T10:54:29+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/creator-retro-camera-3in1-toy-31147-building-kit-261-pieces
 31147,mybrickhouse,2026-09-12T11:04:28+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/creator-retro-camera-3in1-toy-31147-building-kit-261-pieces
+31147,toycra,2026-09-15T07:00:35+00:00,1799.0,,1,https://toycra.com/products/lego-31147-creator-3-in-1-retro-camera-261-pieces
 31148,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-retro-roller-skate-3in1-toy-31148-building-kit-342-pieces
 31148,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-retro-roller-skate-3in1-toy-31148-building-kit-342-pieces
 31148,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-retro-roller-skate-3in1-toy-31148-building-kit-342-pieces
@@ -1804,6 +1843,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31148,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-retro-roller-skate-3in1-toy-31148-building-kit-342-pieces
 31148,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-retro-roller-skate-3in1-toy-31148-building-kit-342-pieces
 31148,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-retro-roller-skate-3in1-toy-31148-building-kit-342-pieces
+31148,toycra,2026-09-15T07:00:40+00:00,3499.0,,1,https://toycra.com/products/lego-31148-creator-3-in-1-retro-roller-skate-342-pieces
 31149,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-flowers-in-watering-can-3in1-toy-31149-building-kit-420-pieces
 31149,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-flowers-in-watering-can-3in1-toy-31149-building-kit-420-pieces
 31149,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-flowers-in-watering-can-3in1-toy-31149-building-kit-420-pieces
@@ -1811,6 +1851,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31149,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-flowers-in-watering-can-3in1-toy-31149-building-kit-420-pieces
 31149,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-flowers-in-watering-can-3in1-toy-31149-building-kit-420-pieces
 31149,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-flowers-in-watering-can-3in1-toy-31149-building-kit-420-pieces
+31149,toycra,2026-09-15T07:00:15+00:00,3499.0,,1,https://toycra.com/products/lego-31149-creator-3-in-1-flowers-in-watering-can-420-pieces
 31150,mybrickhouse,2026-09-10T09:18:14+00:00,5949.0,,0,https://lego.mybrickhouse.com/products/creator-wild-safari-animals-3in1-set-31150-building-kit-780-pieces
 31150,mybrickhouse,2026-09-10T11:10:46+00:00,5949.0,,0,https://lego.mybrickhouse.com/products/creator-wild-safari-animals-3in1-set-31150-building-kit-780-pieces
 31150,mybrickhouse,2026-09-10T11:34:31+00:00,5949.0,,0,https://lego.mybrickhouse.com/products/creator-wild-safari-animals-3in1-set-31150-building-kit-780-pieces
@@ -1818,6 +1859,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31150,mybrickhouse,2026-09-12T10:49:00+00:00,5949.0,,0,https://lego.mybrickhouse.com/products/creator-wild-safari-animals-3in1-set-31150-building-kit-780-pieces
 31150,mybrickhouse,2026-09-12T10:54:29+00:00,5949.0,,0,https://lego.mybrickhouse.com/products/creator-wild-safari-animals-3in1-set-31150-building-kit-780-pieces
 31150,mybrickhouse,2026-09-12T11:04:28+00:00,5949.0,,0,https://lego.mybrickhouse.com/products/creator-wild-safari-animals-3in1-set-31150-building-kit-780-pieces
+31150,toycra,2026-09-15T07:00:56+00:00,6499.0,,0,https://toycra.com/products/lego-31150-creator-3-in-1-wild-safari-animals-780-pieces
 31151,mybrickhouse,2026-09-10T09:18:14+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-t-rex-dinosaur-toy-for-kids-31151-building-kit-626-pieces
 31151,mybrickhouse,2026-09-10T11:10:46+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-t-rex-dinosaur-toy-for-kids-31151-building-kit-626-pieces
 31151,mybrickhouse,2026-09-10T11:34:31+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-t-rex-dinosaur-toy-for-kids-31151-building-kit-626-pieces
@@ -1825,6 +1867,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31151,mybrickhouse,2026-09-12T10:49:00+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-t-rex-dinosaur-toy-for-kids-31151-building-kit-626-pieces
 31151,mybrickhouse,2026-09-12T10:54:29+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-t-rex-dinosaur-toy-for-kids-31151-building-kit-626-pieces
 31151,mybrickhouse,2026-09-12T11:04:28+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-t-rex-dinosaur-toy-for-kids-31151-building-kit-626-pieces
+31151,toycra,2026-09-15T06:59:42+00:00,6999.0,,1,https://toycra.com/products/lego-31151-creator-t-rex-626-pieces
 31152,mybrickhouse,2026-09-10T09:18:14+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-space-astronaut-3in1-toy-set-31152-building-kit-647-pieces
 31152,mybrickhouse,2026-09-10T11:10:46+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-space-astronaut-3in1-toy-set-31152-building-kit-647-pieces
 31152,mybrickhouse,2026-09-10T11:34:31+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-space-astronaut-3in1-toy-set-31152-building-kit-647-pieces
@@ -1832,6 +1875,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31152,mybrickhouse,2026-09-12T10:49:00+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-space-astronaut-3in1-toy-set-31152-building-kit-647-pieces
 31152,mybrickhouse,2026-09-12T10:54:29+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-space-astronaut-3in1-toy-set-31152-building-kit-647-pieces
 31152,mybrickhouse,2026-09-12T11:04:28+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-space-astronaut-3in1-toy-set-31152-building-kit-647-pieces
+31152,toycra,2026-09-15T07:00:44+00:00,4999.0,,0,https://toycra.com/products/lego-31152-creator-3-in-1-space-astronaut-647-pieces
 31155,mybrickhouse,2026-09-10T09:18:14+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/creator-hamster-wheel-3in1-animal-toy-set-31155-building-kit-416-pieces
 31155,mybrickhouse,2026-09-10T11:10:46+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/creator-hamster-wheel-3in1-animal-toy-set-31155-building-kit-416-pieces
 31155,mybrickhouse,2026-09-10T11:34:31+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/creator-hamster-wheel-3in1-animal-toy-set-31155-building-kit-416-pieces
@@ -1839,6 +1883,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31155,mybrickhouse,2026-09-12T10:49:00+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/creator-hamster-wheel-3in1-animal-toy-set-31155-building-kit-416-pieces
 31155,mybrickhouse,2026-09-12T10:54:29+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/creator-hamster-wheel-3in1-animal-toy-set-31155-building-kit-416-pieces
 31155,mybrickhouse,2026-09-12T11:04:28+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/creator-hamster-wheel-3in1-animal-toy-set-31155-building-kit-416-pieces
+31155,toycra,2026-09-15T07:00:20+00:00,3499.0,,0,https://toycra.com/products/lego-31155-creator-3-in-1-hamster-wheel-416-pieces
 31156,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-tropical-ukulele-3in1-toy-set-31156-building-kit-387-pieces
 31156,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-tropical-ukulele-3in1-toy-set-31156-building-kit-387-pieces
 31156,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-tropical-ukulele-3in1-toy-set-31156-building-kit-387-pieces
@@ -1846,6 +1891,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31156,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-tropical-ukulele-3in1-toy-set-31156-building-kit-387-pieces
 31156,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-tropical-ukulele-3in1-toy-set-31156-building-kit-387-pieces
 31156,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-tropical-ukulele-3in1-toy-set-31156-building-kit-387-pieces
+31156,toycra,2026-09-15T07:00:52+00:00,3499.0,,1,https://toycra.com/products/lego-31156-creator-3-in-1-tropical-ukulele-387-pieces
 31159,mybrickhouse,2026-09-10T09:18:14+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-surprising-spider-toy-playset-31159-building-kit-153-pieces
 31159,mybrickhouse,2026-09-10T11:10:46+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-surprising-spider-toy-playset-31159-building-kit-153-pieces
 31159,mybrickhouse,2026-09-10T11:34:31+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-surprising-spider-toy-playset-31159-building-kit-153-pieces
@@ -1853,6 +1899,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31159,mybrickhouse,2026-09-12T10:49:00+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-surprising-spider-toy-playset-31159-building-kit-153-pieces
 31159,mybrickhouse,2026-09-12T10:54:29+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-surprising-spider-toy-playset-31159-building-kit-153-pieces
 31159,mybrickhouse,2026-09-12T11:04:28+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-surprising-spider-toy-playset-31159-building-kit-153-pieces
+31159,toycra,2026-09-15T06:59:54+00:00,1499.0,,0,https://toycra.com/products/lego-31159-creator-wild-animals-surprising-spider-153-pieces
 31160,mybrickhouse,2026-09-10T09:18:14+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-aircraft-race-plane-toy-vehicle-playset-31160-building-kit-178-pieces
 31160,mybrickhouse,2026-09-10T11:10:46+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-aircraft-race-plane-toy-vehicle-playset-31160-building-kit-178-pieces
 31160,mybrickhouse,2026-09-10T11:34:31+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-aircraft-race-plane-toy-vehicle-playset-31160-building-kit-178-pieces
@@ -1860,6 +1907,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31160,mybrickhouse,2026-09-12T10:49:00+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-aircraft-race-plane-toy-vehicle-playset-31160-building-kit-178-pieces
 31160,mybrickhouse,2026-09-12T10:54:29+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-aircraft-race-plane-toy-vehicle-playset-31160-building-kit-178-pieces
 31160,mybrickhouse,2026-09-12T11:04:28+00:00,1349.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-aircraft-race-plane-toy-vehicle-playset-31160-building-kit-178-pieces
+31160,toycra,2026-09-15T06:59:16+00:00,1499.0,,0,https://toycra.com/products/lego-31160-creator-aircraft-race-plane-178-pieces
 31161,mybrickhouse,2026-09-10T09:18:14+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-medieval-dragon-creature-toy-playset-31161-building-kit-715-pieces
 31161,mybrickhouse,2026-09-10T11:10:46+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-medieval-dragon-creature-toy-playset-31161-building-kit-715-pieces
 31161,mybrickhouse,2026-09-10T11:34:31+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-medieval-dragon-creature-toy-playset-31161-building-kit-715-pieces
@@ -1867,6 +1915,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31161,mybrickhouse,2026-09-12T10:49:00+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-medieval-dragon-creature-toy-playset-31161-building-kit-715-pieces
 31161,mybrickhouse,2026-09-12T10:54:29+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-medieval-dragon-creature-toy-playset-31161-building-kit-715-pieces
 31161,mybrickhouse,2026-09-12T11:04:28+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-medieval-dragon-creature-toy-playset-31161-building-kit-715-pieces
+31161,toycra,2026-09-15T06:59:23+00:00,4999.0,6399.0,0,https://toycra.com/products/lego-31161-creator-medieval-dragon-715-pieces
 31163,mybrickhouse,2026-09-10T09:18:14+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-playful-cat-pet-toy-animal-playset-31163-building-kit-407-pieces
 31163,mybrickhouse,2026-09-10T11:10:46+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-playful-cat-pet-toy-animal-playset-31163-building-kit-407-pieces
 31163,mybrickhouse,2026-09-10T11:34:31+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-playful-cat-pet-toy-animal-playset-31163-building-kit-407-pieces
@@ -1874,6 +1923,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31163,mybrickhouse,2026-09-12T10:49:00+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-playful-cat-pet-toy-animal-playset-31163-building-kit-407-pieces
 31163,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-playful-cat-pet-toy-animal-playset-31163-building-kit-407-pieces
 31163,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-playful-cat-pet-toy-animal-playset-31163-building-kit-407-pieces
+31163,toycra,2026-09-15T06:59:30+00:00,2749.0,,1,https://toycra.com/products/lego-31163-creator-playful-cat-407-pieces
 31164,hamleys,2026-09-09T12:13:30+00:00,2849.0,2999.0,1,https://hamleys.in/product/lego-creator-3-in-1-space-robot-toy-science-playset-31164-building-blocks-toys-for-8y-13468942
 31164,hamleys,2026-09-09T12:15:07+00:00,2849.0,2999.0,1,https://hamleys.in/product/lego-creator-3-in-1-space-robot-toy-science-playset-31164-building-blocks-toys-for-8y-13468942
 31164,hamleys,2026-09-09T12:29:11+00:00,2849.0,2999.0,1,https://hamleys.in/product/lego-creator-3-in-1-space-robot-toy-science-playset-31164-building-blocks-toys-for-8y-13468942
@@ -1908,6 +1958,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31167,mybrickhouse,2026-09-12T10:49:00+00:00,10499.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-haunted-mansion-house-31167-building-kit-736-pieces
 31167,mybrickhouse,2026-09-12T10:54:29+00:00,10499.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-haunted-mansion-house-31167-building-kit-736-pieces
 31167,mybrickhouse,2026-09-12T11:04:28+00:00,10499.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-haunted-mansion-house-31167-building-kit-736-pieces
+31167,toycra,2026-09-15T06:59:19+00:00,11499.0,,1,https://toycra.com/products/lego-31167-creator-haunted-mansion-736-pieces
 31168,mybrickhouse,2026-09-10T09:18:14+00:00,13699.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-medieval-horse-knight-castle-31168-building-kit-1371-pieces
 31168,mybrickhouse,2026-09-10T11:10:46+00:00,13699.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-medieval-horse-knight-castle-31168-building-kit-1371-pieces
 31168,mybrickhouse,2026-09-10T11:34:31+00:00,13699.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-medieval-horse-knight-castle-31168-building-kit-1371-pieces
@@ -1915,6 +1966,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31168,mybrickhouse,2026-09-12T10:49:00+00:00,13699.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-medieval-horse-knight-castle-31168-building-kit-1371-pieces
 31168,mybrickhouse,2026-09-12T10:54:29+00:00,13699.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-medieval-horse-knight-castle-31168-building-kit-1371-pieces
 31168,mybrickhouse,2026-09-12T11:04:28+00:00,13699.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-medieval-horse-knight-castle-31168-building-kit-1371-pieces
+31168,toycra,2026-09-15T06:59:26+00:00,13699.0,14999.0,1,https://toycra.com/products/lego-31168-creator-medieval-horse-knight-castle-1371-pieces
 31169,hamleys,2026-09-09T12:13:30+00:00,3039.0,3199.0,1,https://hamleys.in/product/lego-creator-3-in-1-typewriter-with-flowers-toy-playset-31169-building-blocks-toys-for-8y-13468891
 31169,hamleys,2026-09-09T12:15:07+00:00,3039.0,3199.0,1,https://hamleys.in/product/lego-creator-3-in-1-typewriter-with-flowers-toy-playset-31169-building-blocks-toys-for-8y-13468891
 31169,hamleys,2026-09-09T12:29:11+00:00,3039.0,3199.0,1,https://hamleys.in/product/lego-creator-3-in-1-typewriter-with-flowers-toy-playset-31169-building-blocks-toys-for-8y-13468891
@@ -1933,6 +1985,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31170,mybrickhouse,2026-09-12T10:49:00+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-pink-flamingo-animal-toy-playset-31170-building-kit-288-pieces
 31170,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-pink-flamingo-animal-toy-playset-31170-building-kit-288-pieces
 31170,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-pink-flamingo-animal-toy-playset-31170-building-kit-288-pieces
+31170,toycra,2026-09-15T06:59:50+00:00,2999.0,,1,https://toycra.com/products/lego-31170-creator-3-in-1-wild-animals-pink-flamingo-288-pieces
 31171,mybrickhouse,2026-09-10T09:18:14+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/lego-r-creator-3in1-wild-animals-majestic-rhino-with-birds-toy-playset-31171
 31171,mybrickhouse,2026-09-10T11:10:46+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/lego-r-creator-3in1-wild-animals-majestic-rhino-with-birds-toy-playset-31171
 31171,mybrickhouse,2026-09-10T11:34:31+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/lego-r-creator-3in1-wild-animals-majestic-rhino-with-birds-toy-playset-31171
@@ -1947,6 +2000,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31172,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-record-player-with-flowers-music-set-31172-building-kit-366-pieces
 31172,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-record-player-with-flowers-music-set-31172-building-kit-366-pieces
 31172,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-record-player-with-flowers-music-set-31172-building-kit-366-pieces
+31172,toycra,2026-09-15T06:59:34+00:00,3499.0,,0,https://toycra.com/products/lego-31172-creator-record-player-with-flowers-366-pieces
 31173,mybrickhouse,2026-09-10T09:18:14+00:00,1799.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-tropical-toucan-figure-31173-building-kit-225-pieces
 31173,mybrickhouse,2026-09-10T11:10:46+00:00,1799.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-tropical-toucan-figure-31173-building-kit-225-pieces
 31173,mybrickhouse,2026-09-10T11:34:31+00:00,1799.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-tropical-toucan-figure-31173-building-kit-225-pieces
@@ -1954,6 +2008,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31173,mybrickhouse,2026-09-12T10:49:00+00:00,1799.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-tropical-toucan-figure-31173-building-kit-225-pieces
 31173,mybrickhouse,2026-09-12T10:54:29+00:00,1799.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-tropical-toucan-figure-31173-building-kit-225-pieces
 31173,mybrickhouse,2026-09-12T11:04:28+00:00,1799.0,,0,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-tropical-toucan-figure-31173-building-kit-225-pieces
+31173,toycra,2026-09-15T06:59:58+00:00,1999.0,,0,https://toycra.com/products/lego-31173-creator-3-in-1-wild-animals-tropical-toucan-225-pieces
 31174,mybrickhouse,2026-09-10T09:18:14+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-retro-telephone-nostalgic-and-vintage-toy-phones-31174-building-kit-383-pieces
 31174,mybrickhouse,2026-09-10T11:10:46+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-retro-telephone-nostalgic-and-vintage-toy-phones-31174-building-kit-383-pieces
 31174,mybrickhouse,2026-09-10T11:34:31+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-retro-telephone-nostalgic-and-vintage-toy-phones-31174-building-kit-383-pieces
@@ -1961,6 +2016,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31174,mybrickhouse,2026-09-12T10:49:00+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-retro-telephone-nostalgic-and-vintage-toy-phones-31174-building-kit-383-pieces
 31174,mybrickhouse,2026-09-12T10:54:29+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-retro-telephone-nostalgic-and-vintage-toy-phones-31174-building-kit-383-pieces
 31174,mybrickhouse,2026-09-12T11:04:28+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-retro-telephone-nostalgic-and-vintage-toy-phones-31174-building-kit-383-pieces
+31174,toycra,2026-09-15T06:59:38+00:00,3699.0,,1,https://toycra.com/products/lego-31174-creator-3-in-1-retro-telephone-383-pieces
 31175,mybrickhouse,2026-09-10T09:18:14+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-unicorn-castle-toy-animals-and-room-decor-31175-building-kit-390-pieces
 31175,mybrickhouse,2026-09-10T11:10:46+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-unicorn-castle-toy-animals-and-room-decor-31175-building-kit-390-pieces
 31175,mybrickhouse,2026-09-10T11:34:31+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-unicorn-castle-toy-animals-and-room-decor-31175-building-kit-390-pieces
@@ -1968,6 +2024,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31175,mybrickhouse,2026-09-12T10:49:00+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-unicorn-castle-toy-animals-and-room-decor-31175-building-kit-390-pieces
 31175,mybrickhouse,2026-09-12T10:54:29+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-unicorn-castle-toy-animals-and-room-decor-31175-building-kit-390-pieces
 31175,mybrickhouse,2026-09-12T11:04:28+00:00,4549.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-unicorn-castle-toy-animals-and-room-decor-31175-building-kit-390-pieces
+31175,toycra,2026-09-15T06:59:46+00:00,4549.0,4999.0,1,https://toycra.com/products/lego-31175-creator-3-in-1-unicorn-castle-390-pieces
 31212,mybrickhouse,2026-09-10T09:18:14+00:00,17299.0,,0,https://lego.mybrickhouse.com/products/art-the-milky-way-galaxy-wall-art-set-31212-building-kit-3091-pieces
 31212,mybrickhouse,2026-09-10T11:10:46+00:00,17299.0,,0,https://lego.mybrickhouse.com/products/art-the-milky-way-galaxy-wall-art-set-31212-building-kit-3091-pieces
 31212,mybrickhouse,2026-09-10T11:34:31+00:00,17299.0,,0,https://lego.mybrickhouse.com/products/art-the-milky-way-galaxy-wall-art-set-31212-building-kit-3091-pieces
@@ -1975,6 +2032,8 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31212,mybrickhouse,2026-09-12T10:49:00+00:00,17299.0,,0,https://lego.mybrickhouse.com/products/art-the-milky-way-galaxy-wall-art-set-31212-building-kit-3091-pieces
 31212,mybrickhouse,2026-09-12T10:54:29+00:00,17299.0,,0,https://lego.mybrickhouse.com/products/art-the-milky-way-galaxy-wall-art-set-31212-building-kit-3091-pieces
 31212,mybrickhouse,2026-09-12T11:04:28+00:00,17299.0,,0,https://lego.mybrickhouse.com/products/art-the-milky-way-galaxy-wall-art-set-31212-building-kit-3091-pieces
+31212,toycra,2026-09-15T06:54:36+00:00,12949.0,17299.0,0,https://toycra.com/products/lego-31212-art-the-milky-way-galaxy-3091-pieces
+31213,jaimantoys,2026-09-15T06:54:32+00:00,9290.0,10999.0,1,https://jaimantoys.com/products/lego-art-mona-lisa-building-set-leonardo-da-vinci-wall-display-ages-18-diy-crafts-for-men-women-great-for-puzzle-and-art-lovers-birthday-gift-idea-includes-detachable-frame-31213-copy
 31213,mybrickhouse,2026-09-10T09:18:14+00:00,10999.0,,0,https://lego.mybrickhouse.com/products/art-mona-lisa-painting-building-set-for-adults-31213-1503-pieces
 31213,mybrickhouse,2026-09-10T11:10:46+00:00,10999.0,,0,https://lego.mybrickhouse.com/products/art-mona-lisa-painting-building-set-for-adults-31213-1503-pieces
 31213,mybrickhouse,2026-09-10T11:34:31+00:00,10999.0,,0,https://lego.mybrickhouse.com/products/art-mona-lisa-painting-building-set-for-adults-31213-1503-pieces
@@ -1982,6 +2041,8 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31213,mybrickhouse,2026-09-12T10:49:00+00:00,10999.0,,0,https://lego.mybrickhouse.com/products/art-mona-lisa-painting-building-set-for-adults-31213-1503-pieces
 31213,mybrickhouse,2026-09-12T10:54:29+00:00,10999.0,,0,https://lego.mybrickhouse.com/products/art-mona-lisa-painting-building-set-for-adults-31213-1503-pieces
 31213,mybrickhouse,2026-09-12T11:04:28+00:00,10999.0,,0,https://lego.mybrickhouse.com/products/art-mona-lisa-painting-building-set-for-adults-31213-1503-pieces
+31213,toycra,2026-09-15T06:54:32+00:00,9299.0,10999.0,0,https://toycra.com/products/lego-31213-art-mona-lisa-1503-pieces
+31214,jaimantoys,2026-09-15T06:54:27+00:00,8099.0,9999.0,1,https://jaimantoys.com/products/lego-31214-art-love-collectible-building-set
 31214,mybrickhouse,2026-09-10T09:18:14+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/art-love-gift-for-couples-and-home-decor-idea-31214-building-kit-791-pieces
 31214,mybrickhouse,2026-09-10T11:10:46+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/art-love-gift-for-couples-and-home-decor-idea-31214-building-kit-791-pieces
 31214,mybrickhouse,2026-09-10T11:34:31+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/art-love-gift-for-couples-and-home-decor-idea-31214-building-kit-791-pieces
@@ -1989,6 +2050,8 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31214,mybrickhouse,2026-09-12T10:49:00+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/art-love-gift-for-couples-and-home-decor-idea-31214-building-kit-791-pieces
 31214,mybrickhouse,2026-09-12T10:54:29+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/art-love-gift-for-couples-and-home-decor-idea-31214-building-kit-791-pieces
 31214,mybrickhouse,2026-09-12T11:04:28+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/art-love-gift-for-couples-and-home-decor-idea-31214-building-kit-791-pieces
+31214,toycra,2026-09-15T06:54:27+00:00,5999.0,9099.0,1,https://toycra.com/products/lego-31214-art-love-791-pieces
+31215,jaimantoys,2026-09-15T06:54:42+00:00,14890.0,18299.0,1,https://jaimantoys.com/products/lego-art-vincent-van-gogh-sunflowers-31215-wall-art-building-set-iconic-home-decor-for-adults-creative-activity-for-art-lego-lovers-gift-for-artists-builders
 31215,mybrickhouse,2026-09-10T09:18:14+00:00,18299.0,,0,https://lego.mybrickhouse.com/products/art-vincent-van-gogh-sunflowers-wall-artwork-building-set-31215-building-kit-2615-pieces
 31215,mybrickhouse,2026-09-10T11:10:46+00:00,18299.0,,0,https://lego.mybrickhouse.com/products/art-vincent-van-gogh-sunflowers-wall-artwork-building-set-31215-building-kit-2615-pieces
 31215,mybrickhouse,2026-09-10T11:34:31+00:00,18299.0,,0,https://lego.mybrickhouse.com/products/art-vincent-van-gogh-sunflowers-wall-artwork-building-set-31215-building-kit-2615-pieces
@@ -1996,6 +2059,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31215,mybrickhouse,2026-09-12T10:49:00+00:00,18299.0,,0,https://lego.mybrickhouse.com/products/art-vincent-van-gogh-sunflowers-wall-artwork-building-set-31215-building-kit-2615-pieces
 31215,mybrickhouse,2026-09-12T10:54:29+00:00,18299.0,,0,https://lego.mybrickhouse.com/products/art-vincent-van-gogh-sunflowers-wall-artwork-building-set-31215-building-kit-2615-pieces
 31215,mybrickhouse,2026-09-12T11:04:28+00:00,18299.0,,0,https://lego.mybrickhouse.com/products/art-vincent-van-gogh-sunflowers-wall-artwork-building-set-31215-building-kit-2615-pieces
+31215,toycra,2026-09-15T06:54:42+00:00,11999.0,18299.0,1,https://toycra.com/products/lego-31215-art-vincent-van-gogh-sunflowers-2615-pieces
 31216,mybrickhouse,2026-09-10T09:18:14+00:00,12799.0,,1,https://lego.mybrickhouse.com/products/art-keith-haring-31216-dancing-figures-living-room-decor-building-kit-1-773-pieces
 31216,mybrickhouse,2026-09-10T11:10:46+00:00,12799.0,,1,https://lego.mybrickhouse.com/products/art-keith-haring-31216-dancing-figures-living-room-decor-building-kit-1-773-pieces
 31216,mybrickhouse,2026-09-10T11:34:31+00:00,12799.0,,1,https://lego.mybrickhouse.com/products/art-keith-haring-31216-dancing-figures-living-room-decor-building-kit-1-773-pieces
@@ -2003,6 +2067,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31216,mybrickhouse,2026-09-12T10:49:00+00:00,12799.0,,1,https://lego.mybrickhouse.com/products/art-keith-haring-31216-dancing-figures-living-room-decor-building-kit-1-773-pieces
 31216,mybrickhouse,2026-09-12T10:54:29+00:00,12799.0,,1,https://lego.mybrickhouse.com/products/art-keith-haring-31216-dancing-figures-living-room-decor-building-kit-1-773-pieces
 31216,mybrickhouse,2026-09-12T11:04:28+00:00,12799.0,,1,https://lego.mybrickhouse.com/products/art-keith-haring-31216-dancing-figures-living-room-decor-building-kit-1-773-pieces
+31216,toycra,2026-09-15T06:54:21+00:00,12799.0,13999.0,0,https://toycra.com/products/lego-31216-art-keith-haring-dancing-figures-1773-pieces
 31217,mybrickhouse,2026-09-10T09:18:14+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/art-the-fauna-collection-tiger-31217-building-kit-744-pieces
 31217,mybrickhouse,2026-09-10T11:10:46+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/art-the-fauna-collection-tiger-31217-building-kit-744-pieces
 31217,mybrickhouse,2026-09-10T11:34:31+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/art-the-fauna-collection-tiger-31217-building-kit-744-pieces
@@ -2011,6 +2076,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31217,mybrickhouse,2026-09-12T10:49:00+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/art-the-fauna-collection-tiger-31217-building-kit-744-pieces
 31217,mybrickhouse,2026-09-12T10:54:29+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/art-the-fauna-collection-tiger-31217-building-kit-744-pieces
 31217,mybrickhouse,2026-09-12T11:04:28+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/art-the-fauna-collection-tiger-31217-building-kit-744-pieces
+31217,toycra,2026-09-15T06:54:17+00:00,6999.0,,1,https://toycra.com/products/lego-31217-art-the-fauna-collection-tiger-744-pieces
 31218,mybrickhouse,2026-09-10T09:18:14+00:00,12999.0,,1,https://lego.mybrickhouse.com/products/lego-r-art-japanese-cherry-blossom-landscape-wall-art-31218
 31218,mybrickhouse,2026-09-10T11:10:46+00:00,12999.0,,1,https://lego.mybrickhouse.com/products/lego-r-art-japanese-cherry-blossom-landscape-wall-art-31218
 31218,mybrickhouse,2026-09-10T11:34:31+00:00,12999.0,,1,https://lego.mybrickhouse.com/products/lego-r-art-japanese-cherry-blossom-landscape-wall-art-31218
@@ -2207,6 +2273,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 40573,mybrickhouse,2026-09-12T10:49:00+00:00,4549.0,,0,https://lego.mybrickhouse.com/products/christmas-tree-toy-40573-building-kit-784-pieces
 40573,mybrickhouse,2026-09-12T10:54:29+00:00,4549.0,,0,https://lego.mybrickhouse.com/products/christmas-tree-toy-40573-building-kit-784-pieces
 40573,mybrickhouse,2026-09-12T11:04:28+00:00,4549.0,,0,https://lego.mybrickhouse.com/products/christmas-tree-toy-40573-building-kit-784-pieces
+40573,toycra,2026-09-15T06:56:08+00:00,4999.0,,0,https://toycra.com/products/lego-40573-christmas-tree-784-pieces
 40619,mybrickhouse,2026-09-10T09:18:14+00:00,1649.0,,1,https://lego.mybrickhouse.com/products/brickheadz-disney-pixar-eve-wall-e-40619-building-toy-kit-155-pieces
 40619,mybrickhouse,2026-09-10T11:10:46+00:00,1649.0,,1,https://lego.mybrickhouse.com/products/brickheadz-disney-pixar-eve-wall-e-40619-building-toy-kit-155-pieces
 40619,mybrickhouse,2026-09-10T11:34:31+00:00,1649.0,,1,https://lego.mybrickhouse.com/products/brickheadz-disney-pixar-eve-wall-e-40619-building-toy-kit-155-pieces
@@ -2291,6 +2358,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 40743,mybrickhouse,2026-09-12T10:49:00+00:00,4549.0,,0,https://lego.mybrickhouse.com/products/christmas-table-decoration-centrepiece-40743-building-kit-433-pieces
 40743,mybrickhouse,2026-09-12T10:54:29+00:00,4549.0,,0,https://lego.mybrickhouse.com/products/christmas-table-decoration-centrepiece-40743-building-kit-433-pieces
 40743,mybrickhouse,2026-09-12T11:04:28+00:00,4549.0,,0,https://lego.mybrickhouse.com/products/christmas-table-decoration-centrepiece-40743-building-kit-433-pieces
+40743,toycra,2026-09-15T06:56:05+00:00,4549.0,,1,https://toycra.com/products/lego-40743-seasons-and-occasions-christmas-table-decoration-433-pieces
 40750,mybrickhouse,2026-09-10T09:18:14+00:00,1570.0,2099.0,0,https://lego.mybrickhouse.com/products/brickheadz-wednesday-enid-tv-series-toys-40750-building-kit-239-pieces
 40750,mybrickhouse,2026-09-10T11:10:46+00:00,1570.0,2099.0,0,https://lego.mybrickhouse.com/products/brickheadz-wednesday-enid-tv-series-toys-40750-building-kit-239-pieces
 40750,mybrickhouse,2026-09-10T11:34:31+00:00,1570.0,2099.0,0,https://lego.mybrickhouse.com/products/brickheadz-wednesday-enid-tv-series-toys-40750-building-kit-239-pieces
@@ -3923,6 +3991,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60205,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,0,https://lego.mybrickhouse.com/products/city-tracks-60205-toy-for-children-building-kit-20-pieces
 60205,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,0,https://lego.mybrickhouse.com/products/city-tracks-60205-toy-for-children-building-kit-20-pieces
 60205,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,0,https://lego.mybrickhouse.com/products/city-tracks-60205-toy-for-children-building-kit-20-pieces
+60205,toycra,2026-09-15T06:58:11+00:00,2499.0,,1,https://toycra.com/products/lego-60205-city-tracks-20-pieces
 60238,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-switch-tracks-60238-train-toy-building-kit-8-pieces
 60238,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-switch-tracks-60238-train-toy-building-kit-8-pieces
 60238,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-switch-tracks-60238-train-toy-building-kit-8-pieces
@@ -3930,6 +3999,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60238,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-switch-tracks-60238-train-toy-building-kit-8-pieces
 60238,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-switch-tracks-60238-train-toy-building-kit-8-pieces
 60238,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-switch-tracks-60238-train-toy-building-kit-8-pieces
+60238,toycra,2026-09-15T06:58:07+00:00,2499.0,,1,https://toycra.com/products/lego-60238-city-switch-tracks-8-pieces
 60304,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/road-plates-60304-building-kit-112-pieces
 60304,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/road-plates-60304-building-kit-112-pieces
 60304,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/road-plates-60304-building-kit-112-pieces
@@ -3944,6 +4014,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60312,mybrickhouse,2026-09-12T10:49:00+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/city-police-car-60312-building-kit-94-pieces
 60312,mybrickhouse,2026-09-12T10:54:29+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/city-police-car-60312-building-kit-94-pieces
 60312,mybrickhouse,2026-09-12T11:04:28+00:00,1099.0,,1,https://lego.mybrickhouse.com/products/city-police-car-60312-building-kit-94-pieces
+60312,toycra,2026-09-15T06:57:35+00:00,1199.0,,1,https://toycra.com/products/lego-60312-city-police-car
 60316,mybrickhouse,2026-09-10T09:18:14+00:00,7299.0,,1,https://lego.mybrickhouse.com/products/city-police-station-60316-building-kit-668-pieces
 60316,mybrickhouse,2026-09-10T11:10:46+00:00,7299.0,,1,https://lego.mybrickhouse.com/products/city-police-station-60316-building-kit-668-pieces
 60316,mybrickhouse,2026-09-10T11:34:31+00:00,7299.0,,1,https://lego.mybrickhouse.com/products/city-police-station-60316-building-kit-668-pieces
@@ -3951,6 +4022,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60316,mybrickhouse,2026-09-12T10:49:00+00:00,7299.0,,1,https://lego.mybrickhouse.com/products/city-police-station-60316-building-kit-668-pieces
 60316,mybrickhouse,2026-09-12T10:54:29+00:00,7299.0,,1,https://lego.mybrickhouse.com/products/city-police-station-60316-building-kit-668-pieces
 60316,mybrickhouse,2026-09-12T11:04:28+00:00,7299.0,,1,https://lego.mybrickhouse.com/products/city-police-station-60316-building-kit-668-pieces
+60316,toycra,2026-09-15T06:57:48+00:00,7999.0,,1,https://toycra.com/products/lego-60316-city-police-station
 60337,mybrickhouse,2026-09-10T09:18:14+00:00,19999.0,,1,https://lego.mybrickhouse.com/products/city-express-passenger-train-60337-building-kit-764-pieces
 60337,mybrickhouse,2026-09-10T11:10:46+00:00,19999.0,,1,https://lego.mybrickhouse.com/products/city-express-passenger-train-60337-building-kit-764-pieces
 60337,mybrickhouse,2026-09-10T11:34:31+00:00,19999.0,,1,https://lego.mybrickhouse.com/products/city-express-passenger-train-60337-building-kit-764-pieces
@@ -3967,6 +4039,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60367,mybrickhouse,2026-09-12T10:49:00+00:00,11899.0,,1,https://lego.mybrickhouse.com/products/city-passenger-aeroplane-60367-building-toy-set-930-pieces
 60367,mybrickhouse,2026-09-12T10:54:29+00:00,11899.0,,1,https://lego.mybrickhouse.com/products/city-passenger-aeroplane-60367-building-toy-set-930-pieces
 60367,mybrickhouse,2026-09-12T11:04:28+00:00,11899.0,,1,https://lego.mybrickhouse.com/products/city-passenger-aeroplane-60367-building-toy-set-930-pieces
+60367,toycra,2026-09-15T06:57:23+00:00,9499.0,12999.0,0,https://toycra.com/products/lego-60367-city-passenger-airplane-913-pcs
 60373,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-rescue-boat-60373-building-toy-set-144-pieces
 60373,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-rescue-boat-60373-building-toy-set-144-pieces
 60373,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-rescue-boat-60373-building-toy-set-144-pieces
@@ -3974,6 +4047,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60373,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-rescue-boat-60373-building-toy-set-144-pieces
 60373,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-rescue-boat-60373-building-toy-set-144-pieces
 60373,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-rescue-boat-60373-building-toy-set-144-pieces
+60373,toycra,2026-09-15T06:56:53+00:00,2499.0,,1,https://toycra.com/products/lego-city-60373-fire-rescue-boat
 60402,mybrickhouse,2026-09-10T09:18:14+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/city-blue-monster-truck-off-road-toy-60402-building-kit-148-pieces
 60402,mybrickhouse,2026-09-10T11:10:46+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/city-blue-monster-truck-off-road-toy-60402-building-kit-148-pieces
 60402,mybrickhouse,2026-09-10T11:34:31+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/city-blue-monster-truck-off-road-toy-60402-building-kit-148-pieces
@@ -3981,6 +4055,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60402,mybrickhouse,2026-09-12T10:49:00+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/city-blue-monster-truck-off-road-toy-60402-building-kit-148-pieces
 60402,mybrickhouse,2026-09-12T10:54:29+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/city-blue-monster-truck-off-road-toy-60402-building-kit-148-pieces
 60402,mybrickhouse,2026-09-12T11:04:28+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/city-blue-monster-truck-off-road-toy-60402-building-kit-148-pieces
+60402,toycra,2026-09-15T06:56:16+00:00,1999.0,,1,https://toycra.com/products/lego-60402-city-blue-monster-truck-148-pieces
 60404,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-burger-van-toy-building-set-60404-building-kit-194-pieces
 60404,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-burger-van-toy-building-set-60404-building-kit-194-pieces
 60404,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-burger-van-toy-building-set-60404-building-kit-194-pieces
@@ -3988,6 +4063,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60404,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-burger-van-toy-building-set-60404-building-kit-194-pieces
 60404,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-burger-van-toy-building-set-60404-building-kit-194-pieces
 60404,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-burger-van-toy-building-set-60404-building-kit-194-pieces
+60404,toycra,2026-09-15T06:56:20+00:00,2499.0,,1,https://toycra.com/products/lego-60404-city-burger-truck-194-pieces
 60406,mybrickhouse,2026-09-10T09:18:14+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/city-race-car-and-car-carrier-truck-building-toy-60406-building-kit-328-pieces
 60406,mybrickhouse,2026-09-10T11:10:46+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/city-race-car-and-car-carrier-truck-building-toy-60406-building-kit-328-pieces
 60406,mybrickhouse,2026-09-10T11:34:31+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/city-race-car-and-car-carrier-truck-building-toy-60406-building-kit-328-pieces
@@ -3995,6 +4071,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60406,mybrickhouse,2026-09-12T10:49:00+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/city-race-car-and-car-carrier-truck-building-toy-60406-building-kit-328-pieces
 60406,mybrickhouse,2026-09-12T10:54:29+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/city-race-car-and-car-carrier-truck-building-toy-60406-building-kit-328-pieces
 60406,mybrickhouse,2026-09-12T11:04:28+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/city-race-car-and-car-carrier-truck-building-toy-60406-building-kit-328-pieces
+60406,toycra,2026-09-15T06:57:52+00:00,3999.0,,1,https://toycra.com/products/lego-60406-city-race-car-and-car-carrier-truck-328-pieces
 60407,mybrickhouse,2026-09-10T09:18:14+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/city-red-double-decker-sightseeing-bus-toy-60407-building-kit-384-pieces
 60407,mybrickhouse,2026-09-10T11:10:46+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/city-red-double-decker-sightseeing-bus-toy-60407-building-kit-384-pieces
 60407,mybrickhouse,2026-09-10T11:34:31+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/city-red-double-decker-sightseeing-bus-toy-60407-building-kit-384-pieces
@@ -4002,6 +4079,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60407,mybrickhouse,2026-09-12T10:49:00+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/city-red-double-decker-sightseeing-bus-toy-60407-building-kit-384-pieces
 60407,mybrickhouse,2026-09-12T10:54:29+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/city-red-double-decker-sightseeing-bus-toy-60407-building-kit-384-pieces
 60407,mybrickhouse,2026-09-12T11:04:28+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/city-red-double-decker-sightseeing-bus-toy-60407-building-kit-384-pieces
+60407,toycra,2026-09-15T06:57:55+00:00,3999.0,,1,https://toycra.com/products/lego-60407-city-red-double-decker-sightseeing-bus-384-pieces
 60411,mybrickhouse,2026-09-10T09:18:14+00:00,899.0,,0,https://lego.mybrickhouse.com/products/city-fire-rescue-helicopter-building-set-60411-building-kit-85-pieces
 60411,mybrickhouse,2026-09-10T11:10:46+00:00,899.0,,0,https://lego.mybrickhouse.com/products/city-fire-rescue-helicopter-building-set-60411-building-kit-85-pieces
 60411,mybrickhouse,2026-09-10T11:34:31+00:00,899.0,,0,https://lego.mybrickhouse.com/products/city-fire-rescue-helicopter-building-set-60411-building-kit-85-pieces
@@ -4009,6 +4087,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60411,mybrickhouse,2026-09-12T10:49:00+00:00,899.0,,0,https://lego.mybrickhouse.com/products/city-fire-rescue-helicopter-building-set-60411-building-kit-85-pieces
 60411,mybrickhouse,2026-09-12T10:54:29+00:00,899.0,,0,https://lego.mybrickhouse.com/products/city-fire-rescue-helicopter-building-set-60411-building-kit-85-pieces
 60411,mybrickhouse,2026-09-12T11:04:28+00:00,899.0,,0,https://lego.mybrickhouse.com/products/city-fire-rescue-helicopter-building-set-60411-building-kit-85-pieces
+60411,toycra,2026-09-15T06:56:58+00:00,999.0,,1,https://toycra.com/products/lego-60411-city-fire-rescue-helicopter-85-pieces
 60415,mybrickhouse,2026-09-10T09:18:14+00:00,2449.0,,1,https://lego.mybrickhouse.com/products/city-police-car-and-muscle-car-chase-set-60415-213-pieces
 60415,mybrickhouse,2026-09-10T11:10:46+00:00,2449.0,,1,https://lego.mybrickhouse.com/products/city-police-car-and-muscle-car-chase-set-60415-213-pieces
 60415,mybrickhouse,2026-09-10T11:34:31+00:00,2449.0,,1,https://lego.mybrickhouse.com/products/city-police-car-and-muscle-car-chase-set-60415-213-pieces
@@ -4016,6 +4095,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60415,mybrickhouse,2026-09-12T10:49:00+00:00,2449.0,,1,https://lego.mybrickhouse.com/products/city-police-car-and-muscle-car-chase-set-60415-213-pieces
 60415,mybrickhouse,2026-09-12T10:54:29+00:00,2449.0,,1,https://lego.mybrickhouse.com/products/city-police-car-and-muscle-car-chase-set-60415-213-pieces
 60415,mybrickhouse,2026-09-12T11:04:28+00:00,2449.0,,1,https://lego.mybrickhouse.com/products/city-police-car-and-muscle-car-chase-set-60415-213-pieces
+60415,toycra,2026-09-15T06:57:39+00:00,2699.0,,1,https://toycra.com/products/lego-60415-city-police-car-and-muscle-car-chase-213-pieces
 60423,mybrickhouse,2026-09-10T09:18:14+00:00,9099.0,,0,https://lego.mybrickhouse.com/products/city-downtown-tram-and-station-toy-set-60423-building-kit-811-pieces
 60423,mybrickhouse,2026-09-10T11:10:46+00:00,9099.0,,0,https://lego.mybrickhouse.com/products/city-downtown-tram-and-station-toy-set-60423-building-kit-811-pieces
 60423,mybrickhouse,2026-09-10T11:34:31+00:00,9099.0,,0,https://lego.mybrickhouse.com/products/city-downtown-tram-and-station-toy-set-60423-building-kit-811-pieces
@@ -4023,6 +4103,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60423,mybrickhouse,2026-09-12T10:49:00+00:00,9099.0,,0,https://lego.mybrickhouse.com/products/city-downtown-tram-and-station-toy-set-60423-building-kit-811-pieces
 60423,mybrickhouse,2026-09-12T10:54:29+00:00,9099.0,,0,https://lego.mybrickhouse.com/products/city-downtown-tram-and-station-toy-set-60423-building-kit-811-pieces
 60423,mybrickhouse,2026-09-12T11:04:28+00:00,9099.0,,0,https://lego.mybrickhouse.com/products/city-downtown-tram-and-station-toy-set-60423-building-kit-811-pieces
+60423,toycra,2026-09-15T06:56:33+00:00,9999.0,,0,https://toycra.com/products/lego-60423-city-downtown-streetcar-and-station-811-pieces
 60439,mybrickhouse,2026-09-10T09:18:14+00:00,2740.0,3649.0,0,https://lego.mybrickhouse.com/products/city-space-science-lab-toy-building-set-60439-building-kit-560-pieces
 60439,mybrickhouse,2026-09-10T11:10:46+00:00,2740.0,3649.0,0,https://lego.mybrickhouse.com/products/city-space-science-lab-toy-building-set-60439-building-kit-560-pieces
 60439,mybrickhouse,2026-09-10T11:34:31+00:00,2740.0,3649.0,0,https://lego.mybrickhouse.com/products/city-space-science-lab-toy-building-set-60439-building-kit-560-pieces
@@ -4030,6 +4111,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60439,mybrickhouse,2026-09-12T10:49:00+00:00,2740.0,3649.0,0,https://lego.mybrickhouse.com/products/city-space-science-lab-toy-building-set-60439-building-kit-560-pieces
 60439,mybrickhouse,2026-09-12T10:54:29+00:00,2740.0,3649.0,0,https://lego.mybrickhouse.com/products/city-space-science-lab-toy-building-set-60439-building-kit-560-pieces
 60439,mybrickhouse,2026-09-12T11:04:28+00:00,2740.0,3649.0,0,https://lego.mybrickhouse.com/products/city-space-science-lab-toy-building-set-60439-building-kit-560-pieces
+60439,toycra,2026-09-15T06:58:03+00:00,3999.0,,0,https://toycra.com/products/lego-60439-city-space-science-lab-560-pieces
 60442,firstcry,2026-09-09T12:15:07+00:00,1052.22,1349.0,1,https://www.firstcry.com/lego/lego-city-f1-driver-with-mclaren-race-car-mini-vehicle-toy-playset-86-pieces-60442/19722532/product-detail
 60442,firstcry,2026-09-09T12:29:11+00:00,1052.22,1349.0,1,https://www.firstcry.com/lego/lego-city-f1-driver-with-mclaren-race-car-mini-vehicle-toy-playset-86-pieces-60442/19722532/product-detail
 60442,mybrickhouse,2026-09-10T09:18:14+00:00,1349.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-driver-with-mclaren-race-car-mini-vehicle-toy-playset-60442-building-kit-86-pieces
@@ -4074,6 +4156,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60447,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-off-road-4x4-mountain-truck-adventure-toy-60447
 60447,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-off-road-4x4-mountain-truck-adventure-toy-60447
 60447,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-off-road-4x4-mountain-truck-adventure-toy-60447
+60447,toycra,2026-09-15T06:57:14+00:00,2499.0,,1,https://toycra.com/products/lego-60447-city-off-road-4x4-mountain-truck-221-pieces
 60449,mybrickhouse,2026-09-10T09:18:14+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/city-off-road-police-car-chase-set-60449-building-kit-467-pieces
 60449,mybrickhouse,2026-09-10T11:10:46+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/city-off-road-police-car-chase-set-60449-building-kit-467-pieces
 60449,mybrickhouse,2026-09-10T11:34:31+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/city-off-road-police-car-chase-set-60449-building-kit-467-pieces
@@ -4081,6 +4164,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60449,mybrickhouse,2026-09-12T10:49:00+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/city-off-road-police-car-chase-set-60449-building-kit-467-pieces
 60449,mybrickhouse,2026-09-12T10:54:29+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/city-off-road-police-car-chase-set-60449-building-kit-467-pieces
 60449,mybrickhouse,2026-09-12T11:04:28+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/city-off-road-police-car-chase-set-60449-building-kit-467-pieces
+60449,toycra,2026-09-15T06:57:19+00:00,5499.0,,0,https://toycra.com/products/lego-60449-city-off-road-police-car-chase-467-pieces
 60450,mybrickhouse,2026-09-10T09:18:14+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/city-yellow-construction-wheel-loader-buildable-vehicle-set-60450-building-kit-81-pieces
 60450,mybrickhouse,2026-09-10T11:10:46+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/city-yellow-construction-wheel-loader-buildable-vehicle-set-60450-building-kit-81-pieces
 60450,mybrickhouse,2026-09-10T11:34:31+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/city-yellow-construction-wheel-loader-buildable-vehicle-set-60450-building-kit-81-pieces
@@ -4088,6 +4172,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60450,mybrickhouse,2026-09-12T10:49:00+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/city-yellow-construction-wheel-loader-buildable-vehicle-set-60450-building-kit-81-pieces
 60450,mybrickhouse,2026-09-12T10:54:29+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/city-yellow-construction-wheel-loader-buildable-vehicle-set-60450-building-kit-81-pieces
 60450,mybrickhouse,2026-09-12T11:04:28+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/city-yellow-construction-wheel-loader-buildable-vehicle-set-60450-building-kit-81-pieces
+60450,toycra,2026-09-15T06:58:19+00:00,1999.0,,1,https://toycra.com/products/lego-60450-city-yellow-construction-wheel-loader-81-pieces
 60451,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-emergency-ambulance-toy-truck-building-set-60451-building-kit-184-pieces
 60451,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-emergency-ambulance-toy-truck-building-set-60451-building-kit-184-pieces
 60451,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-emergency-ambulance-toy-truck-building-set-60451-building-kit-184-pieces
@@ -4095,6 +4180,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60451,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-emergency-ambulance-toy-truck-building-set-60451-building-kit-184-pieces
 60451,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-emergency-ambulance-toy-truck-building-set-60451-building-kit-184-pieces
 60451,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-emergency-ambulance-toy-truck-building-set-60451-building-kit-184-pieces
+60451,toycra,2026-09-15T06:56:41+00:00,2290.0,,1,https://toycra.com/products/lego-60451-city-emergency-ambulance-184-pieces
 60452,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-doughnut-truck-playset-vendor-vehicle-toy-for-kids-aged-5-and-over-60452-building-kit-196-pieces
 60452,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-doughnut-truck-playset-vendor-vehicle-toy-for-kids-aged-5-and-over-60452-building-kit-196-pieces
 60452,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-doughnut-truck-playset-vendor-vehicle-toy-for-kids-aged-5-and-over-60452-building-kit-196-pieces
@@ -4102,6 +4188,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60452,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-doughnut-truck-playset-vendor-vehicle-toy-for-kids-aged-5-and-over-60452-building-kit-196-pieces
 60452,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-doughnut-truck-playset-vendor-vehicle-toy-for-kids-aged-5-and-over-60452-building-kit-196-pieces
 60452,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-doughnut-truck-playset-vendor-vehicle-toy-for-kids-aged-5-and-over-60452-building-kit-196-pieces
+60452,toycra,2026-09-15T06:56:30+00:00,2499.0,,1,https://toycra.com/products/lego-60452-city-donut-truck-196-pieces
 60453,mybrickhouse,2026-09-10T09:18:14+00:00,2060.0,2749.0,1,https://lego.mybrickhouse.com/products/city-lifeguard-beach-rescue-truck-playset-60453-building-kit-214-pieces
 60453,mybrickhouse,2026-09-10T11:10:46+00:00,2060.0,2749.0,1,https://lego.mybrickhouse.com/products/city-lifeguard-beach-rescue-truck-playset-60453-building-kit-214-pieces
 60453,mybrickhouse,2026-09-10T11:34:31+00:00,2060.0,2749.0,1,https://lego.mybrickhouse.com/products/city-lifeguard-beach-rescue-truck-playset-60453-building-kit-214-pieces
@@ -4109,6 +4196,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60453,mybrickhouse,2026-09-12T10:49:00+00:00,2060.0,2749.0,1,https://lego.mybrickhouse.com/products/city-lifeguard-beach-rescue-truck-playset-60453-building-kit-214-pieces
 60453,mybrickhouse,2026-09-12T10:54:29+00:00,2060.0,2749.0,1,https://lego.mybrickhouse.com/products/city-lifeguard-beach-rescue-truck-playset-60453-building-kit-214-pieces
 60453,mybrickhouse,2026-09-12T11:04:28+00:00,2060.0,2749.0,1,https://lego.mybrickhouse.com/products/city-lifeguard-beach-rescue-truck-playset-60453-building-kit-214-pieces
+60453,toycra,2026-09-15T06:57:11+00:00,2999.0,,0,https://toycra.com/products/lego-60453-city-lifeguard-beach-rescue-truck-214-pieces
 60454,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/city-holiday-adventure-camper-van-toy-vehicle-set-60454-building-kit-385-pieces
 60454,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/city-holiday-adventure-camper-van-toy-vehicle-set-60454-building-kit-385-pieces
 60454,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/city-holiday-adventure-camper-van-toy-vehicle-set-60454-building-kit-385-pieces
@@ -4116,6 +4204,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60454,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/city-holiday-adventure-camper-van-toy-vehicle-set-60454-building-kit-385-pieces
 60454,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/city-holiday-adventure-camper-van-toy-vehicle-set-60454-building-kit-385-pieces
 60454,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/city-holiday-adventure-camper-van-toy-vehicle-set-60454-building-kit-385-pieces
+60454,toycra,2026-09-15T06:57:07+00:00,3499.0,,1,https://toycra.com/products/lego-60454-city-holiday-adventure-camper-van-385-pieces
 60455,mybrickhouse,2026-09-10T09:18:14+00:00,1149.0,,1,https://lego.mybrickhouse.com/products/city-police-motorcycle-chase-60455-building-kit-65-pieces
 60455,mybrickhouse,2026-09-10T11:10:46+00:00,1149.0,,1,https://lego.mybrickhouse.com/products/city-police-motorcycle-chase-60455-building-kit-65-pieces
 60455,mybrickhouse,2026-09-10T11:34:31+00:00,1149.0,,1,https://lego.mybrickhouse.com/products/city-police-motorcycle-chase-60455-building-kit-65-pieces
@@ -4123,6 +4212,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60455,mybrickhouse,2026-09-12T10:49:00+00:00,1149.0,,1,https://lego.mybrickhouse.com/products/city-police-motorcycle-chase-60455-building-kit-65-pieces
 60455,mybrickhouse,2026-09-12T10:54:29+00:00,1149.0,,1,https://lego.mybrickhouse.com/products/city-police-motorcycle-chase-60455-building-kit-65-pieces
 60455,mybrickhouse,2026-09-12T11:04:28+00:00,1149.0,,1,https://lego.mybrickhouse.com/products/city-police-motorcycle-chase-60455-building-kit-65-pieces
+60455,toycra,2026-09-15T06:57:43+00:00,1149.0,1299.0,0,https://toycra.com/products/lego-60455-city-police-motorcycle-chase-65-pieces
 60456,mybrickhouse,2026-09-10T09:18:14+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/city-police-boat-chase-60456-building-kit-264-pieces
 60456,mybrickhouse,2026-09-10T11:10:46+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/city-police-boat-chase-60456-building-kit-264-pieces
 60456,mybrickhouse,2026-09-10T11:34:31+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/city-police-boat-chase-60456-building-kit-264-pieces
@@ -4130,6 +4220,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60456,mybrickhouse,2026-09-12T10:49:00+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/city-police-boat-chase-60456-building-kit-264-pieces
 60456,mybrickhouse,2026-09-12T10:54:29+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/city-police-boat-chase-60456-building-kit-264-pieces
 60456,mybrickhouse,2026-09-12T11:04:28+00:00,3349.0,,1,https://lego.mybrickhouse.com/products/city-police-boat-chase-60456-building-kit-264-pieces
+60456,toycra,2026-09-15T06:57:31+00:00,3349.0,,0,https://toycra.com/products/lego-60456-city-police-boat-chase-264-pieces
 60457,mybrickhouse,2026-09-10T09:18:14+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/city-custom-police-car-garage-60457-building-kit-489-pieces
 60457,mybrickhouse,2026-09-10T11:10:46+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/city-custom-police-car-garage-60457-building-kit-489-pieces
 60457,mybrickhouse,2026-09-10T11:34:31+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/city-custom-police-car-garage-60457-building-kit-489-pieces
@@ -4144,6 +4235,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60458,mybrickhouse,2026-09-12T10:49:00+00:00,670.0,899.0,0,https://lego.mybrickhouse.com/products/city-pizza-vs-fire-truck-race-car-pack-toy-soapbox-racing-set-60458-building-kit-70-pieces
 60458,mybrickhouse,2026-09-12T10:54:29+00:00,670.0,899.0,0,https://lego.mybrickhouse.com/products/city-pizza-vs-fire-truck-race-car-pack-toy-soapbox-racing-set-60458-building-kit-70-pieces
 60458,mybrickhouse,2026-09-12T11:04:28+00:00,670.0,899.0,0,https://lego.mybrickhouse.com/products/city-pizza-vs-fire-truck-race-car-pack-toy-soapbox-racing-set-60458-building-kit-70-pieces
+60458,toycra,2026-09-15T06:57:27+00:00,999.0,,0,https://toycra.com/products/lego-60458-city-pizza-vs-fire-truck-race-car-pack-70-pieces
 60463,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-engine-with-ladder-firefighter-toy-vehicle-gift-for-kids-60463-building-kit-82-pieces
 60463,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-engine-with-ladder-firefighter-toy-vehicle-gift-for-kids-60463-building-kit-82-pieces
 60463,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-engine-with-ladder-firefighter-toy-vehicle-gift-for-kids-60463-building-kit-82-pieces
@@ -4151,6 +4243,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60463,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-engine-with-ladder-firefighter-toy-vehicle-gift-for-kids-60463-building-kit-82-pieces
 60463,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-engine-with-ladder-firefighter-toy-vehicle-gift-for-kids-60463-building-kit-82-pieces
 60463,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-fire-engine-with-ladder-firefighter-toy-vehicle-gift-for-kids-60463-building-kit-82-pieces
+60463,toycra,2026-09-15T06:56:49+00:00,2499.0,,1,https://toycra.com/products/lego-60463-city-fire-ladder-truck-82-pieces
 60464,firstcry,2026-09-09T12:29:11+00:00,2290.0,2290.0,0,https://www.firstcry.com/lego/lego-city-f1-williams-racing-and-haas-f1-race-cars-vehicle-toy-set-92-pieces-60464/19722505/product-detail
 60464,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-williams-racing-haas-f1-r-race-cars-vehicle-toy-set-60464-building-kit-92-pieces
 60464,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-williams-racing-haas-f1-r-race-cars-vehicle-toy-set-60464-building-kit-92-pieces
@@ -4166,6 +4259,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60465,mybrickhouse,2026-09-12T10:49:00+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/city-emergency-air-ambulance-airplane-60465-building-kit-403-pieces
 60465,mybrickhouse,2026-09-12T10:54:29+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/city-emergency-air-ambulance-airplane-60465-building-kit-403-pieces
 60465,mybrickhouse,2026-09-12T11:04:28+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/city-emergency-air-ambulance-airplane-60465-building-kit-403-pieces
+60465,toycra,2026-09-15T06:56:37+00:00,5999.0,,1,https://toycra.com/products/lego-60465-city-emergency-air-ambulance-airplane-403-pieces
 60466,mybrickhouse,2026-09-10T09:18:14+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/city-yellow-bulldozer-60466-building-kit-682-pieces
 60466,mybrickhouse,2026-09-10T11:10:46+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/city-yellow-bulldozer-60466-building-kit-682-pieces
 60466,mybrickhouse,2026-09-10T11:34:31+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/city-yellow-bulldozer-60466-building-kit-682-pieces
@@ -4173,6 +4267,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60466,mybrickhouse,2026-09-12T10:49:00+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/city-yellow-bulldozer-60466-building-kit-682-pieces
 60466,mybrickhouse,2026-09-12T10:54:29+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/city-yellow-bulldozer-60466-building-kit-682-pieces
 60466,mybrickhouse,2026-09-12T11:04:28+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/city-yellow-bulldozer-60466-building-kit-682-pieces
+60466,toycra,2026-09-15T06:58:15+00:00,6999.0,,1,https://toycra.com/products/lego-60466-city-yellow-bulldozer-682-pieces
 60467,mybrickhouse,2026-09-10T09:18:14+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-heavy-duty-recovery-tow-truck-with-crane-60467-building-kit-793-pieces
 60467,mybrickhouse,2026-09-10T11:10:46+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-heavy-duty-recovery-tow-truck-with-crane-60467-building-kit-793-pieces
 60467,mybrickhouse,2026-09-10T11:34:31+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-heavy-duty-recovery-tow-truck-with-crane-60467-building-kit-793-pieces
@@ -4180,6 +4275,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60467,mybrickhouse,2026-09-12T10:49:00+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-heavy-duty-recovery-tow-truck-with-crane-60467-building-kit-793-pieces
 60467,mybrickhouse,2026-09-12T10:54:29+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-heavy-duty-recovery-tow-truck-with-crane-60467-building-kit-793-pieces
 60467,mybrickhouse,2026-09-12T11:04:28+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-heavy-duty-recovery-tow-truck-with-crane-60467-building-kit-793-pieces
+60467,toycra,2026-09-15T06:57:02+00:00,9999.0,,0,https://toycra.com/products/lego-60467-city-heavy-duty-recovery-tow-truck-with-crane-793-pieces
 60469,mybrickhouse,2026-09-10T09:18:14+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/city-central-train-station-60469-building-kit-752-pieces
 60469,mybrickhouse,2026-09-10T11:10:46+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/city-central-train-station-60469-building-kit-752-pieces
 60469,mybrickhouse,2026-09-10T11:34:31+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/city-central-train-station-60469-building-kit-752-pieces
@@ -4187,6 +4283,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60469,mybrickhouse,2026-09-12T10:49:00+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/city-central-train-station-60469-building-kit-752-pieces
 60469,mybrickhouse,2026-09-12T10:54:29+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/city-central-train-station-60469-building-kit-752-pieces
 60469,mybrickhouse,2026-09-12T11:04:28+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/city-central-train-station-60469-building-kit-752-pieces
+60469,toycra,2026-09-15T06:56:24+00:00,10999.0,,1,https://toycra.com/products/lego-60469-city-central-train-station-752-pieces
 60470,mybrickhouse,2026-09-10T09:18:14+00:00,23900.0,,1,https://lego.mybrickhouse.com/products/city-explorers-arctic-polar-express-train-60470-building-kit-1517-pieces
 60470,mybrickhouse,2026-09-10T11:10:46+00:00,23900.0,,1,https://lego.mybrickhouse.com/products/city-explorers-arctic-polar-express-train-60470-building-kit-1517-pieces
 60470,mybrickhouse,2026-09-10T11:34:31+00:00,23900.0,,1,https://lego.mybrickhouse.com/products/city-explorers-arctic-polar-express-train-60470-building-kit-1517-pieces
@@ -4194,6 +4291,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60470,mybrickhouse,2026-09-12T10:49:00+00:00,23900.0,,1,https://lego.mybrickhouse.com/products/city-explorers-arctic-polar-express-train-60470-building-kit-1517-pieces
 60470,mybrickhouse,2026-09-12T10:54:29+00:00,23900.0,,1,https://lego.mybrickhouse.com/products/city-explorers-arctic-polar-express-train-60470-building-kit-1517-pieces
 60470,mybrickhouse,2026-09-12T11:04:28+00:00,23900.0,,1,https://lego.mybrickhouse.com/products/city-explorers-arctic-polar-express-train-60470-building-kit-1517-pieces
+60470,toycra,2026-09-15T06:56:45+00:00,16730.0,23900.0,1,https://toycra.com/products/lego-60470-city-explorers-arctic-polar-express-train-1517-pieces
 60471,mybrickhouse,2026-09-10T09:18:14+00:00,12299.0,,1,https://lego.mybrickhouse.com/products/city-arctic-explorer-science-lab-truck-60471-building-kit-1064-pieces
 60471,mybrickhouse,2026-09-10T11:10:46+00:00,12299.0,,1,https://lego.mybrickhouse.com/products/city-arctic-explorer-science-lab-truck-60471-building-kit-1064-pieces
 60471,mybrickhouse,2026-09-10T11:34:31+00:00,12299.0,,1,https://lego.mybrickhouse.com/products/city-arctic-explorer-science-lab-truck-60471-building-kit-1064-pieces
@@ -4201,6 +4299,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60471,mybrickhouse,2026-09-12T10:49:00+00:00,12299.0,,1,https://lego.mybrickhouse.com/products/city-arctic-explorer-science-lab-truck-60471-building-kit-1064-pieces
 60471,mybrickhouse,2026-09-12T10:54:29+00:00,12299.0,,1,https://lego.mybrickhouse.com/products/city-arctic-explorer-science-lab-truck-60471-building-kit-1064-pieces
 60471,mybrickhouse,2026-09-12T11:04:28+00:00,12299.0,,1,https://lego.mybrickhouse.com/products/city-arctic-explorer-science-lab-truck-60471-building-kit-1064-pieces
+60471,toycra,2026-09-15T06:56:12+00:00,12299.0,13499.0,1,https://toycra.com/products/lego-60471-city-arctic-explorer-science-lab-truck-1064-pieces
 60472,mybrickhouse,2026-09-10T09:18:14+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/city-scrapyard-with-cars-salvage-worker-toy-for-ages-7-plus-60472-building-kit-871-pieces
 60472,mybrickhouse,2026-09-10T11:10:46+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/city-scrapyard-with-cars-salvage-worker-toy-for-ages-7-plus-60472-building-kit-871-pieces
 60472,mybrickhouse,2026-09-10T11:34:31+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/city-scrapyard-with-cars-salvage-worker-toy-for-ages-7-plus-60472-building-kit-871-pieces
@@ -4208,6 +4307,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60472,mybrickhouse,2026-09-12T10:49:00+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/city-scrapyard-with-cars-salvage-worker-toy-for-ages-7-plus-60472-building-kit-871-pieces
 60472,mybrickhouse,2026-09-12T10:54:29+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/city-scrapyard-with-cars-salvage-worker-toy-for-ages-7-plus-60472-building-kit-871-pieces
 60472,mybrickhouse,2026-09-12T11:04:28+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/city-scrapyard-with-cars-salvage-worker-toy-for-ages-7-plus-60472-building-kit-871-pieces
+60472,toycra,2026-09-15T06:57:59+00:00,8999.0,,1,https://toycra.com/products/lego-60472-city-scrapyard-with-cars-871-pieces
 60474,firstcry,2026-09-09T12:29:11+00:00,2975.07,3199.0,1,https://www.firstcry.com/lego/lego-city-f1-grid-with-vcarb-and-sauber-race-cars-toy-vehicle-set-building-blocks-toys-for-6-gift-for-boys-and-girls-313-pieces-60474/20718738/product-detail
 60474,mybrickhouse,2026-09-10T09:18:14+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/city-f1-r-grid-with-vcarb-sauber-race-cars-toy-vehicle-set-60474-building-kit-313-pieces
 60474,mybrickhouse,2026-09-10T11:10:46+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/city-f1-r-grid-with-vcarb-sauber-race-cars-toy-vehicle-set-60474-building-kit-313-pieces
@@ -5094,6 +5194,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 75406,mybrickhouse,2026-09-12T10:49:00+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/star-wars-kylo-rens-command-shuttle-75406-building-kit-386-pieces
 75406,mybrickhouse,2026-09-12T10:54:29+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/star-wars-kylo-rens-command-shuttle-75406-building-kit-386-pieces
 75406,mybrickhouse,2026-09-12T11:04:28+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/star-wars-kylo-rens-command-shuttle-75406-building-kit-386-pieces
+75407,jaimantoys,2026-09-15T06:55:28+00:00,7490.0,8199.0,1,https://jaimantoys.com/products/lego-star-wars-brick-built-star-wars-logo-sign-75407-building-blocks-for-18-gift-copy
 75407,mybrickhouse,2026-09-10T09:18:14+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/brick-built-star-wars-logo-75407-building-kit-700-pieces
 75407,mybrickhouse,2026-09-10T11:10:46+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/brick-built-star-wars-logo-75407-building-kit-700-pieces
 75407,mybrickhouse,2026-09-10T11:34:31+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/brick-built-star-wars-logo-75407-building-kit-700-pieces
@@ -5101,6 +5202,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 75407,mybrickhouse,2026-09-12T10:49:00+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/brick-built-star-wars-logo-75407-building-kit-700-pieces
 75407,mybrickhouse,2026-09-12T10:54:29+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/brick-built-star-wars-logo-75407-building-kit-700-pieces
 75407,mybrickhouse,2026-09-12T11:04:28+00:00,8199.0,,1,https://lego.mybrickhouse.com/products/brick-built-star-wars-logo-75407-building-kit-700-pieces
+75407,toycra,2026-09-15T06:55:28+00:00,5799.0,8199.0,1,https://toycra.com/products/lego-75407-star-wars-brick-built-star-wars-logo-700-pieces
 75408,mybrickhouse,2026-09-10T09:18:14+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/star-wars-jango-fett-helmet-75408-building-kit-616-pieces
 75408,mybrickhouse,2026-09-10T11:10:46+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/star-wars-jango-fett-helmet-75408-building-kit-616-pieces
 75408,mybrickhouse,2026-09-10T11:34:31+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/star-wars-jango-fett-helmet-75408-building-kit-616-pieces
@@ -5368,6 +5470,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76273,mybrickhouse,2026-09-12T10:49:00+00:00,7299.0,,1,https://lego.mybrickhouse.com/products/dc-batman-batman-construction-figure-the-bat-pod-bike-76273-building-kit-713-pieces
 76273,mybrickhouse,2026-09-12T10:54:29+00:00,7299.0,,1,https://lego.mybrickhouse.com/products/dc-batman-batman-construction-figure-the-bat-pod-bike-76273-building-kit-713-pieces
 76273,mybrickhouse,2026-09-12T11:04:28+00:00,7299.0,,1,https://lego.mybrickhouse.com/products/dc-batman-batman-construction-figure-the-bat-pod-bike-76273-building-kit-713-pieces
+76273,toycra,2026-09-15T07:01:11+00:00,7999.0,,0,https://toycra.com/products/lego-76273-super-heroes-batman-construction-figure-and-the-bat-pod-bike-713-pieces
 76275,flipkart,2026-09-09T12:29:11+00:00,949.0,999.0,1,https://www.flipkart.com/lego-marvel-motorcycle-chase-spider-man-vs-doc-ock-76275-77-pieces/p/itm5f8b31790e8b3
 76280,mybrickhouse,2026-09-10T09:18:14+00:00,4099.0,,0,https://lego.mybrickhouse.com/products/marvel-spider-man-vs-sandman-final-battle-set-76280-building-kit-347-pieces
 76280,mybrickhouse,2026-09-10T11:10:46+00:00,4099.0,,0,https://lego.mybrickhouse.com/products/marvel-spider-man-vs-sandman-final-battle-set-76280-building-kit-347-pieces
@@ -5422,6 +5525,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76301,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,0,https://lego.mybrickhouse.com/products/dc-batman-batman-batmobile-vs-mr-freeze-vehicle-playset-76301
 76301,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,0,https://lego.mybrickhouse.com/products/dc-batman-batman-batmobile-vs-mr-freeze-vehicle-playset-76301
 76301,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,0,https://lego.mybrickhouse.com/products/dc-batman-batman-batmobile-vs-mr-freeze-vehicle-playset-76301
+76301,toycra,2026-09-15T07:01:07+00:00,2499.0,,0,https://toycra.com/products/lego-76301-dc-batman-batmobile-vs-mr-freeze-63-pieces
 76302,mybrickhouse,2026-09-10T09:18:14+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/dc-superman-mech-vs-lex-luthor-super-hero-toy-figure-playset-76302-building-kit-120-pieces
 76302,mybrickhouse,2026-09-10T11:10:46+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/dc-superman-mech-vs-lex-luthor-super-hero-toy-figure-playset-76302-building-kit-120-pieces
 76302,mybrickhouse,2026-09-10T11:34:31+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/dc-superman-mech-vs-lex-luthor-super-hero-toy-figure-playset-76302-building-kit-120-pieces
@@ -5429,6 +5533,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76302,mybrickhouse,2026-09-12T10:49:00+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/dc-superman-mech-vs-lex-luthor-super-hero-toy-figure-playset-76302-building-kit-120-pieces
 76302,mybrickhouse,2026-09-12T10:54:29+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/dc-superman-mech-vs-lex-luthor-super-hero-toy-figure-playset-76302-building-kit-120-pieces
 76302,mybrickhouse,2026-09-12T11:04:28+00:00,1350.0,1799.0,0,https://lego.mybrickhouse.com/products/dc-superman-mech-vs-lex-luthor-super-hero-toy-figure-playset-76302-building-kit-120-pieces
+76302,toycra,2026-09-15T07:01:15+00:00,1999.0,,0,https://toycra.com/products/lego-76302-super-heroes-dc-superman-mech-vs-lex-luthor-120-pieces
 76303,hamleys,2026-09-09T12:13:30+00:00,6399.0,,1,https://hamleys.in/product/lego-dc-batman-batman-tumbler-vs-two-face-the-joker-toy-car-76303-building-blocks-toys-for-8y-13468939
 76303,hamleys,2026-09-09T12:46:19+00:00,6399.0,,1,https://hamleys.in/product/lego-dc-batman-batman-tumbler-vs-two-face-the-joker-toy-car-76303-building-blocks-toys-for-8y-13468939
 76303,mybrickhouse,2026-09-10T09:18:14+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/dc-batman-batman-tumbler-vs-two-face-the-joker-toy-car-76303-building-kit-429-pieces
@@ -5976,6 +6081,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76920,mybrickhouse,2026-09-12T10:49:00+00:00,2400.0,3199.0,0,https://lego.mybrickhouse.com/products/speed-champions-ford-mustang-dark-horse-sports-car-76920-building-kit-344-pieces
 76920,mybrickhouse,2026-09-12T10:54:29+00:00,2400.0,3199.0,0,https://lego.mybrickhouse.com/products/speed-champions-ford-mustang-dark-horse-sports-car-76920-building-kit-344-pieces
 76920,mybrickhouse,2026-09-12T11:04:28+00:00,2400.0,3199.0,0,https://lego.mybrickhouse.com/products/speed-champions-ford-mustang-dark-horse-sports-car-76920-building-kit-344-pieces
+76921,jaimantoys,2026-09-15T06:54:48+00:00,2834.0,3499.0,1,https://jaimantoys.com/products/lego-76921-speed-champions-audi-s1-e-tron-quattro-race-car
 76921,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/audi-s1-e-tron-quattro-race-car-76921-building-kit-274-pieces
 76921,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/audi-s1-e-tron-quattro-race-car-76921-building-kit-274-pieces
 76921,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/audi-s1-e-tron-quattro-race-car-76921-building-kit-274-pieces
@@ -5983,6 +6089,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76921,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/audi-s1-e-tron-quattro-race-car-76921-building-kit-274-pieces
 76921,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/audi-s1-e-tron-quattro-race-car-76921-building-kit-274-pieces
 76921,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/audi-s1-e-tron-quattro-race-car-76921-building-kit-274-pieces
+76921,toycra,2026-09-15T06:54:48+00:00,3499.0,,1,https://toycra.com/products/lego-76921-speed-champions-audi-s1-e-tron-quattro-race-car-274-pieces
 76923,flipkart,2026-09-09T12:29:11+00:00,2879.0,3199.0,1,https://www.flipkart.com/lego-speed-champions-lamborghini-lambo-v12-vision-gt-super-car-76923-230-blocks/p/itm52f7ff72c9589
 76923,mybrickhouse,2026-09-10T09:18:14+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/speed-champions-lamborghini-lambo-v12-vision-gt-super-car-76923-building-kit-230-pieces
 76923,mybrickhouse,2026-09-10T11:10:46+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/speed-champions-lamborghini-lambo-v12-vision-gt-super-car-76923-building-kit-230-pieces
