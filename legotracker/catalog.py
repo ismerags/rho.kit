@@ -40,6 +40,17 @@ log = logging.getLogger(__name__)
 
 SETNUM_RE = re.compile(r"(?<!\d)(\d{4,7})(?!\d)")
 PIECES_RE = re.compile(r"(\d[\d,]{1,6})\s*(?:pieces|pcs|piece)\b", re.I)
+_TAG_RE = re.compile(r"<[^>]+>")
+
+#: Real, single-piece products the Certified Store sells alongside sets --
+#: never a brick set, so "no piece count" would otherwise leave every one of
+#: these without a ₹-per-piece figure even though the honest answer is just
+#: "1". Deliberately narrow: a keyword list this specific has no business
+#: matching an actual LEGO set name, and getting it wrong (fabricating "1
+#: piece" for a real, large set whose count we simply failed to find) would
+#: be worse than leaving that set's per-piece figure blank.
+ACCESSORY_KEYWORDS = ("keyring", "key ring", "keychain", "key chain",
+                     "magnet", "lanyard")
 
 #: Theme is not in the Shopify data — `product_type` is blank and `tags` are
 #: marketing labels like "new_arrivals_24_08_2026". So we read it off the title,
@@ -95,6 +106,23 @@ def pieces_of(title: str) -> Optional[int]:
     return n if 1 <= n <= 20000 else None
 
 
+def pieces_from_description(body_html: str) -> Optional[int]:
+    """Second try at a piece count, from the storefront's own description.
+
+    A lot of titles are pure marketing copy with no piece count in them at
+    all ("Krusty Burger Building Set for Adults"), even though the product's
+    own description routinely states it plainly ("Set contains 490 pieces").
+    """
+    if not body_html:
+        return None
+    return pieces_of(_TAG_RE.sub(" ", body_html))
+
+
+def is_accessory(title: str) -> bool:
+    low = title.lower()
+    return any(kw in low for kw in ACCESSORY_KEYWORDS)
+
+
 def set_num_of(raw_sku: Optional[str], title: str) -> Optional[str]:
     """Prefer the storefront's own SKU; fall back to the title.
 
@@ -125,13 +153,19 @@ def to_item(row: dict) -> Optional[CatalogItem]:
     if not set_num:
         return None      # merch, apparel, gift cards — nothing to price-match
 
+    pieces = pieces_of(title)
+    if pieces is None:
+        pieces = pieces_from_description(row.get("body_html") or "")
+    if pieces is None and is_accessory(title):
+        pieces = 1
+
     price = row.get("price")
     compare = row.get("compare_at")
     return CatalogItem(
         set_num=set_num,
         name=title,
         theme=theme_of(title),
-        pieces=pieces_of(title),
+        pieces=pieces,
         image=row.get("image"),
         url=row.get("url"),
         price=price,

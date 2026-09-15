@@ -541,13 +541,25 @@ def _deep_enrich(session: PoliteSession, outcome: SearchOutcome) -> dict[str, di
                 retailer = buyhatke_source.SITE_NAME_TO_RETAILER.get(site)
                 link = deal.get("link")
                 price = deal.get("price")
+                title = deal.get("prod") or res.name
                 if (not retailer or not link or link in seen_urls
                         or not isinstance(price, (int, float))):
+                    continue
+                # BuyHatke's own "same product, other retailer" grouping is
+                # not infallible -- seen in the wild bundling a completely
+                # unrelated Flipkart listing (a microwave oven) into a LEGO
+                # set's deals list. Score it exactly like a fresh search hit
+                # rather than trusting BuyHatke's own grouping blindly; the
+                # set number has to actually be in the title.
+                match = score_listing(title, res.set_num, brand="LEGO")
+                if not match.ok:
+                    log.info("[buyhatke] dropped mismatched deal %r for set %s (%s)",
+                             title, res.set_num, match.reason)
                     continue
                 mrp = deal.get("mrpFloat")
                 res.offers.append(Offer(
                     retailer=retailer, url=link,
-                    title=deal.get("prod") or res.name,
+                    title=title,
                     price_inr=float(price),
                     mrp_inr=(float(mrp) if isinstance(mrp, (int, float))
                             and mrp >= price else None),

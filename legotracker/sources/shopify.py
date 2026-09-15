@@ -163,6 +163,12 @@ class ShopifyStore(Source):
                     "image": (images[0].get("src") or "").split("?")[0]
                              if images else None,
                     "vendor": p.get("vendor"),
+                    # The title often omits the piece count ("Krusty Burger
+                    # Building Set for Adults") even though the storefront's
+                    # own description states it plainly ("Set contains 490
+                    # pieces") -- catalog.py falls back to this when the
+                    # title alone doesn't have it.
+                    "body_html": p.get("body_html") or "",
                 })
 
             if len(products) < per_page:

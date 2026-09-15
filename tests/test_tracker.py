@@ -322,7 +322,8 @@ def test_buyhatke_parser():
 def test_catalog_extraction():
     """The catalogue's set number comes from the storefront SKU, not the title."""
     print("\ncatalogue extraction")
-    from legotracker.catalog import (CatalogItem, pieces_of, set_num_of,
+    from legotracker.catalog import (CatalogItem, is_accessory, pieces_of,
+                                     pieces_from_description, set_num_of,
                                      theme_of, to_item)
 
     eq(set_num_of("75453", "LEGO Star Wars Offworld Sandcrawler Set 75453"),
@@ -338,7 +339,18 @@ def test_catalog_extraction():
        "piece count parsed")
     eq(pieces_of("LEGO Art The Kiss 31221 (4,000 pieces)"), 4000,
        "comma-separated piece count parsed")
-    eq(pieces_of("LEGO Keyring 854235"), None, "no piece count is fine")
+    eq(pieces_of("LEGO Keyring 854235"), None,
+       "the title alone has no piece count -- to_item() below is what recovers it")
+
+    eq(pieces_from_description("<p>Set contains <strong>490</strong> pieces.</p>"),
+       490, "piece count recovered from the storefront's own description")
+    eq(pieces_from_description("<p>For ages 8 and up.</p>"), None,
+       "a description with no piece count is fine too")
+    eq(pieces_from_description(""), None, "no description is fine")
+
+    check(is_accessory("LEGO Keyring 854235"), "a keyring is a known accessory")
+    check(is_accessory("LEGO® DUPLO® Bluey Ice Cream Trip 10458") is False,
+          "a real set is never mistaken for an accessory")
 
     eq(theme_of("LEGO® Star Wars™ Offworld Sandcrawler Set 75453"), "Star Wars",
        "theme from title")
@@ -359,6 +371,25 @@ def test_catalog_extraction():
     same = to_item({"title": "LEGO Keyring 854235", "sku": "854235",
                     "price": 699.0, "compare_at": 699.0, "in_stock": True})
     eq(same.mrp, None, "compare_at equal to price is not an MRP")
+    eq(same.pieces, 1, "a keyring with no piece count anywhere defaults to 1")
+
+    # The title has no piece count, but the storefront's own description does.
+    from_body = to_item({
+        "title": "LEGO® Icons The Simpsons™: Krusty Burger Building Set 10352",
+        "sku": "10352", "price": 5999.0,
+        "body_html": "<p>Set contains 490 pieces for a fun building project.</p>",
+    })
+    eq(from_body.pieces, 490,
+       "piece count recovered from the description when the title lacks one")
+
+    # Neither the title nor the description has one, and it isn't a known
+    # accessory -- must stay unknown rather than guessing.
+    truly_unknown = to_item({
+        "title": "LEGO® The Lord of the Rings: Rivendell 10316",
+        "sku": "10316", "price": 54999.0, "body_html": "<p>For adult fans.</p>",
+    })
+    eq(truly_unknown.pieces, None,
+       "no piece count anywhere and not an accessory -- left unknown, never guessed")
 
     eq(to_item({"title": "LEGO Gift Card", "sku": "GC", "price": 1000.0}), None,
        "items with no set number are excluded from the catalogue")
@@ -887,7 +918,8 @@ def test_deep_enrich_and_backfill():
             # A genuinely new retailer for this product -- should become a
             # new offer on the same SetResult.
             {"site_name": "Flipkart", "link": "https://www.flipkart.com/p/x",
-             "price": 12999, "mrpFloat": 13999, "prod": "LEGO X flipkart"},
+             "price": 12999, "mrpFloat": 13999,
+             "prod": "LEGO NINJAGO Wolf Mask Shadow Dojo 71813"},
             # An unmapped site (see DOMAIN_TO_RETAILER) -- must be skipped,
             # not invented as a new retailer identity.
             {"site_name": "Ajio", "link": "https://www.ajio.com/p/x",
@@ -946,6 +978,61 @@ def test_deep_enrich_and_backfill():
         search_mod._backfill_all_history(db, outcome, detail_by_url)
         eq(len(db.history(amazon_lid)), 3, "re-running the backfill is a no-op (deduped by timestamp)")
         db.close()
+
+
+def test_deep_enrich_rejects_mismatched_deal():
+    """Real bug, seen on a real set (71813): one of BuyHatke's own
+    "dealsList" entries was a completely unrelated Flipkart product (a
+    microwave oven) grouped in under the same pid as the genuine LEGO
+    listing. Blindly trusting BuyHatke's cross-retailer grouping folded that
+    microwave in as an "offer" for the set -- and then backfilled over 40
+    fake price-history points onto it. `_deep_enrich` must score every deal
+    exactly like a fresh search hit before accepting it.
+    """
+    print("\ndeep enrich rejects a mismatched deal")
+    from legotracker import search as search_mod
+    from legotracker.search import SearchOutcome, SetResult
+    from legotracker.sources.base import Offer
+
+    amazon_url = "http://www.amazon.in/gp/product/B0CQ3VY8X2"
+    outcome = SearchOutcome(query="71813", kind="set_number", sets=[
+        SetResult("71813", "LEGO NINJAGO Wolf Mask Shadow Dojo 71813", [
+            Offer(retailer="amazon_in", url=amazon_url,
+                  title="LEGO NINJAGO Wolf Mask Shadow Dojo 71813",
+                  price_inr=13499.0, in_stock=True, brand="LEGO"),
+        ]),
+    ])
+
+    detail_data = {
+        "dealsData": {"dealsList": [
+            # The real bug: same site, a real link, a real price -- just the
+            # wrong product. Nothing about the deal's shape looks broken;
+            # only the title gives it away.
+            {"site_name": "Flipkart",
+             "link": "https://www.flipkart.com/pelonis-microwave-oven/p/x",
+             "price": 8999, "mrpFloat": 10999,
+             "prod": "Pelonis AS823E4J-S 23 L Convection Microwave Oven"},
+        ]},
+        "predictedData": {"history": [
+            {"from": "2026-01-01 00:00:00", "to": "2026-01-01 00:00:00", "price": 8999},
+        ]},
+    }
+
+    original = search_mod.buyhatke_source.fetch_detail
+    search_mod.buyhatke_source.fetch_detail = lambda session, url: detail_data
+    try:
+        detail_by_url = search_mod._deep_enrich(session=None, outcome=outcome)
+    finally:
+        search_mod.buyhatke_source.fetch_detail = original
+
+    res = outcome.sets[0]
+    eq(len(res.offers), 1, "the mismatched microwave deal was dropped, not folded in")
+    check(all("microwave" not in (o.title or "").lower() for o in res.offers),
+          "no trace of the mismatched product ends up on the set")
+
+    # The detail page itself was still fetched (its own listing's history is
+    # legitimate) -- only the *deal* pulled from it was rejected.
+    eq(list(detail_by_url), [amazon_url], "the real listing's own detail page is still recorded")
 
 
 def test_deep_enrich_skips_direct_sources_and_respects_cooldown():
