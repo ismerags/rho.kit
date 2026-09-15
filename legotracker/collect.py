@@ -22,6 +22,7 @@ from .analytics import compute_stats, detect_alerts
 from .db import Database
 from .matching import candidate_set_numbers, normalise_set_num, score_listing
 from .sources import Offer, Source, build_sources
+from .sources import buyhatke as buyhatke_source
 from .http_client import PoliteSession
 
 log = logging.getLogger(__name__)
@@ -129,6 +130,61 @@ def discover(db: Database, session: PoliteSession,
 # refresh
 # --------------------------------------------------------------------------
 
+def _absorb_deals(db: Database, run_id: int, set_num: str,
+                  deals: list[dict], report: RunReport) -> None:
+    """Fold BuyHatke's cross-retailer comparison into OUR OWN retailers'
+    price history — e.g. its "Amazon" deal becomes a real amazon_in listing,
+    priced without ever asking amazon.in directly. Skipped for any site we
+    don't already have an adapter for; there is nowhere sensible to put it."""
+    for deal in deals:
+        site = str(deal.get("site_name") or "").strip().lower()
+        retailer = buyhatke_source.SITE_NAME_TO_RETAILER.get(site)
+        if not retailer or retailer == buyhatke_source.BuyHatke.name:
+            continue
+        link = deal.get("link")
+        price = deal.get("price")
+        if not link or not isinstance(price, (int, float)):
+            continue
+        mrp = deal.get("mrpFloat")
+        listing_id = db.upsert_listing(
+            set_num=set_num, retailer=retailer, url=link,
+            title=deal.get("prod"), confidence=0.8)
+        db.record_price(
+            listing_id, price_inr=float(price),
+            mrp_inr=(float(mrp) if isinstance(mrp, (int, float))
+                    and mrp >= price else None),
+            in_stock=True, run_id=run_id)
+        report.prices_saved += 1
+        report.sets_touched.add(set_num)
+
+
+def _backfill_history(db: Database, listing_id: int,
+                      points: list[tuple[str, float]]) -> int:
+    """Import BuyHatke's own historical price series for one listing.
+
+    Runs every refresh but only ever adds what is missing: BuyHatke's past
+    is immutable (only new points appear at the tail), so anything already
+    present is left alone rather than re-inserted.
+    """
+    if not points:
+        return 0
+    existing = db.observed_timestamps(listing_id)
+    inserted = 0
+    for at, price in points:
+        # BuyHatke's own format ("2024-04-19 05:05:31") normalised to match
+        # this project's ISO-with-offset convention, so a listing's history
+        # sorts correctly whether it came from a live scrape or a backfill.
+        # BuyHatke does not publish a timezone for these; treated as UTC —
+        # close enough for a "when did the price move" signal.
+        observed_at = at.replace(" ", "T") + "+00:00"
+        if observed_at in existing:
+            continue
+        db.backfill_price_point(listing_id, observed_at, price_inr=price)
+        existing.add(observed_at)
+        inserted += 1
+    return inserted
+
+
 def refresh(db: Database, session: PoliteSession,
             sources: Optional[list[str]] = None,
             only_sets: Optional[Iterable[str]] = None) -> RunReport:
@@ -153,8 +209,17 @@ def refresh(db: Database, session: PoliteSession,
         prev = db.latest_price(listing["id"])
         prev_price = prev["price_inr"] if prev else None
 
+        bh_data = None
         try:
-            offer = adapter.fetch_offer(listing["url"])
+            if listing["retailer"] == buyhatke_source.BuyHatke.name:
+                # Fetched once here so the cross-vendor deals and the full
+                # price history below can reuse it instead of hitting
+                # BuyHatke a second time for the same page.
+                bh_data = buyhatke_source.fetch_detail(session, listing["url"])
+                offer = (buyhatke_source.offer_from_product_data(listing["url"], bh_data)
+                        if bh_data else None)
+            else:
+                offer = adapter.fetch_offer(listing["url"])
         except Exception as exc:  # noqa: BLE001
             log.warning("refresh %s %s failed: %s",
                         listing["retailer"], listing["set_num"], exc)
@@ -191,6 +256,12 @@ def refresh(db: Database, session: PoliteSession,
         )
         report.prices_saved += 1
         report.sets_touched.add(listing["set_num"])
+
+        if bh_data is not None:
+            _absorb_deals(db, run_id, listing["set_num"],
+                         buyhatke_source.deal_list(bh_data), report)
+            _backfill_history(db, listing["id"],
+                              buyhatke_source.history_points(bh_data))
 
         # ---- alerts --------------------------------------------------------
         history = [dict(r) for r in db.history(listing["id"])]

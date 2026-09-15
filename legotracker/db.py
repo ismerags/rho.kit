@@ -290,6 +290,34 @@ class Database:
                  rating, review_count, run_id),
             )
 
+    def backfill_price_point(self, listing_id: int, observed_at: str,
+                             price_inr: Optional[float] = None,
+                             mrp_inr: Optional[float] = None,
+                             in_stock: Optional[bool] = None) -> None:
+        """Insert a price_point at a caller-supplied historical timestamp.
+
+        Used only to import price history a third party already collected
+        (BuyHatke keeps a multi-year series per product) — never for a live
+        observation, which must always carry the real observation time (see
+        record_price). No run_id: this row was not produced by any of our
+        own collection runs.
+        """
+        with self.tx() as c:
+            c.execute(
+                """INSERT INTO price_points
+                     (listing_id, observed_at, price_inr, mrp_inr, in_stock, run_id)
+                   VALUES (?,?,?,?,?,NULL)""",
+                (listing_id, observed_at, price_inr, mrp_inr,
+                 None if in_stock is None else int(in_stock)),
+            )
+
+    def observed_timestamps(self, listing_id: int) -> set[str]:
+        """Every observed_at already recorded for a listing, for de-duping a
+        history backfill against what is already there."""
+        return {r["observed_at"] for r in self.conn.execute(
+            "SELECT observed_at FROM price_points WHERE listing_id = ?",
+            (listing_id,))}
+
     def history(self, listing_id: int, limit: int = 5000) -> list[sqlite3.Row]:
         return self.conn.execute(
             """SELECT observed_at, price_inr, in_stock FROM price_points

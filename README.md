@@ -7,7 +7,7 @@ a **static website**. No server, no database in production, no login, no ads.
 YOUR MAC                          GITHUB                      VISITORS
 python -m legotracker publish  →  Actions builds the site  →  a fast, free page
  (weekly, ~45 min)                 (~2 min, free)              (no retailer is
- the 7 retailer adapters           ~900 set pages               ever contacted)
+ the 8 retailer adapters           ~900 set pages               ever contacted)
 ```
 
 The website only ever *reads* data that was collected earlier. That is what
@@ -21,9 +21,9 @@ retailers — a thousand visitors cause exactly as much retailer traffic as zero
 Three tools, one engine.
 
 **Browse** — a catalogue of ~830 LEGO sets sold in India, with thumbnails.
-Click one to compare all seven retailers live.
+Click one to compare all eight retailers live.
 
-**Search** — type a set number, get live prices from seven retailers in ~3 seconds.
+**Search** — type a set number, get live prices from eight retailers in ~3 seconds.
 No database, no waiting.
 
 **Track** — optionally keep the history and get a verdict on whether today's
@@ -37,10 +37,10 @@ python -m legotracker serve          # opens the search page in your browser
 
 ---
 
-## The seven retailers
+## The eight retailers
 
 All verified against the live sites, September 2026. Each costs **one HTTP
-request** per search, and all seven run in parallel.
+request** per search, and all eight run in parallel.
 
 | Retailer | How | Notes |
 |---|---|---|
@@ -51,6 +51,7 @@ request** per search, and all seven run in parallel.
 | **Amazon.in** | HTML search page | Server-rendered prices |
 | **Flipkart** | `window.__INITIAL_STATE__` JSON | Embedded in the page |
 | **FirstCry** | HTML `/search/?q=` | Server-rendered |
+| **BuyHatke** | `buyhatke.com` search + paste-link lookup | Aggregator — see below |
 | *LEGO.com/en-in* | *catalog only* | *Publishes no prices in HTML — see below* |
 
 Four of these are proper JSON APIs, not scraping. That is a large part of why
@@ -83,6 +84,31 @@ adapter lifts it from the homepage and caches it — so a rotation fixes itself.
 endpoint rejects replayed requests as CSRF. It is used only as a catalog source
 (its theme pages *do* server-render official set numbers and names). Adding its
 prices needs a headless browser — see the end of this file.
+
+**BuyHatke is different from the other seven: it does not talk to a retailer,
+it talks to a price-tracking aggregator that already does.** `buyhatke.com`
+watches Amazon, Flipkart, Hamleys, Ajio and others itself, for free, with no
+login or API key. Two of its routes are used here:
+
+- `/search?product=lego` — one request surfaces dozens of BuyHatke-tracked LEGO
+  sets across every retailer it watches.
+- pasting any Amazon/Flipkart product URL after `buyhatke.com/` resolves that
+  exact product and returns its current price, a small cross-retailer
+  comparison, **and its full historical price series** — often a year or more,
+  which is far more history than this project could collect on its own.
+
+Both routes server-render their data into the HTML, so no headless browser is
+needed. Two things happen with what comes back that the other adapters don't
+do: `_absorb_deals` folds BuyHatke's own "Amazon ₹13,499 / Hamleys ₹12,999"
+comparison into *this project's own* `amazon_in`/`flipkart`/`hamleys` price
+history — so a BuyHatke lookup indirectly prices those retailers without ever
+requesting amazon.in or flipkart.com directly — and `_backfill_history` imports
+BuyHatke's multi-year price series the first time each listing is seen, which
+is where a set's history can suddenly start well before this project began
+tracking it. See `legotracker/sources/buyhatke.py` for the parsers (a
+brace-matching extractor for the paste-link route's near-JSON blob, a small
+regex for the search route's compiled `x.field=value;` output) and
+`legotracker/collect.py`'s `refresh()` for where both get wired in.
 
 ---
 
@@ -125,7 +151,7 @@ that are out of stock at *every* retailer checked sink to the bottom whatever th
 sort — but a set nobody has priced yet is treated as **unknown, not
 unavailable**, so it is never demoted for lack of data.
 
-Click a set and all seven retailers are checked live, cheapest first. Every
+Click a set and all eight retailers are checked live, cheapest first. Every
 retailer gets a row, including the ones with nothing: "doesn't stock it" and
 "unavailable" are real answers and are shown as such.
 

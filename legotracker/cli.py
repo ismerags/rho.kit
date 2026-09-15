@@ -13,6 +13,7 @@ from . import collect as collector
 from .analytics import compute_stats, score_deal
 from .db import Database
 from .http_client import PoliteSession
+from .importer import rebuild_from_exports
 from .matching import normalise_set_num
 from .report import render
 from .sources import RETAILER_LABELS, SOURCE_CLASSES, build_sources
@@ -42,6 +43,25 @@ def _session(args) -> PoliteSession:
 
 
 # ---------------------------------------------------------------- commands
+
+def cmd_rebuild(args, db: Database) -> int:
+    """Rebuild the local database from data/catalog.json + observations.csv.
+
+    Every CI run starts from an empty sqlite file — nothing on a GitHub
+    Actions runner survives between runs except what git checked out. This
+    is the step that turns the committed exports back into real "what did we
+    see last time" state, so collect/priceall can compare against it and
+    only save what actually changed. Safe to run any time, including on rb's
+    own machine: it never overwrites price history, only fills in rows that
+    are missing (see importer.py).
+    """
+    stats = rebuild_from_exports(db, Path(args.data))
+    print(f"Rebuilt from {args.data}: {stats['catalog_items']} catalogue rows, "
+          f"{stats['sets']} sets, {stats['listings']} listings, "
+          f"{stats['observations']} observations imported "
+          f"({stats['observations_skipped']} already present).")
+    return 0
+
 
 def cmd_discover(args, db: Database) -> int:
     rep = collector.discover(
@@ -403,6 +423,13 @@ def build_parser() -> argparse.ArgumentParser:
                    help="skip sets priced within this many days (default 7)")
     a.add_argument("--limit", type=int, help="stop after this many sets")
     a.set_defaults(fn=cmd_priceall)
+
+    r = sub.add_parser("rebuild",
+                       help="rebuild the local database from data/*.json|csv "
+                            "(run this first on a fresh checkout, e.g. in CI)")
+    r.add_argument("--data", default=str(ROOT / "data"),
+                   help="folder holding catalog.json / observations.csv")
+    r.set_defaults(fn=cmd_rebuild)
 
     d = sub.add_parser("discover", help="sweep retailers and register sets")
     d.add_argument("--query", nargs="+", help="override the default search sweep")

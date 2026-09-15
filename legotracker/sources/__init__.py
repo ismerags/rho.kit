@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from ..http_client import PoliteSession
 from .amazon_in import AmazonIN
+from .buyhatke import BuyHatke
 from .base import Offer, Source, parse_inr
 from .firstcry import FirstCry
 from .flipkart import Flipkart
@@ -13,6 +14,7 @@ from .shopify import JaimanToys, MyBrickHouse, ShopifyStore, Toycra
 
 SOURCE_CLASSES = {
     AmazonIN.name: AmazonIN,
+    BuyHatke.name: BuyHatke,
     Flipkart.name: Flipkart,
     FirstCry.name: FirstCry,
     Hamleys.name: Hamleys,
@@ -24,7 +26,7 @@ SOURCE_CLASSES = {
 
 #: Sources that can actually report a rupee price. LEGO.com is excluded — it
 #: renders prices client-side only (see sources/lego_in.py).
-PRICE_SOURCES = ("amazon_in", "flipkart", "firstcry",
+PRICE_SOURCES = ("amazon_in", "flipkart", "firstcry", "buyhatke",
                  "hamleys", "jaimantoys", "mybrickhouse", "toycra")
 
 #: The storefront the browsable catalogue is built from.
@@ -50,7 +52,7 @@ def build_sources(session: PoliteSession,
 
 
 __all__ = [
-    "AmazonIN", "FirstCry", "Flipkart", "Hamleys", "JaimanToys", "LegoIN",
+    "AmazonIN", "BuyHatke", "FirstCry", "Flipkart", "Hamleys", "JaimanToys", "LegoIN",
     "MyBrickHouse", "ShopifyStore", "Toycra",
     "Offer", "Source", "parse_inr",
     "SOURCE_CLASSES", "PRICE_SOURCES", "SEARCH_SOURCES", "RETAILER_LABELS",

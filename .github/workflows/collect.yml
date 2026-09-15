@@ -1,0 +1,71 @@
+# Scheduled price collection --- the cloud equivalent of scripts/weekly.sh.
+#
+# Why this exists: scripts/weekly.sh only runs if rb's own Mac happens to be
+# awake at 03:00 on Sunday (launchd cannot wake a sleeping Mac). This workflow
+# runs the same three steps --- collect, publish, push --- on GitHub's own
+# infrastructure instead, so the data stays current no matter what the Mac is
+# doing. Runners are ephemeral and start from a bare checkout, so the first
+# step (`rebuild`) reconstructs the working SQLite database from the
+# git-committed exports (data/catalog.json + data/observations.csv) before
+# `priceall` can compare "new price" against "last known price".
+#
+# GitHub Actions minutes are free and unlimited on public repositories.
+
+name: Collect prices
+
+on:
+  schedule:
+    # Sunday 03:00 IST == Saturday 21:30 UTC --- same slot scripts/weekly.sh
+    # used locally, so the two never race each other in spirit even though
+    # only one of them needs to actually be doing this now.
+    - cron: '30 21 * * 6'
+  # Lets you trigger a collection run by hand from the Actions tab.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Rebuild working database from committed exports
+        run: python -m legotracker rebuild --data data
+
+      - name: Price every catalogue set at every retailer
+        # priceall skips anything priced in the last 7 days, so an interrupted
+        # or timed-out run just picks back up next time rather than starting
+        # over. A partial sweep is still worth publishing --- see weekly.sh.
+        run: python -m legotracker priceall || echo "::warning::priceall stopped early --- publishing what was gathered"
+
+      - name: Export data files and rebuild the site
+        run: python -m legotracker publish
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "legotracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No price changes since the last run. Nothing to commit."
+            exit 0
+          fi
+          CHANGED=$(git diff --cached --numstat data/observations.csv | awk '{print $1}')
+          git commit -m "Prices for $(date '+%-d %B %Y')
+
+          ${CHANGED:-0} new observations, collected by GitHub Actions."
+          git push

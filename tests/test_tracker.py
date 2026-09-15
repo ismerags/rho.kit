@@ -23,6 +23,10 @@ from legotracker.db import Database  # noqa: E402
 from legotracker.matching import (candidate_set_numbers, score_listing,  # noqa: E402
                                   normalise_set_num)
 from legotracker.sources.amazon_in import AmazonIN  # noqa: E402
+from legotracker.sources.buyhatke import (_extract_balanced_object,  # noqa: E402
+                                          _js_object_to_json, offer_from_product_data,
+                                          history_points, deal_list, _parse_search_blocks,
+                                          _offer_from_search_item)
 from legotracker.sources.base import parse_inr  # noqa: E402
 from legotracker.sources.firstcry import FirstCry  # noqa: E402
 from legotracker.sources.flipkart import _extract_state, _walk_products, _prices  # noqa: E402
@@ -247,6 +251,52 @@ def test_hamleys_parser():
 
     eq(candidate_set_numbers(offers[0].title), ["10355"],
        "set number extracted despite '18Y+' age suffix")
+
+
+def test_buyhatke_parser():
+    print("\nBuyHatke parser (genuine captured page data, set 71813)")
+
+    # ---- product-detail route: one near-JSON object literal --------------
+    html = (FIX / "buyhatke_detail.html").read_text()
+    blob = _extract_balanced_object(html, "data:{siteName:")
+    check(blob is not None, "brace-matched data:{siteName:...} object extracted")
+
+    data = _js_object_to_json(blob)
+    check(data is not None, "unquoted-key object literal parsed as JSON")
+    eq(data["siteName"], "Amazon", "siteName read")
+
+    offer = offer_from_product_data("https://buyhatke.com/x", data)
+    check(offer is not None, "offer built from productData")
+    eq(offer.price_inr, 13499.0, "current price read")
+    eq(offer.mrp_inr, None, "mrp(12999) < price(13499) discarded, matches base.py convention")
+    eq(offer.sku, "B0CQ3VY8X2", "ASIN read from productData.pid")
+    eq(offer.rating, 4.7, "rating read")
+    check("71813" in offer.title, "title carries the set number")
+
+    hist = history_points(data)
+    eq(len(hist), 4, "four history points (oldest first)")
+    eq(hist[0], ("2024-04-19 05:05:31", 33500.0), "oldest point, from 2024")
+    eq(hist[-1], ("2026-09-14 07:00:24", 13499.0), "newest point matches current price")
+
+    deals = deal_list(data)
+    eq(len(deals), 3, "three cross-retailer deals")
+    names = sorted(d["site_name"] for d in deals)
+    eq(names, ["Ajio", "Amazon", "Hamleys"], "deal site names read")
+
+    # ---- search route: flat x.field=value; statements, not JSON ----------
+    search_html = (FIX / "buyhatke_search.html").read_text()
+    items = list(_parse_search_blocks(search_html))
+    eq(len(items), 2, "two search result blocks found")
+    eq(items[0]["price"], 2547, "first item's price read")
+    eq(items[1]["pid"], "B0CQ3VY8X2", "second item's pid read")
+
+    first = _offer_from_search_item(items[0])
+    check(first is not None, "search item converted to an Offer")
+    eq(first.url, "https://buyhatke.com/http://www.amazon.in/gp/product/B0FPXDXXYR",
+       "amazon.in link wrapped in the buyhatke paste-link proxy form")
+    eq(first.price_inr, 2547.0, "search item price")
+    eq(first.mrp_inr, 2999.0, "search item mrp(2999) > price(2547) kept")
+    check("77256" in first.title, "search item title carries the set number")
 
 
 def test_catalog_extraction():
@@ -1198,7 +1248,7 @@ def main() -> int:
     for fn in (test_parse_inr, test_set_number_extraction, test_matching_rejects_junk,
                test_amazon_parser, test_flipkart_parser, test_firstcry_parser,
                test_shopify_parser, test_shopify_paise_conversion,
-               test_hamleys_parser, test_catalog_extraction,
+               test_hamleys_parser, test_buyhatke_parser, test_catalog_extraction,
                test_catalog_storage, test_catalog_name_cleanup,
                test_catalog_enrichment, test_lego_catalog_regex,
                test_stats_and_scoring, test_score_curve, test_alerts,

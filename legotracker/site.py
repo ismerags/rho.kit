@@ -66,6 +66,7 @@ RETAILERS: dict[str, dict] = {
     "amazon_in":    {"label": "Amazon.in",            "domain": "amazon.in"},
     "flipkart":     {"label": "Flipkart",             "domain": "flipkart.com"},
     "firstcry":     {"label": "FirstCry",             "domain": "firstcry.com"},
+    "buyhatke":     {"label": "BuyHatke (aggregated)", "domain": "buyhatke.com"},
     "lego_in":      {"label": "LEGO.com IN",          "domain": "lego.com"},
 }
 

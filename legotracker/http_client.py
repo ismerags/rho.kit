@@ -69,6 +69,10 @@ class FetchError(RuntimeError):
 HOST_MIN_INTERVAL = {
     "www.amazon.in": 4.0,
     "www.flipkart.com": 3.0,
+    # Not a bot-walled host — BuyHatke is a public, unauthenticated aggregator
+    # that is happy to be hit. This floor exists purely to be a good citizen,
+    # not because it has ever throttled us.
+    "buyhatke.com": 1.5,
 }
 
 

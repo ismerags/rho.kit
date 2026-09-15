@@ -183,10 +183,27 @@ tail -f data/weekly.log          # Ctrl+C to stop watching
 
 To stop it later: `./scripts/install-schedule.sh --remove`
 
-**If the Mac is asleep at 03:00**, the job runs when it next wakes. If it is
-off all week, nothing collects — the site keeps working and starts labelling
-prices "last checked 12 days ago" in amber. That is the honest failure mode,
-and it is why every price on the site carries a date.
+**If the Mac is asleep at 03:00**, launchd runs the job as soon as it wakes —
+but it cannot wake a sleeping Mac by itself, and if the Mac is off or the lid
+is shut all week, nothing collects locally.
+
+**`.github/workflows/collect.yml` covers that gap.** It runs the same three
+steps — collect, publish, push — on GitHub's own infrastructure, on the same
+Sunday-03:00-IST schedule, whether or not your Mac is awake. Since a fresh
+Actions runner has no database (nothing survives between runs except what's
+in the repo), it starts with `python -m legotracker rebuild`, which
+reconstructs the working SQLite database from the committed
+`data/catalog.json` + `data/observations.csv` — the same two files your Mac's
+own `publish` step already writes — before pricing anything. The two
+schedules don't coordinate and don't need to: whichever one runs, `priceall`
+skips anything priced in the last 7 days, so the other one just finds less
+work to do. You can also trigger a collection run by hand from the repo's
+**Actions** tab → *Collect prices* → *Run workflow* — useful right after
+setup, without waiting for either Sunday.
+
+If both the Mac and Actions miss a week, the site keeps working and starts
+labelling prices "last checked 12 days ago" in amber. That is the honest
+failure mode, and it is why every price on the site carries a date.
 
 ---
 
@@ -228,6 +245,16 @@ changes.
 
 **The site shows old prices.** Your Mac missed its run. `./scripts/weekly.sh`
 fixes it now; check `data/weekly.log` for why.
+
+**`data/lego.sqlite3` won't open ("database disk image is malformed").** This
+is the local working copy, not your data — it is gitignored and gets rebuilt
+from `data/catalog.json` + `data/observations.csv`, which are the real,
+committed record. Move the corrupt file aside and rebuild it:
+
+```bash
+mv data/lego.sqlite3 data/lego.sqlite3.bad
+python -m legotracker rebuild
+```
 
 **A retailer shows "no match" everywhere.** They changed their page layout.
 `python -m legotracker diagnose` tells you which one and whether it was
