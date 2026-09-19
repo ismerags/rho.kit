@@ -34,6 +34,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10295,mybrickhouse,2026-09-12T10:49:00+00:00,18299.0,,0,https://lego.mybrickhouse.com/products/porsche-911-10295-building-kit-1-458-pieces
 10295,mybrickhouse,2026-09-12T10:54:29+00:00,18299.0,,0,https://lego.mybrickhouse.com/products/porsche-911-10295-building-kit-1-458-pieces
 10295,mybrickhouse,2026-09-12T11:04:28+00:00,18299.0,,0,https://lego.mybrickhouse.com/products/porsche-911-10295-building-kit-1-458-pieces
+10295,toycra,2026-09-19T23:23:33+00:00,19999.0,,0,https://toycra.com/products/lego-10295-icons-porsche-911
 10307,mybrickhouse,2026-09-10T09:18:14+00:00,65999.0,,0,https://lego.mybrickhouse.com/products/eiffel-tower-10307-building-kit-for-adults-10-001-pieces
 10307,mybrickhouse,2026-09-10T11:10:46+00:00,65999.0,,0,https://lego.mybrickhouse.com/products/eiffel-tower-10307-building-kit-for-adults-10-001-pieces
 10307,mybrickhouse,2026-09-10T11:34:31+00:00,65999.0,,0,https://lego.mybrickhouse.com/products/eiffel-tower-10307-building-kit-for-adults-10-001-pieces
@@ -154,6 +155,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10342,mybrickhouse,2026-09-12T10:49:00+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/botanicals-pretty-pink-flower-bouquet-floral-decor-10342-building-kit-749-pieces
 10342,mybrickhouse,2026-09-12T10:54:29+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/botanicals-pretty-pink-flower-bouquet-floral-decor-10342-building-kit-749-pieces
 10342,mybrickhouse,2026-09-12T11:04:28+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/botanicals-pretty-pink-flower-bouquet-floral-decor-10342-building-kit-749-pieces
+10342,toycra,2026-09-19T23:16:32+00:00,6399.0,,0,https://toycra.com/products/lego-10342-botanicals-pretty-pink-flower-bouquet-749-pieces
 10343,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-mini-orchid-plant-gift-10343-building-kit-274-pieces
 10343,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-mini-orchid-plant-gift-10343-building-kit-274-pieces
 10343,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-mini-orchid-plant-gift-10343-building-kit-274-pieces
@@ -166,6 +168,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10344,hamleys,2026-09-09T12:15:07+00:00,3039.0,3199.0,1,https://hamleys.in/product/lego-botanicals-lucky-bamboo-plant-decor-10344-building-blocks-for-18y-13468871
 10344,hamleys,2026-09-09T12:29:11+00:00,3039.0,3199.0,1,https://hamleys.in/product/lego-botanicals-lucky-bamboo-plant-decor-10344-building-blocks-for-18y-13468871
 10344,hamleys,2026-09-09T12:46:19+00:00,3039.0,3199.0,1,https://hamleys.in/product/lego-botanicals-lucky-bamboo-plant-decor-10344-building-blocks-for-18y-13468871
+10344,jaimantoys,2026-09-19T23:16:28+00:00,2834.0,3499.0,0,https://jaimantoys.com/products/lego-10343-botanicals-mini-orchid-artificial-flowers-set-274-pieces-copy
 10344,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-lucky-bamboo-plant-decor-10344-building-kit-325-pieces
 10344,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-lucky-bamboo-plant-decor-10344-building-kit-325-pieces
 10344,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-lucky-bamboo-plant-decor-10344-building-kit-325-pieces
@@ -173,6 +176,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10344,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-lucky-bamboo-plant-decor-10344-building-kit-325-pieces
 10344,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-lucky-bamboo-plant-decor-10344-building-kit-325-pieces
 10344,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/botanicals-lucky-bamboo-plant-decor-10344-building-kit-325-pieces
+10344,toycra,2026-09-19T23:16:28+00:00,3199.0,,0,https://toycra.com/products/lego-10344-botanicals-lucky-bamboo-325-pieces
 10345,hamleys,2026-09-09T12:13:30+00:00,10449.0,10999.0,1,https://hamleys.in/product/lego-botanicals-10345-flower-arrangement-floral-home-decor-building-blocks-for-18y-17840610
 10345,hamleys,2026-09-09T12:29:11+00:00,10449.0,10999.0,1,https://hamleys.in/product/lego-botanicals-10345-flower-arrangement-floral-home-decor-building-blocks-for-18y-17840610
 10345,mybrickhouse,2026-09-10T09:18:14+00:00,10999.0,,1,https://lego.mybrickhouse.com/products/botanicals-flower-arrangement-floral-home-decor-10345-building-kit-1161-pieces
@@ -357,6 +361,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10372,hamleys,2026-09-09T12:15:07+00:00,7362.0,7749.0,1,https://hamleys.in/product/lego-botanicals-hibiscus-flower-building-set-for-adults-10372-building-blocks-for-age-18y-17361653
 10372,hamleys,2026-09-09T12:29:11+00:00,7362.0,7749.0,1,https://hamleys.in/product/lego-botanicals-hibiscus-flower-building-set-for-adults-10372-building-blocks-for-age-18y-17361653
 10372,hamleys,2026-09-09T12:46:19+00:00,7362.0,7749.0,1,https://hamleys.in/product/lego-botanicals-hibiscus-flower-building-set-for-adults-10372-building-blocks-for-age-18y-17361653
+10372,jaimantoys,2026-09-19T23:16:27+00:00,8449.0,8499.0,1,https://jaimantoys.com/products/lego%C2%AE-icons-botanical-collection-hibiscus-10372-660-pieces
 10372,mybrickhouse,2026-09-10T09:18:14+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/botanicals-hibiscus-flower-for-adults-10372-building-kit-660-pieces
 10372,mybrickhouse,2026-09-10T11:10:46+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/botanicals-hibiscus-flower-for-adults-10372-building-kit-660-pieces
 10372,mybrickhouse,2026-09-10T11:34:31+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/botanicals-hibiscus-flower-for-adults-10372-building-kit-660-pieces
@@ -364,6 +369,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10372,mybrickhouse,2026-09-12T10:49:00+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/botanicals-hibiscus-flower-for-adults-10372-building-kit-660-pieces
 10372,mybrickhouse,2026-09-12T10:54:29+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/botanicals-hibiscus-flower-for-adults-10372-building-kit-660-pieces
 10372,mybrickhouse,2026-09-12T11:04:28+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/botanicals-hibiscus-flower-for-adults-10372-building-kit-660-pieces
+10372,toycra,2026-09-19T23:16:27+00:00,7749.0,,1,https://toycra.com/products/lego-10372-botanicals-hibiscus-660-pieces
 10373,hamleys,2026-09-09T12:15:07+00:00,6849.0,,1,https://hamleys.in/product/lego-botanicals-mini-bonsai-trees-plant-decor-for-adults-10373-building-blocks-for-age-18y-17361648
 10373,hamleys,2026-09-09T12:46:19+00:00,6849.0,,1,https://hamleys.in/product/lego-botanicals-mini-bonsai-trees-plant-decor-for-adults-10373-building-blocks-for-age-18y-17361648
 10373,mybrickhouse,2026-09-10T09:18:14+00:00,6849.0,,1,https://lego.mybrickhouse.com/products/botanicals-mini-bonsai-trees-plant-decor-for-adults-10373-building-kit-709-pieces
@@ -373,6 +379,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10373,mybrickhouse,2026-09-12T10:49:00+00:00,6849.0,,1,https://lego.mybrickhouse.com/products/botanicals-mini-bonsai-trees-plant-decor-for-adults-10373-building-kit-709-pieces
 10373,mybrickhouse,2026-09-12T10:54:29+00:00,6849.0,,1,https://lego.mybrickhouse.com/products/botanicals-mini-bonsai-trees-plant-decor-for-adults-10373-building-kit-709-pieces
 10373,mybrickhouse,2026-09-12T11:04:28+00:00,6849.0,,1,https://lego.mybrickhouse.com/products/botanicals-mini-bonsai-trees-plant-decor-for-adults-10373-building-kit-709-pieces
+10373,toycra,2026-09-19T23:16:31+00:00,6849.0,7499.0,0,https://toycra.com/products/lego-10373-botanicals-mini-bonsai-trees-709-pieces
 10375,mybrickhouse,2026-09-10T09:18:14+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/icons-how-to-train-your-dragon-toothless-building-set-for-adults-10375-784-pieces
 10375,mybrickhouse,2026-09-10T11:10:46+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/icons-how-to-train-your-dragon-toothless-building-set-for-adults-10375-784-pieces
 10375,mybrickhouse,2026-09-10T11:34:31+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/icons-how-to-train-your-dragon-toothless-building-set-for-adults-10375-784-pieces
@@ -415,6 +422,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10425,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/duplo-r-town-train-tunnel-and-tracks-expansion-set-10425-building-kit-20-pieces
 10425,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/duplo-r-town-train-tunnel-and-tracks-expansion-set-10425-building-kit-20-pieces
 10425,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/duplo-r-town-train-tunnel-and-tracks-expansion-set-10425-building-kit-20-pieces
+10425,toycra,2026-09-19T23:17:46+00:00,2499.0,,1,https://toycra.com/products/lego-10425-duplo-train-tunnel-and-tracks-expansion-set-20-pieces
 10426,hamleys,2026-09-09T12:13:30+00:00,3894.0,4099.0,1,https://hamleys.in/product/lego-duplo-town-train-bridge-and-tracks-expansion-set-10426-building-blocks-toys-for-2y-13468934
 10426,hamleys,2026-09-09T12:15:07+00:00,3894.0,4099.0,1,https://hamleys.in/product/lego-duplo-town-train-bridge-and-tracks-expansion-set-10426-building-blocks-toys-for-2y-13468934
 10426,hamleys,2026-09-09T12:29:11+00:00,3894.0,4099.0,1,https://hamleys.in/product/lego-duplo-town-train-bridge-and-tracks-expansion-set-10426-building-blocks-toys-for-2y-13468934
@@ -426,6 +434,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10426,mybrickhouse,2026-09-12T10:49:00+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/duplo-r-town-train-bridge-and-tracks-expansion-set-10426-building-kit-42-pieces
 10426,mybrickhouse,2026-09-12T10:54:29+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/duplo-r-town-train-bridge-and-tracks-expansion-set-10426-building-kit-42-pieces
 10426,mybrickhouse,2026-09-12T11:04:28+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/duplo-r-town-train-bridge-and-tracks-expansion-set-10426-building-kit-42-pieces
+10426,toycra,2026-09-19T23:17:44+00:00,4099.0,,1,https://toycra.com/products/lego-10426-duplo-train-bridge-and-tracks-expansion-set-42-pieces
 10427,hamleys,2026-09-09T12:13:30+00:00,9999.0,,1,https://hamleys.in/product/lego-duplo-town-interactive-adventure-train-set-10427-building-blocks-for-age-2y-17361697
 10427,hamleys,2026-09-09T12:15:07+00:00,9999.0,,1,https://hamleys.in/product/lego-duplo-town-interactive-adventure-train-set-10427-building-blocks-for-age-2y-17361697
 10427,hamleys,2026-09-09T12:29:11+00:00,9999.0,,1,https://hamleys.in/product/lego-duplo-town-interactive-adventure-train-set-10427-building-blocks-for-age-2y-17361697
@@ -437,6 +446,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10427,mybrickhouse,2026-09-12T10:49:00+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/duplo-town-interactive-adventure-train-set-10427-building-kit-57-pieces
 10427,mybrickhouse,2026-09-12T10:54:29+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/duplo-town-interactive-adventure-train-set-10427-building-kit-57-pieces
 10427,mybrickhouse,2026-09-12T11:04:28+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/duplo-town-interactive-adventure-train-set-10427-building-kit-57-pieces
+10427,toycra,2026-09-19T23:17:38+00:00,7499.0,9999.0,1,https://toycra.com/products/lego-10427-duplo-interactive-adventure-train-57-pieces
 10428,hamleys,2026-09-09T12:15:07+00:00,16999.0,,1,https://hamleys.in/product/lego-duplo-town-big-interactive-community-train-set-10428-building-blocks-for-age-3y-17361738
 10428,mybrickhouse,2026-09-10T09:18:14+00:00,16999.0,,1,https://lego.mybrickhouse.com/products/duplo-town-big-interactive-community-train-set-10428-building-kit-103-pieces
 10428,mybrickhouse,2026-09-10T11:10:46+00:00,16999.0,,1,https://lego.mybrickhouse.com/products/duplo-town-big-interactive-community-train-set-10428-building-kit-103-pieces
@@ -445,6 +455,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10428,mybrickhouse,2026-09-12T10:49:00+00:00,16999.0,,1,https://lego.mybrickhouse.com/products/duplo-town-big-interactive-community-train-set-10428-building-kit-103-pieces
 10428,mybrickhouse,2026-09-12T10:54:29+00:00,16999.0,,1,https://lego.mybrickhouse.com/products/duplo-town-big-interactive-community-train-set-10428-building-kit-103-pieces
 10428,mybrickhouse,2026-09-12T11:04:28+00:00,16999.0,,1,https://lego.mybrickhouse.com/products/duplo-town-big-interactive-community-train-set-10428-building-kit-103-pieces
+10428,toycra,2026-09-19T23:17:35+00:00,12374.0,16999.0,1,https://toycra.com/products/lego-10428-duplo-big-interactive-community-train-103-pieces
 10432,mybrickhouse,2026-09-10T09:18:14+00:00,2060.0,2749.0,1,https://lego.mybrickhouse.com/products/duplo-r-peppa-pig-boat-trip-playset-10432-building-kit-23-pieces
 10432,mybrickhouse,2026-09-10T11:10:46+00:00,2060.0,2749.0,1,https://lego.mybrickhouse.com/products/duplo-r-peppa-pig-boat-trip-playset-10432-building-kit-23-pieces
 10432,mybrickhouse,2026-09-10T11:34:31+00:00,2060.0,2749.0,1,https://lego.mybrickhouse.com/products/duplo-r-peppa-pig-boat-trip-playset-10432-building-kit-23-pieces
@@ -504,6 +515,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10447,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/duplo-r-ambulance-driver-for-pretend-play-10447-building-kit-19-pieces
 10447,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/duplo-r-ambulance-driver-for-pretend-play-10447-building-kit-19-pieces
 10447,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/duplo-r-ambulance-driver-for-pretend-play-10447-building-kit-19-pieces
+10447,toycra,2026-09-19T23:17:40+00:00,2499.0,,1,https://toycra.com/products/lego-10447-duplo-ambulance-driver-19-pieces
 10448,mybrickhouse,2026-09-10T09:18:14+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/duplo-town-3in1-animals-on-wheels-10448-building-kit-58-pieces
 10448,mybrickhouse,2026-09-10T11:10:46+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/duplo-town-3in1-animals-on-wheels-10448-building-kit-58-pieces
 10448,mybrickhouse,2026-09-10T11:34:31+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/duplo-town-3in1-animals-on-wheels-10448-building-kit-58-pieces
@@ -523,6 +535,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 10449,mybrickhouse,2026-09-12T10:49:00+00:00,3070.0,4099.0,1,https://lego.mybrickhouse.com/products/duplo-r-town-first-time-visit-to-the-doctor-10449-building-kit-65-pieces
 10449,mybrickhouse,2026-09-12T10:54:29+00:00,3070.0,4099.0,1,https://lego.mybrickhouse.com/products/duplo-r-town-first-time-visit-to-the-doctor-10449-building-kit-65-pieces
 10449,mybrickhouse,2026-09-12T11:04:28+00:00,3070.0,4099.0,1,https://lego.mybrickhouse.com/products/duplo-r-town-first-time-visit-to-the-doctor-10449-building-kit-65-pieces
+10449,toycra,2026-09-19T23:17:42+00:00,4499.0,,0,https://toycra.com/products/lego-10449-duplo-first-time-visit-with-the-doctor-65-pieces
 10452,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/duplo-r-peppa-pig-camping-trip-building-playset-with-canoe-toy-10452-building-kit-32-pieces
 10452,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/duplo-r-peppa-pig-camping-trip-building-playset-with-canoe-toy-10452-building-kit-32-pieces
 10452,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/duplo-r-peppa-pig-camping-trip-building-playset-with-canoe-toy-10452-building-kit-32-pieces
@@ -1033,6 +1046,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 11375,mybrickhouse,2026-09-12T10:54:29+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-icons-ferrari-f2004-michael-schumacher-model-car-11375
 11375,mybrickhouse,2026-09-12T11:04:28+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-icons-ferrari-f2004-michael-schumacher-model-car-11375
 11375,toycra,2026-09-09T12:29:11+00:00,9999.0,,1,https://toycra.com/products/lego-11375-icons-ferrari-f2004-michael-schumacher-735-pieces
+11375,toycra,2026-09-19T23:19:20+00:00,6999.0,9999.0,1,https://toycra.com/products/lego-11375-icons-ferrari-f2004-michael-schumacher-735-pieces
 11376,mybrickhouse,2026-09-10T09:18:14+00:00,13999.0,,1,https://lego.mybrickhouse.com/products/lego-r-icons-ford-model-t-model-car-kit-11376
 11376,mybrickhouse,2026-09-10T11:10:46+00:00,13999.0,,1,https://lego.mybrickhouse.com/products/lego-r-icons-ford-model-t-model-car-kit-11376
 11376,mybrickhouse,2026-09-10T11:34:31+00:00,13999.0,,1,https://lego.mybrickhouse.com/products/lego-r-icons-ford-model-t-model-car-kit-11376
@@ -1208,6 +1222,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 21062,mybrickhouse,2026-09-12T11:04:28+00:00,17299.0,,1,https://lego.mybrickhouse.com/products/architecture-trevi-fountain-model-italian-landmark-rome-memorabilia-21062-building-kit-1880-pieces
 21062,toycra,2026-09-12T10:49:20+00:00,17299.0,,1,https://toycra.com/products/lego-21062-architecture-trevi-fountain-1880-pieces
 21062,toycra,2026-09-12T10:54:41+00:00,17299.0,,1,https://toycra.com/products/lego-21062-architecture-trevi-fountain-1880-pieces
+21062,toycra,2026-09-19T23:16:19+00:00,17299.0,,1,https://toycra.com/products/lego-21062-architecture-trevi-fountain-1880-pieces
 21063,amazon_in,2026-09-12T10:46:44+00:00,18527.21,30199.0,1,https://www.amazon.in/dp/B0DWDX63HC
 21063,amazon_in,2026-09-12T10:48:37+00:00,18527.21,30199.0,1,https://www.amazon.in/dp/B0DWDX63HC
 21063,amazon_in,2026-09-12T11:04:08+00:00,18527.21,30199.0,1,https://www.amazon.in/dp/B0DWDX63HC
@@ -1249,6 +1264,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 21063,toycra,2026-09-12T11:04:08+00:00,21139.0,30199.0,1,https://toycra.com/products/lego-21063-architecture-neuschwanstein-castle-3455-pieces
 21063,toycra,2026-09-12T11:21:01+00:00,21139.0,30199.0,1,https://toycra.com/products/lego-21063-architecture-neuschwanstein-castle-3455-pieces
 21063,toycra,2026-09-12T11:22:02+00:00,21139.0,30199.0,1,https://toycra.com/products/lego-21063-architecture-neuschwanstein-castle-3455-pieces
+21063,toycra,2026-09-19T23:16:16+00:00,21139.0,30199.0,1,https://toycra.com/products/lego-21063-architecture-neuschwanstein-castle-3455-pieces
 21064,mybrickhouse,2026-09-10T09:18:14+00:00,8499.0,,1,https://lego.mybrickhouse.com/products/lego-r-architecture-paris-city-of-love-building-set-21064
 21064,mybrickhouse,2026-09-10T11:10:46+00:00,8499.0,,1,https://lego.mybrickhouse.com/products/lego-r-architecture-paris-city-of-love-building-set-21064
 21064,mybrickhouse,2026-09-10T11:34:31+00:00,8499.0,,1,https://lego.mybrickhouse.com/products/lego-r-architecture-paris-city-of-love-building-set-21064
@@ -1289,6 +1305,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 21251,mybrickhouse,2026-09-12T10:49:00+00:00,899.0,,0,https://lego.mybrickhouse.com/products/minecraft-r-the-armoury-building-adventure-21251-building-kit-75-pieces
 21251,mybrickhouse,2026-09-12T10:54:29+00:00,899.0,,0,https://lego.mybrickhouse.com/products/minecraft-r-the-armoury-building-adventure-21251-building-kit-75-pieces
 21251,mybrickhouse,2026-09-12T11:04:28+00:00,899.0,,0,https://lego.mybrickhouse.com/products/minecraft-r-the-armoury-building-adventure-21251-building-kit-75-pieces
+21251,toycra,2026-09-19T23:23:12+00:00,999.0,,0,https://toycra.com/products/lego-21251-minecraft-steves-desert-expedition-75-pieces
 21262,mybrickhouse,2026-09-10T09:18:14+00:00,4460.0,5949.0,1,https://lego.mybrickhouse.com/products/minecraft-r-the-windmill-farm-video-game-set-gift-21262-building-kit-462-pieces
 21262,mybrickhouse,2026-09-10T11:10:46+00:00,4460.0,5949.0,1,https://lego.mybrickhouse.com/products/minecraft-r-the-windmill-farm-video-game-set-gift-21262-building-kit-462-pieces
 21262,mybrickhouse,2026-09-10T11:34:31+00:00,4460.0,5949.0,1,https://lego.mybrickhouse.com/products/minecraft-r-the-windmill-farm-video-game-set-gift-21262-building-kit-462-pieces
@@ -1332,6 +1349,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 21269,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/minecraft-r-the-armadillo-mine-expedition-video-game-figure-21269-building-kit-247-pieces
 21269,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/minecraft-r-the-armadillo-mine-expedition-video-game-figure-21269-building-kit-247-pieces
 21269,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/minecraft-r-the-armadillo-mine-expedition-video-game-figure-21269-building-kit-247-pieces
+21269,toycra,2026-09-19T23:23:11+00:00,3199.0,,1,https://toycra.com/products/lego-21269-minecraft-the-armadillo-mine-expedition-247-pieces
 21270,mybrickhouse,2026-09-10T09:18:14+00:00,5949.0,,1,https://lego.mybrickhouse.com/products/minecraft-r-the-mooshroom-house-island-gamer-kit-toy-for-kids-21270-building-kit-500-pieces
 21270,mybrickhouse,2026-09-10T11:10:46+00:00,5949.0,,1,https://lego.mybrickhouse.com/products/minecraft-r-the-mooshroom-house-island-gamer-kit-toy-for-kids-21270-building-kit-500-pieces
 21270,mybrickhouse,2026-09-10T11:34:31+00:00,5949.0,,1,https://lego.mybrickhouse.com/products/minecraft-r-the-mooshroom-house-island-gamer-kit-toy-for-kids-21270-building-kit-500-pieces
@@ -1746,6 +1764,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30701,hamleys,2026-09-09T12:15:07+00:00,427.0,449.0,1,https://hamleys.in/product/lego-botanicals-field-flowers-building-kit-30701-building-blocks-toys-for-9y-13468983
 30701,hamleys,2026-09-09T12:29:11+00:00,427.0,449.0,1,https://hamleys.in/product/lego-botanicals-field-flowers-building-kit-30701-building-blocks-toys-for-9y-13468983
 30701,hamleys,2026-09-10T11:35:11+00:00,427.0,449.0,1,https://hamleys.in/product/lego-botanicals-field-flowers-building-kit-30701-building-blocks-toys-for-9y-13468983
+30701,jaimantoys,2026-09-19T23:16:23+00:00,404.0,499.0,1,https://jaimantoys.com/products/lego-duplo-30686-my-first-flower-with-bee-copy
 30701,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/botanicals-field-flowers-building-kit-30701-building-kit-77-pieces
 30701,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/botanicals-field-flowers-building-kit-30701-building-kit-77-pieces
 30701,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/botanicals-field-flowers-building-kit-30701-building-kit-77-pieces
@@ -1754,6 +1773,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30701,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,1,https://lego.mybrickhouse.com/products/botanicals-field-flowers-building-kit-30701-building-kit-77-pieces
 30701,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,1,https://lego.mybrickhouse.com/products/botanicals-field-flowers-building-kit-30701-building-kit-77-pieces
 30701,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,1,https://lego.mybrickhouse.com/products/botanicals-field-flowers-building-kit-30701-building-kit-77-pieces
+30701,toycra,2026-09-19T23:16:23+00:00,449.0,,1,https://toycra.com/products/lego-30701-recruitment-bags-field-flowers-77-pieces
 30710,hamleys,2026-09-09T12:13:30+00:00,399.0,,1,https://hamleys.in/product/lego-technic-skid-steer-loader-30710-building-blocks-toys-7y-14543175
 30710,hamleys,2026-09-09T12:29:11+00:00,399.0,,1,https://hamleys.in/product/lego-technic-skid-steer-loader-30710-building-blocks-toys-7y-14543175
 30712,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30712-celebration-cake
@@ -1792,6 +1812,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30716,amazon_in,2026-09-10T11:13:07+00:00,440.0,799.0,1,https://www.amazon.in/dp/B0GP4M9R6R
 30716,firstcry,2026-09-10T11:05:32+00:00,371.07,399.0,1,https://www.firstcry.com/lego/lego-cute-easter-bunny-v29-set-30716-66-pieces-set/22491944/product-detail
 30716,firstcry,2026-09-10T11:13:07+00:00,371.07,399.0,1,https://www.firstcry.com/lego/lego-cute-easter-bunny-v29-set-30716-66-pieces-set/22491944/product-detail
+30716,jaimantoys,2026-09-19T23:16:09+00:00,399.0,,1,https://jaimantoys.com/products/lego-30716-creator-cute-easter-bunny-building-set-66-pieces-animal-toy
 30716,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30716-cute-easter-bunny-v29
 30716,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30716-cute-easter-bunny-v29
 30716,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30716-cute-easter-bunny-v29
@@ -1799,6 +1820,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30716,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30716-cute-easter-bunny-v29
 30716,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30716-cute-easter-bunny-v29
 30716,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30716-cute-easter-bunny-v29
+30716,toycra,2026-09-19T23:16:09+00:00,399.0,,0,https://toycra.com/products/lego-30716-recruitment-bags-cute-easter-bunny-66-pieces
 30717,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,0,https://lego.mybrickhouse.com/products/fun-halloween-skeleton
 30717,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,0,https://lego.mybrickhouse.com/products/fun-halloween-skeleton
 30717,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,0,https://lego.mybrickhouse.com/products/fun-halloween-skeleton
@@ -1860,6 +1882,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30723,hamleys,2026-09-10T10:30:25+00:00,399.0,,1,https://hamleys.in/product/lego-ninjago-ninja-cole-s-car-30723-building-blocks-for-kids-6y
 30723,hamleys,2026-09-10T10:41:17+00:00,399.0,,1,https://hamleys.in/product/lego-ninjago-ninja-cole-s-car-30723-building-blocks-for-kids-6y
 30723,hamleys,2026-09-10T11:15:12+00:00,399.0,,1,https://hamleys.in/product/lego-ninjago-ninja-cole-s-car-30723-building-blocks-for-kids-6y
+30723,jaimantoys,2026-09-19T23:16:11+00:00,399.0,,1,https://jaimantoys.com/products/lego-30723-ninjago-legacy-cole-s-car-building-set-39-pieces-ninja-vehicle-toy
 30723,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30723-ninja-coles-car-v29
 30723,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30723-ninja-coles-car-v29
 30723,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30723-ninja-coles-car-v29
@@ -1867,6 +1890,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30723,mybrickhouse,2026-09-12T10:49:00+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30723-ninja-coles-car-v29
 30723,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30723-ninja-coles-car-v29
 30723,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30723-ninja-coles-car-v29
+30723,toycra,2026-09-19T23:16:11+00:00,399.0,,1,https://toycra.com/products/lego-30723-recruitment-bags-ninja-coles-car-39-pieces
 30724,jaimantoys,2026-09-15T06:54:08+00:00,399.0,,1,https://jaimantoys.com/products/lego-harry-potter-30724-dumbledore-s-office-with-harry-potter-minifigure-42-pieces-building-set
 30724,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30724-dumbledores-office-with-har
 30724,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30724-dumbledores-office-with-har
@@ -1877,6 +1901,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30724,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30724-dumbledores-office-with-har
 30724,toycra,2026-09-15T06:54:08+00:00,399.0,,0,https://toycra.com/products/lego-30724-recruitment-bags-dumbledores-office-with-harry-potter-42-pieces
 30725,jaimantoys,2026-09-10T11:19:12+00:00,399.0,,1,https://jaimantoys.com/products/lego-30725-marvel-spider-man-vs-anti-venom-heist-building-set-31-pieces-superhero-toy
+30725,jaimantoys,2026-09-19T23:16:13+00:00,399.0,,1,https://jaimantoys.com/products/lego-30725-marvel-spider-man-vs-anti-venom-heist-building-set-31-pieces-superhero-toy
 30725,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30725-spider-man-vs-anti-venom-he
 30725,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30725-spider-man-vs-anti-venom-he
 30725,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30725-spider-man-vs-anti-venom-he
@@ -1885,8 +1910,10 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30725,mybrickhouse,2026-09-12T10:54:29+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30725-spider-man-vs-anti-venom-he
 30725,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,1,https://lego.mybrickhouse.com/products/30725-spider-man-vs-anti-venom-he
 30725,toycra,2026-09-10T11:19:12+00:00,399.0,,1,https://toycra.com/products/lego-30725-recruitment-bags-spider-man-vs-anti-venom-heist-31-pieces
+30725,toycra,2026-09-19T23:16:13+00:00,399.0,,1,https://toycra.com/products/lego-30725-recruitment-bags-spider-man-vs-anti-venom-heist-31-pieces
 30726,jaimantoys,2026-09-09T12:13:30+00:00,399.0,,1,https://jaimantoys.com/products/lego-30726-dc-batman-bruce-wayne-batsuit-chamber-35-pieces-building-set
 30726,jaimantoys,2026-09-09T12:46:19+00:00,399.0,,1,https://jaimantoys.com/products/lego-30726-dc-batman-bruce-wayne-batsuit-chamber-35-pieces-building-set
+30726,jaimantoys,2026-09-19T23:16:15+00:00,399.0,,1,https://jaimantoys.com/products/lego-30726-dc-batman-bruce-wayne-batsuit-chamber-35-pieces-building-set
 30726,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,0,https://lego.mybrickhouse.com/products/30726-batman-bruce-wayne-and-th
 30726,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,0,https://lego.mybrickhouse.com/products/30726-batman-bruce-wayne-and-th
 30726,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,0,https://lego.mybrickhouse.com/products/30726-batman-bruce-wayne-and-th
@@ -1896,6 +1923,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 30726,mybrickhouse,2026-09-12T11:04:28+00:00,399.0,,0,https://lego.mybrickhouse.com/products/30726-batman-bruce-wayne-and-th
 30726,toycra,2026-09-09T12:13:30+00:00,399.0,,1,https://toycra.com/products/lego-30726-recruitment-bags-batman-bruce-wayne-and-the-batsuit-35-pieces
 30726,toycra,2026-09-09T12:46:19+00:00,399.0,,1,https://toycra.com/products/lego-30726-recruitment-bags-batman-bruce-wayne-and-the-batsuit-35-pieces
+30726,toycra,2026-09-19T23:16:15+00:00,399.0,,1,https://toycra.com/products/lego-30726-recruitment-bags-batman-bruce-wayne-and-the-batsuit-35-pieces
 30727,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,0,https://lego.mybrickhouse.com/products/lego-30727-recruitment-bags-tie-advance-mini-build-68-pieces
 30727,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,0,https://lego.mybrickhouse.com/products/lego-30727-recruitment-bags-tie-advance-mini-build-68-pieces
 30727,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,0,https://lego.mybrickhouse.com/products/lego-30727-recruitment-bags-tie-advance-mini-build-68-pieces
@@ -2084,6 +2112,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31164,mybrickhouse,2026-09-12T10:49:00+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-space-robot-toy-science-playset-31164-building-kit-281-pieces
 31164,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-space-robot-toy-science-playset-31164-building-kit-281-pieces
 31164,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-space-robot-toy-science-playset-31164-building-kit-281-pieces
+31164,toycra,2026-09-19T23:17:16+00:00,2999.0,,1,https://toycra.com/products/lego-31164-creator-3-in-1-space-robot-281-pieces
 31165,hamleys,2026-09-11T08:48:59+00:00,3894.0,4099.0,1,https://hamleys.in/product/lego-creator-3-in-1-wild-animals-panda-family-toy-playset-31165-building-blocks-toys-for-8y-13468948
 31165,mybrickhouse,2026-09-10T09:18:14+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-panda-family-toy-playset-31165-building-kit-626-pieces
 31165,mybrickhouse,2026-09-10T11:10:46+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-panda-family-toy-playset-31165-building-kit-626-pieces
@@ -2093,6 +2122,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31165,mybrickhouse,2026-09-12T10:49:00+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-panda-family-toy-playset-31165-building-kit-626-pieces
 31165,mybrickhouse,2026-09-12T10:54:29+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-panda-family-toy-playset-31165-building-kit-626-pieces
 31165,mybrickhouse,2026-09-12T11:04:28+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-panda-family-toy-playset-31165-building-kit-626-pieces
+31165,toycra,2026-09-19T23:17:20+00:00,4499.0,,0,https://toycra.com/products/lego-31165-creator-wild-animals-panda-family-626-pieces
 31166,mybrickhouse,2026-09-10T09:18:14+00:00,5949.0,,0,https://lego.mybrickhouse.com/products/lego-r-creator-3in1-beautiful-horse-toy-animal-building-set-31166
 31166,mybrickhouse,2026-09-10T11:10:46+00:00,5949.0,,0,https://lego.mybrickhouse.com/products/lego-r-creator-3in1-beautiful-horse-toy-animal-building-set-31166
 31166,mybrickhouse,2026-09-10T11:34:31+00:00,5949.0,,0,https://lego.mybrickhouse.com/products/lego-r-creator-3in1-beautiful-horse-toy-animal-building-set-31166
@@ -2128,6 +2158,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 31169,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-typewriter-with-flowers-toy-playset-31169-building-kit-363-pieces
 31169,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-typewriter-with-flowers-toy-playset-31169-building-kit-363-pieces
 31169,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-typewriter-with-flowers-toy-playset-31169-building-kit-363-pieces
+31169,toycra,2026-09-19T23:17:18+00:00,3199.0,,1,https://toycra.com/products/lego-31169-creator-typewriter-with-flowers-363-pieces
 31170,mybrickhouse,2026-09-10T09:18:14+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-pink-flamingo-animal-toy-playset-31170-building-kit-288-pieces
 31170,mybrickhouse,2026-09-10T11:10:46+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-pink-flamingo-animal-toy-playset-31170-building-kit-288-pieces
 31170,mybrickhouse,2026-09-10T11:34:31+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/creator-3in1-wild-animals-pink-flamingo-animal-toy-playset-31170-building-kit-288-pieces
@@ -2867,6 +2898,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42151,mybrickhouse,2026-09-12T10:54:29+00:00,5949.0,,1,https://lego.mybrickhouse.com/products/technic-bugatti-bolide-42151-building-toy-set-905-pieces
 42151,mybrickhouse,2026-09-12T11:04:28+00:00,5949.0,,1,https://lego.mybrickhouse.com/products/technic-bugatti-bolide-42151-building-toy-set-905-pieces
 42151,toycra,2026-09-10T11:46:47+00:00,6499.0,,1,https://toycra.com/products/lego-42151-technic-bugatti-bolide
+42151,toycra,2026-09-19T23:24:48+00:00,6499.0,,1,https://toycra.com/products/lego-42151-technic-bugatti-bolide
 42160,jaimantoys,2026-09-11T08:50:49+00:00,16490.0,17999.0,1,https://jaimantoys.com/products/lego-42160-technic-audi-rs-q-e-tron
 42160,mybrickhouse,2026-09-10T09:18:14+00:00,17999.0,,1,https://lego.mybrickhouse.com/products/technic-audi-rs-q-e-tron-42160-building-toy-set-914-pieces
 42160,mybrickhouse,2026-09-10T11:10:46+00:00,17999.0,,1,https://lego.mybrickhouse.com/products/technic-audi-rs-q-e-tron-42160-building-toy-set-914-pieces
@@ -2877,6 +2909,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42160,mybrickhouse,2026-09-12T10:54:29+00:00,17999.0,,1,https://lego.mybrickhouse.com/products/technic-audi-rs-q-e-tron-42160-building-toy-set-914-pieces
 42160,mybrickhouse,2026-09-12T11:04:28+00:00,17999.0,,1,https://lego.mybrickhouse.com/products/technic-audi-rs-q-e-tron-42160-building-toy-set-914-pieces
 42160,toycra,2026-09-11T08:50:49+00:00,17999.0,,1,https://toycra.com/products/lego-42160-technic-audi-rs-q-e-tron
+42160,toycra,2026-09-19T23:24:45+00:00,17999.0,,1,https://toycra.com/products/lego-42160-technic-audi-rs-q-e-tron
 42164,mybrickhouse,2026-09-10T09:18:14+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/technic-off-road-race-buggy-car-toy-42164-building-kit-219-pieces
 42164,mybrickhouse,2026-09-10T11:10:46+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/technic-off-road-race-buggy-car-toy-42164-building-kit-219-pieces
 42164,mybrickhouse,2026-09-10T11:34:31+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/technic-off-road-race-buggy-car-toy-42164-building-kit-219-pieces
@@ -2902,6 +2935,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42166,mybrickhouse,2026-09-12T10:49:00+00:00,2749.0,,0,https://lego.mybrickhouse.com/products/technic-neom-mclaren-extreme-e-race-car-42166-building-kit-252-pieces
 42166,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,0,https://lego.mybrickhouse.com/products/technic-neom-mclaren-extreme-e-race-car-42166-building-kit-252-pieces
 42166,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,0,https://lego.mybrickhouse.com/products/technic-neom-mclaren-extreme-e-race-car-42166-building-kit-252-pieces
+42166,toycra,2026-09-19T23:25:03+00:00,2999.0,,0,https://toycra.com/products/lego-42166-technic-neom-mclaren-extreme-e-race-car-252-pieces
 42167,mybrickhouse,2026-09-10T09:18:14+00:00,3649.0,,0,https://lego.mybrickhouse.com/products/technic-mack-r-lr-electric-garbage-truck-42167-building-kit-503-pieces
 42167,mybrickhouse,2026-09-10T11:10:46+00:00,3649.0,,0,https://lego.mybrickhouse.com/products/technic-mack-r-lr-electric-garbage-truck-42167-building-kit-503-pieces
 42167,mybrickhouse,2026-09-10T11:34:31+00:00,3649.0,,0,https://lego.mybrickhouse.com/products/technic-mack-r-lr-electric-garbage-truck-42167-building-kit-503-pieces
@@ -2919,6 +2953,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42169,mybrickhouse,2026-09-12T10:49:00+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/technic-neom-mclaren-formula-e-race-car-42169-building-kit-452-pieces
 42169,mybrickhouse,2026-09-12T10:54:29+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/technic-neom-mclaren-formula-e-race-car-42169-building-kit-452-pieces
 42169,mybrickhouse,2026-09-12T11:04:28+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/technic-neom-mclaren-formula-e-race-car-42169-building-kit-452-pieces
+42169,toycra,2026-09-19T23:25:04+00:00,5999.0,,1,https://toycra.com/products/lego-42169-technic-neom-mclaren-formula-e-race-car-452-pieces
 42170,mybrickhouse,2026-09-10T09:18:14+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/technic-kawasaki-ninja-h2r-motorcycle-set-42170-building-kit-643-pieces
 42170,mybrickhouse,2026-09-10T11:10:46+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/technic-kawasaki-ninja-h2r-motorcycle-set-42170-building-kit-643-pieces
 42170,mybrickhouse,2026-09-10T11:34:31+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/technic-kawasaki-ninja-h2r-motorcycle-set-42170-building-kit-643-pieces
@@ -2936,6 +2971,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42172,mybrickhouse,2026-09-12T10:49:00+00:00,41199.0,,1,https://lego.mybrickhouse.com/products/technic-mclaren-p1-hypercar-set-for-adults-42172-building-kit-3893-pieces
 42172,mybrickhouse,2026-09-12T10:54:29+00:00,41199.0,,1,https://lego.mybrickhouse.com/products/technic-mclaren-p1-hypercar-set-for-adults-42172-building-kit-3893-pieces
 42172,mybrickhouse,2026-09-12T11:04:28+00:00,41199.0,,1,https://lego.mybrickhouse.com/products/technic-mclaren-p1-hypercar-set-for-adults-42172-building-kit-3893-pieces
+42172,toycra,2026-09-19T23:24:59+00:00,29399.0,41199.0,1,https://toycra.com/products/lego-42172-technic-mclaren-p1-3893-pieces
 42173,firstcry,2026-09-09T12:15:07+00:00,5532.57,5949.0,1,https://www.firstcry.com/lego/lego-technic-koenigsegg-jesko-absolut-gray-hypercar-801-pieces-42173/20189651/product-detail
 42173,mybrickhouse,2026-09-10T09:18:14+00:00,5949.0,,1,https://lego.mybrickhouse.com/products/technic-koenigsegg-jesko-absolut-grey-hypercar-42173-building-kit-801-pieces
 42173,mybrickhouse,2026-09-10T11:10:46+00:00,5949.0,,1,https://lego.mybrickhouse.com/products/technic-koenigsegg-jesko-absolut-grey-hypercar-42173-building-kit-801-pieces
@@ -2944,6 +2980,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42173,mybrickhouse,2026-09-12T10:49:00+00:00,5949.0,,1,https://lego.mybrickhouse.com/products/technic-koenigsegg-jesko-absolut-grey-hypercar-42173-building-kit-801-pieces
 42173,mybrickhouse,2026-09-12T10:54:29+00:00,5949.0,,1,https://lego.mybrickhouse.com/products/technic-koenigsegg-jesko-absolut-grey-hypercar-42173-building-kit-801-pieces
 42173,mybrickhouse,2026-09-12T11:04:28+00:00,5949.0,,1,https://lego.mybrickhouse.com/products/technic-koenigsegg-jesko-absolut-grey-hypercar-42173-building-kit-801-pieces
+42173,toycra,2026-09-19T23:24:57+00:00,6499.0,,1,https://toycra.com/products/lego-42173-technic-koenigsegg-jesko-absolut-grey-hypercar-801-pieces
 42175,mybrickhouse,2026-09-10T09:18:14+00:00,17299.0,,0,https://lego.mybrickhouse.com/products/technic-volvo-fmx-truck-ec230-electric-excavator-42175-building-kit-2274-pieces
 42175,mybrickhouse,2026-09-10T11:10:46+00:00,17299.0,,0,https://lego.mybrickhouse.com/products/technic-volvo-fmx-truck-ec230-electric-excavator-42175-building-kit-2274-pieces
 42175,mybrickhouse,2026-09-10T11:34:31+00:00,17299.0,,0,https://lego.mybrickhouse.com/products/technic-volvo-fmx-truck-ec230-electric-excavator-42175-building-kit-2274-pieces
@@ -2968,6 +3005,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42177,mybrickhouse,2026-09-12T10:49:00+00:00,21999.0,,0,https://lego.mybrickhouse.com/products/technic-mercedes-benz-g-500-professional-line-42177-building-kit-2891-pieces
 42177,mybrickhouse,2026-09-12T10:54:29+00:00,21999.0,,0,https://lego.mybrickhouse.com/products/technic-mercedes-benz-g-500-professional-line-42177-building-kit-2891-pieces
 42177,mybrickhouse,2026-09-12T11:04:28+00:00,21999.0,,0,https://lego.mybrickhouse.com/products/technic-mercedes-benz-g-500-professional-line-42177-building-kit-2891-pieces
+42177,toycra,2026-09-19T23:25:01+00:00,16499.0,21999.0,1,https://toycra.com/products/lego-42177-technic-mercedes-benz-g-500-professional-line-2891-pieces
 42178,mybrickhouse,2026-09-10T09:18:14+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/technic-surface-space-loader-lt78-set-42178-building-kit-435-pieces
 42178,mybrickhouse,2026-09-10T11:10:46+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/technic-surface-space-loader-lt78-set-42178-building-kit-435-pieces
 42178,mybrickhouse,2026-09-10T11:34:31+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/technic-surface-space-loader-lt78-set-42178-building-kit-435-pieces
@@ -3008,6 +3046,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42197,mybrickhouse,2026-09-12T10:49:00+00:00,899.0,,1,https://lego.mybrickhouse.com/products/technic-backhoe-loader-construction-toy-vehicle-set-42197-building-kit-104-pieces
 42197,mybrickhouse,2026-09-12T10:54:29+00:00,899.0,,1,https://lego.mybrickhouse.com/products/technic-backhoe-loader-construction-toy-vehicle-set-42197-building-kit-104-pieces
 42197,mybrickhouse,2026-09-12T11:04:28+00:00,899.0,,1,https://lego.mybrickhouse.com/products/technic-backhoe-loader-construction-toy-vehicle-set-42197-building-kit-104-pieces
+42197,toycra,2026-09-19T23:24:46+00:00,999.0,,1,https://toycra.com/products/lego-42197-technic-backhoe-loader-104-pieces
 42198,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/technic-bush-plane-aircraft-toy-vehicle-gift-set-for-kids-42198-building-kit-333-pieces
 42198,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/technic-bush-plane-aircraft-toy-vehicle-gift-set-for-kids-42198-building-kit-333-pieces
 42198,mybrickhouse,2026-09-10T11:34:31+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/technic-bush-plane-aircraft-toy-vehicle-gift-set-for-kids-42198-building-kit-333-pieces
@@ -3040,6 +3079,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42201,mybrickhouse,2026-09-12T10:49:00+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/technic-deep-sea-research-submarine-toy-set-42201-building-kit-413-pieces
 42201,mybrickhouse,2026-09-12T10:54:29+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/technic-deep-sea-research-submarine-toy-set-42201-building-kit-413-pieces
 42201,mybrickhouse,2026-09-12T11:04:28+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/technic-deep-sea-research-submarine-toy-set-42201-building-kit-413-pieces
+42201,toycra,2026-09-19T23:24:50+00:00,4499.0,,1,https://toycra.com/products/lego-42201-technic-deep-sea-research-submarine-413-pieces
 42202,mybrickhouse,2026-09-10T09:18:14+00:00,18299.0,,1,https://lego.mybrickhouse.com/products/technic-ducati-panigale-v4-s-motorcycle-model-building-set-42202-building-kit-1603-pieces
 42202,mybrickhouse,2026-09-10T11:10:46+00:00,18299.0,,1,https://lego.mybrickhouse.com/products/technic-ducati-panigale-v4-s-motorcycle-model-building-set-42202-building-kit-1603-pieces
 42202,mybrickhouse,2026-09-10T11:34:31+00:00,18299.0,,1,https://lego.mybrickhouse.com/products/technic-ducati-panigale-v4-s-motorcycle-model-building-set-42202-building-kit-1603-pieces
@@ -3057,6 +3097,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42203,mybrickhouse,2026-09-12T10:49:00+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/technic-tipping-dump-truck-toy-blue-construction-vehicle-set-42203-building-kit-462-pieces
 42203,mybrickhouse,2026-09-12T10:54:29+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/technic-tipping-dump-truck-toy-blue-construction-vehicle-set-42203-building-kit-462-pieces
 42203,mybrickhouse,2026-09-12T11:04:28+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/technic-tipping-dump-truck-toy-blue-construction-vehicle-set-42203-building-kit-462-pieces
+42203,toycra,2026-09-19T23:25:09+00:00,5449.0,,1,https://toycra.com/products/lego-42203-technic-tipping-dump-truck-462-pieces
 42204,amazon_in,2026-09-09T12:15:07+00:00,5759.0,6999.0,1,https://www.amazon.in/dp/B0DHSCKXP2
 42204,firstcry,2026-09-09T12:15:07+00:00,5119.2,6399.0,1,https://www.firstcry.com/lego/lego-technic-fast-and-furious-toyota-supra-mk4-toy-car-model-kit-810-pieces-42204-orange/20507694/product-detail
 42204,flipkart,2026-09-09T12:15:07+00:00,5759.0,6399.0,1,https://www.flipkart.com/lego-technic-fast-furious-toyota-supra-mk4-toy-car-model-kit-42204-810-blocks/p/itmaa986e46e19e8
@@ -3069,6 +3110,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42204,mybrickhouse,2026-09-12T10:54:29+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/technic-fast-and-furious-toyota-supra-mk4-toy-car-model-kit-42204-building-kit-810-pieces
 42204,mybrickhouse,2026-09-12T11:04:28+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/technic-fast-and-furious-toyota-supra-mk4-toy-car-model-kit-42204-building-kit-810-pieces
 42204,toycra,2026-09-09T12:15:07+00:00,6999.0,,1,https://toycra.com/products/lego-42204-technic-fast-and-furious-toyota-supra-mk4-810-pieces
+42204,toycra,2026-09-19T23:24:52+00:00,6999.0,,1,https://toycra.com/products/lego-42204-technic-fast-and-furious-toyota-supra-mk4-810-pieces
 42205,mybrickhouse,2026-09-10T09:18:14+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/technic-chevrolet-corvette-stingray-car-model-kit-vehicle-toy-42205-building-kit-732-pieces
 42205,mybrickhouse,2026-09-10T11:10:46+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/technic-chevrolet-corvette-stingray-car-model-kit-vehicle-toy-42205-building-kit-732-pieces
 42205,mybrickhouse,2026-09-10T11:34:31+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/technic-chevrolet-corvette-stingray-car-model-kit-vehicle-toy-42205-building-kit-732-pieces
@@ -3085,6 +3127,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42206,mybrickhouse,2026-09-12T10:49:00+00:00,22899.0,,1,https://lego.mybrickhouse.com/products/technic-oracle-red-bull-racing-rb20-f1-car-model-kit-for-adults-42206-building-kit-1639-pieces
 42206,mybrickhouse,2026-09-12T10:54:29+00:00,22899.0,,1,https://lego.mybrickhouse.com/products/technic-oracle-red-bull-racing-rb20-f1-car-model-kit-for-adults-42206-building-kit-1639-pieces
 42206,mybrickhouse,2026-09-12T11:04:28+00:00,22899.0,,1,https://lego.mybrickhouse.com/products/technic-oracle-red-bull-racing-rb20-f1-car-model-kit-for-adults-42206-building-kit-1639-pieces
+42206,toycra,2026-09-19T23:25:06+00:00,16999.0,22899.0,1,https://toycra.com/products/lego-42206-technic-oracle-red-bull-racing-rb20-f1-car-1639-pieces
 42207,amazon_in,2026-09-10T09:23:44+00:00,20609.0,22899.0,1,https://www.amazon.in/dp/B0DHSCYDL2
 42207,jaimantoys,2026-09-09T12:29:11+00:00,21990.0,22899.0,1,https://jaimantoys.com/products/lego-10353-icons-williams-racing-fw14b-and-nigel-mansell-f1-model-car-copy
 42207,mybrickhouse,2026-09-10T09:18:14+00:00,22899.0,,1,https://lego.mybrickhouse.com/products/technic-ferrari-sf-24-f1-car-model-kit-for-adults-42207-building-kit-1361-pieces
@@ -3096,6 +3139,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42207,mybrickhouse,2026-09-12T11:04:28+00:00,22899.0,,1,https://lego.mybrickhouse.com/products/technic-ferrari-sf-24-f1-car-model-kit-for-adults-42207-building-kit-1361-pieces
 42207,toycra,2026-09-09T12:29:11+00:00,22899.0,,1,https://toycra.com/products/lego-42207-technic-ferrari-sf-24-f1-car-1361-pieces
 42207,toycra,2026-09-10T09:23:44+00:00,16999.0,22899.0,1,https://toycra.com/products/lego-42207-technic-ferrari-sf-24-f1-car-1361-pieces
+42207,toycra,2026-09-19T23:24:56+00:00,17174.0,22899.0,1,https://toycra.com/products/lego-42207-technic-ferrari-sf-24-f1-car-1361-pieces
 42208,mybrickhouse,2026-09-10T09:18:14+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/technic-aston-martin-valkyrie-42208-building-kit-707-pieces
 42208,mybrickhouse,2026-09-10T11:10:46+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/technic-aston-martin-valkyrie-42208-building-kit-707-pieces
 42208,mybrickhouse,2026-09-10T11:34:31+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/technic-aston-martin-valkyrie-42208-building-kit-707-pieces
@@ -3122,6 +3166,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42210,mybrickhouse,2026-09-12T10:54:29+00:00,15499.0,,1,https://lego.mybrickhouse.com/products/technic-2-fast-2-furious-nissan-skyline-gt-r-r34-car-42210-building-kit-1410-pieces
 42210,mybrickhouse,2026-09-12T11:04:28+00:00,15499.0,,1,https://lego.mybrickhouse.com/products/technic-2-fast-2-furious-nissan-skyline-gt-r-r34-car-42210-building-kit-1410-pieces
 42210,toycra,2026-09-09T12:15:07+00:00,16999.0,,1,https://toycra.com/products/lego-42210-technic-2-fast-2-furious-nissan-skyline-gt-r-r34-car-1410-pieces
+42210,toycra,2026-09-19T23:24:43+00:00,16999.0,,1,https://toycra.com/products/lego-42210-technic-2-fast-2-furious-nissan-skyline-gt-r-r34-car-1410-pieces
 42212,firstcry,2026-09-10T11:45:22+00:00,6369.57,6849.0,1,https://www.firstcry.com/lego/lego-technic-ferrari-fxx-k-model-car-kit-stem-building-toy-897-pieces-42212/21189669/product-detail
 42212,jaimantoys,2026-09-10T11:45:22+00:00,6849.0,7499.0,0,https://jaimantoys.com/products/lego-technic-42212-ferrari-fxx-k-897-piece-supercar-model-with-opening-doors-v12-engine-differential-ages-10
 42212,mybrickhouse,2026-09-10T09:18:14+00:00,6849.0,,1,https://lego.mybrickhouse.com/products/technic-ferrari-fxx-k-model-car-kit-stem-42212-building-kit-897-pieces
@@ -3133,6 +3178,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42212,mybrickhouse,2026-09-12T11:04:28+00:00,6849.0,,1,https://lego.mybrickhouse.com/products/technic-ferrari-fxx-k-model-car-kit-stem-42212-building-kit-897-pieces
 42212,toycra,2026-09-09T12:29:11+00:00,6849.0,,1,https://toycra.com/products/lego-42212-technic-ferrari-fxx-k-897-pieces
 42212,toycra,2026-09-10T11:45:22+00:00,6849.0,,1,https://toycra.com/products/lego-42212-technic-ferrari-fxx-k-897-pieces
+42212,toycra,2026-09-19T23:24:54+00:00,6849.0,,1,https://toycra.com/products/lego-42212-technic-ferrari-fxx-k-897-pieces
 42213,amazon_in,2026-09-10T09:19:11+00:00,6079.0,6399.0,1,https://www.amazon.in/dp/B0DWDQ8BN5
 42213,jaimantoys,2026-09-10T09:19:11+00:00,5990.0,6999.0,1,https://jaimantoys.com/products/lego-technic-42213-ford-bronco-suv-943-piece-off-road-model-with-v6-engine-steering-spare-wheel-roof-rack-ages-9
 42213,jaimantoys,2026-09-11T15:52:11+00:00,5990.0,6999.0,1,https://jaimantoys.com/products/lego-technic-42213-ford-bronco-suv-943-piece-off-road-model-with-v6-engine-steering-spare-wheel-roof-rack-ages-9
@@ -3143,6 +3189,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42213,mybrickhouse,2026-09-12T10:49:00+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/technic-42213-1
 42213,mybrickhouse,2026-09-12T10:54:29+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/technic-42213-1
 42213,mybrickhouse,2026-09-12T11:04:28+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/technic-42213-1
+42213,toycra,2026-09-19T23:22:21+00:00,6399.0,,1,https://toycra.com/products/lego-42213-technic-ford-bronco-suv-943-pieces
 42215,mybrickhouse,2026-09-10T09:18:14+00:00,44999.0,,1,https://lego.mybrickhouse.com/products/technic-volvo-ec500-hybrid-excavator-set-gift-for-adults-42215-building-kit-2359-pieces
 42215,mybrickhouse,2026-09-10T11:10:46+00:00,44999.0,,1,https://lego.mybrickhouse.com/products/technic-volvo-ec500-hybrid-excavator-set-gift-for-adults-42215-building-kit-2359-pieces
 42215,mybrickhouse,2026-09-10T11:34:31+00:00,44999.0,,1,https://lego.mybrickhouse.com/products/technic-volvo-ec500-hybrid-excavator-set-gift-for-adults-42215-building-kit-2359-pieces
@@ -3168,6 +3215,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42218,mybrickhouse,2026-09-12T10:49:00+00:00,999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-tm-john-deere-1470h-wheeled-harvester-42218
 42218,mybrickhouse,2026-09-12T10:54:29+00:00,999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-tm-john-deere-1470h-wheeled-harvester-42218
 42218,mybrickhouse,2026-09-12T11:04:28+00:00,999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-tm-john-deere-1470h-wheeled-harvester-42218
+42218,toycra,2026-09-19T23:19:47+00:00,999.0,,1,https://toycra.com/products/lego-42218-technic-john-deere-1470h-wheeled-harvester-117-pieces
 42219,mybrickhouse,2026-09-10T09:18:14+00:00,2999.0,,0,https://lego.mybrickhouse.com/products/lego-r-technic-tm-monster-jam-tm-grave-digger-tm-fire-and-ice-42219
 42219,mybrickhouse,2026-09-10T11:10:46+00:00,2999.0,,0,https://lego.mybrickhouse.com/products/lego-r-technic-tm-monster-jam-tm-grave-digger-tm-fire-and-ice-42219
 42219,mybrickhouse,2026-09-10T11:34:31+00:00,2999.0,,0,https://lego.mybrickhouse.com/products/lego-r-technic-tm-monster-jam-tm-grave-digger-tm-fire-and-ice-42219
@@ -3210,6 +3258,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42223,mybrickhouse,2026-09-12T11:04:28+00:00,7999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-1966-ford-gt40-mkii-race-car-for-adults-42223
 42223,toycra,2026-09-10T09:21:39+00:00,5799.0,7999.0,1,https://toycra.com/products/lego-42223-technic-1966-ford-gt40-mkii-race-car-793-pieces
 42223,toycra,2026-09-11T08:49:12+00:00,5799.0,7999.0,1,https://toycra.com/products/lego-42223-technic-1966-ford-gt40-mkii-race-car-793-pieces
+42223,toycra,2026-09-19T23:19:45+00:00,5799.0,7999.0,1,https://toycra.com/products/lego-42223-technic-1966-ford-gt40-mkii-race-car-793-pieces
 42224,amazon_in,2026-09-10T09:21:05+00:00,14249.0,14999.0,1,https://www.amazon.in/dp/B0FPXFZXC2
 42224,amazon_in,2026-09-11T08:53:19+00:00,14249.0,14999.0,1,https://www.amazon.in/dp/B0FPXFZXC2
 42224,amazon_in,2026-09-11T09:09:12+00:00,14249.0,14999.0,1,https://www.amazon.in/dp/B0FPXFZXC2
@@ -3226,6 +3275,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42224,mybrickhouse,2026-09-12T10:49:00+00:00,14999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-porsche-911-gt3-r-rexy-ao-racing-car-42224
 42224,mybrickhouse,2026-09-12T10:54:29+00:00,14999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-porsche-911-gt3-r-rexy-ao-racing-car-42224
 42224,mybrickhouse,2026-09-12T11:04:28+00:00,14999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-porsche-911-gt3-r-rexy-ao-racing-car-42224
+42224,toycra,2026-09-19T23:19:43+00:00,14999.0,,1,https://toycra.com/products/lego-42224-technic-porsche-911-gt3-r-rexy-ao-racing-car-1313-pieces
 42225,mybrickhouse,2026-09-10T09:18:14+00:00,999.0,,1,https://lego.mybrickhouse.com/products/lego-technic-yellow-motorcycle-toy-building-set-42225
 42225,mybrickhouse,2026-09-10T11:10:46+00:00,999.0,,1,https://lego.mybrickhouse.com/products/lego-technic-yellow-motorcycle-toy-building-set-42225
 42225,mybrickhouse,2026-09-10T11:34:31+00:00,999.0,,1,https://lego.mybrickhouse.com/products/lego-technic-yellow-motorcycle-toy-building-set-42225
@@ -3267,6 +3317,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42229,mybrickhouse,2026-09-12T10:54:29+00:00,6999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-fast-and-furious-mitsubishi-eclipse-car-42229
 42229,mybrickhouse,2026-09-12T11:04:28+00:00,6999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-fast-and-furious-mitsubishi-eclipse-car-42229
 42229,toycra,2026-09-09T12:15:07+00:00,6999.0,,1,https://toycra.com/products/lego-42229-technic-fast-and-furious-mitsubishi-eclipse-car-827-pieces
+42229,toycra,2026-09-19T23:22:26+00:00,6999.0,,1,https://toycra.com/products/lego-42229-technic-fast-and-furious-mitsubishi-eclipse-car-827-pieces
 42231,amazon_in,2026-09-09T12:15:07+00:00,18999.0,,1,https://www.amazon.in/dp/B0FPXGL73L
 42231,amazon_in,2026-09-10T09:21:49+00:00,15999.0,,1,https://www.amazon.in/dp/B0FPXGL73L
 42231,amazon_in,2026-09-11T08:53:54+00:00,15999.0,,1,https://www.amazon.in/dp/B0FPXGL73L
@@ -3280,6 +3331,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42231,mybrickhouse,2026-09-12T10:54:29+00:00,15999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-fast-and-furious-dodge-charger-r-t-car-42231
 42231,mybrickhouse,2026-09-12T11:04:28+00:00,15999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-fast-and-furious-dodge-charger-r-t-car-42231
 42231,toycra,2026-09-09T12:15:07+00:00,15999.0,,1,https://toycra.com/products/lego-42231-technic-fast-and-furious-dodge-charger-r-t-car-1516-pieces
+42231,toycra,2026-09-19T23:22:24+00:00,11999.0,15999.0,0,https://toycra.com/products/lego-42231-technic-fast-and-furious-dodge-charger-r-t-car-1516-pieces
 42232,mybrickhouse,2026-09-10T09:18:14+00:00,49999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-koenigsegg-sadair-s-spear-megacar-set-42232
 42232,mybrickhouse,2026-09-10T11:10:46+00:00,49999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-koenigsegg-sadair-s-spear-megacar-set-42232
 42232,mybrickhouse,2026-09-10T11:34:31+00:00,49999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-koenigsegg-sadair-s-spear-megacar-set-42232
@@ -3302,6 +3354,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42240,mybrickhouse,2026-09-12T10:54:29+00:00,24999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-aston-martin-aramco-amr25-f1-r-car-42240
 42240,mybrickhouse,2026-09-12T11:04:28+00:00,24999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-aston-martin-aramco-amr25-f1-r-car-42240
 42240,toycra,2026-09-11T08:44:57+00:00,17999.0,24999.0,1,https://toycra.com/products/lego-42240-technic-aston-martin-aramco-amr25-f1-car-1547-pcs
+42240,toycra,2026-09-19T23:22:22+00:00,24999.0,,1,https://toycra.com/products/lego-42240-technic-aston-martin-aramco-amr25-f1-car-1547-pcs
 42241,mybrickhouse,2026-09-10T09:18:14+00:00,6999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-green-bugatti-chiron-pur-sport-hypercar-42241
 42241,mybrickhouse,2026-09-10T11:10:46+00:00,6999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-green-bugatti-chiron-pur-sport-hypercar-42241
 42241,mybrickhouse,2026-09-10T11:34:31+00:00,6999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-green-bugatti-chiron-pur-sport-hypercar-42241
@@ -3376,6 +3429,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42641,mybrickhouse,2026-09-12T10:49:00+00:00,1350.0,1799.0,1,https://lego.mybrickhouse.com/products/friends-surfing-dogs-and-scooter-adventure-building-toy-42641
 42641,mybrickhouse,2026-09-12T10:54:29+00:00,1350.0,1799.0,1,https://lego.mybrickhouse.com/products/friends-surfing-dogs-and-scooter-adventure-building-toy-42641
 42641,mybrickhouse,2026-09-12T11:04:28+00:00,1350.0,1799.0,1,https://lego.mybrickhouse.com/products/friends-surfing-dogs-and-scooter-adventure-building-toy-42641
+42641,toycra,2026-09-19T23:18:20+00:00,1999.0,,1,https://toycra.com/products/lego-42641-friends-surfing-dogs-and-scooter-adventure-113-pieces
 42642,mybrickhouse,2026-09-10T09:18:14+00:00,1899.0,,1,https://lego.mybrickhouse.com/products/friends-friendship-movie-night-42642-building-kit-154-pieces
 42642,mybrickhouse,2026-09-10T11:10:46+00:00,1899.0,,1,https://lego.mybrickhouse.com/products/friends-friendship-movie-night-42642-building-kit-154-pieces
 42642,mybrickhouse,2026-09-10T11:34:31+00:00,1899.0,,1,https://lego.mybrickhouse.com/products/friends-friendship-movie-night-42642-building-kit-154-pieces
@@ -3451,6 +3505,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42650,mybrickhouse,2026-09-12T10:49:00+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/friends-pet-accessories-shop-toy-building-playset-42650-building-kit-375-pieces
 42650,mybrickhouse,2026-09-12T10:54:29+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/friends-pet-accessories-shop-toy-building-playset-42650-building-kit-375-pieces
 42650,mybrickhouse,2026-09-12T11:04:28+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/friends-pet-accessories-shop-toy-building-playset-42650-building-kit-375-pieces
+42650,toycra,2026-09-19T23:18:18+00:00,4499.0,,1,https://toycra.com/products/lego-42650-friends-pet-accessories-shop-375-pieces
 42652,mybrickhouse,2026-09-10T09:18:14+00:00,7299.0,,0,https://lego.mybrickhouse.com/products/friends-friendship-tree-house-hangout-building-kit-for-pretend-play-42652-building-kit-701-pieces
 42652,mybrickhouse,2026-09-10T11:10:46+00:00,7299.0,,0,https://lego.mybrickhouse.com/products/friends-friendship-tree-house-hangout-building-kit-for-pretend-play-42652-building-kit-701-pieces
 42652,mybrickhouse,2026-09-10T11:34:31+00:00,7299.0,,0,https://lego.mybrickhouse.com/products/friends-friendship-tree-house-hangout-building-kit-for-pretend-play-42652-building-kit-701-pieces
@@ -3840,6 +3895,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 43011,mybrickhouse,2026-09-12T10:49:00+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-lionel-messi-soccer-highlights-43011
 43011,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-lionel-messi-soccer-highlights-43011
 43011,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-lionel-messi-soccer-highlights-43011
+43011,toycra,2026-09-19T23:20:49+00:00,2949.0,2999.0,1,https://toycra.com/products/lego-43011-editions-lionel-messi-football-highlights-500-pieces
 43012,mybrickhouse,2026-09-10T09:18:14+00:00,2999.0,,0,https://lego.mybrickhouse.com/products/lego-r-editions-cristiano-ronaldo-soccer-highlights-43012
 43012,mybrickhouse,2026-09-10T11:10:46+00:00,2999.0,,0,https://lego.mybrickhouse.com/products/lego-r-editions-cristiano-ronaldo-soccer-highlights-43012
 43012,mybrickhouse,2026-09-10T11:34:31+00:00,2999.0,,0,https://lego.mybrickhouse.com/products/lego-r-editions-cristiano-ronaldo-soccer-highlights-43012
@@ -3864,6 +3920,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 43014,mybrickhouse,2026-09-12T10:54:29+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-scuderia-ferrari-hp-charles-leclerc-helmet-43014
 43014,mybrickhouse,2026-09-12T11:04:28+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-scuderia-ferrari-hp-charles-leclerc-helmet-43014
 43014,toycra,2026-09-09T12:29:11+00:00,8999.0,9999.0,1,https://toycra.com/products/lego-43014-editions-scuderia-ferrari-hp-charles-leclerc-helmet-886-pieces
+43014,toycra,2026-09-19T23:20:53+00:00,9999.0,,1,https://toycra.com/products/lego-43014-editions-scuderia-ferrari-hp-charles-leclerc-helmet-886-pieces
 43015,mybrickhouse,2026-09-10T09:18:14+00:00,8499.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-lionel-messi-soccer-legend-set-43015
 43015,mybrickhouse,2026-09-10T11:10:46+00:00,8499.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-lionel-messi-soccer-legend-set-43015
 43015,mybrickhouse,2026-09-10T11:34:31+00:00,8499.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-lionel-messi-soccer-legend-set-43015
@@ -3926,6 +3983,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 43022,mybrickhouse,2026-09-12T10:54:29+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-scuderia-ferrari-hp-lewis-hamilton-helmet-43022
 43022,mybrickhouse,2026-09-12T11:04:28+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-scuderia-ferrari-hp-lewis-hamilton-helmet-43022
 43022,toycra,2026-09-09T12:29:11+00:00,8999.0,9999.0,1,https://toycra.com/products/lego-43022-editions-scuderia-ferrari-hp-lewis-hamilton-helmet-884-pieces
+43022,toycra,2026-09-19T23:20:55+00:00,7299.0,9999.0,1,https://toycra.com/products/lego-43022-editions-scuderia-ferrari-hp-lewis-hamilton-helmet-884-pieces
 43023,mybrickhouse,2026-09-10T09:18:14+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-mclaren-mastercard-f1-r-team-lando-norris-helmet-43023
 43023,mybrickhouse,2026-09-10T11:10:46+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-mclaren-mastercard-f1-r-team-lando-norris-helmet-43023
 43023,mybrickhouse,2026-09-10T11:34:31+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-r-editions-mclaren-mastercard-f1-r-team-lando-norris-helmet-43023
@@ -4081,6 +4139,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 43270,mybrickhouse,2026-09-12T10:49:00+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/disney-moana-s-adventure-canoe-fantasy-toy-model-kit-43270-building-kit-529-pieces
 43270,mybrickhouse,2026-09-12T10:54:29+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/disney-moana-s-adventure-canoe-fantasy-toy-model-kit-43270-building-kit-529-pieces
 43270,mybrickhouse,2026-09-12T11:04:28+00:00,6399.0,,1,https://lego.mybrickhouse.com/products/disney-moana-s-adventure-canoe-fantasy-toy-model-kit-43270-building-kit-529-pieces
+43270,toycra,2026-09-19T23:18:00+00:00,6999.0,,0,https://toycra.com/products/lego-43270-disney-moanas-adventure-canoe-529-pieces
 43271,mybrickhouse,2026-09-10T09:18:14+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/disney-lucky-penny-101-dalmatians-puppies-43271-building-kit-268-pieces
 43271,mybrickhouse,2026-09-10T11:10:46+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/disney-lucky-penny-101-dalmatians-puppies-43271-building-kit-268-pieces
 43271,mybrickhouse,2026-09-10T11:34:31+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/disney-lucky-penny-101-dalmatians-puppies-43271-building-kit-268-pieces
@@ -4337,6 +4396,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60337,mybrickhouse,2026-09-12T10:54:29+00:00,19999.0,,1,https://lego.mybrickhouse.com/products/city-express-passenger-train-60337-building-kit-764-pieces
 60337,mybrickhouse,2026-09-12T11:04:28+00:00,19999.0,,1,https://lego.mybrickhouse.com/products/city-express-passenger-train-60337-building-kit-764-pieces
 60337,toycra,2026-09-10T12:00:59+00:00,19999.0,,1,https://toycra.com/products/lego-60337-city-express-passenger-train-764-pieces
+60337,toycra,2026-09-19T23:17:02+00:00,19999.0,,1,https://toycra.com/products/lego-60337-city-express-passenger-train-764-pieces
 60367,mybrickhouse,2026-09-10T09:18:14+00:00,11899.0,,1,https://lego.mybrickhouse.com/products/city-passenger-aeroplane-60367-building-toy-set-930-pieces
 60367,mybrickhouse,2026-09-10T11:10:46+00:00,11899.0,,1,https://lego.mybrickhouse.com/products/city-passenger-aeroplane-60367-building-toy-set-930-pieces
 60367,mybrickhouse,2026-09-10T11:34:31+00:00,11899.0,,1,https://lego.mybrickhouse.com/products/city-passenger-aeroplane-60367-building-toy-set-930-pieces
@@ -4426,6 +4486,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60442,mybrickhouse,2026-09-12T10:49:00+00:00,1349.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-driver-with-mclaren-race-car-mini-vehicle-toy-playset-60442-building-kit-86-pieces
 60442,mybrickhouse,2026-09-12T10:54:29+00:00,1349.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-driver-with-mclaren-race-car-mini-vehicle-toy-playset-60442-building-kit-86-pieces
 60442,mybrickhouse,2026-09-12T11:04:28+00:00,1349.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-driver-with-mclaren-race-car-mini-vehicle-toy-playset-60442-building-kit-86-pieces
+60442,toycra,2026-09-19T23:17:04+00:00,1499.0,,1,https://toycra.com/products/lego-60442-city-f1-driver-with-mclaren-race-car-86-pieces
 60443,firstcry,2026-09-09T12:15:07+00:00,2556.57,2749.0,1,https://www.firstcry.com/lego/lego-city-f1-pit-stop-and-pit-crew-with-ferrari-car-racing-vehicle-toy-322-pieces-60443/19722550/product-detail
 60443,firstcry,2026-09-09T12:29:11+00:00,2556.57,2749.0,1,https://www.firstcry.com/lego/lego-city-f1-pit-stop-and-pit-crew-with-ferrari-car-racing-vehicle-toy-322-pieces-60443/19722550/product-detail
 60443,hamleys,2026-09-09T12:29:11+00:00,2612.0,2749.0,1,https://hamleys.in/product/lego-city-f1-pit-stop-pit-crew-with-ferrari-car-racing-vehicle-toy-60443-building-blocks-toys-for-6y-13468889
@@ -4438,6 +4499,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60443,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-pit-stop-pit-crew-with-ferrari-car-racing-vehicle-toy-60443-building-kit-322-pieces
 60443,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-pit-stop-pit-crew-with-ferrari-car-racing-vehicle-toy-60443-building-kit-322-pieces
 60443,toycra,2026-09-09T12:29:11+00:00,2999.0,,1,https://toycra.com/products/lego-60443-city-f1-pit-stop-pit-crew-with-ferrari-car-322-pieces
+60443,toycra,2026-09-19T23:17:10+00:00,2999.0,,1,https://toycra.com/products/lego-60443-city-f1-pit-stop-pit-crew-with-ferrari-car-322-pieces
 60444,firstcry,2026-09-09T12:29:11+00:00,7625.07,8199.0,1,https://www.firstcry.com/lego/lego-city-f1-garage-and-mercedes-amg-and-alpine-cars-toy-playset-678-pieces-60444/19722538/product-detail
 60444,mybrickhouse,2026-09-10T09:18:14+00:00,6150.0,8199.0,1,https://lego.mybrickhouse.com/products/city-f1-r-garage-mercedes-amg-alpine-cars-toy-playset-60444-building-kit-678-pieces
 60444,mybrickhouse,2026-09-10T11:10:46+00:00,6150.0,8199.0,1,https://lego.mybrickhouse.com/products/city-f1-r-garage-mercedes-amg-alpine-cars-toy-playset-60444-building-kit-678-pieces
@@ -4446,6 +4508,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60444,mybrickhouse,2026-09-12T10:49:00+00:00,6150.0,8199.0,1,https://lego.mybrickhouse.com/products/city-f1-r-garage-mercedes-amg-alpine-cars-toy-playset-60444-building-kit-678-pieces
 60444,mybrickhouse,2026-09-12T10:54:29+00:00,6150.0,8199.0,1,https://lego.mybrickhouse.com/products/city-f1-r-garage-mercedes-amg-alpine-cars-toy-playset-60444-building-kit-678-pieces
 60444,mybrickhouse,2026-09-12T11:04:28+00:00,6150.0,8199.0,1,https://lego.mybrickhouse.com/products/city-f1-r-garage-mercedes-amg-alpine-cars-toy-playset-60444-building-kit-678-pieces
+60444,toycra,2026-09-19T23:17:06+00:00,8999.0,,1,https://toycra.com/products/lego-60444-city-f1-garage-mercedes-amg-alpine-cars-678-pieces
 60445,firstcry,2026-09-09T12:29:11+00:00,8189.1,9099.0,1,https://www.firstcry.com/lego/lego-city-f1-truck-with-red-bull-racing-and-aston-martins-f1-cars-and-transporter-set-1086-pieces-60445/19722541/product-detail
 60445,mybrickhouse,2026-09-10T09:18:14+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-truck-with-rb20-amr24-f1-r-cars-toy-racing-transporter-set-60445-building-kit-1086-pieces
 60445,mybrickhouse,2026-09-10T11:10:46+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-truck-with-rb20-amr24-f1-r-cars-toy-racing-transporter-set-60445-building-kit-1086-pieces
@@ -4454,6 +4517,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60445,mybrickhouse,2026-09-12T10:49:00+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-truck-with-rb20-amr24-f1-r-cars-toy-racing-transporter-set-60445-building-kit-1086-pieces
 60445,mybrickhouse,2026-09-12T10:54:29+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-truck-with-rb20-amr24-f1-r-cars-toy-racing-transporter-set-60445-building-kit-1086-pieces
 60445,mybrickhouse,2026-09-12T11:04:28+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-truck-with-rb20-amr24-f1-r-cars-toy-racing-transporter-set-60445-building-kit-1086-pieces
+60445,toycra,2026-09-19T23:17:12+00:00,9999.0,,0,https://toycra.com/products/lego-60445-city-f1-truck-with-rb20-amr24-f1-cars-1086-pieces
 60447,mybrickhouse,2026-09-10T09:18:14+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-off-road-4x4-mountain-truck-adventure-toy-60447
 60447,mybrickhouse,2026-09-10T11:10:46+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-off-road-4x4-mountain-truck-adventure-toy-60447
 60447,mybrickhouse,2026-09-10T11:34:31+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-off-road-4x4-mountain-truck-adventure-toy-60447
@@ -4557,6 +4621,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60464,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-williams-racing-haas-f1-r-race-cars-vehicle-toy-set-60464-building-kit-92-pieces
 60464,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-williams-racing-haas-f1-r-race-cars-vehicle-toy-set-60464-building-kit-92-pieces
 60464,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/city-f1-r-williams-racing-haas-f1-r-race-cars-vehicle-toy-set-60464-building-kit-92-pieces
+60464,toycra,2026-09-19T23:17:14+00:00,1749.0,2499.0,1,https://toycra.com/products/lego-60464-city-f1-williams-racing-haas-f1-race-cars-92-pieces
 60465,mybrickhouse,2026-09-10T09:18:14+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/city-emergency-air-ambulance-airplane-60465-building-kit-403-pieces
 60465,mybrickhouse,2026-09-10T11:10:46+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/city-emergency-air-ambulance-airplane-60465-building-kit-403-pieces
 60465,mybrickhouse,2026-09-10T11:34:31+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/city-emergency-air-ambulance-airplane-60465-building-kit-403-pieces
@@ -4621,6 +4686,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 60474,mybrickhouse,2026-09-12T10:49:00+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/city-f1-r-grid-with-vcarb-sauber-race-cars-toy-vehicle-set-60474-building-kit-313-pieces
 60474,mybrickhouse,2026-09-12T10:54:29+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/city-f1-r-grid-with-vcarb-sauber-race-cars-toy-vehicle-set-60474-building-kit-313-pieces
 60474,mybrickhouse,2026-09-12T11:04:28+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/city-f1-r-grid-with-vcarb-sauber-race-cars-toy-vehicle-set-60474-building-kit-313-pieces
+60474,toycra,2026-09-19T23:17:08+00:00,3499.0,,1,https://toycra.com/products/lego-60474-city-f1-grid-with-vcarb-sauber-race-cars-313-pieces
 60478,mybrickhouse,2026-09-10T09:18:14+00:00,4499.0,,1,https://lego.mybrickhouse.com/products/lego-r-city-cement-mixer-construction-toy-for-kids-60478
 60478,mybrickhouse,2026-09-10T11:10:46+00:00,4499.0,,1,https://lego.mybrickhouse.com/products/lego-r-city-cement-mixer-construction-toy-for-kids-60478
 60478,mybrickhouse,2026-09-10T11:34:31+00:00,4499.0,,1,https://lego.mybrickhouse.com/products/lego-r-city-cement-mixer-construction-toy-for-kids-60478
@@ -4954,6 +5020,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 71806,mybrickhouse,2026-09-12T10:49:00+00:00,1720.0,2290.0,0,https://lego.mybrickhouse.com/products/ninjago-r-cole-s-elemental-earth-mech-toy-71806-building-kit-235-pieces
 71806,mybrickhouse,2026-09-12T10:54:29+00:00,1720.0,2290.0,0,https://lego.mybrickhouse.com/products/ninjago-r-cole-s-elemental-earth-mech-toy-71806-building-kit-235-pieces
 71806,mybrickhouse,2026-09-12T11:04:28+00:00,1720.0,2290.0,0,https://lego.mybrickhouse.com/products/ninjago-r-cole-s-elemental-earth-mech-toy-71806-building-kit-235-pieces
+71806,toycra,2026-09-19T23:23:17+00:00,2499.0,,0,https://toycra.com/products/lego-71806-ninjago-coles-elemental-earth-mech-235-pieces
 71807,mybrickhouse,2026-09-10T09:18:14+00:00,1720.0,2290.0,1,https://lego.mybrickhouse.com/products/ninjago-r-sora-s-elemental-tech-mech-toy-71807-building-kit-209-pieces
 71807,mybrickhouse,2026-09-10T11:10:46+00:00,1720.0,2290.0,1,https://lego.mybrickhouse.com/products/ninjago-r-sora-s-elemental-tech-mech-toy-71807-building-kit-209-pieces
 71807,mybrickhouse,2026-09-10T11:34:31+00:00,1720.0,2290.0,1,https://lego.mybrickhouse.com/products/ninjago-r-sora-s-elemental-tech-mech-toy-71807-building-kit-209-pieces
@@ -5093,6 +5160,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 71829,mybrickhouse,2026-09-12T10:49:00+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/ninjago-r-lloyd-s-green-forest-dragon-toy-71829-building-kit-128-pieces
 71829,mybrickhouse,2026-09-12T10:54:29+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/ninjago-r-lloyd-s-green-forest-dragon-toy-71829-building-kit-128-pieces
 71829,mybrickhouse,2026-09-12T11:04:28+00:00,2290.0,,1,https://lego.mybrickhouse.com/products/ninjago-r-lloyd-s-green-forest-dragon-toy-71829-building-kit-128-pieces
+71829,toycra,2026-09-19T23:23:19+00:00,2499.0,,1,https://toycra.com/products/lego-71829-ninjago-lloyds-green-forest-dragon-128-pieces
 71830,mybrickhouse,2026-09-10T09:18:14+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/ninjago-r-kai-s-mech-storm-rider-combo-ninja-toy-71830-building-kit-333-pieces
 71830,mybrickhouse,2026-09-10T11:10:46+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/ninjago-r-kai-s-mech-storm-rider-combo-ninja-toy-71830-building-kit-333-pieces
 71830,mybrickhouse,2026-09-10T11:34:31+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/ninjago-r-kai-s-mech-storm-rider-combo-ninja-toy-71830-building-kit-333-pieces
@@ -5112,6 +5180,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 71831,mybrickhouse,2026-09-12T10:49:00+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/ninjago-r-ninja-spinjitzu-temple-action-toy-playset-71831-building-kit-158-pieces
 71831,mybrickhouse,2026-09-12T10:54:29+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/ninjago-r-ninja-spinjitzu-temple-action-toy-playset-71831-building-kit-158-pieces
 71831,mybrickhouse,2026-09-12T11:04:28+00:00,4099.0,,1,https://lego.mybrickhouse.com/products/ninjago-r-ninja-spinjitzu-temple-action-toy-playset-71831-building-kit-158-pieces
+71831,toycra,2026-09-19T23:23:21+00:00,4499.0,,1,https://toycra.com/products/lego-71831-ninjago-ninja-spinjitzu-temple-158-pieces
 71832,mybrickhouse,2026-09-10T09:18:14+00:00,8199.0,,0,https://lego.mybrickhouse.com/products/ninjago-r-thunderfang-dragon-of-chaos-ninja-toy-set-71832-building-kit-668-pieces
 71832,mybrickhouse,2026-09-10T11:10:46+00:00,8199.0,,0,https://lego.mybrickhouse.com/products/ninjago-r-thunderfang-dragon-of-chaos-ninja-toy-set-71832-building-kit-668-pieces
 71832,mybrickhouse,2026-09-10T11:34:31+00:00,8199.0,,0,https://lego.mybrickhouse.com/products/ninjago-r-thunderfang-dragon-of-chaos-ninja-toy-set-71832-building-kit-668-pieces
@@ -5178,6 +5247,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 71842,mybrickhouse,2026-09-12T10:49:00+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/ninjago-rontu-the-master-dragon-71842-building-kit-381-pieces
 71842,mybrickhouse,2026-09-12T10:54:29+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/ninjago-rontu-the-master-dragon-71842-building-kit-381-pieces
 71842,mybrickhouse,2026-09-12T11:04:28+00:00,4999.0,,1,https://lego.mybrickhouse.com/products/ninjago-rontu-the-master-dragon-71842-building-kit-381-pieces
+71842,toycra,2026-09-19T23:23:29+00:00,5499.0,,1,https://toycra.com/products/lego-71842-ninjago-rontu-the-master-dragon-381-pieces
 71843,mybrickhouse,2026-09-10T09:18:14+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/ninjago-rogue-s-mech-dragon-rider-71843-building-kit-584-pieces
 71843,mybrickhouse,2026-09-10T11:10:46+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/ninjago-rogue-s-mech-dragon-rider-71843-building-kit-584-pieces
 71843,mybrickhouse,2026-09-10T11:34:31+00:00,7749.0,,1,https://lego.mybrickhouse.com/products/ninjago-rogue-s-mech-dragon-rider-71843-building-kit-584-pieces
@@ -5758,6 +5828,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 75442,mybrickhouse,2026-09-12T10:49:00+00:00,26999.0,,1,https://lego.mybrickhouse.com/products/lego-r-star-wars-the-mandalorian-s-n-1-starfighter-75442
 75442,mybrickhouse,2026-09-12T10:54:29+00:00,26999.0,,1,https://lego.mybrickhouse.com/products/lego-r-star-wars-the-mandalorian-s-n-1-starfighter-75442
 75442,mybrickhouse,2026-09-12T11:04:28+00:00,26999.0,,1,https://lego.mybrickhouse.com/products/lego-r-star-wars-the-mandalorian-s-n-1-starfighter-75442
+75442,toycra,2026-09-19T23:22:17+00:00,26999.0,,0,https://toycra.com/products/lego-75442-the-mandalorians-n-1-starfighter-1809-pcs
 75443,mybrickhouse,2026-09-10T09:18:14+00:00,1999.0,,1,https://lego.mybrickhouse.com/products/lego-r-star-wars-grogu-s-homestead-toy-building-set-75443
 75443,mybrickhouse,2026-09-10T11:10:46+00:00,1999.0,,1,https://lego.mybrickhouse.com/products/lego-r-star-wars-grogu-s-homestead-toy-building-set-75443
 75443,mybrickhouse,2026-09-10T11:34:31+00:00,1999.0,,1,https://lego.mybrickhouse.com/products/lego-r-star-wars-grogu-s-homestead-toy-building-set-75443
@@ -5878,6 +5949,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 75637,mybrickhouse,2026-09-12T10:54:29+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/one-piece-buggy-the-clown-s-circus-tent-75637-building-kit-573-pieces
 75637,mybrickhouse,2026-09-12T11:04:28+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/one-piece-buggy-the-clown-s-circus-tent-75637-building-kit-573-pieces
 75637,toycra,2026-09-10T11:12:06+00:00,5999.0,,0,https://toycra.com/products/lego-75637-one-piece-buggy-the-clowns-circus-tent-573-pieces
+75637,toycra,2026-09-19T23:23:31+00:00,5999.0,,0,https://toycra.com/products/lego-75637-one-piece-buggy-the-clowns-circus-tent-573-pieces
 75638,mybrickhouse,2026-09-10T09:18:14+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/one-piece-battle-at-arlong-park-interactive-pirate-toy-75638-building-kit-926-pieces
 75638,mybrickhouse,2026-09-10T11:10:46+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/one-piece-battle-at-arlong-park-interactive-pirate-toy-75638-building-kit-926-pieces
 75638,mybrickhouse,2026-09-10T11:34:31+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/one-piece-battle-at-arlong-park-interactive-pirate-toy-75638-building-kit-926-pieces
@@ -5949,6 +6021,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76294,mybrickhouse,2026-09-12T11:04:28+00:00,33899.0,,1,https://lego.mybrickhouse.com/products/marvel-x-men-the-x-mansion-buildable-set-76294-building-kit-3093-pieces
 76294,toycra,2026-09-09T12:13:30+00:00,27999.0,33899.0,1,https://toycra.com/products/lego-76294-super-heroes-marvel-x-men-the-x-mansion-3093-pieces
 76294,toycra,2026-09-09T12:46:19+00:00,27999.0,33899.0,1,https://toycra.com/products/lego-76294-super-heroes-marvel-x-men-the-x-mansion-3093-pieces
+76294,toycra,2026-09-19T23:23:07+00:00,25424.0,33899.0,1,https://toycra.com/products/lego-76294-super-heroes-marvel-x-men-the-x-mansion-3093-pieces
 76296,mybrickhouse,2026-09-10T09:18:14+00:00,3649.0,,0,https://lego.mybrickhouse.com/products/marvel-new-captain-america-construction-figure-76296-building-kit-359-pieces
 76296,mybrickhouse,2026-09-10T11:10:46+00:00,3649.0,,0,https://lego.mybrickhouse.com/products/marvel-new-captain-america-construction-figure-76296-building-kit-359-pieces
 76296,mybrickhouse,2026-09-10T11:34:31+00:00,3649.0,,0,https://lego.mybrickhouse.com/products/marvel-new-captain-america-construction-figure-76296-building-kit-359-pieces
@@ -5999,6 +6072,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76303,mybrickhouse,2026-09-12T10:49:00+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/dc-batman-batman-tumbler-vs-two-face-the-joker-toy-car-76303-building-kit-429-pieces
 76303,mybrickhouse,2026-09-12T10:54:29+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/dc-batman-batman-tumbler-vs-two-face-the-joker-toy-car-76303-building-kit-429-pieces
 76303,mybrickhouse,2026-09-12T11:04:28+00:00,6399.0,,0,https://lego.mybrickhouse.com/products/dc-batman-batman-tumbler-vs-two-face-the-joker-toy-car-76303-building-kit-429-pieces
+76303,toycra,2026-09-19T23:17:34+00:00,6399.0,,0,https://toycra.com/products/lego-76303-dc-batman-tumbler-vs-two-face-the-joker-429-pieces
 76304,hamleys,2026-09-09T12:13:30+00:00,10999.0,,1,https://hamleys.in/product/lego-dc-batman-batman-forever-batmobile-super-hero-toy-for-kids-76304-building-blocks-for-age-12y-17361740
 76304,hamleys,2026-09-09T12:46:19+00:00,10999.0,,1,https://hamleys.in/product/lego-dc-batman-batman-forever-batmobile-super-hero-toy-for-kids-76304-building-blocks-for-age-12y-17361740
 76304,mybrickhouse,2026-09-10T09:18:14+00:00,10999.0,,1,https://lego.mybrickhouse.com/products/sh-dc-76304-1
@@ -6010,6 +6084,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76304,mybrickhouse,2026-09-12T11:04:28+00:00,10999.0,,1,https://lego.mybrickhouse.com/products/sh-dc-76304-1
 76304,toycra,2026-09-09T12:13:30+00:00,10999.0,,1,https://toycra.com/products/lego-76304-super-heroes-dc-batman-forever-batmobile-909-pieces
 76304,toycra,2026-09-09T12:46:19+00:00,10999.0,,1,https://toycra.com/products/lego-76304-super-heroes-dc-batman-forever-batmobile-909-pieces
+76304,toycra,2026-09-19T23:20:35+00:00,8249.0,10999.0,1,https://toycra.com/products/lego-76304-super-heroes-dc-batman-forever-batmobile-909-pieces
 76307,mybrickhouse,2026-09-10T09:18:14+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/marvel-iron-man-mech-vs-ultron-buildable-super-hero-figure-playset-76307-building-kit-101-pieces
 76307,mybrickhouse,2026-09-10T11:10:46+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/marvel-iron-man-mech-vs-ultron-buildable-super-hero-figure-playset-76307-building-kit-101-pieces
 76307,mybrickhouse,2026-09-10T11:34:31+00:00,1799.0,,1,https://lego.mybrickhouse.com/products/marvel-iron-man-mech-vs-ultron-buildable-super-hero-figure-playset-76307-building-kit-101-pieces
@@ -6035,6 +6110,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76309,mybrickhouse,2026-09-12T11:04:28+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/marvel-spider-man-vs-venom-muscle-car-buildable-toy-vehicle-set-76309-building-kit-254-pieces
 76309,toycra,2026-09-09T12:13:30+00:00,3799.0,3999.0,1,https://toycra.com/products/lego-76309-super-heroes-marvel-spider-man-vs-venom-muscle-car-254-pieces
 76309,toycra,2026-09-09T12:46:19+00:00,3799.0,3999.0,1,https://toycra.com/products/lego-76309-super-heroes-marvel-spider-man-vs-venom-muscle-car-254-pieces
+76309,toycra,2026-09-19T23:23:05+00:00,3799.0,3999.0,1,https://toycra.com/products/lego-76309-super-heroes-marvel-spider-man-vs-venom-muscle-car-254-pieces
 76310,mybrickhouse,2026-09-10T09:18:14+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/marvel-iron-man-car-black-panther-vs-red-hulk-buildable-playset-76310-building-kit-295-pieces
 76310,mybrickhouse,2026-09-10T11:10:46+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/marvel-iron-man-car-black-panther-vs-red-hulk-buildable-playset-76310-building-kit-295-pieces
 76310,mybrickhouse,2026-09-10T11:34:31+00:00,2740.0,3649.0,1,https://lego.mybrickhouse.com/products/marvel-iron-man-car-black-panther-vs-red-hulk-buildable-playset-76310-building-kit-295-pieces
@@ -6108,6 +6184,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76319,mybrickhouse,2026-09-12T10:49:00+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/marvel-captain-america-vs-thanos-with-2-minifigures-76319-building-kit-107-pieces
 76319,mybrickhouse,2026-09-12T10:54:29+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/marvel-captain-america-vs-thanos-with-2-minifigures-76319-building-kit-107-pieces
 76319,mybrickhouse,2026-09-12T11:04:28+00:00,3649.0,,1,https://lego.mybrickhouse.com/products/marvel-captain-america-vs-thanos-with-2-minifigures-76319-building-kit-107-pieces
+76319,toycra,2026-09-19T23:22:53+00:00,3999.0,,1,https://toycra.com/products/lego-76319-super-heroes-marvel-captain-america-vs-thanos-107-pieces
 76323,mybrickhouse,2026-09-10T09:18:14+00:00,11399.0,,1,https://lego.mybrickhouse.com/products/marvel-avengers-endgame-final-battle-buildable-set-76323-building-kit-621-pieces
 76323,mybrickhouse,2026-09-10T11:10:46+00:00,11399.0,,1,https://lego.mybrickhouse.com/products/marvel-avengers-endgame-final-battle-buildable-set-76323-building-kit-621-pieces
 76323,mybrickhouse,2026-09-10T11:34:31+00:00,11399.0,,1,https://lego.mybrickhouse.com/products/marvel-avengers-endgame-final-battle-buildable-set-76323-building-kit-621-pieces
@@ -6145,6 +6222,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76330,mybrickhouse,2026-09-12T11:04:28+00:00,8499.0,,1,https://lego.mybrickhouse.com/products/lego-dc-batman-batman-logo-super-hero-building-toy-76330
 76330,toycra,2026-09-09T12:13:30+00:00,8499.0,,1,https://toycra.com/products/lego-76330-super-heroes-dc-batman-logo-678-pieces
 76330,toycra,2026-09-09T12:46:19+00:00,8499.0,,1,https://toycra.com/products/lego-76330-super-heroes-dc-batman-logo-678-pieces
+76330,toycra,2026-09-19T23:25:16+00:00,6374.0,8499.0,1,https://toycra.com/products/lego-76330-super-heroes-dc-batman-logo-678-pieces
 76331,firstcry,2026-09-09T12:13:30+00:00,2789.07,2999.0,1,https://www.firstcry.com/lego/lego-dc-batman-v-superman-batmobile-car-toy-220-pieces-76331/22631286/product-detail
 76331,firstcry,2026-09-09T12:46:19+00:00,2789.07,2999.0,1,https://www.firstcry.com/lego/lego-dc-batman-v-superman-batmobile-car-toy-220-pieces-76331/22631286/product-detail
 76331,flipkart,2026-09-09T12:13:30+00:00,2849.0,2999.0,1,http://dl.flipkart.com/dl/lego-dc-batman-v-superman-batmobile-car-toy-76331/p/itm8c0de6a2a6281
@@ -6158,6 +6236,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76331,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-dc-batman-batman-v-superman-batmobile-car-toy-76331
 76331,toycra,2026-09-09T12:13:30+00:00,2999.0,,1,https://toycra.com/products/lego-76331-super-heroes-dc-batman-v-superman-batmobile-220-pieces
 76331,toycra,2026-09-09T12:46:19+00:00,2999.0,,1,https://toycra.com/products/lego-76331-super-heroes-dc-batman-v-superman-batmobile-220-pieces
+76331,toycra,2026-09-19T23:25:18+00:00,2999.0,,0,https://toycra.com/products/lego-76331-super-heroes-dc-batman-v-superman-batmobile-220-pieces
 76332,amazon_in,2026-09-09T12:15:07+00:00,2849.0,2999.0,1,https://www.amazon.in/dp/B0FPXG53K5
 76332,firstcry,2026-09-09T12:13:30+00:00,2789.07,2999.0,1,https://www.firstcry.com/lego/lego-dc-batman-the-batman-batmobile-model-car-toy-330-pieces-76332/22631287/product-detail
 76332,firstcry,2026-09-09T12:46:19+00:00,2789.07,2999.0,1,https://www.firstcry.com/lego/lego-dc-batman-the-batman-batmobile-model-car-toy-330-pieces-76332/22631287/product-detail
@@ -6214,6 +6293,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76338,mybrickhouse,2026-09-12T10:49:00+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-mech-battle-spider-man-vs-doc-ock-76338
 76338,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-mech-battle-spider-man-vs-doc-ock-76338
 76338,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-mech-battle-spider-man-vs-doc-ock-76338
+76338,toycra,2026-09-19T23:21:40+00:00,2999.0,,1,https://toycra.com/products/lego-76338-super-heroes-marvel-mech-battle-spider-man-vs-doc-ock-315-pieces
 76341,mybrickhouse,2026-09-10T09:18:14+00:00,6499.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-ravager-jumpsuit-groot-building-toy-76341
 76341,mybrickhouse,2026-09-10T11:10:46+00:00,6499.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-ravager-jumpsuit-groot-building-toy-76341
 76341,mybrickhouse,2026-09-10T11:34:31+00:00,6499.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-ravager-jumpsuit-groot-building-toy-76341
@@ -6231,6 +6311,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76342,mybrickhouse,2026-09-12T11:04:28+00:00,11999.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-spider-man-vs-mysterio-the-daily-bugle-76342
 76342,toycra,2026-09-09T12:13:30+00:00,11999.0,,1,https://toycra.com/products/lego-76342-super-heroes-marvel-spider-man-vs-mysterio-the-daily-bugle-781-pieces
 76342,toycra,2026-09-09T12:46:19+00:00,11999.0,,1,https://toycra.com/products/lego-76342-super-heroes-marvel-spider-man-vs-mysterio-the-daily-bugle-781-pieces
+76342,toycra,2026-09-19T23:22:42+00:00,11999.0,,1,https://toycra.com/products/lego-76342-super-heroes-marvel-spider-man-vs-mysterio-the-daily-bugle-781-pieces
 76343,mybrickhouse,2026-09-10T09:18:14+00:00,5499.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-epic-battle-hulkbuster-vs-the-hulk-76343
 76343,mybrickhouse,2026-09-10T11:10:46+00:00,5499.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-epic-battle-hulkbuster-vs-the-hulk-76343
 76343,mybrickhouse,2026-09-10T11:34:31+00:00,5499.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-epic-battle-hulkbuster-vs-the-hulk-76343
@@ -6248,6 +6329,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76344,mybrickhouse,2026-09-12T11:04:28+00:00,13999.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-iron-man-mark-3-collectors-edition-76344
 76344,toycra,2026-09-09T12:13:30+00:00,11999.0,13999.0,1,https://toycra.com/products/lego-76344-super-heroes-marvel-iron-man-mark-3-collectors-edition-1297-pieces
 76344,toycra,2026-09-09T12:46:19+00:00,11999.0,13999.0,1,https://toycra.com/products/lego-76344-super-heroes-marvel-iron-man-mark-3-collectors-edition-1297-pieces
+76344,toycra,2026-09-19T23:22:40+00:00,10499.0,13999.0,1,https://toycra.com/products/lego-76344-super-heroes-marvel-iron-man-mark-3-collectors-edition-1297-pieces
 76346,mybrickhouse,2026-09-10T09:18:14+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-spider-man-hero-figure-collectible-76346
 76346,mybrickhouse,2026-09-10T11:10:46+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-spider-man-hero-figure-collectible-76346
 76346,mybrickhouse,2026-09-10T11:34:31+00:00,9999.0,,1,https://lego.mybrickhouse.com/products/lego-r-marvel-spider-man-hero-figure-collectible-76346
@@ -6353,6 +6435,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76444,mybrickhouse,2026-09-12T11:04:28+00:00,18299.0,,1,https://lego.mybrickhouse.com/products/harry-potter-diagon-alley-wizarding-shops-wizard-set-for-adults-76444-building-kit-2750-pieces
 76444,toycra,2026-09-09T12:13:30+00:00,18299.0,,1,https://toycra.com/products/lego-76444-harry-potter-diagon-alley-wizarding-shops-2750-pieces
 76444,toycra,2026-09-09T12:46:19+00:00,18299.0,,1,https://toycra.com/products/lego-76444-harry-potter-diagon-alley-wizarding-shops-2750-pieces
+76444,toycra,2026-09-19T23:18:24+00:00,14999.0,18299.0,1,https://toycra.com/products/lego-76444-harry-potter-diagon-alley-wizarding-shops-2750-pieces
 76445,mybrickhouse,2026-09-10T09:18:14+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/harry-potter-tm-hogwarts-castle-herbology-class-76445-building-kit-390-pieces
 76445,mybrickhouse,2026-09-10T11:10:46+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/harry-potter-tm-hogwarts-castle-herbology-class-76445-building-kit-390-pieces
 76445,mybrickhouse,2026-09-10T11:34:31+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/harry-potter-tm-hogwarts-castle-herbology-class-76445-building-kit-390-pieces
@@ -6586,6 +6669,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76917,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-2-fast-2-furious-nissan-skyline-gt-r-r34-76917-319-pieces
 76917,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-2-fast-2-furious-nissan-skyline-gt-r-r34-76917-319-pieces
 76917,toycra,2026-09-09T12:15:07+00:00,2999.0,,1,https://toycra.com/products/lego-76917-speed-champions-fast-2-furious-nissan-skyline-gt-r-r3
+76917,toycra,2026-09-19T23:23:49+00:00,2999.0,,1,https://toycra.com/products/lego-76917-speed-champions-fast-2-furious-nissan-skyline-gt-r-r3
 76920,amazon_in,2026-09-09T12:15:07+00:00,2949.0,3499.0,1,https://www.amazon.in/dp/B0CFVZRN8W
 76920,mybrickhouse,2026-09-10T09:18:14+00:00,2400.0,3199.0,0,https://lego.mybrickhouse.com/products/speed-champions-ford-mustang-dark-horse-sports-car-76920-building-kit-344-pieces
 76920,mybrickhouse,2026-09-10T11:10:46+00:00,2400.0,3199.0,0,https://lego.mybrickhouse.com/products/speed-champions-ford-mustang-dark-horse-sports-car-76920-building-kit-344-pieces
@@ -6594,6 +6678,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76920,mybrickhouse,2026-09-12T10:49:00+00:00,2400.0,3199.0,0,https://lego.mybrickhouse.com/products/speed-champions-ford-mustang-dark-horse-sports-car-76920-building-kit-344-pieces
 76920,mybrickhouse,2026-09-12T10:54:29+00:00,2400.0,3199.0,0,https://lego.mybrickhouse.com/products/speed-champions-ford-mustang-dark-horse-sports-car-76920-building-kit-344-pieces
 76920,mybrickhouse,2026-09-12T11:04:28+00:00,2400.0,3199.0,0,https://lego.mybrickhouse.com/products/speed-champions-ford-mustang-dark-horse-sports-car-76920-building-kit-344-pieces
+76920,toycra,2026-09-19T23:24:01+00:00,3499.0,,0,https://toycra.com/products/lego-76920-speed-champions-ford-mustang-dark-horse-sports-car-344-pieces
 76921,jaimantoys,2026-09-15T06:54:48+00:00,2834.0,3499.0,1,https://jaimantoys.com/products/lego-76921-speed-champions-audi-s1-e-tron-quattro-race-car
 76921,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/audi-s1-e-tron-quattro-race-car-76921-building-kit-274-pieces
 76921,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/audi-s1-e-tron-quattro-race-car-76921-building-kit-274-pieces
@@ -6611,6 +6696,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76923,mybrickhouse,2026-09-12T10:49:00+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/speed-champions-lamborghini-lambo-v12-vision-gt-super-car-76923-building-kit-230-pieces
 76923,mybrickhouse,2026-09-12T10:54:29+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/speed-champions-lamborghini-lambo-v12-vision-gt-super-car-76923-building-kit-230-pieces
 76923,mybrickhouse,2026-09-12T11:04:28+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/speed-champions-lamborghini-lambo-v12-vision-gt-super-car-76923-building-kit-230-pieces
+76923,toycra,2026-09-19T23:24:03+00:00,3499.0,,0,https://toycra.com/products/lego-76923-speed-champions-lamborghini-lambo-v12-vision-gt-super-car-230-pieces
 76924,firstcry,2026-09-09T12:15:07+00:00,4958.59,5449.0,1,https://www.firstcry.com/lego/lego-speed-champions-mercedes-amg-g-63-and-mercedes-amg-sl-63-808-pieces-76924/18046506/product-detail
 76924,mybrickhouse,2026-09-10T09:18:14+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mercedes-amg-g-63-mercedes-amg-sl-63-76924-building-kit-808-pieces
 76924,mybrickhouse,2026-09-10T11:10:46+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mercedes-amg-g-63-mercedes-amg-sl-63-76924-building-kit-808-pieces
@@ -6619,6 +6705,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76924,mybrickhouse,2026-09-12T10:49:00+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mercedes-amg-g-63-mercedes-amg-sl-63-76924-building-kit-808-pieces
 76924,mybrickhouse,2026-09-12T10:54:29+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mercedes-amg-g-63-mercedes-amg-sl-63-76924-building-kit-808-pieces
 76924,mybrickhouse,2026-09-12T11:04:28+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mercedes-amg-g-63-mercedes-amg-sl-63-76924-building-kit-808-pieces
+76924,toycra,2026-09-19T23:24:09+00:00,5449.0,,0,https://toycra.com/products/lego-76924-speed-champions-mercedes-amg-g-63-mercedes-amg-sl-63-808-pieces
 76934,firstcry,2026-09-09T12:15:07+00:00,2239.3,3199.0,1,https://www.firstcry.com/lego/lego-speed-champions-ferrari-f40-supercar-vehicle-toy-318-pieces-76934/19036905/product-detail
 76934,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/speed-champions-ferrari-f40-supercar-vehicle-toy-76934-building-kit-318-pieces
 76934,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,0,https://lego.mybrickhouse.com/products/speed-champions-ferrari-f40-supercar-vehicle-toy-76934-building-kit-318-pieces
@@ -6627,6 +6714,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 76934,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-ferrari-f40-supercar-vehicle-toy-76934-building-kit-318-pieces
 76934,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-ferrari-f40-supercar-vehicle-toy-76934-building-kit-318-pieces
 76934,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-ferrari-f40-supercar-vehicle-toy-76934-building-kit-318-pieces
+76934,toycra,2026-09-19T23:23:57+00:00,3199.0,,0,https://toycra.com/products/lego-76934-speed-champions-ferrari-f40-supercar-318-pieces
 76935,mybrickhouse,2026-09-10T09:18:14+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/speed-champions-nascar-r-next-gen-chevrolet-camaro-zl1-76935-building-kit-328-pieces
 76935,mybrickhouse,2026-09-10T11:10:46+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/speed-champions-nascar-r-next-gen-chevrolet-camaro-zl1-76935-building-kit-328-pieces
 76935,mybrickhouse,2026-09-10T11:34:31+00:00,2400.0,3199.0,1,https://lego.mybrickhouse.com/products/speed-champions-nascar-r-next-gen-chevrolet-camaro-zl1-76935-building-kit-328-pieces
@@ -6760,6 +6848,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77077,mybrickhouse,2026-09-12T10:49:00+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/fortnite-r-klombo-video-game-toy-77077-1084-pieces
 77077,mybrickhouse,2026-09-12T10:54:29+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/fortnite-r-klombo-video-game-toy-77077-1084-pieces
 77077,mybrickhouse,2026-09-12T11:04:28+00:00,9099.0,,1,https://lego.mybrickhouse.com/products/fortnite-r-klombo-video-game-toy-77077-1084-pieces
+77077,toycra,2026-09-19T23:20:59+00:00,9099.0,,0,https://toycra.com/products/lego-77077-fortnite-klombo-1084-pieces
 77078,mybrickhouse,2026-09-10T09:18:14+00:00,22899.0,,1,https://lego.mybrickhouse.com/products/fortnite-r-mecha-team-leader-building-set-for-adults-77078-2503-pieces
 77078,mybrickhouse,2026-09-10T11:10:46+00:00,22899.0,,1,https://lego.mybrickhouse.com/products/fortnite-r-mecha-team-leader-building-set-for-adults-77078-2503-pieces
 77078,mybrickhouse,2026-09-10T11:34:31+00:00,22899.0,,1,https://lego.mybrickhouse.com/products/fortnite-r-mecha-team-leader-building-set-for-adults-77078-2503-pieces
@@ -6817,6 +6906,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77237,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-dodge-challenger-srt-hellcat-sports-car-toy-77237-building-kit-390-pieces
 77237,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-dodge-challenger-srt-hellcat-sports-car-toy-77237-building-kit-390-pieces
 77237,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-dodge-challenger-srt-hellcat-sports-car-toy-77237-building-kit-390-pieces
+77237,toycra,2026-09-19T23:23:55+00:00,3199.0,,1,https://toycra.com/products/lego-77237-speed-champions-dodge-challenger-srt-hellcat-sports-car-390-pieces
 77238,mybrickhouse,2026-09-10T09:18:14+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/speed-champions-lamborghini-revuelto-huracan-sto-77238-building-kit-607-pieces
 77238,mybrickhouse,2026-09-10T11:10:46+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/speed-champions-lamborghini-revuelto-huracan-sto-77238-building-kit-607-pieces
 77238,mybrickhouse,2026-09-10T11:34:31+00:00,5449.0,,1,https://lego.mybrickhouse.com/products/speed-champions-lamborghini-revuelto-huracan-sto-77238-building-kit-607-pieces
@@ -6841,6 +6931,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77240,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-bugatti-centodieci-hyper-sports-car-toy-77240-building-kit-291-pieces
 77240,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-bugatti-centodieci-hyper-sports-car-toy-77240-building-kit-291-pieces
 77240,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-bugatti-centodieci-hyper-sports-car-toy-77240-building-kit-291-pieces
+77240,toycra,2026-09-19T23:23:53+00:00,3199.0,,1,https://toycra.com/products/lego-77240-speed-champions-bugatti-centodieci-hyper-sports-car-291-pieces
 77241,firstcry,2026-09-09T12:15:07+00:00,2975.07,3199.0,1,https://www.firstcry.com/lego/lego-speed-champions-2-fast-2-furious-honda-s2000-car-toy-300-pieces-77241/20949270/product-detail
 77241,mybrickhouse,2026-09-10T09:18:14+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-2-fast-2-furious-honda-s2000-77241-building-kit-300-pieces
 77241,mybrickhouse,2026-09-10T11:10:46+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-2-fast-2-furious-honda-s2000-77241-building-kit-300-pieces
@@ -6849,6 +6940,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77241,mybrickhouse,2026-09-12T10:49:00+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-2-fast-2-furious-honda-s2000-77241-building-kit-300-pieces
 77241,mybrickhouse,2026-09-12T10:54:29+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-2-fast-2-furious-honda-s2000-77241-building-kit-300-pieces
 77241,mybrickhouse,2026-09-12T11:04:28+00:00,3199.0,,1,https://lego.mybrickhouse.com/products/speed-champions-2-fast-2-furious-honda-s2000-77241-building-kit-300-pieces
+77241,toycra,2026-09-19T23:23:47+00:00,3499.0,,0,https://toycra.com/products/lego-77241-speed-champions-2-fast-2-furious-honda-s2000-300-pieces
 77242,amazon_in,2026-09-09T12:15:07+00:00,2474.0,2749.0,1,https://www.amazon.in/dp/B0DHSBBV6R
 77242,firstcry,2026-09-09T12:15:07+00:00,2474.1,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-ferrari-sf-24-f1-race-car-driver-set-275-pieces-77242/19967977/product-detail
 77242,firstcry,2026-09-09T12:29:11+00:00,2474.1,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-ferrari-sf-24-f1-race-car-driver-set-275-pieces-77242/19967977/product-detail
@@ -6862,6 +6954,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77242,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-ferrari-sf-24-f1-r-race-car-driver-set-77242-building-kit-275-pieces
 77242,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-ferrari-sf-24-f1-r-race-car-driver-set-77242-building-kit-275-pieces
 77242,toycra,2026-09-09T12:29:11+00:00,2749.0,2999.0,1,https://toycra.com/products/lego-77242-speed-champions-ferrari-sf-24-f1-race-car-275-pieces
+77242,toycra,2026-09-19T23:23:59+00:00,2749.0,2999.0,1,https://toycra.com/products/lego-77242-speed-champions-ferrari-sf-24-f1-race-car-275-pieces
 77243,flipkart,2026-09-09T12:15:07+00:00,2474.0,2749.0,1,https://www.flipkart.com/lego-speed-champions-oracle-red-bull-racing-rb20-f1-race-car-vehicle-set-77243/p/itmc301c5f664558
 77243,flipkart,2026-09-09T12:29:11+00:00,2474.0,2749.0,1,https://www.flipkart.com/lego-speed-champions-oracle-red-bull-racing-rb20-f1-race-car-vehicle-set-77243/p/itmc301c5f664558
 77243,mybrickhouse,2026-09-10T09:18:14+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-oracle-red-bull-racing-rb20-f1-r-race-car-vehicle-set-77243-251-pieces
@@ -6871,6 +6964,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77243,mybrickhouse,2026-09-12T10:49:00+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-oracle-red-bull-racing-rb20-f1-r-race-car-vehicle-set-77243-251-pieces
 77243,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-oracle-red-bull-racing-rb20-f1-r-race-car-vehicle-set-77243-251-pieces
 77243,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-oracle-red-bull-racing-rb20-f1-r-race-car-vehicle-set-77243-251-pieces
+77243,toycra,2026-09-19T23:24:11+00:00,2749.0,2999.0,1,https://toycra.com/products/lego-77243-speed-champions-oracle-red-bull-racing-rb20-f1-race-car-251-pieces
 77244,firstcry,2026-09-09T12:29:11+00:00,2556.57,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-mercedes-amg-f1-w15-race-car-toy-vehicle-267-pieces-77244/19967978/product-detail
 77244,flipkart,2026-09-09T12:29:11+00:00,2474.0,2749.0,1,https://www.flipkart.com/lego-speed-champions-mercedes-amg-f1-w15-race-car-toy-vehicle-77244-267-blocks/p/itm3ae454e6e679a
 77244,mybrickhouse,2026-09-10T09:18:14+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mercedes-amg-f1-r-w15-race-car-toy-vehicle-77244-building-kit-267-pieces
@@ -6880,6 +6974,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77244,mybrickhouse,2026-09-12T10:49:00+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mercedes-amg-f1-r-w15-race-car-toy-vehicle-77244-building-kit-267-pieces
 77244,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mercedes-amg-f1-r-w15-race-car-toy-vehicle-77244-building-kit-267-pieces
 77244,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mercedes-amg-f1-r-w15-race-car-toy-vehicle-77244-building-kit-267-pieces
+77244,toycra,2026-09-19T23:24:07+00:00,2749.0,,1,https://toycra.com/products/lego-77244-speed-champions-mercedes-amg-f1-w15-race-car-267-pieces
 77245,amazon_in,2026-09-12T10:47:55+00:00,2474.0,2749.0,1,https://www.amazon.in/dp/B0DHSDWPP2
 77245,firstcry,2026-09-09T12:15:07+00:00,2474.1,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-aston-martin-aramco-f1-amr24-race-car-vehicle-set-269-pieces-77245/19967979/product-detail
 77245,firstcry,2026-09-09T12:29:11+00:00,2474.1,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-aston-martin-aramco-f1-amr24-race-car-vehicle-set-269-pieces-77245/19967979/product-detail
@@ -6894,6 +6989,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77245,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-aston-martin-aramco-f1-r-amr24-race-car-vehicle-set-77245-building-kit-269-pieces
 77245,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-aston-martin-aramco-f1-r-amr24-race-car-vehicle-set-77245-building-kit-269-pieces
 77245,toycra,2026-09-12T10:47:55+00:00,2749.0,2999.0,1,https://toycra.com/products/lego-77245-speed-champions-aston-martin-aramco-f1-amr24-race-car-269-pieces
+77245,toycra,2026-09-19T23:23:52+00:00,2749.0,2999.0,1,https://toycra.com/products/lego-77245-speed-champions-aston-martin-aramco-f1-amr24-race-car-269-pieces
 77246,flipkart,2026-09-09T12:15:07+00:00,2474.0,2749.0,1,https://www.flipkart.com/lego-speed-champions-visa-cash-app-rb-vcarb-01-f1-race-car-vehicle-kit-77246/p/itmdd70939ffa962
 77246,flipkart,2026-09-09T12:29:11+00:00,2474.0,2749.0,1,https://www.flipkart.com/lego-speed-champions-visa-cash-app-rb-vcarb-01-f1-race-car-vehicle-kit-77246/p/itmdd70939ffa962
 77246,mybrickhouse,2026-09-10T09:18:14+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-visa-cash-app-rb-vcarb-01-f1-r-race-car-vehicle-kit-77246-248-pieces
@@ -6903,6 +6999,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77246,mybrickhouse,2026-09-12T10:49:00+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-visa-cash-app-rb-vcarb-01-f1-r-race-car-vehicle-kit-77246-248-pieces
 77246,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-visa-cash-app-rb-vcarb-01-f1-r-race-car-vehicle-kit-77246-248-pieces
 77246,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-visa-cash-app-rb-vcarb-01-f1-r-race-car-vehicle-kit-77246-248-pieces
+77246,toycra,2026-09-19T23:24:13+00:00,2749.0,2999.0,0,https://toycra.com/products/lego-77246-speed-champions-visa-cash-app-rb-vcarb-01-f1-race-car-248-pieces
 77247,firstcry,2026-09-09T12:29:11+00:00,2474.1,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-kick-sauber-f1-team-c44-race-car-toy-vehicle-259-pieces-77247/19967981/product-detail
 77248,firstcry,2026-09-09T12:29:11+00:00,2556.57,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-bwt-alpine-f1-team-a524-race-car-toy-vehicle-258-pieces-77248/19967982/product-detail
 77249,firstcry,2026-09-09T12:15:07+00:00,2474.1,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-williams-racing-fw46-f1-race-car-vehicle-set-263-pieces-77249/19967980/product-detail
@@ -6915,6 +7012,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77249,mybrickhouse,2026-09-12T10:49:00+00:00,2749.0,,0,https://lego.mybrickhouse.com/products/speed-champions-williams-racing-fw46-f1-r-race-car-vehicle-set-77249-building-kit-263-pieces
 77249,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,0,https://lego.mybrickhouse.com/products/speed-champions-williams-racing-fw46-f1-r-race-car-vehicle-set-77249-building-kit-263-pieces
 77249,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,0,https://lego.mybrickhouse.com/products/speed-champions-williams-racing-fw46-f1-r-race-car-vehicle-set-77249-building-kit-263-pieces
+77249,toycra,2026-09-19T23:24:15+00:00,2749.0,2999.0,1,https://toycra.com/products/lego-77249-speed-champions-williams-racing-fw46-f1-race-car-263-pieces
 77250,firstcry,2026-09-09T12:15:07+00:00,2474.1,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-moneygram-haas-f1-team-vf-24-race-car-toy-vehicle-242-pieces-77250/19967983/product-detail
 77250,firstcry,2026-09-09T12:29:11+00:00,2474.1,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-moneygram-haas-f1-team-vf-24-race-car-toy-vehicle-242-pieces-77250/19967983/product-detail
 77251,firstcry,2026-09-09T12:15:07+00:00,2380.08,2749.0,1,https://www.firstcry.com/lego/lego-speed-champions-mclaren-f1-team-mcl38-race-car-vehicle-set-269-pieces-77251/19967976/product-detail
@@ -6926,6 +7024,9 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77251,mybrickhouse,2026-09-12T10:49:00+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mclaren-f1-r-team-mcl38-race-car-vehicle-set-77251-building-kit-269-pieces
 77251,mybrickhouse,2026-09-12T10:54:29+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mclaren-f1-r-team-mcl38-race-car-vehicle-set-77251-building-kit-269-pieces
 77251,mybrickhouse,2026-09-12T11:04:28+00:00,2749.0,,1,https://lego.mybrickhouse.com/products/speed-champions-mclaren-f1-r-team-mcl38-race-car-vehicle-set-77251-building-kit-269-pieces
+77251,toycra,2026-09-19T23:23:59+00:00,24999.0,29990.0,0,https://toycra.com/products/lego-speed-champions-formula1-all-10-sets-77242-to-77251
+77251,toycra,2026-09-19T23:24:05+00:00,2749.0,2999.0,1,https://toycra.com/products/lego-77251-speed-champions-mclaren-f1-team-mcl38-race-car-269-pieces
+77251,toycra,2026-09-19T23:24:05+00:00,24999.0,29990.0,0,https://toycra.com/products/lego-speed-champions-formula1-all-10-sets-77242-to-77251
 77252,mybrickhouse,2026-09-10T09:18:14+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-apxgp-team-race-car-from-f1-r-the-movie-77252
 77252,mybrickhouse,2026-09-10T11:10:46+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-apxgp-team-race-car-from-f1-r-the-movie-77252
 77252,mybrickhouse,2026-09-10T11:34:31+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-apxgp-team-race-car-from-f1-r-the-movie-77252
@@ -6941,6 +7042,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77253,mybrickhouse,2026-09-12T10:49:00+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-bugatti-vision-gran-turismo-hyper-sports-car-77253
 77253,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-bugatti-vision-gran-turismo-hyper-sports-car-77253
 77253,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-bugatti-vision-gran-turismo-hyper-sports-car-77253
+77253,toycra,2026-09-19T23:19:33+00:00,2999.0,,1,https://toycra.com/products/lego-77253-speed-champions-bugatti-vision-gt-hyper-sports-car-284-pieces
 77254,amazon_in,2026-09-09T12:15:07+00:00,2789.0,2999.0,1,https://www.amazon.in/dp/B0FPXK52K8
 77254,firstcry,2026-09-09T12:15:07+00:00,2789.07,2999.0,1,https://www.firstcry.com/lego/lego-speed-champions-ferrari-sf90-xx-stradale-sports-car-model-car-and-building-set-339-pieces-77254/22080460/product-detail
 77254,flipkart,2026-09-09T12:15:07+00:00,2849.0,2999.0,1,https://www.flipkart.com/lego-speed-champions-ferrari-sf90-xx-stradale-sports-car-77254/p/itme6c40eb4e832f
@@ -6955,6 +7057,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77254,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-ferrari-sf90-xx-stradale-sports-car-77254
 77254,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-ferrari-sf90-xx-stradale-sports-car-77254
 77254,toycra,2026-09-09T12:29:11+00:00,2999.0,,1,https://toycra.com/products/lego-77254-speed-champions-ferrari-sf90-xx-stradale-sports-car-339-pieces
+77254,toycra,2026-09-19T23:19:35+00:00,2999.0,,0,https://toycra.com/products/lego-77254-speed-champions-ferrari-sf90-xx-stradale-sports-car-339-pieces
 77255,amazon_in,2026-09-09T12:15:07+00:00,2789.0,2999.0,1,https://www.amazon.in/dp/B0FPXCYXHM
 77255,firstcry,2026-09-09T12:15:07+00:00,2789.07,2999.0,1,https://www.firstcry.com/lego/lego-speed-champions-lightning-mcqueen-from-disney-pixar-cars-building-set-270-pieces-77255/22080461/product-detail
 77255,mybrickhouse,2026-09-10T09:18:14+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-lightning-mcqueen-77255
@@ -6965,6 +7068,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77255,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-lightning-mcqueen-77255
 77255,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-lightning-mcqueen-77255
 77255,toycra,2026-09-09T12:15:07+00:00,2699.0,2999.0,1,https://toycra.com/products/lego-77255-speed-champions-lightning-mcqueen-270-pieces
+77255,toycra,2026-09-19T23:19:25+00:00,2699.0,2999.0,1,https://toycra.com/products/lego-77255-speed-champions-lightning-mcqueen-270-pieces
 77256,amazon_in,2026-09-09T12:15:07+00:00,2547.0,2999.0,1,https://www.amazon.in/dp/B0FPXDXXYR
 77256,firstcry,2026-09-09T12:15:07+00:00,2547.95,2999.0,1,https://www.firstcry.com/lego/lego-speed-champions-time-machine-from-back-to-the-future-model-car-kit-and-building-set-357-pieces-77256/22080462/product-detail
 77256,mybrickhouse,2026-09-10T09:18:14+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-time-machine-from-back-to-the-future-77256
@@ -6974,6 +7078,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77256,mybrickhouse,2026-09-12T10:49:00+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-time-machine-from-back-to-the-future-77256
 77256,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-time-machine-from-back-to-the-future-77256
 77256,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-time-machine-from-back-to-the-future-77256
+77256,toycra,2026-09-19T23:19:39+00:00,2299.0,2999.0,1,https://toycra.com/products/lego-77256-speed-champions-time-machine-from-back-to-the-future-357-pieces
 77257,amazon_in,2026-09-09T12:15:07+00:00,2789.0,2999.0,1,https://www.amazon.in/dp/B0FPXDQM2S
 77257,firstcry,2026-09-09T12:15:07+00:00,2789.07,2999.0,1,https://www.firstcry.com/lego/lego-speed-champions-mclaren-w1-the-real-supercar-with-1-minifigure-race-car-287-pieces-77257/22080463/product-detail
 77257,mybrickhouse,2026-09-10T09:18:14+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-mclaren-w1-77257
@@ -6983,6 +7088,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77257,mybrickhouse,2026-09-12T10:49:00+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-mclaren-w1-77257
 77257,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-mclaren-w1-77257
 77257,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-mclaren-w1-77257
+77257,toycra,2026-09-19T23:19:37+00:00,2999.0,,1,https://toycra.com/products/lego-77257-speed-champions-mclaren-w1-287-pieces
 77258,mybrickhouse,2026-09-10T09:18:14+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-speed-champions-f1-academy-lego-race-car-77258
 77258,mybrickhouse,2026-09-10T11:10:46+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-speed-champions-f1-academy-lego-race-car-77258
 77258,mybrickhouse,2026-09-10T11:34:31+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-speed-champions-f1-academy-lego-race-car-77258
@@ -6998,6 +7104,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77259,mybrickhouse,2026-09-12T10:49:00+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-speed-champions-audi-revolut-f1-team-r26-race-car-77259
 77259,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-speed-champions-audi-revolut-f1-team-r26-race-car-77259
 77259,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-speed-champions-audi-revolut-f1-team-r26-race-car-77259
+77259,toycra,2026-09-19T23:21:59+00:00,2999.0,,1,https://toycra.com/products/lego-77259-speed-champions-audi-revolut-f1-team-r26-race-car-216-pieces
 77260,amazon_in,2026-09-09T12:15:07+00:00,2990.0,2999.0,1,https://www.amazon.in/dp/B0FPXF65PH
 77260,firstcry,2026-09-09T12:15:07+00:00,2789.07,2999.0,1,https://www.firstcry.com/lego/lego-speed-champions-the-fast-and-the-furious-toyota-supra-mk4-292-pieces-77260/24072319/product-detail
 77260,jaimantoys,2026-09-09T12:15:07+00:00,2999.0,,1,https://jaimantoys.com/products/lego-77260-speed-champions-fast-furious-toyota-supra-mk4-building-set-292-pieces-brian-oconner-collectible-car
@@ -7009,6 +7116,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77260,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-the-fast-and-the-furious-toyota-supra-mk4-77260
 77260,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-the-fast-and-the-furious-toyota-supra-mk4-77260
 77260,toycra,2026-09-09T12:15:07+00:00,2999.0,,1,https://toycra.com/products/lego-77260-speed-champions-the-fast-and-the-furious-toyota-supra-mk4-292-pcs
+77260,toycra,2026-09-19T23:22:06+00:00,2999.0,,1,https://toycra.com/products/lego-77260-speed-champions-the-fast-and-the-furious-toyota-supra-mk4-292-pcs
 77261,amazon_in,2026-09-09T12:15:07+00:00,2979.0,3499.0,1,https://www.amazon.in/dp/B0FPXGT7K7
 77261,mybrickhouse,2026-09-10T09:18:14+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-ferrari-499p-ferrari-merch-77261
 77261,mybrickhouse,2026-09-10T11:10:46+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-ferrari-499p-ferrari-merch-77261
@@ -7019,6 +7127,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77261,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-ferrari-499p-ferrari-merch-77261
 77261,toycra,2026-09-09T12:15:07+00:00,2999.0,,1,https://toycra.com/products/lego-77261-speed-champions-ferrari-499p-329-pcs
 77261,toycra,2026-09-09T12:29:11+00:00,2999.0,,1,https://toycra.com/products/lego-77261-speed-champions-ferrari-499p-329-pcs
+77261,toycra,2026-09-19T23:22:03+00:00,2999.0,,1,https://toycra.com/products/lego-77261-speed-champions-ferrari-499p-329-pcs
 77262,amazon_in,2026-09-09T12:15:07+00:00,2999.0,,1,https://www.amazon.in/dp/B0FPXGKBCS
 77262,amazon_in,2026-09-11T09:11:17+00:00,2999.0,,1,https://www.amazon.in/dp/B0FPXGKBCS
 77262,firstcry,2026-09-09T12:15:07+00:00,2789.07,2999.0,1,https://www.firstcry.com/lego/lego-speed-champions-ken-blocks-65-ford-mustang-hoonicorn-v1-345-pieces-77262/24072317/product-detail
@@ -7033,6 +7142,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77262,mybrickhouse,2026-09-12T10:54:29+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-ken-block-s-65-ford-mustang-hoonicorn-v1-77262
 77262,mybrickhouse,2026-09-12T11:04:28+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-ken-block-s-65-ford-mustang-hoonicorn-v1-77262
 77262,toycra,2026-09-11T09:11:17+00:00,2999.0,,1,https://toycra.com/products/lego-77262-speed-champions-ken-blocks-65-ford-mustang-hoonicorn-v1-345-pcs
+77262,toycra,2026-09-19T23:22:05+00:00,2999.0,,0,https://toycra.com/products/lego-77262-speed-champions-ken-blocks-65-ford-mustang-hoonicorn-v1-345-pcs
 77985,mybrickhouse,2026-09-10T09:18:14+00:00,10999.0,,1,https://lego.mybrickhouse.com/products/lego-r-jurassic-world-dinosaur-fossils-triceratops-77985
 77985,mybrickhouse,2026-09-10T11:10:46+00:00,10999.0,,1,https://lego.mybrickhouse.com/products/lego-r-jurassic-world-dinosaur-fossils-triceratops-77985
 77985,mybrickhouse,2026-09-10T11:34:31+00:00,10999.0,,1,https://lego.mybrickhouse.com/products/lego-r-jurassic-world-dinosaur-fossils-triceratops-77985
