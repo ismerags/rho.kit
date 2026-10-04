@@ -1,12 +1,12 @@
 {
  "catalog_items": 908,
- "catalog_refreshed_at": "2026-09-26T23:42:12+00:00",
- "distinct_days": 8,
- "exported_at": "2026-09-27T00:11:50+00:00",
+ "catalog_refreshed_at": "2026-10-03T23:55:55+00:00",
+ "distinct_days": 10,
+ "exported_at": "2026-10-04T00:12:57+00:00",
  "first_observation": "2026-09-09T11:54:17+00:00",
  "format": 1,
- "last_observation": "2026-09-27T00:11:49+00:00",
- "observations": 8226,
+ "last_observation": "2026-10-04T00:09:40+00:00",
+ "observations": 8586,
  "retailers": [
   "amazon_in",
   "firstcry",
