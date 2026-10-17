@@ -4166,6 +4166,7 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 42232,mybrickhouse,2026-09-12T10:49:00+00:00,49999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-koenigsegg-sadair-s-spear-megacar-set-42232
 42232,mybrickhouse,2026-09-12T10:54:29+00:00,49999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-koenigsegg-sadair-s-spear-megacar-set-42232
 42232,mybrickhouse,2026-09-12T11:04:28+00:00,49999.0,,1,https://lego.mybrickhouse.com/products/lego-r-technic-koenigsegg-sadair-s-spear-megacar-set-42232
+42232,toycra,2026-10-17T23:18:31+00:00,49999.0,,1,https://toycra.com/products/lego-42232-technic-koenigsegg-sadairs-spear-megacar-4104pcs
 42235,toycra,2026-09-09T12:29:11+00:00,6999.0,,1,https://toycra.com/products/lego-42235-technic-ferrari-488-pista-car-882pcs
 42240,amazon_in,2026-09-10T09:20:50+00:00,24999.0,,1,https://www.amazon.in/dp/B0GGSHY123
 42240,jaimantoys,2026-09-10T09:20:50+00:00,23749.0,24999.0,1,https://jaimantoys.com/products/lego-technic-42240-aston-martin-aramco-amr25-f1-car-1-8-scale-building-set-for-adults-1547-pieces
@@ -6262,8 +6263,8 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 71051,toycra,2026-09-15T07:27:59+00:00,1596.0,,0,https://toycra.com/products/lego-71051-minifigures-animals-series-28-pack-of-4-mini-figures
 71051,toycra,2026-09-27T00:02:45+00:00,4788.0,,1,https://toycra.com/products/lego-71051-minifigures-animals-series-28-pack-of-12-mini-figures
 71051,toycra,2026-09-27T00:02:45+00:00,1596.0,,1,https://toycra.com/products/lego-71051-minifigures-animals-series-28-pack-of-4-mini-figures
-71051,toycra,2026-10-11T00:37:09+00:00,1596.0,,1,https://toycra.com/products/lego-71051-minifigures-animals-series-28-pack-of-4-mini-figures
 71051,toycra,2026-10-11T00:37:09+00:00,4788.0,,1,https://toycra.com/products/lego-71051-minifigures-animals-series-28-pack-of-12-mini-figures
+71051,toycra,2026-10-11T00:37:09+00:00,1596.0,,1,https://toycra.com/products/lego-71051-minifigures-animals-series-28-pack-of-4-mini-figures
 71052,mybrickhouse,2026-09-10T09:18:14+00:00,399.0,,1,https://lego.mybrickhouse.com/products/lego-r-minifigures-series-29-mystery-box-toy-71052
 71052,mybrickhouse,2026-09-10T11:10:46+00:00,399.0,,1,https://lego.mybrickhouse.com/products/lego-r-minifigures-series-29-mystery-box-toy-71052
 71052,mybrickhouse,2026-09-10T11:34:31+00:00,399.0,,1,https://lego.mybrickhouse.com/products/lego-r-minifigures-series-29-mystery-box-toy-71052
@@ -8864,8 +8865,8 @@ set_num,retailer,observed_at,price_inr,mrp_inr,in_stock,url
 77251,toycra,2026-09-27T00:08:51+00:00,24999.0,29990.0,0,https://toycra.com/products/lego-speed-champions-formula1-all-10-sets-77242-to-77251
 77251,toycra,2026-09-27T00:08:51+00:00,2749.0,2999.0,1,https://toycra.com/products/lego-77251-speed-champions-mclaren-f1-team-mcl38-race-car-269-pieces
 77251,toycra,2026-10-11T00:42:59+00:00,24999.0,29990.0,0,https://toycra.com/products/lego-speed-champions-formula1-all-10-sets-77242-to-77251
-77251,toycra,2026-10-11T00:43:06+00:00,2749.0,2999.0,1,https://toycra.com/products/lego-77251-speed-champions-mclaren-f1-team-mcl38-race-car-269-pieces
 77251,toycra,2026-10-11T00:43:06+00:00,24999.0,29990.0,0,https://toycra.com/products/lego-speed-champions-formula1-all-10-sets-77242-to-77251
+77251,toycra,2026-10-11T00:43:06+00:00,2749.0,2999.0,1,https://toycra.com/products/lego-77251-speed-champions-mclaren-f1-team-mcl38-race-car-269-pieces
 77252,mybrickhouse,2026-09-10T09:18:14+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-apxgp-team-race-car-from-f1-r-the-movie-77252
 77252,mybrickhouse,2026-09-10T11:10:46+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-apxgp-team-race-car-from-f1-r-the-movie-77252
 77252,mybrickhouse,2026-09-10T11:34:31+00:00,2999.0,,1,https://lego.mybrickhouse.com/products/lego-r-speed-champions-apxgp-team-race-car-from-f1-r-the-movie-77252
